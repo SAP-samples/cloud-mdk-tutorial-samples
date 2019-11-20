@@ -1,4 +1,5 @@
 # Create an MDK Offline App
+Use the mobile development kit editor to create a mobile app
 
 ***
 ### Description
