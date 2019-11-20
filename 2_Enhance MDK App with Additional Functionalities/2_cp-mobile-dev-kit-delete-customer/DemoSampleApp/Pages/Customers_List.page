@@ -1,0 +1,57 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Create.action",
+				"Position": "right",
+				"SystemItem": "Add",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customers",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}"
+							}
+						],
+						"Description": "{Address/City}",
+						"DetailImage": "res://contact.png",
+						"Headline": "{LastName}",
+						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Detail.action",
+						"Subheadline": "{FirstName}"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customers_List",
+	"_Type": "Page"
+}

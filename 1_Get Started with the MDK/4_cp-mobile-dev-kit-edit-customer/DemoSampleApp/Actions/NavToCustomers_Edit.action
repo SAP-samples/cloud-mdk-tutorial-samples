@@ -1,0 +1,5 @@
+{
+	"ModalPage": true,
+	"PageToOpen": "/DemoSampleApp/Pages/Customers_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

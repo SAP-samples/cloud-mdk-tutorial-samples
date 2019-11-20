@@ -1,0 +1,135 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
+				"Position": "right",
+				"SystemItem": "Edit",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js",
+				"Position": "right",
+				"SystemItem": "Trash",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customer Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{DateOfBirth}",
+						"Description": "{CustomerId}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "{EmailAddress}",
+						"HeadlineText": "{LastName}",
+						"PreserveIconStackSpacing": true,
+						"ProgressIndicator": "inProgress",
+						"StatusText": "{PhoneNumber}",
+						"Subhead": "{FirstName}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Address",
+							"Value": "{{#Property:HouseNumber}} {{#Property:Street}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "City",
+							"Value": "{City}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Postal Code",
+							"Value": "{PostalCode}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"Caption": "No Customer Orders Found",
+						"FooterVisible": false
+					},
+					"Footer": {
+						"AccessoryType": "disclosureIndicator",
+						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
+						"Caption": "See All",
+						"FooterStyle": "attribute",
+						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
+						"UseBottomPadding": false,
+						"Visible": true
+					},
+					"Header": {
+						"Caption": "Customer Orders",
+						"UseTopPadding": true
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"Subhead": "$(D,{CreatedAt})",
+						"SubstatusText": "{CurrencyCode}",
+						"Title": "{SalesOrderId}"
+					},
+					"Target": {
+						"EntitySet": "{{#Property:@odata.readLink}}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"DataSubscriptions": [
+		"SalesOrderHeaders"
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Create Order",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/DemoSampleApp/Actions/NavToSalesOrderHeaders_Create.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Customers_Detail",
+	"_Type": "Page"
+}

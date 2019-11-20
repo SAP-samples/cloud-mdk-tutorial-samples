@@ -1,0 +1,24 @@
+{
+	"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+	"DefiningRequests": [{
+		"Name": "Customers",
+		"Query": "Customers"
+	}, {
+		"Name": "Products",
+		"Query": "Products"
+	}, {
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}, {
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	}],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "DownLoading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
+}

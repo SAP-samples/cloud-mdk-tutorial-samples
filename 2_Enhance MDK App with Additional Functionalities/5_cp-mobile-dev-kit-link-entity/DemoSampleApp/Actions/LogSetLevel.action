@@ -1,0 +1,4 @@
+{
+	"Level": "Debug",
+	"_Type": "Action.Type.Logger.SetLevel"
+}

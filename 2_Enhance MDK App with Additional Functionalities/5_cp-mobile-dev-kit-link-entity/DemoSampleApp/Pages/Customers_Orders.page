@@ -1,0 +1,42 @@
+{
+	"Caption": "Customer Orders",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"Caption": "No Orders Found",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "$(D,{CreatedAt})",
+						"DetailImageIsCircular": false,
+						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"Subhead": "{CustomerId}",
+						"SubstatusText": "{LifeCycleStatusName}",
+						"Title": "{SalesOrderId}"
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$filter=CustomerId eq '{{#Property:CustomerId}}'&$top=5&$orderby=CreatedAt desc",
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customers_Orders",
+	"_Type": "Page"
+}

@@ -1,0 +1,5 @@
+{
+	"ModalPage": true,
+	"PageToOpen": "/DemoSampleApp/Pages/SalesOrderHeaders_Create.page",
+	"_Type": "Action.Type.Navigation"
+}
