@@ -1,4 +1,5 @@
 # Create a Customer Record in an MDK App
+Allow the user to create a customer record in an MDK app.
 
 ***
 ### Description

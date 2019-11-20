@@ -1,4 +1,5 @@
 # Create a Customer List Page in an MDK App
+Use the mobile development kit page editor to create a new page for displaying a customer list
 
 ***
 ### Description

@@ -1,5 +1,6 @@
 # Extend an MDK App with Customer Orders
-
+ Display a customer order list and its details
+ 
 ***
 ### Description
 

@@ -2,7 +2,7 @@
 Increase your understanding of the mobile development kit, including how to upload client logs to mobile services.
 ***
 ### Description
-These sample resources provide reference to [Enhance MDK App with Additional Functionalities](https://developers.sap.com/group.mobile-dev-kit-enhance.html) tutorials.
+This folder contains the MDK metadata projects which is the end result of each tutorial part of [Enhance MDK App with Additional Functionalities](https://developers.sap.com/group.mobile-dev-kit-enhance.html) group.
 The samples include:
 * **Create a Customer Record in an MDK App**
 	* Allow the user to create a customer record in an MDK app.
@@ -11,7 +11,7 @@ The samples include:
 	* Allow the user to delete a customer record in an MDK app.
 
 * **Upload Logs from an MDK App**
-	* Allow users to upload logs from an MDK app to SAP Cloud Platform Mobile Servi
+	* Allow users to upload logs from an MDK app to SAP Cloud Platform Mobile Services.
 
 * **Extend an MDK App with Customer Orders**
 	* Display a customer order list and its details.

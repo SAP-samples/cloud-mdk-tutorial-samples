@@ -2,7 +2,7 @@
 
 ***
 ### Description
-These sample resources provide reference to [Get Started with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) tutorials.
+This folder contains the MDK metadata projects which is the end result of each tutorial part of [Get Started with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) mission.
 The samples include:
 * **Create an MDK Offline App**
 	* Use the mobile development kit editor to create a mobile app.

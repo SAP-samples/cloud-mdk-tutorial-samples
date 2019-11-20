@@ -1,4 +1,5 @@
 # Define a Validation Rule in an MDK App
+Write a JavaScript logic to validate an email address format in an MDK app
 
 ***
 ### Description

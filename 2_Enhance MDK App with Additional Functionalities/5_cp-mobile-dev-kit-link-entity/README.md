@@ -1,4 +1,5 @@
 # Implement Create Entity and Linking Entities in an MDK App
+Create relationship between two OData entities
 
 ***
 ### Description

@@ -1,4 +1,5 @@
 # Create a Customer Detail Page in an MDK App
+Create a new page for displaying customer details in an MDK app
 
 ***
 ### Description

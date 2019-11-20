@@ -1,4 +1,5 @@
 # Delete a Customer Record in an MDK App
+Allow the user to delete a customer record in an MDK app
 
 ***
 ### Description

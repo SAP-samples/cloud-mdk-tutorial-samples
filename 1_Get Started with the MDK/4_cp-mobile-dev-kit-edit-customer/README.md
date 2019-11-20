@@ -1,4 +1,5 @@
 # Modify a customer record in an MDK App
+Allow editing of customer details in an MDK app
 
 ***
 ### Description
