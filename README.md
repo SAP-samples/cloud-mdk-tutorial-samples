@@ -35,7 +35,6 @@ To use the resources you need to have:
 ### Download and Installation
 
 Clone the repository or download it to your file system.
-- TBD
 
 ***
 ### Known Issues
@@ -43,9 +42,10 @@ There are no known issues relating to the resources included in this repository.
 
 ***
 ### How to Obtain Support
-For any issue you encounter with the resources in this repository or the tutorials associated with them please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
-
-In addition, registered users can log-in and submit their question in the **SAP Community** by following [this link](https://answers.sap.com/questions/ask.html) .
+For any issue you encounter with 
+* the *resources* in this repository, please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
+* the *tutorials* associated with them, please create a new `Issue` by clicking on the **Provide Feedback** option available in the tutorial page.
+* In addition, registered users can log-in and submit their question in the **SAP Community** by following [this link](https://answers.sap.com/questions/ask.html) .
 Please select the **Primary Tag** - `mobile development kit client`.
 
 
