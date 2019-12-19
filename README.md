@@ -5,12 +5,13 @@
 These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorals.
 The samples include:
 * How to create an MDK Online/Offline app
-* How to add CRUD (Create, Read, Update & Read) funtionality
-* How to store the data locally, make some transcations being in offline mode, upload the changes to the backend
+* How to add CRUD (Create, Read, Update & Delete) funtionality
+* How to store the data locally, make some transcations against the local database (offline store), upload the changes to the backend
 * How to add client side validation rule
 * How to implement deep linking opening an installed app like SAP Mobile Cards, SAP Fiori Client etc.
 * How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations
-
+* How to create a custom MDK client using MDK SDK
+*  How to write a custom extension control using NativeScript
 
 The resources can also be used as a general code reference and starting point for the Mobile development kit.
 
