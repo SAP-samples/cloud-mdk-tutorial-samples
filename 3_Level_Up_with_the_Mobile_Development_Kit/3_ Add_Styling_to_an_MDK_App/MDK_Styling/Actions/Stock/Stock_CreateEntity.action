@@ -1,0 +1,21 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/MDK_Styling/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/MDK_Styling/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+		"LotSize": "#Control:LotSize/#Value",
+		"MinStock": "#Control:MinStock/#Value",
+		"ProductId": "#Control:ProductId/#Value",
+		"Quantity": "#Control:Quantity/#Value",
+		"QuantityLessMin": "#Control:QuantityLessMin/#Value",
+		"UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+	},
+	"Target": {
+		"EntitySet": "Stock",
+		"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

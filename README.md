@@ -20,8 +20,8 @@ Above folders point to related tutorial mission/group.
 |  :------------- | :-------------
 |  [1_Get_Started_with_the_MDK](/1_Get_Started_with_the_MDK)  | https://developers.sap.com/mission.mobile-dev-kit-get-started.html
 |  [2_Enhance_MDK_App_with_Additional_Functionalities](2_Enhance_MDK_App_with_Additional_Functionalities) | https://developers.sap.com/group.mobile-dev-kit-enhance.html
-| [3_Level_Up_with_the_Mobile_Development_Kit](3_Level_Up_with_the_Mobile_Development_Kit)    | https://developers.sap.com/mission.mobile-dev-kit-level-up.html
-|  [4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK](4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK) | https://developers.sap.com/mission.mobile-dev-kit-brand.html
+| [3_Level_Up_with_the_Mobile_Development_Kit](3_Level_Up_with_the_Mobile_Development_Kit) | https://developers.sap.com/mission.mobile-dev-kit-level-up.html
+| [4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK](/4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK) | https://developers.sap.com/mission.mobile-dev-kit-brand.html
 
 The resources can also be used as a general code reference and starting point for the Mobile development kit.
 

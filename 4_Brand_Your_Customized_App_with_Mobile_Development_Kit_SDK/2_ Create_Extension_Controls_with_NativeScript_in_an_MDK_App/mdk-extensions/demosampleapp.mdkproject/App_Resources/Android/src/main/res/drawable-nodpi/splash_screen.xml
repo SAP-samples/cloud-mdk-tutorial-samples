@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="fill">
+    <item>
+        <!-- This is where you specify the drawable for Splashscreen Background-->
+        <bitmap android:gravity="fill" android:src="@drawable/background" />
+    </item>
+    <item>
+        <!-- This is where you specify the drawable for image or icon-->
+        <bitmap android:gravity="center" android:src="@drawable/splash_logo" />
+    </item>
+</layer-list>

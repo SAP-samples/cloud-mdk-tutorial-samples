@@ -1,0 +1,73 @@
+{
+	"Caption": "Error Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "/MDK_ErrorArchive/Rules/GetAffectedEntityHeaderCaption.js",
+						"UseTopPadding": true
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/MDK_ErrorArchive/Rules/DecideWhichEditPage.js",
+						"PreserveIconStackSpacing": false,
+						"Subhead": "{@odata.id}",
+						"Title": "Edit Affected Entity"
+					},
+					"Target": "#Property:AffectedEntity",
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "HTTP Status Code",
+							"Value": "{HTTPStatusCode}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Request Method",
+							"Value": "{RequestMethod}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Request URL",
+							"Value": "{RequestURL}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Request Body",
+							"Value": "{RequestBody}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Error Message",
+							"Value": "{Message}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ErrorDetails",
+	"_Type": "Page"
+}

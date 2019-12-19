@@ -1,0 +1,50 @@
+{
+	"Caption": "SalesOrderItems",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDK_Styling/Actions/SalesOrderItems/NavToSalesOrderItems_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{GrossAmount}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDK_Styling/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+				"StatusImage": "",
+				"Title": "{CurrencyCode}",
+				"Footnote": "{ProductId}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{ItemNumber}",
+				"Subhead": "{DeliveryDate}",
+				"SubstatusText": "{NetAmount}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "SalesOrderItems",
+				"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderItems_List"
+}

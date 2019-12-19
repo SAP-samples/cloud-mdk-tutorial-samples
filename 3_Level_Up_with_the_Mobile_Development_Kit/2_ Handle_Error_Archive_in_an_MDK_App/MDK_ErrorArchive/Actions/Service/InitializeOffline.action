@@ -1,0 +1,18 @@
+{
+	"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+	"DefiningRequests": [{
+		"Name": "PurchaseOrderHeaders",
+		"Query": "PurchaseOrderHeaders"
+	}, {
+		"Name": "PurchaseOrderItems",
+		"Query": "PurchaseOrderItems"
+	}],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "DownLoading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineFailureMessage.action"
+}

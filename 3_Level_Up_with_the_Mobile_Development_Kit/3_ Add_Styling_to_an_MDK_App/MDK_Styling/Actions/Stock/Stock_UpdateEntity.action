@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Stock",
+		"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"LotSize": "#Control:LotSize/#Value",
+		"MinStock": "#Control:MinStock/#Value",
+		"ProductId": "#Control:ProductId/#Value",
+		"Quantity": "#Control:Quantity/#Value",
+		"QuantityLessMin": "#Control:QuantityLessMin/#Value",
+		"UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+	},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/MDK_Styling/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/MDK_Styling/Actions/UpdateEntityFailureMessage.action"
+}

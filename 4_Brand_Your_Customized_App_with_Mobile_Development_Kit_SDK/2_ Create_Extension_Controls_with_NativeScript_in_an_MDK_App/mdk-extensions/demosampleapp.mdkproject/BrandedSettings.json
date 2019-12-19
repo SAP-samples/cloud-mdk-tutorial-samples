@@ -1,0 +1,61 @@
+{
+  "ApplicationDisplayName": "<Enter App Name Here>",
+  "SkipEula": false,
+  "ConnectionSettings": {
+    "EnableOverrides": false,
+    "AppId": "<Enter your SAP CPms app ID here>",
+    "ClientId": "<Enter your SAP CPms Client ID here>",
+    "SapCloudPlatformEndpoint": "<Enter your SAP CPms Endpoint here>",
+    "AuthorizationEndpointUrl": "<Enter your SAP CPms Authorization Endpoint here>",
+    "RedirectUrl": "<Enter your SAP CPms Authorization Redirect URL here>",
+    "TokenUrl": "<Enter your SAP CPms Authorization Token Url here>"
+  },
+  "DebugSettings": {
+    "DebugODataProvider": false,
+    "ProfilingEnabled": false,
+    "TracingEnabled": false,
+    "Categories": [
+      "mdk.trace.action",
+      "mdk.trace.api",
+      "mdk.trace.app",
+      "mdk.trace.binding",
+      "mdk.trace.branding",
+      "mdk.trace.core",
+      "mdk.trace.i18n",
+      "mdk.trace.lcms",
+      "mdk.trace.logging",
+      "mdk.trace.odata",
+      "mdk.trace.onboarding",
+      "mdk.trace.profiling",
+      "mdk.trace.push",
+      "mdk.trace.settings",
+      "mdk.trace.targetpath",
+      "mdk.trace.ui"
+    ]
+  },
+  "LogSettings": {
+    "FileName": "ClientLog.txt",
+    "MaxFileSizeInMegaBytes": 1,
+    "LogLevel": "<Enter your LogLevel - Error | Warn | Info | Debug>"
+  },
+  "Demo": {
+    "EnableOverrides": false,
+    "DemoAppLanguage": "<Specify language code (i.e. en) if the demo db can support sap-language parameter>",
+    "ConnectionSettings": {
+      "AppId": "<Enter your SAP CPms app ID here>",
+      "ClientId": "<Enter your SAP CPms Client ID here>",
+      "SapCloudPlatformEndpoint": "<Enter your SAP CPms Endpoint here>",
+      "AuthorizationEndpointUrl": "<Enter your SAP CPms Authorization Endpoint here>",
+      "RedirectUrl": "<Enter your SAP CPms Authorization Redirect URL here>",
+      "TokenUrl": "<Enter your SAP CPms Authorization Token Url here>"
+    }
+  },
+  "DetailLabelViewText": "Easily manage your jobs and notifications and track your time and material usage",
+  "DefaultAppLanguage" : "en",
+  "EncryptDatabase" : true,
+  "PasscodeTimeout": 120,
+  "SigninButtonText": "<Enter Sign in button text here>",
+  "OnboardingCustomizations": {
+    "_comment" : "<See Branding documentation or OnboardingCustomizations.sample on how to override & customize Onboarding UI strings>"
+  }
+}

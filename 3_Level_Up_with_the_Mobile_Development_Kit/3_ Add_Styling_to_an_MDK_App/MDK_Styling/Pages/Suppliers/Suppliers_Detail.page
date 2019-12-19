@@ -1,0 +1,78 @@
+{
+	"Caption": "Supplier Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDK_Styling/Actions/Suppliers/NavToSuppliers_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/MDK_Styling/Rules/Suppliers/Suppliers_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{City}",
+				"Subhead": "{Country}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{PostalCode}",
+				"Description": "{EmailAddress}",
+				"StatusText": "{HouseNumber}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{PhoneNumber}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [{
+				"KeyName": "City",
+				"Value": "{City}"
+			}, {
+				"KeyName": "Country",
+				"Value": "{Country}"
+			}, {
+				"KeyName": "EmailAddress",
+				"Value": "{EmailAddress}"
+			}, {
+				"KeyName": "HouseNumber",
+				"Value": "{HouseNumber}"
+			}, {
+				"KeyName": "PhoneNumber",
+				"Value": "{PhoneNumber}"
+			}, {
+				"KeyName": "PostalCode",
+				"Value": "{PostalCode}"
+			}, {
+				"KeyName": "Street",
+				"Value": "{Street}"
+			}, {
+				"KeyName": "SupplierId",
+				"Value": "{SupplierId}"
+			}, {
+				"KeyName": "SupplierName",
+				"Value": "{SupplierName}"
+			}, {
+				"KeyName": "Address",
+				"Value": "{Address}"
+			}, {
+				"KeyName": "UpdatedTimestamp",
+				"Value": "{UpdatedTimestamp}"
+			}],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Suppliers_Detail"
+}

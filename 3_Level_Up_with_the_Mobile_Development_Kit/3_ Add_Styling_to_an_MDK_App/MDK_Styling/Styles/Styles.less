@@ -1,0 +1,37 @@
+@mdkYellow1: #ffbb33;
+@mdkRed1: #ff0000;
+
+//// This style applies to all the ActionBars in the application
+ActionBar {
+    color: white;
+    background-color: red;
+}
+
+//// This style applies to all the ToolBars in the application
+ToolBar {
+    color: white;
+    background-color: blue;
+}
+
+//// LogoutToolbarItem is tool bar item for Logout in Main.page
+#LogoutToolbarItem  {
+    color: brown;
+}
+
+//// UploadToolbarItem is tool bar item for Upload in Main.page
+#UploadToolbarItem  {
+    color: green;
+}
+
+//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
+//// below snippet is to style SalesOrder button on Main.page
+.MySalesOrderButton {
+  font-color: @mdkRed1;
+  background-color: black;
+}
+
+//// below snippet is to style Title property of an Object Table control in Customers_List.page
+.ObjectTableTitle {
+  font-color: @mdkYellow1;
+  background-color: @mdkRed1;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "my-nativescript-plugin",
+  "version": "1.0.0",
+  "description": "SAP Mobile Development Kit (MDK) Client Extensions Example. ",
+  "main": "index.js",
+  "nativescript": {
+    "platforms": {
+      "ios": "5.2.1",
+      "android": "5.2.1"
+    },
+    "tns-ios": {
+      "version": "5.2.1"
+    },
+    "tns-android": {
+      "version": "5.2.1"
+    }
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "SAP"
+}

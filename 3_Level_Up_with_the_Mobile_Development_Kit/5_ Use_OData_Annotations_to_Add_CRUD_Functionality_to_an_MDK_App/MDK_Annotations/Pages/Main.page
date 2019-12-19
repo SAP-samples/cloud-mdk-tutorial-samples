@@ -1,0 +1,46 @@
+{
+	"Caption": "Main",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/MDK_Annotations/Actions/Customers/NavToCustomers_List.action",
+							"TextAlignment": "center",
+							"Title": "Customers"
+						},
+						{
+							"OnPress": "/MDK_Annotations/Actions/Product/NavToProduct_List.action",
+							"TextAlignment": "center",
+							"Title": "Products",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/MDK_Annotations/Actions/Logout.action",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}

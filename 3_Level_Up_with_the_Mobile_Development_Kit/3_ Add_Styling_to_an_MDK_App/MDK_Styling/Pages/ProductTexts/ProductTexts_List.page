@@ -1,0 +1,50 @@
+{
+	"Caption": "ProductTexts",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDK_Styling/Actions/ProductTexts/NavToProductTexts_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{LongDescription}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDK_Styling/Actions/ProductTexts/NavToProductTexts_Detail.action",
+				"StatusImage": "",
+				"Title": "{Id}",
+				"Footnote": "{ShortDescription}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{Name}",
+				"Subhead": "{Language}",
+				"SubstatusText": "{ProductId}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "ProductTexts",
+				"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "ProductTexts_List"
+}

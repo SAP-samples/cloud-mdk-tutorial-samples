@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/MDK_ErrorArchive/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/MDK_ErrorArchive/Actions/Service/CloseOfflineFailureMessage.action"
+}

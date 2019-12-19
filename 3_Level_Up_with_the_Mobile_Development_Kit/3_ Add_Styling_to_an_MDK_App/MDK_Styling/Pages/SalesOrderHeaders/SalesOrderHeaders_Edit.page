@@ -1,0 +1,70 @@
+{
+	"Caption": "Update SalesOrderHeader",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"Text": "Cancel",
+			"OnPress": "/MDK_Styling/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"Text": "Save",
+			"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/SalesOrderHeaders_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [{
+				"Mode": "Date",
+				"Value": "{CreatedAt}",
+				"_Name": "CreatedAt",
+				"Caption": "CreatedAt",
+				"_Type": "Control.Type.FormCell.DatePicker"
+			}, {
+				"Caption": "CurrencyCode",
+				"Value": "{CurrencyCode}",
+				"_Name": "CurrencyCode",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "CustomerId",
+				"Value": "{CustomerId}",
+				"_Name": "CustomerId",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "GrossAmount",
+				"Value": "{GrossAmount}",
+				"_Name": "GrossAmount",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "LifeCycleStatus",
+				"Value": "{LifeCycleStatus}",
+				"_Name": "LifeCycleStatus",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "LifeCycleStatusName",
+				"Value": "{LifeCycleStatusName}",
+				"_Name": "LifeCycleStatusName",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "NetAmount",
+				"Value": "{NetAmount}",
+				"_Name": "NetAmount",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "SalesOrderId",
+				"Value": "{SalesOrderId}",
+				"_Name": "SalesOrderId",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "TaxAmount",
+				"Value": "{TaxAmount}",
+				"_Name": "TaxAmount",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Edit"
+}

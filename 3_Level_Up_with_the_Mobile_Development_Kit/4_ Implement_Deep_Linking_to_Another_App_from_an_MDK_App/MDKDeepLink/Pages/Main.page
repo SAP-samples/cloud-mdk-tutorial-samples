@@ -1,0 +1,60 @@
+{
+	"Caption": "Main",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js",
+							"TextAlignment": "center",
+							"Title": "Open SAP Mobile Cards",
+							"Visible": true
+						},
+						{
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPFioriClient.js",
+							"TextAlignment": "center",
+							"Title": "Open SAP Fiori Client",
+							"Visible": true
+						},
+						{
+							"OnPress": "/MDKDeepLink/Rules/OpenUI5.js",
+							"TextAlignment": "center",
+							"Title": "Open UI5 App",
+							"Visible": true
+						},
+						{
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js",
+							"TextAlignment": "center",
+							"Title": "Open SAP.com page",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/MDKDeepLink/Actions/Logout.action",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}

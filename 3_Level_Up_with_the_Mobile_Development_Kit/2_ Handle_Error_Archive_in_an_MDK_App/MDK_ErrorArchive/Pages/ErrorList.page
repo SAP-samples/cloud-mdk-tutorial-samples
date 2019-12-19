@@ -1,0 +1,38 @@
+{
+	"Caption": "Error List",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"Caption": "No Sync Errors Found",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{RequestMethod}",
+						"Subhead": "{RequestURL}",
+						"Title": "{HTTPStatusCode}"
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "ErrorArchive",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ErrorList",
+	"_Type": "Page"
+}

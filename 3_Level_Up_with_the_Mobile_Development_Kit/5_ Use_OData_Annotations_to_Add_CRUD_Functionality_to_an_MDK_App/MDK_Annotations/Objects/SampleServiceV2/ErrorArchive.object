@@ -1,0 +1,71 @@
+{
+	"Collection": [
+		"ErrorArchive"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "AffectedEntity",
+			"_Type": "Entity"
+		}
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "RequestID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "CustomTag",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "HTTPStatusCode",
+			"_Type": "Edm.Int32"
+		},
+		{
+			"Key": false,
+			"_Name": "Code",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Message",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "InnerError",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Domain",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "RequestMethod",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "RequestURL",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "RequestBody",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "CustomTag",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "SampleServiceV2.service",
+	"_Name": "ErrorArchive"
+}

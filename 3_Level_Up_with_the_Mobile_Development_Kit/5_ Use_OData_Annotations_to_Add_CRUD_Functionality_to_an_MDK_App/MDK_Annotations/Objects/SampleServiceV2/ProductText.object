@@ -1,0 +1,39 @@
+{
+	"Collection": [
+		"ProductTexts"
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "Id",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Language",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "LongDescription",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Name",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "ProductId",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "ShortDescription",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/MDK_Annotations/Services/SampleServiceV2.service",
+	"_Name": "ProductText"
+}

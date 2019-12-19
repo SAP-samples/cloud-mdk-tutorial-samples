@@ -1,0 +1,21 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/MDK_Styling/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/MDK_Styling/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+		"CurrencyCode": "#Control:CurrencyCode/#Value",
+		"GrossAmount": "#Control:GrossAmount/#Value",
+		"NetAmount": "#Control:NetAmount/#Value",
+		"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+		"SupplierId": "#Control:SupplierId/#Value",
+		"TaxAmount": "#Control:TaxAmount/#Value"
+	},
+	"Target": {
+		"EntitySet": "PurchaseOrderHeaders",
+		"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

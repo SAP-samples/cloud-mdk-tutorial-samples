@@ -1,0 +1,6 @@
+{
+	"Message": "#Control:MyExtensionControlName/#Value",
+	"OKCaption": "OK",
+	"Title": "Value of the Slider is:",
+	"_Type": "Action.Type.Message"
+}
