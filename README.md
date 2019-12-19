@@ -13,6 +13,13 @@ The samples include:
 * How to create a custom MDK client using MDK SDK
 *  How to write a custom extension control using NativeScript
 
+Above folders point to related tutorial mission/group.
+
+* 1_Get Started with the MDK: https://developers.sap.com/mission.mobile-dev-kit-get-started.html
+* 2_Enhance MDK App with Additional Functionalities: https://developers.sap.com/group.mobile-dev-kit-enhance.html
+* 3_Level Up with the Mobile Development Kit: https://developers.sap.com/mission.mobile-dev-kit-level-up.html
+* 4_Brand Your Customized App with Mobile Development Kit SDK: https://developers.sap.com/mission.mobile-dev-kit-brand.html
+
 The resources can also be used as a general code reference and starting point for the Mobile development kit.
 
 Please be advised that any downloads are subject to the following:
