@@ -8,10 +8,10 @@ The samples include:
 |  Folder     | Description   | Tutorial
 |  :------------- | :------------- | :-------------
 |  [1_cp-mobile-dev-kit-offline-app](/1_Get_Started_with_the_MDK/1_cp-mobile-dev-kit-offline-app) | Use the mobile development kit editor to create a mobile app | [Create an MDK Offline App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-offline-app.html)
-|  [2_cp-mobile-dev-kit-list-page](/2_cp-mobile-dev-kit-list-page)  |  Create a Customer List Page in an MDK App  | [Create a Customer List Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-list-page.html)
-|  [3_cp-mobile-dev-kit-detail-page](/3_cp-mobile-dev-kit-detail-page)      |     Use the mobile development kit editor to create a mobile app | [Create a Customer Detail Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-detail-page.html)
-|  [4_cp-mobile-dev-kit-edit-customer](4_cp-mobile-dev-kit-edit-customer) | Allow editing of customer details in an MDK app | [Modify a customer record in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-edit-customer.html)
-|  [5_cp-mobile-dev-kit-add-validation](/5_cp-mobile-dev-kit-add-validation) | Write a JavaScript logic to validate an email address format in an MDK app | [Define a Validation Rule in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-add-validation.html)
+|  [2_cp-mobile-dev-kit-list-page](/1_Get_Started_with_the_MDK2_cp-mobile-dev-kit-list-page)  |  Create a Customer List Page in an MDK App  | [Create a Customer List Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-list-page.html)
+|  [3_cp-mobile-dev-kit-detail-page](/1_Get_Started_with_the_MDK3_cp-mobile-dev-kit-detail-page)      |     Use the mobile development kit editor to create a mobile app | [Create a Customer Detail Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-detail-page.html)
+|  [4_cp-mobile-dev-kit-edit-customer](/1_Get_Started_with_the_MDK/4_cp-mobile-dev-kit-edit-customer) | Allow editing of customer details in an MDK app | [Modify a customer record in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-edit-customer.html)
+|  [5_cp-mobile-dev-kit-add-validation](/1_Get_Started_with_the_MDK/5_cp-mobile-dev-kit-add-validation) | Write a JavaScript logic to validate an email address format in an MDK app | [Define a Validation Rule in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-add-validation.html)
 
 
 
