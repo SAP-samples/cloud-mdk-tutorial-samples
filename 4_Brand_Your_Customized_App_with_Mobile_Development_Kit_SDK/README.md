@@ -1,18 +1,15 @@
-# Get Started with the Mobile Development Kit
+# Brand Your Customized App with Mobile Development Kit SDK
+Explore the mobile development kit SDK and build a custom Android/iOS client, enable push notifications, and create extensions.
 
 ***
 ### Description
-This folder contains the MDK metadata projects which is the end result of each tutorial part of [Get Started with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) mission.
+This folder contains the MDK metadata projects which is the end result of each tutorial part of [Brand Your Customized App with Mobile Development Kit SDK](https://developers.sap.com/mission.mobile-dev-kit-brand.html) mission.
 The samples include:
 
 |  Folder     | Description   | Tutorial
 |  :------------- | :------------- | :-------------
-|  [1_cp-mobile-dev-kit-offline-app](/1_cp-mobile-dev-kit-offline-app)      |     Use the mobile development kit editor to create a mobile app | [Create an MDK Offline App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-offline-app.html)
-|  [2_cp-mobile-dev-kit-list-page](/2_cp-mobile-dev-kit-list-page)  |  Create a Customer List Page in an MDK App  | [Create a Customer List Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-list-page.html)
-|  [3_cp-mobile-dev-kit-detail-page](/3_cp-mobile-dev-kit-detail-page)      |     Use the mobile development kit editor to create a mobile app | [Create a Customer Detail Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-detail-page.html)
-|  [4_cp-mobile-dev-kit-edit-customer](/4_cp-mobile-dev-kit-edit-customer)      | Allow editing of customer details in an MDK app | [Modify a customer record in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-edit-customer.html)
-|  [5_cp-mobile-dev-kit-add-validation](/5_cp-mobile-dev-kit-add-validation) | Write a JavaScript logic to validate an email address format in an MDK app | [Define a Validation Rule in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-add-validation.html)
-
+|  [1_Enable_Push_Notifications_in_an_MDK_App](/4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK/1_Enable_Push_Notifications_in_an_MDK_App)   |  Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html)
+|  [2_Create_Extension_Controls_with_NativeScript_in_an_MDK_App](/4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK/2_Create_Extension_Controls_with_NativeScript_in_an_MDK_App)  |  Build and run the Mobile Development Kit client with custom extension functionality for Android and iOS platforms | [Create Extension Controls with NativeScript in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-slider-extension.html)
 
 
 ***

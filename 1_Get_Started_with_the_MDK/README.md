@@ -1,4 +1,5 @@
 # Get Started with the Mobile Development Kit
+Build a cross-platform native offline mobile app from scratch with the SAP Cloud Platform Mobile Services mobile development kit.
 
 ***
 ### Description
