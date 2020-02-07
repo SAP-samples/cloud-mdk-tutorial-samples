@@ -15,7 +15,7 @@
 								"ActivityValue": "{EmailAddress}"
 							}
 						],
-						"Description": "{Address/City}",
+						"Description": "{City}",
 						"DetailImage": "res://contact.png",
 						"Headline": "{LastName}",
 						"Subheadline": "{FirstName}"
