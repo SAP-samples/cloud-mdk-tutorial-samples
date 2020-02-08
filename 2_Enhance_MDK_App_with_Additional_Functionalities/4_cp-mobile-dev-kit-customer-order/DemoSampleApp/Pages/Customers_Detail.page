@@ -17,7 +17,7 @@
 			}
 		]
 	},
-	"Caption": "Customer Detail",
+	"Caption": "Customers Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -29,8 +29,6 @@
 						"DetailImageIsCircular": false,
 						"Footnote": "{EmailAddress}",
 						"HeadlineText": "{LastName}",
-						"PreserveIconStackSpacing": true,
-						"ProgressIndicator": "inProgress",
 						"StatusText": "{PhoneNumber}",
 						"Subhead": "{FirstName}"
 					},

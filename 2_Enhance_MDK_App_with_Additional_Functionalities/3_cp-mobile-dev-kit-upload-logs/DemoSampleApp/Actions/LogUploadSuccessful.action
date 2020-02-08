@@ -1,7 +1,7 @@
 {
 	"Animated": true,
 	"Duration": 3,
-	"IsIconHidden": false,
+	"IsIconHidden": true,
 	"MaxNumberOfLines": 1,
 	"Message": "Log File Uploaded",
 	"_Type": "Action.Type.ToastMessage"

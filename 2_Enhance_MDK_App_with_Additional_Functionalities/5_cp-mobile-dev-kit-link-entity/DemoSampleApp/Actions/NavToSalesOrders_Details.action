@@ -1,4 +1,6 @@
 {
+	"ClearHistory": false,
+	"ModalPage": false,
 	"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Detail.page",
 	"_Type": "Action.Type.Navigation"
 }

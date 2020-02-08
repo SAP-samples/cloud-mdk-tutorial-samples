@@ -26,7 +26,7 @@
 								"ActivityValue": "{EmailAddress}"
 							}
 						],
-						"Description": "{Address/City}",
+						"Description": "{City}",
 						"DetailImage": "res://contact.png",
 						"Headline": "{LastName}",
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Detail.action",

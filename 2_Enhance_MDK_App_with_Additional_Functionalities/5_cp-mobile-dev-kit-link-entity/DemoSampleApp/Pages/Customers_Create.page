@@ -43,8 +43,7 @@
 							"Caption": "Phone",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
-							"Value": "Enter Value",
+							"PlaceHolder": "Enter Value",
 							"_Name": "FCCreatePhone",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -52,8 +51,7 @@
 							"Caption": "Email",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
-							"Value": "Enter Value",
+							"PlaceHolder": "Enter Value",
 							"_Name": "FCCreateEmail",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},

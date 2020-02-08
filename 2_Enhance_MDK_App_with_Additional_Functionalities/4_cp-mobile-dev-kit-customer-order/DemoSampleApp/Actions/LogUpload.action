@@ -1,5 +1,5 @@
 {
-	"ActivityIndicatorText": "Upload Logs...",
+	"ActivityIndicatorText": "Uploading Logs...",
 	"OnFailure": "/DemoSampleApp/Actions/LogUploadFailure.action",
 	"OnSuccess": "/DemoSampleApp/Actions/LogUploadSuccessful.action",
 	"ShowActivityIndicator": true,
