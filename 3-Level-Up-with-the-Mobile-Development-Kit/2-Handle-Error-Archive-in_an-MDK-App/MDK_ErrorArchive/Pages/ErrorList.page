@@ -33,6 +33,7 @@
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
+	"OnLoaded": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
 	"_Name": "ErrorList",
 	"_Type": "Page"
 }
