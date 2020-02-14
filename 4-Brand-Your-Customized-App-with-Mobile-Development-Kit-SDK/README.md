@@ -8,8 +8,8 @@ The samples include:
 
 |  Folder     | Description   | Tutorial
 |  :------------- | :------------- | :-------------
-|  [1_Enable_Push_Notifications_in_an_MDK_App](/4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK/1_Enable_Push_Notifications_in_an_MDK_App)   |  Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html)
-|  [2_Create_Extension_Controls_with_NativeScript_in_an_MDK_App](/4_Brand_Your_Customized_App_with_Mobile_Development_Kit_SDK/2_Create_Extension_Controls_with_NativeScript_in_an_MDK_App)  |  Build and run the Mobile Development Kit client with custom extension functionality for Android and iOS platforms | [Create Extension Controls with NativeScript in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-slider-extension.html)
+|  [1-Enable-Push-Notifications-in-an-MDK-App](/4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/1-Enable-Push-Notifications-in-an-MDK-App)   |  Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html)
+|  [2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App](/4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App)  |  Build and run the Mobile Development Kit client with custom extension functionality for Android and iOS platforms | [Create Extension Controls with NativeScript in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-slider-extension.html)
 
 
 ***
