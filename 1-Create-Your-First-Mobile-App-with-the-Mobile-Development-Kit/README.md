@@ -3,17 +3,9 @@ Build a cross-platform native offline mobile app from scratch with the SAP Cloud
 
 ***
 ### Description
-This folder contains the MDK metadata project which is the end result of each tutorial part of [Create Your First Mobile App with the Mobile Development Kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) mission.
-The samples include:
+This folder contains the MDK metadata project which is the end result the tutorial mission of [Create Your First Mobile App with the Mobile Development Kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
 
-|  Folder     | Description   | Tutorial
-|  :------------- | :------------- | :-------------
-|  [1-cp-mobile-dev-kit-offline-app](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit/1-cp-mobile-dev-kit-offline-app) | Use the mobile development kit editor to create a mobile app | [Create an MDK Offline App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-offline-app.html)
-|  [2-cp-mobile-dev-kit-list-page](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit/2-cp-mobile-dev-kit-list-page)  |  Create a Customer List Page in an MDK App  | [Create a Customer List Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-list-page.html)
-|  [3-cp-mobile-dev-kit-detail-page](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit/3-cp-mobile-dev-kit-detail-page)      |     Use the mobile development kit editor to create a mobile app | [Create a Customer Detail Page in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-detail-page.html)
-|  [4-cp-mobile-dev-kit-edit-customer](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit/4-cp-mobile-dev-kit-edit-customer) | Allow editing of customer details in an MDK app | [Modify a customer record in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-edit-customer.html)
-|  [5-cp-mobile-dev-kit-add-validation](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit/5-cp-mobile-dev-kit-add-validation) | Write a JavaScript logic to validate an email address format in an MDK app | [Define a Validation Rule in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-add-validation.html)
-
+You can reference this project and continue with the [Enhance MDK First MDK App with Additional Functionalities](https://developers.sap.com/group.mobile-dev-kit-enhance.html) tutorial group.
 
 
 ***

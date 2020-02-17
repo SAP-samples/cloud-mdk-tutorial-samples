@@ -1,9 +1,0 @@
-{
-	"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-	"_Type": "Action.Type.OfflineOData.Upload",
-	"ActionResult": {
-		"_Name": "sync"
-	},
-	"OnSuccess": "/DemoSampleApp/Actions/Service/DownloadStartedMessage.action",
-	"OnFailure": "/DemoSampleApp/Actions/Service/SyncFailureMessage.action"
-}
