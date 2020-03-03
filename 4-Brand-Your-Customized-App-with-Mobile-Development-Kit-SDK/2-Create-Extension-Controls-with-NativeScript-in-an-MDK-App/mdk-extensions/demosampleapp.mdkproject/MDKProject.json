@@ -1,8 +1,0 @@
-{
-  "AppName": "Example App",
-  "AppVersion": "1.0.0",
-  "BundleID": "com.example.app",
-  "Externals": [],
-  "NSPlugins": [],
-  "UrlScheme": "mdkclient"
-}
