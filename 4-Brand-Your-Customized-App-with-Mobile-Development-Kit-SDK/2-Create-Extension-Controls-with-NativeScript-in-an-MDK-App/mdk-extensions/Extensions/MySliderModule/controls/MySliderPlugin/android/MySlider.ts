@@ -2,27 +2,22 @@ import { Observable } from "tns-core-modules/data/observable";
 import { View } from "tns-core-modules/ui/core/view";
 import { layout } from "tns-core-modules/ui/core/view";
 import { device as Device } from 'tns-core-modules/platform';
-
 /*
   This is a way to keep iOS and Android implementation of your extension separate
-  You will encapsulate the MySlider class definition inside a function called GetMySliderClass
+  We will encapsulate the MySlider class definition inside a function called GetMySliderClass
   This is so that the class definition won't be executed when you load this javascript 
   via require function.
   The class definition will only be executed when you execute GetMySliderClass
 */
-
 declare var com: any;
 declare var android: any;
-
 export function GetMySliderClass() {
-
   /**
    * IMPLEMENT THE ANDROID VERSION OF YOUR PLUGIN HERE
    * In this sample you have 2 controls a label and a seekbar (slider)
    * You extends this control with Observable (View) class so that you can accept listeners
    *  and notify them when UI interaction is triggered
    */
-
   function getPadding() {
     // Return left & right padding in dp
     // For tablet you want 24dp, for other type you use 16dp
@@ -36,6 +31,7 @@ export function GetMySliderClass() {
     private _seekbar;
     private _layout;
     private _value = 0;
+    private _min = 0; //Used to track min for API 25 or lower
   
     private updateText() {
       this._label.setText(this._labelText + "(" + this._value + ")")
@@ -89,7 +85,7 @@ export function GetMySliderClass() {
         //Attach a listener to be notified whenever the native Seekbar is changed so that you can notify the MDK Extension
         this._seekbar.setOnSeekBarChangeListener(new android.widget.SeekBar.OnSeekBarChangeListener({
           onStartTrackingTouch(seekBar: any){
-            // you do not have any use for this event, so do nothing here
+            // You do not have any use for this event, so do nothing here
           },
           //This handler function will be called when user let go of the handle
           // This is where you will trigger an event called "OnSliderValueChanged" to the MDK Extension Class
@@ -142,13 +138,26 @@ export function GetMySliderClass() {
       if (newVal != null && newVal != undefined) {
         this._value = newVal;
         this.updateText();
-        this._seekbar.setProgress(newVal);
+        if (this._seekbar.getProgress() < this._min ) {
+          this._seekbar.setProgress(this._min);
+        }
+        else {
+          this._seekbar.setProgress(newVal);
+        }
       }
     }
   
     public setMinValue(newMin: number): void {
       if (newMin != null && newMin != undefined) {
-        this._seekbar.setMin(newMin);
+        if (Device.sdkVersion >= 26) { //setMin is only available in set API Level 26 or newer
+           this._seekbar.setMin(newMin);
+         }
+         else {
+          this._min = newMin;
+          if (this._seekbar.getProgress() < this._min ) {
+            this._seekbar.setProgress(this._min);
+          }
+        }
       }
     }
     
@@ -160,4 +169,3 @@ export function GetMySliderClass() {
   }
   return MySlider;
 }
-
