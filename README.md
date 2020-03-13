@@ -1,4 +1,5 @@
-# SAP Mobile Development Kit Tutorial Samples
+# Developer Tutorials - SAP Mobile Development Kit
+	https://developers.sap.com/topics/mobile-development-kit.html#tutorials
 
 ***
 ### Description
@@ -10,7 +11,9 @@ The samples include:
 * How to add client side validation rule
 * How to implement deep linking opening an installed app like SAP Mobile Cards, SAP Fiori Client etc.
 * How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations
-* How to create a custom MDK client using MDK SDK
+* How to create your branded MDK client 
+	* using Cloud Build Service 
+	* using MDK SDK
 *  How to write a custom extension control using NativeScript
 
 Above folders point to related tutorial mission/group.
@@ -18,10 +21,11 @@ Above folders point to related tutorial mission/group.
 
 |  Folder     | Tutorials
 |  :------------- | :-------------
-|  [1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit](/1-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit)  | https://developers.sap.com/mission.mobile-dev-kit-get-started.html
-|  [2-Enhance-Your-First-MDK-App-with-Additional-Functionalities](2-Enhance-Your-First-MDK-App-with-Additional-Functionalities) | https://developers.sap.com/group.mobile-dev-kit-enhance.html
-| [3-Level-Up-with-the-Mobile-Development-Kit](3-Level-Up-with-the-Mobile-Development-Kit) | https://developers.sap.com/mission.mobile-dev-kit-level-up.html
-| [4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK](/4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK) | https://developers.sap.com/mission.mobile-dev-kit-brand.html
+|  [1-Quick-Start-with-the-Mobile-Development-Kit-(MDK)](/1-Quick-Start-with-the-Mobile-Development-Kit-(MDK)) | https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html
+|  [2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit](/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit)  | https://developers.sap.com/mission.mobile-dev-kit-get-started.html
+|  [3-Enhance-Your-First-MDK-App-with-Additional-Functionalities](3-Enhance-Your-First-MDK-App-with-Additional-Functionalities) | https://developers.sap.com/group.mobile-dev-kit-enhance.html
+| [4-Level-Up-with-the-Mobile-Development-Kit](4-Level-Up-with-the-Mobile-Development-Kit) | https://developers.sap.com/mission.mobile-dev-kit-level-up.html
+| [5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK) | https://developers.sap.com/mission.mobile-dev-kit-brand.html
 
 The resources can also be used as a general code reference and starting point for the Mobile development kit.
 
