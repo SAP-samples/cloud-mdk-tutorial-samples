@@ -1,5 +1,5 @@
 # Developer Tutorials - SAP Mobile Development Kit
-	https://developers.sap.com/topics/mobile-development-kit.html#tutorials
+	[https://developers.sap.com/topics/mobile-development-kit.html#tutorials](https://developers.sap.com/topics/mobile-development-kit.html#tutorials)
 
 ***
 ### Description
