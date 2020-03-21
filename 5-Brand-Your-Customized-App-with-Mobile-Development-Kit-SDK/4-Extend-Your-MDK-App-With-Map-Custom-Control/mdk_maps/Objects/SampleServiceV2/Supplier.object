@@ -1,0 +1,76 @@
+{
+	"Collection": [
+		"Suppliers"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Products",
+			"_Type": "Collection(Product)"
+		},
+		{
+			"Key": false,
+			"_Name": "PurchaseOrders",
+			"_Type": "Collection(PurchaseOrderHeader)"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "City",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Country",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "EmailAddress",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "HouseNumber",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "PhoneNumber",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "PostalCode",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Street",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": true,
+			"_Name": "SupplierId",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "SupplierName",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Address",
+			"_Type": "ESPM.Address"
+		},
+		{
+			"Key": false,
+			"_Name": "UpdatedTimestamp",
+			"_Type": "Edm.DateTime"
+		}
+	],
+	"Service": "/mdk_maps/Services/SampleServiceV2.service",
+	"_Name": "Supplier"
+}

@@ -1,0 +1,111 @@
+{
+	"Collection": [
+		"Products"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "StockDetails",
+			"_Type": "Stock"
+		},
+		{
+			"Key": false,
+			"_Name": "SupplierDetails",
+			"_Type": "Supplier"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "Category",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "CategoryName",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "CurrencyCode",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "DimensionDepth",
+			"_Type": "Edm.Decimal"
+		},
+		{
+			"Key": false,
+			"_Name": "DimensionHeight",
+			"_Type": "Edm.Decimal"
+		},
+		{
+			"Key": false,
+			"_Name": "DimensionUnit",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "DimensionWidth",
+			"_Type": "Edm.Decimal"
+		},
+		{
+			"Key": false,
+			"_Name": "LongDescription",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Name",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "PictureUrl",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Price",
+			"_Type": "Edm.Decimal"
+		},
+		{
+			"Key": true,
+			"_Name": "ProductId",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "QuantityUnit",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "ShortDescription",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "SupplierId",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "UpdatedTimestamp",
+			"_Type": "Edm.DateTime"
+		},
+		{
+			"Key": false,
+			"_Name": "Weight",
+			"_Type": "Edm.Decimal"
+		},
+		{
+			"Key": false,
+			"_Name": "WeightUnit",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/mdk_maps/Services/SampleServiceV2.service",
+	"_Name": "Product"
+}

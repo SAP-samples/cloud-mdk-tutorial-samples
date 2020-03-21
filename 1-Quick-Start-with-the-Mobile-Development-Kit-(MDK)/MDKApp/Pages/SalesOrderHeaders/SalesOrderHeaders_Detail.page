@@ -1,0 +1,72 @@
+{
+	"Caption": "SalesOrderHeader Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/MDKApp/Rules/SalesOrderHeaders/SalesOrderHeaders_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CreatedAt}",
+				"Subhead": "{CurrencyCode}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{LifeCycleStatusName}",
+				"Description": "{CustomerId}",
+				"StatusText": "{GrossAmount}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{LifeCycleStatus}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [{
+				"KeyName": "CreatedAt",
+				"Value": "{CreatedAt}"
+			}, {
+				"KeyName": "CurrencyCode",
+				"Value": "{CurrencyCode}"
+			}, {
+				"KeyName": "CustomerId",
+				"Value": "{CustomerId}"
+			}, {
+				"KeyName": "GrossAmount",
+				"Value": "{GrossAmount}"
+			}, {
+				"KeyName": "LifeCycleStatus",
+				"Value": "{LifeCycleStatus}"
+			}, {
+				"KeyName": "LifeCycleStatusName",
+				"Value": "{LifeCycleStatusName}"
+			}, {
+				"KeyName": "NetAmount",
+				"Value": "{NetAmount}"
+			}, {
+				"KeyName": "SalesOrderId",
+				"Value": "{SalesOrderId}"
+			}, {
+				"KeyName": "TaxAmount",
+				"Value": "{TaxAmount}"
+			}],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail"
+}

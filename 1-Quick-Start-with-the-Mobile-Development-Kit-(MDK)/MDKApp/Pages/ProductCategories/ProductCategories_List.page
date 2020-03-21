@@ -1,0 +1,50 @@
+{
+	"Caption": "ProductCategories",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/ProductCategories/NavToProductCategories_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{MainCategory}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDKApp/Actions/ProductCategories/NavToProductCategories_Detail.action",
+				"StatusImage": "",
+				"Title": "{Category}",
+				"Footnote": "{UpdatedTimestamp}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{MainCategoryName}",
+				"Subhead": "{CategoryName}",
+				"SubstatusText": "{NumberOfProducts}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "ProductCategories",
+				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "ProductCategories_List"
+}

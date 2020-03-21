@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.ODataService.Create",
+	"Service": "/mdk_maps/Services/SampleServiceV2.service",
+	"OnSuccess": "/mdk_maps/Actions/Service/OpenService.action",
+	"OnFailure": "/mdk_maps/Actions/Service/CreateOpenServiceFailureMessage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Initializing Application...",
+	"ActionResult": {
+		"_Name": "init"
+	}
+}

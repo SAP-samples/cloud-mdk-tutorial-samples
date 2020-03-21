@@ -1,0 +1,42 @@
+{
+	"Service": "/MDKApp/Services/SampleServiceV2.service",
+	"DefiningRequests": [{
+		"Name": "Customers",
+		"Query": "Customers"
+	}, {
+		"Name": "Suppliers",
+		"Query": "Suppliers"
+	}, {
+		"Name": "Products",
+		"Query": "Products"
+	}, {
+		"Name": "ProductCategories",
+		"Query": "ProductCategories"
+	}, {
+		"Name": "ProductTexts",
+		"Query": "ProductTexts"
+	}, {
+		"Name": "Stock",
+		"Query": "Stock"
+	}, {
+		"Name": "PurchaseOrderHeaders",
+		"Query": "PurchaseOrderHeaders"
+	}, {
+		"Name": "PurchaseOrderItems",
+		"Query": "PurchaseOrderItems"
+	}, {
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}, {
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	}],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/MDKApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/MDKApp/Actions/Service/InitializeOfflineFailureMessage.action"
+}

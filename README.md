@@ -1,10 +1,11 @@
 # Developer Tutorials - SAP Mobile Development Kit
-	[https://developers.sap.com/topics/mobile-development-kit.html#tutorials](https://developers.sap.com/topics/mobile-development-kit.html#tutorials)
+	https://developers.sap.com/topics/mobile-development-kit.html#tutorials
 
 ***
 ### Description
 These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorals.
 The samples include:
+* How to quick start with the Mobile Development Kit (MDK)
 * How to create an MDK Online/Offline app
 * How to add CRUD (Create, Read, Update & Delete) funtionality
 * How to store the data locally, make some transcations against the local database (offline store), upload the changes to the backend
@@ -14,7 +15,8 @@ The samples include:
 * How to create your branded MDK client 
 	* using Cloud Build Service 
 	* using MDK SDK
-*  How to write a custom extension control using NativeScript
+*  How to write a custom extension control using Metadata approach
+*  How to add NativeScript Plugins in an MDK App
 
 Above folders point to related tutorial mission/group.
 

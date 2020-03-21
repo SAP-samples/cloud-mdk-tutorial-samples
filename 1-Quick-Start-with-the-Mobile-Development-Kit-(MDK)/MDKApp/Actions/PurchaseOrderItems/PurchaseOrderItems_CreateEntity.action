@@ -1,0 +1,24 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/MDKApp/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/MDKApp/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+		"CurrencyCode": "#Control:CurrencyCode/#Value",
+		"GrossAmount": "#Control:GrossAmount/#Value",
+		"ItemNumber": "#Control:ItemNumber/#Value",
+		"NetAmount": "#Control:NetAmount/#Value",
+		"ProductId": "#Control:ProductId/#Value",
+		"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+		"Quantity": "#Control:Quantity/#Value",
+		"QuantityUnit": "#Control:QuantityUnit/#Value",
+		"TaxAmount": "#Control:TaxAmount/#Value"
+	},
+	"Target": {
+		"EntitySet": "PurchaseOrderItems",
+		"Service": "/MDKApp/Services/SampleServiceV2.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

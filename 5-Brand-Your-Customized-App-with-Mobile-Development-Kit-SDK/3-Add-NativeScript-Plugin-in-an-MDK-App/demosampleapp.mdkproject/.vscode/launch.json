@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MDK Launch on iOS",
+            "type": "MDK",
+            "request": "launch",
+            "platform": "ios",
+            "sourceMaps": true,
+            "watch": true
+        },
+        {
+            "name": "MDK Attach on iOS",
+            "type": "MDK",
+            "request": "attach",
+            "platform": "ios",
+            "sourceMaps": true,
+            "watch": false
+        },
+        {
+            "name": "MDK Launch on Android",
+            "type": "MDK",
+            "request": "launch",
+            "platform": "android",
+            "sourceMaps": true,
+            "watch": true
+        },
+        {
+            "name": "MDK Attach on Android",
+            "type": "MDK",
+            "request": "attach",
+            "platform": "android",
+            "sourceMaps": true,
+            "watch": false
+        }
+    ]
+}

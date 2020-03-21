@@ -1,0 +1,50 @@
+{
+	"Caption": "Suppliers",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/Suppliers/NavToSuppliers_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{EmailAddress}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDKApp/Actions/Suppliers/NavToSuppliers_Detail.action",
+				"StatusImage": "",
+				"Title": "{City}",
+				"Footnote": "{PostalCode}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{HouseNumber}",
+				"Subhead": "{Country}",
+				"SubstatusText": "{PhoneNumber}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Suppliers",
+				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Suppliers_List"
+}

@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/MDKApp/Pages/SalesOrderHeaders/SalesOrderHeaders_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

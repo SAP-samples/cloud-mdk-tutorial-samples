@@ -1,0 +1,75 @@
+{
+	"Caption": "SalesOrderItem Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/MDKApp/Rules/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CurrencyCode}",
+				"Subhead": "{DeliveryDate}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{ProductId}",
+				"Description": "{GrossAmount}",
+				"StatusText": "{ItemNumber}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{NetAmount}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [{
+				"KeyName": "CurrencyCode",
+				"Value": "{CurrencyCode}"
+			}, {
+				"KeyName": "DeliveryDate",
+				"Value": "{DeliveryDate}"
+			}, {
+				"KeyName": "GrossAmount",
+				"Value": "{GrossAmount}"
+			}, {
+				"KeyName": "ItemNumber",
+				"Value": "{ItemNumber}"
+			}, {
+				"KeyName": "NetAmount",
+				"Value": "{NetAmount}"
+			}, {
+				"KeyName": "ProductId",
+				"Value": "{ProductId}"
+			}, {
+				"KeyName": "Quantity",
+				"Value": "{Quantity}"
+			}, {
+				"KeyName": "QuantityUnit",
+				"Value": "{QuantityUnit}"
+			}, {
+				"KeyName": "SalesOrderId",
+				"Value": "{SalesOrderId}"
+			}, {
+				"KeyName": "TaxAmount",
+				"Value": "{TaxAmount}"
+			}],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderItems_Detail"
+}

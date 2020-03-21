@@ -1,0 +1,48 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/MDKApp/Actions/Stock/Stock_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Stock",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [{
+				"Caption": "LotSize",
+				"_Name": "LotSize",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "MinStock",
+				"_Name": "MinStock",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "ProductId",
+				"_Name": "ProductId",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"Caption": "Quantity",
+				"_Name": "Quantity",
+				"_Type": "Control.Type.FormCell.SimpleProperty"
+			}, {
+				"_Name": "QuantityLessMin",
+				"Caption": "QuantityLessMin",
+				"_Type": "Control.Type.FormCell.Switch"
+			}, {
+				"Mode": "Date",
+				"_Name": "UpdatedTimestamp",
+				"Caption": "UpdatedTimestamp",
+				"_Type": "Control.Type.FormCell.DatePicker"
+			}]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Stock_Create"
+}

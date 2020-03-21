@@ -1,0 +1,50 @@
+{
+	"Caption": "PurchaseOrderItems",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{ItemNumber}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
+				"StatusImage": "",
+				"Title": "{CurrencyCode}",
+				"Footnote": "{PurchaseOrderId}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{NetAmount}",
+				"Subhead": "{GrossAmount}",
+				"SubstatusText": "{ProductId}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "PurchaseOrderItems",
+				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderItems_List"
+}

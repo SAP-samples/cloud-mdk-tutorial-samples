@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/MDKApp/Pages/ProductTexts/ProductTexts_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

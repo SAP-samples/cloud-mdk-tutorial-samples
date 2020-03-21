@@ -1,0 +1,50 @@
+{
+	"Caption": "SalesOrderHeaders",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{CustomerId}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+				"StatusImage": "",
+				"Title": "{CreatedAt}",
+				"Footnote": "{LifeCycleStatusName}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{GrossAmount}",
+				"Subhead": "{CurrencyCode}",
+				"SubstatusText": "{LifeCycleStatus}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "SalesOrderHeaders",
+				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_List"
+}

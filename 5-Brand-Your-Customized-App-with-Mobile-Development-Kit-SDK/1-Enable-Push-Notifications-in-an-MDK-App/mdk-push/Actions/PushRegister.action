@@ -1,0 +1,5 @@
+{
+	"OnFailure": "/mdk_push/Actions/PushRegisterFailureMessage.action",
+	"OnSuccess": "/mdk_push/Actions/PushRegisterSuccessMessage.action",
+	"_Type": "Action.Type.PushNotificationRegister"
+}

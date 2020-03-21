@@ -1,0 +1,63 @@
+{
+	"Caption": "Stock Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/MDKApp/Actions/Stock/NavToStock_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/MDKApp/Rules/Stock/Stock_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{LotSize}",
+				"Subhead": "{MinStock}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{UpdatedTimestamp}",
+				"Description": "{ProductId}",
+				"StatusText": "{Quantity}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{QuantityLessMin}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [{
+				"KeyName": "LotSize",
+				"Value": "{LotSize}"
+			}, {
+				"KeyName": "MinStock",
+				"Value": "{MinStock}"
+			}, {
+				"KeyName": "ProductId",
+				"Value": "{ProductId}"
+			}, {
+				"KeyName": "Quantity",
+				"Value": "{Quantity}"
+			}, {
+				"KeyName": "QuantityLessMin",
+				"Value": "{QuantityLessMin}"
+			}, {
+				"KeyName": "UpdatedTimestamp",
+				"Value": "{UpdatedTimestamp}"
+			}],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Stock_Detail"
+}
