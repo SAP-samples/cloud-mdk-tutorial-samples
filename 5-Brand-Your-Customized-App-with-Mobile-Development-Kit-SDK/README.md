@@ -8,8 +8,10 @@ The samples include:
 
 |  Folder     | Description   | Tutorial
 |  :------------- | :------------- | :-------------
-|  [1-Enable-Push-Notifications-in-an-MDK-App](/4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/1-Enable-Push-Notifications-in-an-MDK-App)   |  Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html)
-|  [2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App](/4-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App)  |  Build and run the Mobile Development Kit client with custom extension functionality for Android and iOS platforms | [Create Extension Controls with NativeScript in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-slider-extension.html)
+|  [1-Enable-Push-Notifications-in-your-branded-MDK-client](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/1-Enable-Push-Notifications-in-your-branded-MDK-client)   |  Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html)
+|  [2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Create-Extension-Controls-with-NativeScript-in-an-MDK-App)  |  Build and run the Mobile Development Kit client with custom extension functionality for Android and iOS platforms | [Create Extension Controls with NativeScript in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-slider-extension.html)
+|  [3-Extend-Your-MDK-App-With-Map-Custom-Control](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/3-Extend-Your-MDK-App-With-Map-Custom-Control)   |  Extend Your MDK App With a Map Custom Control (Using Metadata Approach) | [Enable Push Notifications in your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-map-extension.html)
+|  [4-Add-NativeScript-Plugin-in-an-MDK-App](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/4-Add-NativeScript-Plugin-in-an-MDK-App)  |  Build and run the Mobile Development Kit client with a non-visual extension functionality for Android and iOS platforms | [Add NativeScript Plugins in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-nativescript-geolocation.html)
 
 
 ***
