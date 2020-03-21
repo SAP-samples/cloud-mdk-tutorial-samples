@@ -23,7 +23,7 @@ Above folders point to related tutorial mission/group.
 
 |  Folder     | Tutorials
 |  :------------- | :-------------
-|  [1-Quick-Start-with-the-Mobile-Development-Kit-(MDK)](/1-Quick-Start-with-the-Mobile-Development-Kit-(MDK)) | https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html
+|  [1-Quick-Start-with-the-Mobile-Development-Kit](/1-Quick-Start-with-the-Mobile-Development-Kit) | https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html
 |  [2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit](/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit)  | https://developers.sap.com/mission.mobile-dev-kit-get-started.html
 |  [3-Enhance-Your-First-MDK-App-with-Additional-Functionalities](3-Enhance-Your-First-MDK-App-with-Additional-Functionalities) | https://developers.sap.com/group.mobile-dev-kit-enhance.html
 | [4-Level-Up-with-the-Mobile-Development-Kit](4-Level-Up-with-the-Mobile-Development-Kit) | https://developers.sap.com/mission.mobile-dev-kit-level-up.html
