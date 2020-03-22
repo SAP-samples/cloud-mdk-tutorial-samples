@@ -1,5 +1,6 @@
 # Developer Tutorials - SAP Mobile Development Kit
-	https://developers.sap.com/topics/mobile-development-kit.html#tutorials
+	
+# The samples provided in this repository contains MDK metadata projects required for Developer tutorials listed here: https://developers.sap.com/topics/mobile-development-kit.html#tutorials
 
 ***
 ### Description
