@@ -1,15 +1,16 @@
 # Developer Tutorials - SAP Mobile Development Kit
-	
-# The samples provided in this repository reference to the MDK tutorials listed [here](https://developers.sap.com/topics/mobile-development-kit.html#tutorials).
+
+The samples provided in this repository reference to the MDK tutorials listed on the SAP Developer Center  [Mobile Development Kit page](https://developers.sap.com/topics/mobile-development-kit.html#tutorials).
 
 ***
 ### Description
-These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorals.
+These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorials.
 The samples include:
+
 * How to quick start with the Mobile Development Kit (MDK)
 * How to create an MDK Online/Offline app
-* How to add CRUD (Create, Read, Update & Delete) funtionality
-* How to store the data locally, make some transcations against the local database (offline store), upload the changes to the backend
+* How to add CRUD (Create, Read, Update & Delete) functionality.
+* How to store the data locally, make some transactions against the local database (offline store), upload the changes to the backend
 * How to add client side validation rule
 * How to implement deep linking opening an installed app like SAP Mobile Cards, SAP Fiori Client etc.
 * How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations
@@ -38,7 +39,6 @@ Please be advised that any downloads are subject to the following:
 
 * These resources are subject to the full terms of the license agreement (see below).
 
-
 ***
 ### Requirements
 The included resources run in available on any SAP Cloud Platform account.
@@ -47,7 +47,6 @@ To use the resources you need to have:
 	See [Sign up for a free trial account on SAP Cloud Platform](https://www.sap.com/developer/tutorials/hcp-create-trial-account.html).
 
 2. Some of the resources connect to the **Sample OData Service**. This service is part of SAP Cloud Platform Mobile Services cockpit based on ESPM model (Enterprise Sales & Procurement Model) and  is available for developers to use during development and testing. The sample OData service also lets you evaluate how delta tokens are handled in your test application. This service is specific to an SCP account.
-
 
 ***
 ### Download and Installation
@@ -63,12 +62,10 @@ There are no known issues relating to the resources included in this repository.
 For any issue you encounter with 
 * the *resources* in this repository, please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
 * the *tutorials* associated with them, please create a new `Issue` by clicking on the **Provide Feedback** option available in the tutorial page.
-* In addition, registered users can log-in and submit their question in the **SAP Community** by following [this link](https://answers.sap.com/questions/ask.html) .
+* In addition, registered users can log-in and submit their question in **SAP Community** by following [this link](https://answers.sap.com/questions/ask.html) .
 Please select the **Primary Tag** - `mobile development kit client`.
-
 
 ***
 ### License
 
-Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the SAP Sample Code License Agreement except as noted otherwise in the [LICENSE](LICENSE "License file").
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](LICENSE "License file").
