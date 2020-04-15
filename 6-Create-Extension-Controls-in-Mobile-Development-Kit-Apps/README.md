@@ -1,6 +1,6 @@
-# Brand Your Customized App with Mobile Development Kit SDK
+# Create Extension Controls in Mobile Development Kit (MDK) Apps
 
-Explore the mobile development kit SDK and build a custom Android/iOS client, enable push notifications, and create extensions.
+Customize the look and feel of your MDK app with extension controls using metadata approach or NativeScript plugins.
 
 ---
 
