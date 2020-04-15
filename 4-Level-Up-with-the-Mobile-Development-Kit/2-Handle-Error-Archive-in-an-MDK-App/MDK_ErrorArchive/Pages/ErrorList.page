@@ -1,5 +1,5 @@
 {
-	"Caption": "Error List",
+	"Caption": "ErrorList",
 	"Controls": [
 		{
 			"Sections": [
@@ -33,7 +33,6 @@
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
-	"OnLoaded": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
-	"_Name": "ErrorList",
+	"_Name": "Error List",
 	"_Type": "Page"
 }

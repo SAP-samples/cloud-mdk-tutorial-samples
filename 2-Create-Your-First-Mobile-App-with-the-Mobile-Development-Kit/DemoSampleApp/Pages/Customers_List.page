@@ -17,9 +17,9 @@
 						],
 						"Description": "{City}",
 						"DetailImage": "res://contact.png",
-						"Headline": "{LastName}",
+						"Headline": "{FirstName}",
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Detail.action",
-						"Subheadline": "{FirstName}"
+						"Subheadline": "{LastName}"
 					},
 					"EmptySection": {
 						"FooterVisible": false
@@ -33,7 +33,7 @@
 						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
 					},
 					"Visible": true,
-					"_Name": "SectionContactCellTable0",
+					"_Name": "SectionContactCellTable1",
 					"_Type": "Section.Type.ContactCell"
 				}
 			],

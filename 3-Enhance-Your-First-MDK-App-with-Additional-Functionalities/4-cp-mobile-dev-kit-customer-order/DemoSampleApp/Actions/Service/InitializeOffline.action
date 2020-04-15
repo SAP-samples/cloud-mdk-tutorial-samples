@@ -2,7 +2,7 @@
 	"ActionResult": {
 		"_Name": "init"
 	},
-	"ActivityIndicatorText": "DownLoading...",
+	"ActivityIndicatorText": "Downloading...",
 	"DefiningRequests": [
 		{
 			"Name": "Customers",

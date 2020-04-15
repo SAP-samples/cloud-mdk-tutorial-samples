@@ -17,7 +17,7 @@
 			}
 		]
 	},
-	"Caption": "Customers Detail",
+	"Caption": "Customer Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -118,7 +118,7 @@
 	"ToolBar": {
 		"Controls": [
 			{
-				"Caption": "Create Order",
+				"Caption": " Create Order",
 				"Clickable": true,
 				"Enabled": true,
 				"OnPress": "/DemoSampleApp/Actions/NavToSalesOrderHeaders_Create.action",

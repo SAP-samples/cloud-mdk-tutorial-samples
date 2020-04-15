@@ -1,5 +1,5 @@
 {
-	"Caption": "Customer Orders",
+	"Caption": "Customers Orders",
 	"Controls": [
 		{
 			"Sections": [
@@ -12,6 +12,7 @@
 						"AccessoryType": "disclosureIndicator",
 						"Description": "$(D,{CreatedAt})",
 						"DetailImageIsCircular": false,
+						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"Subhead": "{CustomerId}",
@@ -36,7 +37,6 @@
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
-	"OnLoaded": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 	"_Name": "Customers_Orders",
 	"_Type": "Page"
 }

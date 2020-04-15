@@ -33,7 +33,7 @@
 	}],
 	"_Type": "Action.Type.OfflineOData.Initialize",
 	"ShowActivityIndicator": true,
-	"ActivityIndicatorText": "DownLoading...",
+	"ActivityIndicatorText": "Downloading...",
 	"ActionResult": {
 		"_Name": "init"
 	},
