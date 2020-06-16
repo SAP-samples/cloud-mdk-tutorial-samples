@@ -14,7 +14,7 @@ The samples include:
 |  [4-Implement-Deep-Linking-to-Another-App-from-an-MDK-App](/4-Level-Up-with-the-Mobile-Development-Kit/4-Implement-Deep-Linking-to-Another-App-from-an-MDK-App) |Open a web page or navigate to an installed app from an MDK app| [Implement Deep Linking to Another App from an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-deep-link.html)
 |  [5-Use-OData-Annotations-to-Add-CRUD-Functionality-to-an-MDK-App](/4-Level-Up-with-the-Mobile-Development-Kit/5-Use-OData-Annotations-to-Add-CRUD-Functionality-to-an-MDK-App) | Create a fully functional CRUD native mobile application for iOS and Android| [Use OData Annotations to Add CRUD Functionality to an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-annotations.html)
 |  [6-Enable-Push-Notifications-in-the-MDK-Public-Store-Client](/4-Level-Up-with-the-Mobile-Development-Kit/6-Enable-Push-Notifications-in-the-MDK-Public-Store-Client) | Use the SAP Cloud Platform Mobile Services to enable push notifications in the MDK public store client| [Enable Push Notifications in the MDK Public Store Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html)
-	
+
 
 ***
 ### How to Obtain Support

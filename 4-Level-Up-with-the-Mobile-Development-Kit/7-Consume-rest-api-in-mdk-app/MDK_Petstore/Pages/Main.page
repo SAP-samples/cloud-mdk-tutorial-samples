@@ -1,0 +1,54 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDK_Petstore/Rules/PostPet.js",
+				"Position": "right",
+				"SystemItem": "Add",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Main",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "none",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{status}",
+						"Subhead": "Pet Name: {{#Property:name}}",
+						"Title": "Pet ID: {{#Property:id}}"
+					},
+					"Target": "/MDK_Petstore/Rules/GetPetFindByStatus.js",
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/MDK_Petstore/Actions/Logout.action",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}
