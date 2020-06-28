@@ -1,0 +1,68 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDK_Petstore/Actions/ClosePage.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/MDK_Petstore/Rules/PostPet.js",
+				"Position": "right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Create Pet",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Category",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateCategory",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Pet",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreatePet",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Tag",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateTag",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Status",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCCreateStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Pet_Create",
+	"_Type": "Page"
+}

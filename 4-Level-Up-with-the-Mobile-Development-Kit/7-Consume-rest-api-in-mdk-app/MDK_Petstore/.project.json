@@ -1,0 +1,20 @@
+{
+	"Credential": "cf",
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.mdk.restapi&ClientId=36f39530-1337-4dc0-9b21-1bb641e29fb7&SapCloudPlatformEndpoint=https://1eac930ftrial-dev-com-sap-mdk-restapi.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://1eac930ftrial-dev-com-sap-mdk-restapi.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://1eac930ftrial-dev-com-sap-mdk-restapi.cfapps.eu10.hana.ondemand.com&TokenUrl=https://1eac930ftrial-dev-com-sap-mdk-restapi.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "f909cb82-b784-4e20-9384-03617b4440c2",
+		"Space": "4bae2633-bb0d-4cb4-ac01-c0c4b94226bf"
+	},
+	"MobileService": {
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/f909cb82-b784-4e20-9384-03617b4440c2/space/4bae2633-bb0d-4cb4-ac01-c0c4b94226bf",
+		"AppId": "com.sap.mdk.restapi",
+		"Destination": [
+			"swagger.petstore"
+		]
+	}
+}

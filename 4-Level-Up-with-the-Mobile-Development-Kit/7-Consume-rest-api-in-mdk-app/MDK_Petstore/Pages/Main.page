@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDK_Petstore/Rules/PostPet.js",
+				"OnPress": "/MDK_Petstore/Actions/NavToPet_Create.action",
 				"Position": "right",
 				"SystemItem": "Add",
 				"Text": "Item",
