@@ -3,20 +3,20 @@
 	"OnFailure": "/MDKApp/Actions/CreateEntityFailureMessage.action",
 	"OnSuccess": "/MDKApp/Actions/CreateEntitySuccessMessage.action",
 	"Properties": {
-		"CurrencyCode": "#Control:CurrencyCode/#Value",
-		"DeliveryDate": "#Control:DeliveryDate/#Value",
-		"GrossAmount": "#Control:GrossAmount/#Value",
-		"ItemNumber": "#Control:ItemNumber/#Value",
-		"NetAmount": "#Control:NetAmount/#Value",
-		"ProductId": "#Control:ProductId/#Value",
-		"Quantity": "#Control:Quantity/#Value",
-		"QuantityUnit": "#Control:QuantityUnit/#Value",
-		"SalesOrderId": "#Control:SalesOrderId/#Value",
-		"TaxAmount": "#Control:TaxAmount/#Value"
-	},
+	"CurrencyCode": "#Control:CurrencyCode/#Value",
+	"DeliveryDate": "#Control:DeliveryDate/#Value",
+	"GrossAmount": "#Control:GrossAmount/#Value",
+	"ItemNumber": "#Control:ItemNumber/#Value",
+	"NetAmount": "#Control:NetAmount/#Value",
+	"ProductId": "#Control:ProductId/#Value",
+	"Quantity": "#Control:Quantity/#Value",
+	"QuantityUnit": "#Control:QuantityUnit/#Value",
+	"SalesOrderId": "#Control:SalesOrderId/#Value",
+	"TaxAmount": "#Control:TaxAmount/#Value"
+},
 	"Target": {
 		"EntitySet": "SalesOrderItems",
-		"Service": "/MDKApp/Services/SampleServiceV2.service"
+		"Service": "/MDKApp/Services/SampleService.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

@@ -3,7 +3,7 @@
   "SkipEula": false,
   "ConnectionSettings": {
     "EnableOverrides": false,
-    "AppId": "com.sap.mdk.demo",
+    "AppId": "",
     "ClientId": "",
     "SapCloudPlatformEndpoint": "",
     "AuthorizationEndpointUrl": "",
@@ -12,7 +12,6 @@
   },
   "DebugSettings": {
     "DebugODataProvider": false,
-    "ProfilingEnabled": false,
     "TracingEnabled": false,
     "Categories": [
       "mdk.trace.action",
@@ -50,11 +49,11 @@
       "TokenUrl": "<Enter your SAP CPms Authorization Token Url here>"
     }
   },
-  "DetailLabelViewText": "My Sample custom Client",
+  "DetailLabelViewText": "Easily manage your jobs and notifications and track your time and material usage",
   "DefaultAppLanguage" : "en",
   "EncryptDatabase" : true,
   "PasscodeTimeout": 120,
-  "SigninButtonText": "Start", 
+  "SigninButtonText": "Start",
   "OnboardingCustomizations": {
     "_comment" : "<See Branding documentation or OnboardingCustomizations.sample on how to override & customize Onboarding UI strings>"
   }

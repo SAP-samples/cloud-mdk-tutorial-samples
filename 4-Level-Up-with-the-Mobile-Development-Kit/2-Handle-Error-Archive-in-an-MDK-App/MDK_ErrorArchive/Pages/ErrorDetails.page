@@ -19,7 +19,7 @@
 						"Subhead": "{@odata.id}",
 						"Title": "Edit Affected Entity"
 					},
-					"Target": "#Property:AffectedEntity",
+					"Target": "{AffectedEntity}",
 					"Visible": true,
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"

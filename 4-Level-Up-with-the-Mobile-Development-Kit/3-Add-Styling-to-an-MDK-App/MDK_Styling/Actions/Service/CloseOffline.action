@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.OfflineOData.Close",
-	"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+	"Service": "/MDK_Styling/Services/SampleService.service",
 	"Force": true,
 	"ActionResult": {
 		"_Name": "close"

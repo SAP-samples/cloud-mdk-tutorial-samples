@@ -3,19 +3,19 @@
 	"OnFailure": "/MDK_ErrorArchive/Actions/CreateEntityFailureMessage.action",
 	"OnSuccess": "/MDK_ErrorArchive/Actions/CreateEntitySuccessMessage.action",
 	"Properties": {
-		"CurrencyCode": "#Control:CurrencyCode/#Value",
-		"GrossAmount": "#Control:GrossAmount/#Value",
-		"ItemNumber": "#Control:ItemNumber/#Value",
-		"NetAmount": "#Control:NetAmount/#Value",
-		"ProductId": "#Control:ProductId/#Value",
-		"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-		"Quantity": "#Control:Quantity/#Value",
-		"QuantityUnit": "#Control:QuantityUnit/#Value",
-		"TaxAmount": "#Control:TaxAmount/#Value"
-	},
+	"CurrencyCode": "#Control:CurrencyCode/#Value",
+	"GrossAmount": "#Control:GrossAmount/#Value",
+	"ItemNumber": "#Control:ItemNumber/#Value",
+	"NetAmount": "#Control:NetAmount/#Value",
+	"ProductId": "#Control:ProductId/#Value",
+	"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+	"Quantity": "#Control:Quantity/#Value",
+	"QuantityUnit": "#Control:QuantityUnit/#Value",
+	"TaxAmount": "#Control:TaxAmount/#Value"
+},
 	"Target": {
 		"EntitySet": "PurchaseOrderItems",
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+		"Service": "/MDK_ErrorArchive/Services/SampleService.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

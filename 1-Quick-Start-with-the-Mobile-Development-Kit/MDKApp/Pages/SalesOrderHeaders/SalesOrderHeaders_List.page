@@ -15,18 +15,18 @@
 			},
 			"ObjectCell": {
 				"AccessoryType": "disclosureIndicator",
-				"Description": "{CustomerId}",
+				"Description": "{CurrencyCode}",
 				"DetailImage": "",
 				"DetailImageIsCircular": false,
 				"Icons": [],
 				"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
 				"StatusImage": "",
 				"Title": "{CreatedAt}",
-				"Footnote": "{LifeCycleStatusName}",
+				"Footnote": "{GrossAmount}",
 				"PreserveIconStackSpacing": false,
-				"StatusText": "{GrossAmount}",
-				"Subhead": "{CurrencyCode}",
-				"SubstatusText": "{LifeCycleStatus}"
+				"StatusText": "{LifeCycleStatus}",
+				"Subhead": "{CustomerId}",
+				"SubstatusText": "{LifeCycleStatusName}"
 			},
 			"Search": {
 				"Enabled": true,
@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "SalesOrderHeaders",
-				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"Service": "/MDKApp/Services/SampleService.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.OfflineOData.Close",
-	"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+	"Service": "/DemoSampleApp/Services/SampleService.service",
 	"Force": true,
 	"ActionResult": {
 		"_Name": "close"

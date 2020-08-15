@@ -101,7 +101,7 @@
 					"Target": {
 						"EntitySet": "{{#Property:@odata.readLink}}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+						"Service": "/DemoSampleApp/Services/SampleService.service"
 					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",

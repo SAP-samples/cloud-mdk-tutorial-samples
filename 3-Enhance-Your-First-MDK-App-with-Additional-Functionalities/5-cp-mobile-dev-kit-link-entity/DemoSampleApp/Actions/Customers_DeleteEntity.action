@@ -7,7 +7,7 @@
 	"Target": {
 		"EntitySet": "Customers",
 		"ReadLink": "{@odata.readLink}",
-		"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+		"Service": "/DemoSampleApp/Services/SampleService.service"
 	},
 	"_Type": "Action.Type.ODataService.DeleteEntity"
 }

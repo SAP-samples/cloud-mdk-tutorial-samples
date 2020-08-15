@@ -4,47 +4,28 @@
 		"_Name": "SectionedTable0",
 		"_Type": "Control.Type.SectionedTable",
 		"Sections": [{
-			"Buttons": [{
-				"OnPress": "/MDKApp/Actions/Customers/NavToCustomers_List.action",
-				"TextAlignment": "center",
-				"Title": "Customers"
-			}, {
-				"OnPress": "/MDKApp/Actions/Suppliers/NavToSuppliers_List.action",
-				"TextAlignment": "center",
-				"Title": "Suppliers"
-			}, {
-				"OnPress": "/MDKApp/Actions/Products/NavToProducts_List.action",
-				"TextAlignment": "center",
-				"Title": "Products"
-			}, {
-				"OnPress": "/MDKApp/Actions/ProductCategories/NavToProductCategories_List.action",
-				"TextAlignment": "center",
-				"Title": "ProductCategories"
-			}, {
-				"OnPress": "/MDKApp/Actions/ProductTexts/NavToProductTexts_List.action",
-				"TextAlignment": "center",
-				"Title": "ProductTexts"
-			}, {
-				"OnPress": "/MDKApp/Actions/Stock/NavToStock_List.action",
-				"TextAlignment": "center",
-				"Title": "Stock"
-			}, {
-				"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
-				"TextAlignment": "center",
-				"Title": "PurchaseOrderHeaders"
-			}, {
-				"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
-				"TextAlignment": "center",
-				"Title": "PurchaseOrderItems"
-			}, {
-				"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
-				"TextAlignment": "center",
-				"Title": "SalesOrderHeaders"
-			}, {
-				"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
-				"TextAlignment": "center",
-				"Title": "SalesOrderItems"
-			}],
+			"Buttons": [
+	{
+		"OnPress": "/MDKApp/Actions/Customers/NavToCustomers_List.action",
+		"TextAlignment": "center",
+		"Title": "Customers"
+	},
+	{
+		"OnPress": "/MDKApp/Actions/Products/NavToProducts_List.action",
+		"TextAlignment": "center",
+		"Title": "Products"
+	},
+	{
+		"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+		"TextAlignment": "center",
+		"Title": "SalesOrderHeaders"
+	},
+	{
+		"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
+		"TextAlignment": "center",
+		"Title": "SalesOrderItems"
+	}
+],
 			"_Name": "SectionButtonTable0",
 			"_Type": "Section.Type.ButtonTable"
 		}]

@@ -15,18 +15,18 @@
 			},
 			"ObjectCell": {
 				"AccessoryType": "disclosureIndicator",
-				"Description": "{GrossAmount}",
+				"Description": "{DeliveryDate}",
 				"DetailImage": "",
 				"DetailImageIsCircular": false,
 				"Icons": [],
 				"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
 				"StatusImage": "",
 				"Title": "{CurrencyCode}",
-				"Footnote": "{ProductId}",
+				"Footnote": "{ItemNumber}",
 				"PreserveIconStackSpacing": false,
-				"StatusText": "{ItemNumber}",
-				"Subhead": "{DeliveryDate}",
-				"SubstatusText": "{NetAmount}"
+				"StatusText": "{NetAmount}",
+				"Subhead": "{GrossAmount}",
+				"SubstatusText": "{ProductId}"
 			},
 			"Search": {
 				"Enabled": true,
@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "SalesOrderItems",
-				"Service": "/MDKApp/Services/SampleServiceV2.service",
+				"Service": "/MDKApp/Services/SampleService.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

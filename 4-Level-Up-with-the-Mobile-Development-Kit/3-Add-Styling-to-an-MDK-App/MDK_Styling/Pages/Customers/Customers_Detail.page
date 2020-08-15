@@ -13,16 +13,16 @@
 			}
 		]
 	},
-	"Caption": "Customer Details",
+	"Caption": "Customers Details",
 	"Controls": [
 		{
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Description": "{CustomerId}",
-						"Footnote": "{FirstName}",
+						"Description": "{Country}",
+						"Footnote": "{DateOfBirth}",
 						"HeadlineText": "{City}",
-						"StatusText": "{DateOfBirth}",
+						"StatusText": "{EmailAddress}",
 						"Styles": {
 							"BodyText": "objectHeaderBodyText",
 							"Description": "objectHeaderDescription",
@@ -33,8 +33,8 @@
 							"Subhead": "objectHeaderSubhead",
 							"SubstatusText": "objectHeaderSubStatus"
 						},
-						"Subhead": "{Country}",
-						"SubstatusText": "{EmailAddress}",
+						"Subhead": "{CustomerId}",
+						"SubstatusText": "{FirstName}",
 						"Tags": [
 						]
 					},
@@ -89,10 +89,6 @@
 						{
 							"KeyName": "Street",
 							"Value": "{Street}"
-						},
-						{
-							"KeyName": "Address",
-							"Value": "{Address}"
 						},
 						{
 							"KeyName": "UpdatedTimestamp",

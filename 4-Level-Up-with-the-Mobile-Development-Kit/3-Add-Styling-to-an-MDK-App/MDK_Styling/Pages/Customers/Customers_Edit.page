@@ -14,74 +14,82 @@
 	"Controls": [{
 		"Sections": [{
 			"Caption": "",
-			"Controls": [{
-				"Caption": "City",
-				"Value": "{City}",
-				"_Name": "City",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "Country",
-				"Value": "{Country}",
-				"_Name": "Country",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "CustomerId",
-				"Value": "{CustomerId}",
-				"_Name": "CustomerId",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Mode": "Date",
-				"Value": "{DateOfBirth}",
-				"_Name": "DateOfBirth",
-				"Caption": "DateOfBirth",
-				"_Type": "Control.Type.FormCell.DatePicker"
-			}, {
-				"Caption": "EmailAddress",
-				"Value": "{EmailAddress}",
-				"_Name": "EmailAddress",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "FirstName",
-				"Value": "{FirstName}",
-				"_Name": "FirstName",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "HouseNumber",
-				"Value": "{HouseNumber}",
-				"_Name": "HouseNumber",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "LastName",
-				"Value": "{LastName}",
-				"_Name": "LastName",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "PhoneNumber",
-				"Value": "{PhoneNumber}",
-				"_Name": "PhoneNumber",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "PostalCode",
-				"Value": "{PostalCode}",
-				"_Name": "PostalCode",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "Street",
-				"Value": "{Street}",
-				"_Name": "Street",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "Address",
-				"Value": "{Address}",
-				"_Name": "Address",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Mode": "Date",
-				"Value": "{UpdatedTimestamp}",
-				"_Name": "UpdatedTimestamp",
-				"Caption": "UpdatedTimestamp",
-				"_Type": "Control.Type.FormCell.DatePicker"
-			}]
+			"Controls": [
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"Value": "{City}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Country",
+		"_Name": "Country",
+		"Value": "{Country}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerId",
+		"_Name": "CustomerId",
+		"Value": "{CustomerId}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "DateOfBirth",
+		"Value": "{DateOfBirth}",
+		"Caption": "DateOfBirth",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "EmailAddress",
+		"_Name": "EmailAddress",
+		"Value": "{EmailAddress}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "FirstName",
+		"_Name": "FirstName",
+		"Value": "{FirstName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "HouseNumber",
+		"_Name": "HouseNumber",
+		"Value": "{HouseNumber}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LastName",
+		"_Name": "LastName",
+		"Value": "{LastName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PhoneNumber",
+		"_Name": "PhoneNumber",
+		"Value": "{PhoneNumber}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PostalCode",
+		"_Name": "PostalCode",
+		"Value": "{PostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Street",
+		"_Name": "Street",
+		"Value": "{Street}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "UpdatedTimestamp",
+		"Value": "{UpdatedTimestamp}",
+		"Caption": "UpdatedTimestamp",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	}
+]
 		}],
 		"_Name": "PageOneFormCell",
 		"_Type": "Control.Type.FormCellContainer"

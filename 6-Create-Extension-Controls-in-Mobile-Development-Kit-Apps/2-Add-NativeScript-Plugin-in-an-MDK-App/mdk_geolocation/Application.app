@@ -1,7 +1,7 @@
 {
-	"MainPage": "/mdk_geolocation/Pages/Main.page",
-	"OnWillUpdate": "/mdk_geolocation/Rules/OnWillUpdate.js",
-	"Styles": "/mdk_geolocation/Styles/Styles.less",
-	"Localization": "/mdk_geolocation/i18n/i18n.properties",
-	"_Name": "mdk_geolocation"
+	"MainPage": "/MDK_Geolocation/Pages/Main.page",
+	"OnWillUpdate": "/MDK_Geolocation/Rules/OnWillUpdate.js",
+	"Styles": "/MDK_Geolocation/Styles/Styles.less",
+	"Localization": "/MDK_Geolocation/i18n/i18n.properties",
+	"_Name": "MDK_Geolocation"
 }

@@ -1,6 +1,6 @@
 {
 	"Animated": true,
 	"Duration": 4,
-	"Message": "Affected Entity {{#Property:AffectedEntity/#Property:@odata.id}} doesn't have handler yet.",
+	"Message": "Affected Entity {AffectedEntity/@odata.id} doesn't have handler yet.",
 	"_Type": "Action.Type.ToastMessage"
 }

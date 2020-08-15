@@ -1,5 +1,5 @@
 {
-	"Caption": "PurchaseOrderItem Details",
+	"Caption": "PurchaseOrderItems Details",
 
 	"ActionBar": {
 		"Items": [{
@@ -17,46 +17,56 @@
 			"ObjectHeader": {
 				"DetailImage": "",
 				"HeadlineText": "{CurrencyCode}",
-				"Subhead": "{GrossAmount}",
+				"Subhead": "{ItemNumber}",
 				"Tags": [],
 				"BodyText": "",
-				"Footnote": "{PurchaseOrderId}",
-				"Description": "{ItemNumber}",
-				"StatusText": "{NetAmount}",
+				"Footnote": "{NetAmount}",
+				"Description": "{GrossAmount}",
+				"StatusText": "{ProductId}",
 				"StatusImage": "",
 				"SubstatusImage": "",
-				"SubstatusText": "{ProductId}"
+				"SubstatusText": "{PurchaseOrderId}"
 			},
 			"_Type": "Section.Type.ObjectHeader"
 		}, {
-			"KeyAndValues": [{
-				"KeyName": "CurrencyCode",
-				"Value": "{CurrencyCode}"
-			}, {
-				"KeyName": "GrossAmount",
-				"Value": "{GrossAmount}"
-			}, {
-				"KeyName": "ItemNumber",
-				"Value": "{ItemNumber}"
-			}, {
-				"KeyName": "NetAmount",
-				"Value": "{NetAmount}"
-			}, {
-				"KeyName": "ProductId",
-				"Value": "{ProductId}"
-			}, {
-				"KeyName": "PurchaseOrderId",
-				"Value": "{PurchaseOrderId}"
-			}, {
-				"KeyName": "Quantity",
-				"Value": "{Quantity}"
-			}, {
-				"KeyName": "QuantityUnit",
-				"Value": "{QuantityUnit}"
-			}, {
-				"KeyName": "TaxAmount",
-				"Value": "{TaxAmount}"
-			}],
+			"KeyAndValues": [
+	{
+		"KeyName": "CurrencyCode",
+		"Value": "{CurrencyCode}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "ItemNumber",
+		"Value": "{ItemNumber}"
+	},
+	{
+		"KeyName": "NetAmount",
+		"Value": "{NetAmount}"
+	},
+	{
+		"KeyName": "ProductId",
+		"Value": "{ProductId}"
+	},
+	{
+		"KeyName": "PurchaseOrderId",
+		"Value": "{PurchaseOrderId}"
+	},
+	{
+		"KeyName": "Quantity",
+		"Value": "{Quantity}"
+	},
+	{
+		"KeyName": "QuantityUnit",
+		"Value": "{QuantityUnit}"
+	},
+	{
+		"KeyName": "TaxAmount",
+		"Value": "{TaxAmount}"
+	}
+],
 			"Layout": {
 				"NumberOfColumns": 2
 			},

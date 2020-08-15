@@ -10,7 +10,7 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "Coordinates",
-							"Value": "/mdk_geolocation/Rules/GetCoordinates.js",
+							"Value": "/MDK_Geolocation/Rules/GetCoordinates.js",
 							"Visible": true
 						}
 					],
@@ -33,7 +33,7 @@
 				"Caption": "Logout",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/mdk_geolocation/Actions/Logout.action",
+				"OnPress": "/MDK_Geolocation/Actions/Logout.action",
 				"Visible": true,
 				"_Name": "LogoutToolbarItem",
 				"_Type": "Control.Type.ToolbarItem"

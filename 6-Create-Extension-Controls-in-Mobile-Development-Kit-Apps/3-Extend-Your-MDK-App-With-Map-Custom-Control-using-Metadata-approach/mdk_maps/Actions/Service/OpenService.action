@@ -1,8 +1,8 @@
 {
-	"Service": "/mdk_maps/Services/SampleServiceV2.service",
+	"Service": "/MDK_Maps/Services/SampleService.service",
 	"_Type": "Action.Type.ODataService.Open",
-	"OnSuccess": "/mdk_maps/Actions/Service/CreateOpenServiceSuccessMessage.action",
-	"OnFailure": "/mdk_maps/Actions/Service/CreateOpenServiceFailureMessage.action",
+	"OnSuccess": "/MDK_Maps/Actions/Service/CreateOpenServiceSuccessMessage.action",
+	"OnFailure": "/MDK_Maps/Actions/Service/CreateOpenServiceFailureMessage.action",
 	"ActionResult": {
 		"_Name": "init"
 	}

@@ -2,17 +2,17 @@
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"Target": {
 		"EntitySet": "PurchaseOrderHeaders",
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleService.service",
 		"ReadLink": "{@odata.readLink}"
 	},
-	"Properties": {
-		"CurrencyCode": "#Control:CurrencyCode/#Value",
-		"GrossAmount": "#Control:GrossAmount/#Value",
-		"NetAmount": "#Control:NetAmount/#Value",
-		"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-		"SupplierId": "#Control:SupplierId/#Value",
-		"TaxAmount": "#Control:TaxAmount/#Value"
-	},
+	"Properties":  {
+	"CurrencyCode": "#Control:CurrencyCode/#Value",
+	"GrossAmount": "#Control:GrossAmount/#Value",
+	"NetAmount": "#Control:NetAmount/#Value",
+	"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+	"SupplierId": "#Control:SupplierId/#Value",
+	"TaxAmount": "#Control:TaxAmount/#Value"
+},
 	"UpdateLinks": [],
 	"ActionResult": {
 		"_Name": "update"

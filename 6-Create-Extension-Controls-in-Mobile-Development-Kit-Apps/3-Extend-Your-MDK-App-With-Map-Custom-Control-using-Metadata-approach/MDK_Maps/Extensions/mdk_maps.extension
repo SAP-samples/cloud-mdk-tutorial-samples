@@ -1,0 +1,6 @@
+{
+	"Class": "MyMapClass",
+	"Control": "MyMapExtension",
+	"Module": "MyMapModule",
+	"_Type": "Register.Type.ExtensionControl.Metadata"
+}

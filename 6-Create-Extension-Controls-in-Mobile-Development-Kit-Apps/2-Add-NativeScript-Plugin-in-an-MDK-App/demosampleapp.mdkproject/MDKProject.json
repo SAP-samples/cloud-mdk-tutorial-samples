@@ -1,5 +1,5 @@
 {
-  "AppName": "Demo Sample App",
+  "AppName": "DemoSampleApp",
   "AppVersion": "1.0.0",
   "BundleID": "com.sap.mdk.demo",
   "Externals": ["nativescript-geolocation","ui/enums"],

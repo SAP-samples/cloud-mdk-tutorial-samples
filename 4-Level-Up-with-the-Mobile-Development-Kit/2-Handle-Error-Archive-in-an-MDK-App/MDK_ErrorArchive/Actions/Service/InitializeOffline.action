@@ -1,12 +1,15 @@
 {
-	"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
-	"DefiningRequests": [{
+	"Service": "/MDK_ErrorArchive/Services/SampleService.service",
+	"DefiningRequests": [
+	{
 		"Name": "PurchaseOrderHeaders",
 		"Query": "PurchaseOrderHeaders"
-	}, {
+	},
+	{
 		"Name": "PurchaseOrderItems",
 		"Query": "PurchaseOrderItems"
-	}],
+	}
+],
 	"_Type": "Action.Type.OfflineOData.Initialize",
 	"ShowActivityIndicator": true,
 	"ActivityIndicatorText": "Downloading...",

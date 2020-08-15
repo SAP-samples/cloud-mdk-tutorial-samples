@@ -2,20 +2,20 @@
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"Target": {
 		"EntitySet": "SalesOrderHeaders",
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleService.service",
 		"ReadLink": "{@odata.readLink}"
 	},
-	"Properties": {
-		"CreatedAt": "#Control:CreatedAt/#Value",
-		"CurrencyCode": "#Control:CurrencyCode/#Value",
-		"CustomerId": "#Control:CustomerId/#Value",
-		"GrossAmount": "#Control:GrossAmount/#Value",
-		"LifeCycleStatus": "#Control:LifeCycleStatus/#Value",
-		"LifeCycleStatusName": "#Control:LifeCycleStatusName/#Value",
-		"NetAmount": "#Control:NetAmount/#Value",
-		"SalesOrderId": "#Control:SalesOrderId/#Value",
-		"TaxAmount": "#Control:TaxAmount/#Value"
-	},
+	"Properties":  {
+	"CreatedAt": "#Control:CreatedAt/#Value",
+	"CurrencyCode": "#Control:CurrencyCode/#Value",
+	"CustomerId": "#Control:CustomerId/#Value",
+	"GrossAmount": "#Control:GrossAmount/#Value",
+	"LifeCycleStatus": "#Control:LifeCycleStatus/#Value",
+	"LifeCycleStatusName": "#Control:LifeCycleStatusName/#Value",
+	"NetAmount": "#Control:NetAmount/#Value",
+	"SalesOrderId": "#Control:SalesOrderId/#Value",
+	"TaxAmount": "#Control:TaxAmount/#Value"
+},
 	"UpdateLinks": [],
 	"ActionResult": {
 		"_Name": "update"

@@ -25,8 +25,8 @@
 					},
 					"Target": {
 						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$filter=CustomerId eq '{{#Property:CustomerId}}'&$top=5&$orderby=CreatedAt desc",
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+						"QueryOptions": "$filter=CustomerId eq '{CustomerId}'&$top=5&$orderby=CreatedAt desc",
+						"Service": "/DemoSampleApp/Services/SampleService.service"
 					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",

@@ -1,12 +1,12 @@
 {
-	"_Name": "mdk_maps",
-	"Version": "/mdk_maps/Globals/AppDefinition_Version.global",
-	"MainPage": "/mdk_maps/Pages/Main.page",
+	"_Name": "MDK_Maps",
+	"Version": "/MDK_Maps/Globals/AppDefinition_Version.global",
+	"MainPage": "/MDK_Maps/Pages/Main.page",
 	"OnLaunch": [
-		"/mdk_maps/Actions/Service/CreateService.action"
+		"/MDK_Maps/Actions/Service/CreateService.action"
 	],
-	"OnWillUpdate": "/mdk_maps/Rules/OnWillUpdate.js",
-	"OnDidUpdate": "/mdk_maps/Actions/Service/CreateService.action",
-	"Styles": "/mdk_maps/Styles/Styles.less",
-	"Localization": "/mdk_maps/i18n/i18n.properties"
+	"OnWillUpdate": "/MDK_Maps/Rules/OnWillUpdate.js",
+	"OnDidUpdate": "/MDK_Maps/Actions/Service/CreateService.action",
+	"Styles": "/MDK_Maps/Styles/Styles.less",
+	"Localization": "/MDK_Maps/i18n/i18n.properties"
 }

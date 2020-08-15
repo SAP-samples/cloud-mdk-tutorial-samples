@@ -1,0 +1,8 @@
+{
+    "AppId": "com.sap.mdk.demo",
+    "DestinationName": "com.sap.mdk.annotation",
+    "OfflineEnabled": false,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": ""
+}

@@ -1,7 +1,7 @@
 {
 	"Target": {
 		"EntitySet": "PurchaseOrderItems",
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleService.service",
 		"ReadLink": "{@odata.readLink}"
 	},
 	"OnSuccess": "/MDK_ErrorArchive/Actions/DeleteEntitySuccessMessage.action",

@@ -4,7 +4,7 @@
 			"Property": "CustomerDetails",
 			"Target": {
 				"EntitySet": "Customers",
-				"ReadLink": "{{#Page:-Previous/#Property:@odata.readLink}}"
+				"ReadLink": "{#Page:-Previous/@odata.readLink}"
 			},
 			"_Enabled": true
 		}
@@ -22,7 +22,7 @@
 	},
 	"Target": {
 		"EntitySet": "SalesOrderHeaders",
-		"Service": "/DemoSampleApp/Services/SampleServiceV2.service"
+		"Service": "/DemoSampleApp/Services/SampleService.service"
 	},
 	"_Type": "Action.Type.ODataService.CreateEntity"
 }

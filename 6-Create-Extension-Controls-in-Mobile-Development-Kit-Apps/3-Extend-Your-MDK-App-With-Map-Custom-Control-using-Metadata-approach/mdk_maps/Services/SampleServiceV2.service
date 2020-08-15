@@ -1,6 +1,0 @@
-{
-    "ServiceUrl": "/destinations/mobileservices_cf",
-    "AppId": "com.sap.mdk.demo",
-    "DestinationName": "com.sap.edm.sampleservice.v2",
-    "OfflineEnabled": false
-}

@@ -21,17 +21,17 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{CustomerId}",
+						"Description": "{Country}",
 						"DetailImageIsCircular": false,
-						"Footnote": "{FirstName}",
+						"Footnote": "{DateOfBirth}",
 						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{DateOfBirth}",
+						"StatusText": "{EmailAddress}",
 						"Styles": {
 							"Title": "ObjectTableTitle"
 						},
-						"Subhead": "{Country}",
-						"SubstatusText": "{EmailAddress}",
+						"Subhead": "{CustomerId}",
+						"SubstatusText": "{FirstName}",
 						"Title": "{City}"
 					},
 					"Search": {
@@ -44,7 +44,7 @@
 					"Target": {
 						"EntitySet": "Customers",
 						"QueryOptions": "",
-						"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+						"Service": "/MDK_Styling/Services/SampleService.service"
 					},
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"

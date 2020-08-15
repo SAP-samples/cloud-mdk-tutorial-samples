@@ -24,17 +24,17 @@
 							"Visible": true
 						},
 						{
-							"KeyName": "Price",
+							"KeyName": "Net Amount",
 							"Value": "$(C,{NetAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 							"Visible": true
 						},
 						{
-							"KeyName": "Tax",
+							"KeyName": "Tax Amount",
 							"Value": "$(C,{TaxAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 							"Visible": true
 						},
 						{
-							"KeyName": "Total",
+							"KeyName": "Total Amount",
 							"Value": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 							"Visible": true
 						}

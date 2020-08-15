@@ -15,18 +15,18 @@
 			},
 			"ObjectCell": {
 				"AccessoryType": "disclosureIndicator",
-				"Description": "{ItemNumber}",
+				"Description": "{GrossAmount}",
 				"DetailImage": "",
 				"DetailImageIsCircular": false,
 				"Icons": [],
 				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
 				"StatusImage": "",
 				"Title": "{CurrencyCode}",
-				"Footnote": "{PurchaseOrderId}",
+				"Footnote": "{NetAmount}",
 				"PreserveIconStackSpacing": false,
-				"StatusText": "{NetAmount}",
-				"Subhead": "{GrossAmount}",
-				"SubstatusText": "{ProductId}"
+				"StatusText": "{ProductId}",
+				"Subhead": "{ItemNumber}",
+				"SubstatusText": "{PurchaseOrderId}"
 			},
 			"Search": {
 				"Enabled": true,
@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "PurchaseOrderItems",
-				"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+				"Service": "/MDK_ErrorArchive/Services/SampleService.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

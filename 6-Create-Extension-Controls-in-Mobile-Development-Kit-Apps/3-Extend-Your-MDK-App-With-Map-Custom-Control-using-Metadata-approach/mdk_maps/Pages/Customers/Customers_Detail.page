@@ -1,16 +1,16 @@
 {
-	"Caption": "Customer Details",
+	"Caption": "Customers Details",
 	"Controls": [
 		{
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Description": "{CustomerId}",
-						"Footnote": "{Street}",
+						"Description": "{Country}",
+						"Footnote": "{DateOfBirth}",
 						"HeadlineText": "{City}",
-						"StatusText": "{HouseNumber}",
-						"Subhead": "{Country}",
-						"SubstatusText": "{PostalCode}",
+						"StatusText": "{EmailAddress}",
+						"Subhead": "{CustomerId}",
+						"SubstatusText": "{FirstName}",
 						"Tags": [
 						]
 					},

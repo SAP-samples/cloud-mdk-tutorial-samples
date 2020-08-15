@@ -1,5 +1,5 @@
 {
-	"Caption": "ErrorList",
+	"Caption": "Error List",
 	"Controls": [
 		{
 			"Sections": [
@@ -22,7 +22,7 @@
 					},
 					"Target": {
 						"EntitySet": "ErrorArchive",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+						"Service": "/MDK_ErrorArchive/Services/SampleService.service"
 					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",
@@ -33,6 +33,6 @@
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
-	"_Name": "Error List",
+	"_Name": "ErrorList",
 	"_Type": "Page"
 }

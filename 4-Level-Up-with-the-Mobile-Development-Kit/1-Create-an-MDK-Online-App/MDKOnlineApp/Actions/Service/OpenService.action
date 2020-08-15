@@ -1,5 +1,5 @@
 {
-	"Service": "/MDKOnlineApp/Services/SampleServiceV2.service",
+	"Service": "/MDKOnlineApp/Services/SampleService.service",
 	"_Type": "Action.Type.ODataService.Open",
 	"OnSuccess": "/MDKOnlineApp/Actions/Service/CreateOpenServiceSuccessMessage.action",
 	"OnFailure": "/MDKOnlineApp/Actions/Service/CreateOpenServiceFailureMessage.action",

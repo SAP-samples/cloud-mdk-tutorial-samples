@@ -3,16 +3,16 @@
 	"OnFailure": "/MDK_ErrorArchive/Actions/CreateEntityFailureMessage.action",
 	"OnSuccess": "/MDK_ErrorArchive/Actions/CreateEntitySuccessMessage.action",
 	"Properties": {
-		"CurrencyCode": "#Control:CurrencyCode/#Value",
-		"GrossAmount": "#Control:GrossAmount/#Value",
-		"NetAmount": "#Control:NetAmount/#Value",
-		"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-		"SupplierId": "#Control:SupplierId/#Value",
-		"TaxAmount": "#Control:TaxAmount/#Value"
-	},
+	"CurrencyCode": "#Control:CurrencyCode/#Value",
+	"GrossAmount": "#Control:GrossAmount/#Value",
+	"NetAmount": "#Control:NetAmount/#Value",
+	"PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+	"SupplierId": "#Control:SupplierId/#Value",
+	"TaxAmount": "#Control:TaxAmount/#Value"
+},
 	"Target": {
 		"EntitySet": "PurchaseOrderHeaders",
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+		"Service": "/MDK_ErrorArchive/Services/SampleService.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

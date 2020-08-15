@@ -1,5 +1,5 @@
 {
-	"Caption": "SalesOrderHeader Details",
+	"Caption": "SalesOrderHeaders Details",
 
 	"ActionBar": {
 		"Items": [{
@@ -17,46 +17,56 @@
 			"ObjectHeader": {
 				"DetailImage": "",
 				"HeadlineText": "{CreatedAt}",
-				"Subhead": "{CurrencyCode}",
+				"Subhead": "{CustomerId}",
 				"Tags": [],
 				"BodyText": "",
-				"Footnote": "{LifeCycleStatusName}",
-				"Description": "{CustomerId}",
-				"StatusText": "{GrossAmount}",
+				"Footnote": "{GrossAmount}",
+				"Description": "{CurrencyCode}",
+				"StatusText": "{LifeCycleStatus}",
 				"StatusImage": "",
 				"SubstatusImage": "",
-				"SubstatusText": "{LifeCycleStatus}"
+				"SubstatusText": "{LifeCycleStatusName}"
 			},
 			"_Type": "Section.Type.ObjectHeader"
 		}, {
-			"KeyAndValues": [{
-				"KeyName": "CreatedAt",
-				"Value": "{CreatedAt}"
-			}, {
-				"KeyName": "CurrencyCode",
-				"Value": "{CurrencyCode}"
-			}, {
-				"KeyName": "CustomerId",
-				"Value": "{CustomerId}"
-			}, {
-				"KeyName": "GrossAmount",
-				"Value": "{GrossAmount}"
-			}, {
-				"KeyName": "LifeCycleStatus",
-				"Value": "{LifeCycleStatus}"
-			}, {
-				"KeyName": "LifeCycleStatusName",
-				"Value": "{LifeCycleStatusName}"
-			}, {
-				"KeyName": "NetAmount",
-				"Value": "{NetAmount}"
-			}, {
-				"KeyName": "SalesOrderId",
-				"Value": "{SalesOrderId}"
-			}, {
-				"KeyName": "TaxAmount",
-				"Value": "{TaxAmount}"
-			}],
+			"KeyAndValues": [
+	{
+		"KeyName": "CreatedAt",
+		"Value": "{CreatedAt}"
+	},
+	{
+		"KeyName": "CurrencyCode",
+		"Value": "{CurrencyCode}"
+	},
+	{
+		"KeyName": "CustomerId",
+		"Value": "{CustomerId}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "LifeCycleStatus",
+		"Value": "{LifeCycleStatus}"
+	},
+	{
+		"KeyName": "LifeCycleStatusName",
+		"Value": "{LifeCycleStatusName}"
+	},
+	{
+		"KeyName": "NetAmount",
+		"Value": "{NetAmount}"
+	},
+	{
+		"KeyName": "SalesOrderId",
+		"Value": "{SalesOrderId}"
+	},
+	{
+		"KeyName": "TaxAmount",
+		"Value": "{TaxAmount}"
+	}
+],
 			"Layout": {
 				"NumberOfColumns": 2
 			},

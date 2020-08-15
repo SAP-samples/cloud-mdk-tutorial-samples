@@ -11,18 +11,18 @@
 			},
 			"ObjectCell": {
 				"AccessoryType": "disclosureIndicator",
-				"Description": "{CustomerId}",
+				"Description": "{Country}",
 				"DetailImage": "",
 				"DetailImageIsCircular": false,
 				"Icons": [],
-				"OnPress": "/mdk_maps/Actions/Customers/NavToCustomers_Detail.action",
+				"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_Detail.action",
 				"StatusImage": "",
 				"Title": "{City}",
-				"Footnote": "{Street}",
+				"Footnote": "{DateOfBirth}",
 				"PreserveIconStackSpacing": false,
-				"StatusText": "{HouseNumber}",
-				"Subhead": "{Country}",
-				"SubstatusText": "{PostalCode}"
+				"StatusText": "{EmailAddress}",
+				"Subhead": "{CustomerId}",
+				"SubstatusText": "{FirstName}"
 			},
 			"Search": {
 				"Enabled": true,
@@ -33,7 +33,7 @@
 			},
 			"Target": {
 				"EntitySet": "Customers",
-				"Service": "/mdk_maps/Services/SampleServiceV2.service",
+				"Service": "/MDK_Maps/Services/SampleService.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

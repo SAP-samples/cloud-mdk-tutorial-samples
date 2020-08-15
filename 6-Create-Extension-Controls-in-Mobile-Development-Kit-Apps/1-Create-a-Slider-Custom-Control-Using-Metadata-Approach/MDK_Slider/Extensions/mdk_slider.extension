@@ -1,0 +1,6 @@
+{
+	"Class": "MySliderClass",
+	"Control": "MySliderExtension",
+	"Module": "MySliderModule",
+	"_Type": "Register.Type.ExtensionControl.Metadata"
+}

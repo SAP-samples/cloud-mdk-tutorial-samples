@@ -7,54 +7,9 @@
 					"Buttons": [
 						{
 							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action",
+							"Style": "MyCustomerButton",
 							"TextAlignment": "center",
 							"Title": "Customers"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/Suppliers/NavToSuppliers_List.action",
-							"TextAlignment": "center",
-							"Title": "Suppliers"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action",
-							"TextAlignment": "center",
-							"Title": "Products"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/ProductCategories/NavToProductCategories_List.action",
-							"TextAlignment": "center",
-							"Title": "ProductCategories"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/ProductTexts/NavToProductTexts_List.action",
-							"TextAlignment": "center",
-							"Title": "ProductTexts"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/Stock/NavToStock_List.action",
-							"TextAlignment": "center",
-							"Title": "Stock"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
-							"TextAlignment": "center",
-							"Title": "PurchaseOrderHeaders"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
-							"TextAlignment": "center",
-							"Title": "PurchaseOrderItems"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
-							"Style": "MySalesOrderButton",
-							"TextAlignment": "center",
-							"Title": "SalesOrderHeaders"
-						},
-						{
-							"OnPress": "/MDK_Styling/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
-							"TextAlignment": "center",
-							"Title": "SalesOrderItems"
 						}
 					],
 					"EmptySection": {

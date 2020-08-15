@@ -23,8 +23,8 @@
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{status}",
-						"Subhead": "Pet Name: {{#Property:name}}",
-						"Title": "Pet ID: {{#Property:id}}"
+						"Subhead": "Pet Name: {name}",
+						"Title": "Pet ID: {id}"
 					},
 					"Target": "/MDK_Petstore/Rules/GetPetFindByStatus.js",
 					"Visible": true,

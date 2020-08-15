@@ -1,5 +1,5 @@
 {
-	"Caption": "SalesOrderItem Details",
+	"Caption": "SalesOrderItems Details",
 
 	"ActionBar": {
 		"Items": [{
@@ -17,49 +17,60 @@
 			"ObjectHeader": {
 				"DetailImage": "",
 				"HeadlineText": "{CurrencyCode}",
-				"Subhead": "{DeliveryDate}",
+				"Subhead": "{GrossAmount}",
 				"Tags": [],
 				"BodyText": "",
-				"Footnote": "{ProductId}",
-				"Description": "{GrossAmount}",
-				"StatusText": "{ItemNumber}",
+				"Footnote": "{ItemNumber}",
+				"Description": "{DeliveryDate}",
+				"StatusText": "{NetAmount}",
 				"StatusImage": "",
 				"SubstatusImage": "",
-				"SubstatusText": "{NetAmount}"
+				"SubstatusText": "{ProductId}"
 			},
 			"_Type": "Section.Type.ObjectHeader"
 		}, {
-			"KeyAndValues": [{
-				"KeyName": "CurrencyCode",
-				"Value": "{CurrencyCode}"
-			}, {
-				"KeyName": "DeliveryDate",
-				"Value": "{DeliveryDate}"
-			}, {
-				"KeyName": "GrossAmount",
-				"Value": "{GrossAmount}"
-			}, {
-				"KeyName": "ItemNumber",
-				"Value": "{ItemNumber}"
-			}, {
-				"KeyName": "NetAmount",
-				"Value": "{NetAmount}"
-			}, {
-				"KeyName": "ProductId",
-				"Value": "{ProductId}"
-			}, {
-				"KeyName": "Quantity",
-				"Value": "{Quantity}"
-			}, {
-				"KeyName": "QuantityUnit",
-				"Value": "{QuantityUnit}"
-			}, {
-				"KeyName": "SalesOrderId",
-				"Value": "{SalesOrderId}"
-			}, {
-				"KeyName": "TaxAmount",
-				"Value": "{TaxAmount}"
-			}],
+			"KeyAndValues": [
+	{
+		"KeyName": "CurrencyCode",
+		"Value": "{CurrencyCode}"
+	},
+	{
+		"KeyName": "DeliveryDate",
+		"Value": "{DeliveryDate}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "ItemNumber",
+		"Value": "{ItemNumber}"
+	},
+	{
+		"KeyName": "NetAmount",
+		"Value": "{NetAmount}"
+	},
+	{
+		"KeyName": "ProductId",
+		"Value": "{ProductId}"
+	},
+	{
+		"KeyName": "Quantity",
+		"Value": "{Quantity}"
+	},
+	{
+		"KeyName": "QuantityUnit",
+		"Value": "{QuantityUnit}"
+	},
+	{
+		"KeyName": "SalesOrderId",
+		"Value": "{SalesOrderId}"
+	},
+	{
+		"KeyName": "TaxAmount",
+		"Value": "{TaxAmount}"
+	}
+],
 			"Layout": {
 				"NumberOfColumns": 2
 			},

@@ -1,5 +1,5 @@
 {
-	"Caption": "PurchaseOrderHeader Details",
+	"Caption": "PurchaseOrderHeaders Details",
 
 	"ActionBar": {
 		"Items": [{
@@ -17,37 +17,44 @@
 			"ObjectHeader": {
 				"DetailImage": "",
 				"HeadlineText": "{CurrencyCode}",
-				"Subhead": "{GrossAmount}",
+				"Subhead": "{NetAmount}",
 				"Tags": [],
 				"BodyText": "",
-				"Footnote": "{TaxAmount}",
-				"Description": "{NetAmount}",
-				"StatusText": "{PurchaseOrderId}",
+				"Footnote": "{PurchaseOrderId}",
+				"Description": "{GrossAmount}",
+				"StatusText": "{SupplierId}",
 				"StatusImage": "",
 				"SubstatusImage": "",
-				"SubstatusText": "{SupplierId}"
+				"SubstatusText": "{TaxAmount}"
 			},
 			"_Type": "Section.Type.ObjectHeader"
 		}, {
-			"KeyAndValues": [{
-				"KeyName": "CurrencyCode",
-				"Value": "{CurrencyCode}"
-			}, {
-				"KeyName": "GrossAmount",
-				"Value": "{GrossAmount}"
-			}, {
-				"KeyName": "NetAmount",
-				"Value": "{NetAmount}"
-			}, {
-				"KeyName": "PurchaseOrderId",
-				"Value": "{PurchaseOrderId}"
-			}, {
-				"KeyName": "SupplierId",
-				"Value": "{SupplierId}"
-			}, {
-				"KeyName": "TaxAmount",
-				"Value": "{TaxAmount}"
-			}],
+			"KeyAndValues": [
+	{
+		"KeyName": "CurrencyCode",
+		"Value": "{CurrencyCode}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "NetAmount",
+		"Value": "{NetAmount}"
+	},
+	{
+		"KeyName": "PurchaseOrderId",
+		"Value": "{PurchaseOrderId}"
+	},
+	{
+		"KeyName": "SupplierId",
+		"Value": "{SupplierId}"
+	},
+	{
+		"KeyName": "TaxAmount",
+		"Value": "{TaxAmount}"
+	}
+],
 			"Layout": {
 				"NumberOfColumns": 2
 			},

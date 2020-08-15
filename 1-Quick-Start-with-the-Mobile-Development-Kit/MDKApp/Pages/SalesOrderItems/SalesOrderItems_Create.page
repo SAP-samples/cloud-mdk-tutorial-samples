@@ -10,51 +10,62 @@
 			"SystemItem": "Save"
 		}]
 	},
-	"Caption": "Create SalesOrderItem",
+	"Caption": "Create Customer",
 	"Controls": [{
 		"Sections": [{
-			"Controls": [{
-				"Caption": "CurrencyCode",
-				"_Name": "CurrencyCode",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Mode": "Date",
-				"_Name": "DeliveryDate",
-				"Caption": "DeliveryDate",
-				"_Type": "Control.Type.FormCell.DatePicker"
-			}, {
-				"Caption": "GrossAmount",
-				"_Name": "GrossAmount",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "ItemNumber",
-				"_Name": "ItemNumber",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "NetAmount",
-				"_Name": "NetAmount",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "ProductId",
-				"_Name": "ProductId",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "Quantity",
-				"_Name": "Quantity",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "QuantityUnit",
-				"_Name": "QuantityUnit",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "SalesOrderId",
-				"_Name": "SalesOrderId",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}, {
-				"Caption": "TaxAmount",
-				"_Name": "TaxAmount",
-				"_Type": "Control.Type.FormCell.SimpleProperty"
-			}]
+			"Controls": [
+	{
+		"Caption": "CurrencyCode",
+		"_Name": "CurrencyCode",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "DeliveryDate",
+		"Caption": "DeliveryDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "GrossAmount",
+		"_Name": "GrossAmount",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ItemNumber",
+		"_Name": "ItemNumber",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "NetAmount",
+		"_Name": "NetAmount",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductId",
+		"_Name": "ProductId",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Quantity",
+		"_Name": "Quantity",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityUnit",
+		"_Name": "QuantityUnit",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "SalesOrderId",
+		"_Name": "SalesOrderId",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "TaxAmount",
+		"_Name": "TaxAmount",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
 		}],
 		"_Name": "FormCellContainer",
 		"_Type": "Control.Type.FormCellContainer"
