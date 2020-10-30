@@ -1,5 +1,6 @@
 {
 	"ModalPage": true,
+	"NavigationType": "Cross",
 	"PageToOpen": "/DemoSampleApp/Pages/Customers_Create.page",
 	"_Type": "Action.Type.Navigation"
 }

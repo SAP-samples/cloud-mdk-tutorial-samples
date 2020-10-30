@@ -20,7 +20,7 @@
 						},
 						{
 							"KeyName": "Created At",
-							"Value": "$(D,{CreatedAt})",
+							"Value": "$(D,{CreatedAt},'','',{format:'medium'})",
 							"Visible": true
 						},
 						{

@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "Products",
-				"Service": "/MDKApp/Services/SampleService.service",
+				"Service": "/MDKApp/Services/sample.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

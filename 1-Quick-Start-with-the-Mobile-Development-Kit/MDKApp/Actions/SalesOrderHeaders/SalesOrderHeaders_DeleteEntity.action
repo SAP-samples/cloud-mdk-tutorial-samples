@@ -1,7 +1,7 @@
 {
 	"Target": {
 		"EntitySet": "SalesOrderHeaders",
-		"Service": "/MDKApp/Services/SampleService.service",
+		"Service": "/MDKApp/Services/sample.service",
 		"ReadLink": "{@odata.readLink}"
 	},
 	"OnSuccess": "/MDKApp/Actions/DeleteEntitySuccessMessage.action",

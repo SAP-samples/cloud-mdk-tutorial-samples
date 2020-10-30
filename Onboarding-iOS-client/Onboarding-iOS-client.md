@@ -22,7 +22,7 @@
 
     ![MDK](img_6.png)
 
-7. Optionally, you can enable Touch ID to get faster access to the app data, tap **Enable**.
+7. Optionally, you can enable Biometric authentication to get faster access to the app data, tap **Enable**.
 
     ![MDK](img_7.png)
 

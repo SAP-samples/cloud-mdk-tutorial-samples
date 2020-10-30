@@ -10,7 +10,7 @@
 	},
 	"Target": {
 		"EntitySet": "Customers",
-		"Service": "/DemoSampleApp/Services/SampleService.service"
+		"Service": "/DemoSampleApp/Services/Sample.service"
 	},
 	"_Type": "Action.Type.ODataService.CreateEntity"
 }

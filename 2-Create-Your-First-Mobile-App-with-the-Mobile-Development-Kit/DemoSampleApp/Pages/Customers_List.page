@@ -30,7 +30,7 @@
 					},
 					"Target": {
 						"EntitySet": "Customers",
-						"Service": "/DemoSampleApp/Services/SampleService.service"
+						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,
 					"_Name": "SectionContactCellTable0",

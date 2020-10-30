@@ -15,7 +15,7 @@
 },
 	"Target": {
 		"EntitySet": "SalesOrderHeaders",
-		"Service": "/MDKApp/Services/SampleService.service"
+		"Service": "/MDKApp/Services/sample.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

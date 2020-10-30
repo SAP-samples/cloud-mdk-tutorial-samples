@@ -10,7 +10,7 @@
 	"Target": {
 		"EntitySet": "Customers",
 		"ReadLink": "{@odata.readLink}",
-		"Service": "/DemoSampleApp/Services/SampleService.service"
+		"Service": "/DemoSampleApp/Services/Sample.service"
 	},
 	"ValidationRule": "/DemoSampleApp/Rules/EmailValidation.js",
 	"_Type": "Action.Type.ODataService.UpdateEntity"

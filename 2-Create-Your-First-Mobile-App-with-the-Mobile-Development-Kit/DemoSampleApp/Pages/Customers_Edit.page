@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action",
 				"Position": "left",
 				"SystemItem": "Cancel",
@@ -9,6 +10,7 @@
 				"Visible": true
 			},
 			{
+				"IsIconCircular": false,
 				"OnPress": "/DemoSampleApp/Actions/Customers_UpdateEntity.action",
 				"Position": "right",
 				"SystemItem": "Save",

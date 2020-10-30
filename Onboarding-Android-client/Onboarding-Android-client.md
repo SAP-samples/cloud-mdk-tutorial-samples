@@ -26,7 +26,7 @@
 
     ![MDK](img_7.png)
 
-    Optionally, you can enable fingerprint to get faster access to the app data.
+    Optionally, you can enable Biometric authentication to get faster access to the app data.
 
     ![MDK](img_7.1.png)
 

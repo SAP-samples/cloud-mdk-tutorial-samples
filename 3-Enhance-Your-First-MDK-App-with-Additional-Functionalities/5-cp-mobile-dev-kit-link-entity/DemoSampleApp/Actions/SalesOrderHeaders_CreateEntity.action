@@ -1,16 +1,13 @@
 {
-	"CreateLinks": [
-		{
-			"Property": "CustomerDetails",
-			"Target": {
-				"EntitySet": "Customers",
-				"ReadLink": "{#Page:-Previous/@odata.readLink}"
-			},
-			"_Enabled": true
-		}
-	],
 	"OnFailure": "/DemoSampleApp/Actions/CreateSalesOrderHeaderEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
+	"ParentLink": {
+		"Property": "SalesOrders",
+		"Target": {
+			"EntitySet": "Customers",
+			"ReadLink": "{@odata.readLink}"
+		}
+	},
 	"Properties": {
 		"CreatedAt": "#Control:FCCreatedate/#Value",
 		"CurrencyCode": "#Control:FCCreateCurrencyCode/#Value",
@@ -22,7 +19,7 @@
 	},
 	"Target": {
 		"EntitySet": "SalesOrderHeaders",
-		"Service": "/DemoSampleApp/Services/SampleService.service"
+		"Service": "/DemoSampleApp/Services/Sample.service"
 	},
-	"_Type": "Action.Type.ODataService.CreateEntity"
+	"_Type": "Action.Type.ODataService.CreateRelatedEntity"
 }

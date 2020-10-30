@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
 				"Position": "right",
 				"SystemItem": "Edit",

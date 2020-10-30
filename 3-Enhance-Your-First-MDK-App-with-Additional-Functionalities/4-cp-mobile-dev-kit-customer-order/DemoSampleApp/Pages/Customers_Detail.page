@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
 				"Position": "right",
 				"SystemItem": "Edit",
@@ -9,6 +10,7 @@
 				"Visible": true
 			},
 			{
+				"IsIconCircular": false,
 				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js",
 				"Position": "right",
 				"SystemItem": "Trash",
@@ -88,20 +90,21 @@
 						"Caption": "Customer Orders",
 						"UseTopPadding": true
 					},
+					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"DetailImageIsCircular": false,
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
-						"Subhead": "$(D,{CreatedAt})",
+						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"SubstatusText": "{CurrencyCode}",
 						"Title": "{SalesOrderId}"
 					},
 					"Target": {
 						"EntitySet": "{{#Property:@odata.readLink}}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
-						"Service": "/DemoSampleApp/Services/SampleService.service"
+						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",

@@ -24,7 +24,7 @@
 },
 	"Target": {
 		"EntitySet": "Products",
-		"Service": "/MDKApp/Services/SampleService.service"
+		"Service": "/MDKApp/Services/sample.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

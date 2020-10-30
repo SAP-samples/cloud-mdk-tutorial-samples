@@ -10,7 +10,7 @@
 			"SystemItem": "Save"
 		}]
 	},
-	"Caption": "Create Customer",
+	"Caption": "Create SalesOrderItem",
 	"Controls": [{
 		"Sections": [{
 			"Controls": [

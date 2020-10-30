@@ -23,7 +23,7 @@
 	],
 	"OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/LogSetState.action",
-	"Service": "/DemoSampleApp/Services/SampleService.service",
+	"Service": "/DemoSampleApp/Services/Sample.service",
 	"ShowActivityIndicator": true,
 	"_Type": "Action.Type.OfflineOData.Initialize"
 }
