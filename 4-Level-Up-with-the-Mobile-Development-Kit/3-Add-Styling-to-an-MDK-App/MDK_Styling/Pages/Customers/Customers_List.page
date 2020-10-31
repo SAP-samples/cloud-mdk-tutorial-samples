@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Create.action",
 				"Position": "right",
 				"SystemItem": "Add"
@@ -44,7 +45,7 @@
 					"Target": {
 						"EntitySet": "Customers",
 						"QueryOptions": "",
-						"Service": "/MDK_Styling/Services/SampleService.service"
+						"Service": "/MDK_Styling/Services/Sample.service"
 					},
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"

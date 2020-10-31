@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "PurchaseOrderItems",
-				"Service": "/MDK_ErrorArchive/Services/SampleService.service",
+				"Service": "/MDK_ErrorArchive/Services/Sample.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

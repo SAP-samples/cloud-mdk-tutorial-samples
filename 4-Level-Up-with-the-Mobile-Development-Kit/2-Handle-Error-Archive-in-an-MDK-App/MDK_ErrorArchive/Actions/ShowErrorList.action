@@ -1,4 +1,5 @@
 {
+	"NavigationType": "Cross",
 	"PageToOpen": "/MDK_ErrorArchive/Pages/ErrorList.page",
 	"_Type": "Action.Type.Navigation"
 }

@@ -18,7 +18,7 @@
 },
 	"Target": {
 		"EntitySet": "Customers",
-		"Service": "/MDK_Styling/Services/SampleService.service"
+		"Service": "/MDK_Styling/Services/Sample.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

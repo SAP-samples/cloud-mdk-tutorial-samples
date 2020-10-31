@@ -12,7 +12,7 @@
 },
 	"Target": {
 		"EntitySet": "PurchaseOrderHeaders",
-		"Service": "/MDK_ErrorArchive/Services/SampleService.service"
+		"Service": "/MDK_ErrorArchive/Services/Sample.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

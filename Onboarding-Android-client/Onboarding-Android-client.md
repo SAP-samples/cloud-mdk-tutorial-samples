@@ -1,4 +1,4 @@
-1. Launch **`Mobile Svcs`** app on your Android device. Tap **AGREE** on `End User License Agreement and Privacy Statement`.
+1. Launch **`Mobile Svcs`** app on your Android device. Tap **AGREE** on `End User License Agreement`.
 
     ![MDK](img_1.png)
 

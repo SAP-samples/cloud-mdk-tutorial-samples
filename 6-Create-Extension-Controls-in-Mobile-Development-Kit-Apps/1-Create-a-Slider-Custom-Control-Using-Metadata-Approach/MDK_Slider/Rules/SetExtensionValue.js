@@ -1,6 +1,6 @@
-export default function SetExtensionValue(controlProxy) {
+export default function SetExtensionValue(context) {
     console.log("In SetExtensionValue");
-    let srcValue = controlProxy.getValue();
-    let targetCtrl = controlProxy.evaluateTargetPath("#Page:SliderExtension/#Control:MyExtensionControlName");
+    let srcValue = context.getValue();
+    let targetCtrl = context.evaluateTargetPath("#Page:SliderExtension/#Control:MyExtensionControlName");
     targetCtrl.setValue(srcValue);
 }

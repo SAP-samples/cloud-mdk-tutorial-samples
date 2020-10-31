@@ -18,7 +18,7 @@
 	},
 	"Target": {
 		"EntitySet": "Products",
-		"Service": "/MDK_Annotations/Services/SampleService.service"
+		"Service": "/MDK_Annotations/Services/Sample.service"
 	},
 	"ActionResult": {
 		"_Name": "create"

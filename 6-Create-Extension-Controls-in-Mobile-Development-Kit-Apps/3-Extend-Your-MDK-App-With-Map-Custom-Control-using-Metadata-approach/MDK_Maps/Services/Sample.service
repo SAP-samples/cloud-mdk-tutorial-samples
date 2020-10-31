@@ -1,8 +1,9 @@
 {
     "AppId": "com.sap.mdk.demo",
     "DestinationName": "com.sap.edm.sampleservice.v2",
-    "OfflineEnabled": true,
+    "OfflineEnabled": false,
     "LanguageURLParam": "sap-language",
     "OnlineOptions": {},
-    "PathSuffix": ""
+    "PathSuffix": "",
+    "SourceType": "Mobile"
 }

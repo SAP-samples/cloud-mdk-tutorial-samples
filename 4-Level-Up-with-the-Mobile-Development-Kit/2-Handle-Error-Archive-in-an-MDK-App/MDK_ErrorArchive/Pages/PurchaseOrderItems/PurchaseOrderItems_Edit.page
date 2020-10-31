@@ -1,13 +1,13 @@
 {
-	"Caption": "Update Customer",
+	"Caption": "Update PurchaseOrderItem",
 	"ActionBar": {
 		"Items": [{
 			"Position": "left",
-			"Text": "Cancel",
+			"SystemItem": "Cancel",
 			"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action"
 		}, {
 			"Position": "right",
-			"Text": "Save",
+			"SystemItem": "Save",
 			"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/PurchaseOrderItems_UpdateEntity.action"
 		}]
 	},

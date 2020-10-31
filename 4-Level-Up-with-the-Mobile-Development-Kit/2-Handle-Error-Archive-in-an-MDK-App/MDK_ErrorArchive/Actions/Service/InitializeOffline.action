@@ -1,5 +1,5 @@
 {
-	"Service": "/MDK_ErrorArchive/Services/SampleService.service",
+	"Service": "/MDK_ErrorArchive/Services/Sample.service",
 	"DefiningRequests": [
 	{
 		"Name": "PurchaseOrderHeaders",

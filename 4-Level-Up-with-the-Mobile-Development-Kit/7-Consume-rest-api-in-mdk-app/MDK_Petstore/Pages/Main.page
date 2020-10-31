@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/MDK_Petstore/Actions/NavToPet_Create.action",
 				"Position": "right",
 				"SystemItem": "Add",
@@ -18,6 +19,7 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "none",
 						"DetailImageIsCircular": false,
@@ -26,7 +28,13 @@
 						"Subhead": "Pet Name: {name}",
 						"Title": "Pet ID: {id}"
 					},
-					"Target": "/MDK_Petstore/Rules/GetPetFindByStatus.js",
+					"Target": {
+						"Path": "/pet/findByStatus?status=available",
+						"RequestProperties": {
+							"Method": "GET"
+						},
+						"Service": "/MDK_Petstore/Services/petstore.service"
+					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"

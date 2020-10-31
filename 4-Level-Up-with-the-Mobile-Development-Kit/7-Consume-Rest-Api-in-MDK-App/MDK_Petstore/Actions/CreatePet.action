@@ -1,0 +1,15 @@
+{
+	"OnSuccess": "/MDK_Petstore/Actions/ClosePage_Complete.action",
+	"Target": {
+		"Path": "/pet",
+		"RequestProperties": {
+			"Body": {
+				"name": "#Control:FCCreatePet/#Value",
+				"status": "#Control:FCCreateStatus/#Value"
+			},
+			"Method": "POST"
+		},
+		"Service": "/MDK_Petstore/Services/petstore.service"
+	},
+	"_Type": "Action.Type.RestService.SendRequest"
+}

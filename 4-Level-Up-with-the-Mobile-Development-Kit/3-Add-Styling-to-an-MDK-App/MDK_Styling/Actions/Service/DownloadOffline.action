@@ -1,5 +1,5 @@
 {
-	"Service": "/MDK_Styling/Services/SampleService.service",
+	"Service": "/MDK_Styling/Services/Sample.service",
 	"DefiningRequests": [
 	{
 		"Name": "Customers",

@@ -11,6 +11,7 @@
 						"Caption": "/MDK_ErrorArchive/Rules/GetAffectedEntityHeaderCaption.js",
 						"UseTopPadding": true
 					},
+					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"DetailImageIsCircular": false,

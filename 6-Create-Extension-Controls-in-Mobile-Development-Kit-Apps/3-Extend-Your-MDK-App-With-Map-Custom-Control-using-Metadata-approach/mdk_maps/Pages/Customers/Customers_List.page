@@ -33,7 +33,7 @@
 			},
 			"Target": {
 				"EntitySet": "Customers",
-				"Service": "/MDK_Maps/Services/SampleService.service",
+				"Service": "/MDK_Maps/Services/Sample.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

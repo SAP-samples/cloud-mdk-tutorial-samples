@@ -4,5 +4,6 @@
     "OfflineEnabled": false,
     "LanguageURLParam": "sap-language",
     "OnlineOptions": {},
-    "PathSuffix": ""
+    "PathSuffix": "",
+    "SourceType": "Mobile"
 }

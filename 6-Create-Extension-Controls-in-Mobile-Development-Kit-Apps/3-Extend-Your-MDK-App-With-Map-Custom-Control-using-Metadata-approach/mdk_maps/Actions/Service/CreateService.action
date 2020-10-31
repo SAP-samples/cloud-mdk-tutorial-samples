@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.ODataService.Create",
-	"Service": "/MDK_Maps/Services/SampleService.service",
+	"Service": "/MDK_Maps/Services/Sample.service",
 	"OnSuccess": "/MDK_Maps/Actions/Service/OpenService.action",
 	"OnFailure": "/MDK_Maps/Actions/Service/CreateOpenServiceFailureMessage.action",
 	"ShowActivityIndicator": true,

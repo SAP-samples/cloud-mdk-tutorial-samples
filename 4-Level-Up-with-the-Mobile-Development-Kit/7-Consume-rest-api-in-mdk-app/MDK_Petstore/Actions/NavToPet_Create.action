@@ -1,5 +1,6 @@
 {
 	"ModalPage": true,
+	"NavigationType": "Cross",
 	"PageToOpen": "/MDK_Petstore/Pages/Pet_Create.page",
 	"_Type": "Action.Type.Navigation"
 }

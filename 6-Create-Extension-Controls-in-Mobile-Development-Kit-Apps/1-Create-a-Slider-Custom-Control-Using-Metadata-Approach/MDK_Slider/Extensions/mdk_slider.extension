@@ -1,6 +1,29 @@
 {
 	"Class": "MySliderClass",
 	"Control": "MySliderExtension",
+	"ExtensionPropertiesSchema": {
+		"BindType": "",
+		"properties": {
+			"MaxValue": {
+				"BindType": "",
+				"type": "number"
+			},
+			"MinValue": {
+				"BindType": "",
+				"type": "number"
+			},
+			"Title": {
+				"BindType": "",
+				"type": "string"
+			}
+		},
+		"type": "object"
+	},
+	"ExtensionPropertiesSchemaSample": {
+		"MaxValue": 200,
+		"MinValue": 10,
+		"Title": "Counter"
+	},
 	"Module": "MySliderModule",
 	"_Type": "Register.Type.ExtensionControl.Metadata"
 }

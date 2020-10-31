@@ -2,6 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"IsIconCircular": false,
 				"OnPress": "/MDK_Petstore/Actions/ClosePage.action",
 				"Position": "left",
 				"SystemItem": "Cancel",
@@ -9,7 +10,8 @@
 				"Visible": true
 			},
 			{
-				"OnPress": "/MDK_Petstore/Rules/PostPet.js",
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Petstore/Actions/CreatePet.action",
 				"Position": "right",
 				"SystemItem": "Save",
 				"Text": "Item",
@@ -24,27 +26,11 @@
 				{
 					"Controls": [
 						{
-							"Caption": "Category",
-							"IsEditable": true,
-							"IsVisible": true,
-							"PlaceHolder": "Enter Value",
-							"_Name": "FCCreateCategory",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "Pet",
+							"Caption": "Pet Name",
 							"IsEditable": true,
 							"IsVisible": true,
 							"PlaceHolder": "Enter Value",
 							"_Name": "FCCreatePet",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "Tag",
-							"IsEditable": true,
-							"IsVisible": true,
-							"PlaceHolder": "Enter Value",
-							"_Name": "FCCreateTag",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
