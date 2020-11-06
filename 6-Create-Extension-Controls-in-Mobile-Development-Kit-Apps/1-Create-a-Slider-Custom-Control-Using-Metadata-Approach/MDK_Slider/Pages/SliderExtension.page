@@ -25,6 +25,7 @@
 								"MinValue": 10,
 								"Title": "Counter"
 							},
+							"Height": 72,
 							"IsVisible": true,
 							"Module": "MySliderModule",
 							"_Name": "MyExtensionControlName",

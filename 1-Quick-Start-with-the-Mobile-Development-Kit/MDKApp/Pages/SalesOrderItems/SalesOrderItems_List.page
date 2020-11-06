@@ -37,7 +37,7 @@
 			},
 			"Target": {
 				"EntitySet": "SalesOrderItems",
-				"Service": "/MDKApp/Services/sample.service",
+				"Service": "/MDKApp/Services/Sample.service",
 				"QueryOptions": ""
 			},
 			"_Type": "Section.Type.ObjectTable"

@@ -1,5 +1,5 @@
 {
-	"Service": "/MDKApp/Services/sample.service",
+	"Service": "/MDKApp/Services/Sample.service",
 	"_Type": "Action.Type.OfflineOData.Upload",
 	"ActionResult": {
 		"_Name": "sync"

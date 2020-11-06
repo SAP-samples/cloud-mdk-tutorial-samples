@@ -1,40 +1,40 @@
 {
-        "compilerOptions": {
-            "module": "commonjs",
-            "target": "es5",
-            "experimentalDecorators": true,
-            "emitDecoratorMetadata": true,
-            "removeComments": true,
-            "inlineSourceMap": false,
-            "sourceMap": false,
-            "noEmitOnError": false,
-            "noEmitHelpers": true,
-            "declaration": true,
-            "lib": [
-                "es6",
-                "dom"
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "removeComments": true,
+        "inlineSourceMap": false,
+        "sourceMap": false,
+        "noEmitOnError": false,
+        "noEmitHelpers": true,
+        "declaration": true,
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "tns-core-modules/*": [
+                "./node_modules/tns-core-modules/*"
             ],
-            "baseUrl": ".",
-            "paths": {
-                "tns-core-modules/*": [
-                    "./node_modules/tns-core-modules/*"
-                ],
-                "mdk-sap": [
-                    "./node_modules/mdk-sap"
-                ],
-                "toolbar-plugin": [
-                    "./node_modules/toolbar-plugin"
-                ],
-                "zip-plugin": [
-                    "./node_modules/zip-plugin"
-                ]
-            }
-        },
-        "exclude": [
-            "node_modules",
-            "platforms",
-            "modules",
-            "plugins",
-            "build.definitions"
-        ]
-    }
+            "mdk-sap": [
+                "./node_modules/mdk-sap"
+            ],
+            "toolbar-plugin": [
+                "./node_modules/toolbar-plugin"
+            ],
+            "zip-plugin": [
+                "./node_modules/zip-plugin"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "platforms",
+        "modules",
+        "plugins",
+        "build.definitions"
+    ]
+}

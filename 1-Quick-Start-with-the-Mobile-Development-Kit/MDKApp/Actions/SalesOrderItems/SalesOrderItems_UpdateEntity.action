@@ -2,7 +2,7 @@
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"Target": {
 		"EntitySet": "SalesOrderItems",
-		"Service": "/MDKApp/Services/sample.service",
+		"Service": "/MDKApp/Services/Sample.service",
 		"ReadLink": "{@odata.readLink}"
 	},
 	"Properties":  {
