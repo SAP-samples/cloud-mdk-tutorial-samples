@@ -6,7 +6,7 @@ The samples provided in this repository reference to the MDK tutorials listed on
 
 ---
 
-### Description
+### 📌 Description
 
 These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorials.
 The samples include:
@@ -46,7 +46,7 @@ Please be advised that any downloads are subject to the following:
 
 ---
 
-### Requirements
+### 🚦 Requirements
 
 The included resources run in available on any SAP Cloud Platform account.
 To use the resources you need to have:
@@ -70,7 +70,7 @@ There are no known issues relating to the resources included in this repository.
 
 ---
 
-### How to Obtain Support
+### 📞 How to Obtain Support
 
 For any issue you encounter with
 
@@ -81,6 +81,6 @@ For any issue you encounter with
 
 ---
 
-### License
+### 📑 License
 
 Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.

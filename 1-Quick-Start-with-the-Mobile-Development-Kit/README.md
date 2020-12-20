@@ -2,7 +2,7 @@
 Create and examine your first offline CRUD mobile app using the Mobile development kit template connecting against a sample service.
 
 ***
-### Description
+### 📌 Description
 This folder contains the MDK metadata project which is the end result the tutorial of [Quick Start with the Mobile Development Kit (MDK)](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html).
 
 You can reference this project and continue with the [Quick Start with the Mobile Development Kit (MDK)](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) tutorial.
@@ -14,7 +14,7 @@ You can reference this project and continue with the [Quick Start with the Mobil
 Clone the repository or download it to your file system.
 
 ***
-### How to Obtain Support
+### 📞 How to Obtain Support
 For any issue you encounter with 
 * the *resources* in this repository, please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
 * the *tutorials* associated with them, please create a new `Issue` by clicking on the **Provide Feedback** option available in the tutorial page.

@@ -39,5 +39,5 @@
 		"type": "object"
 	},
 	"Module": "MyMapModule",
-	"_Type": "Register.Type.ExtensionControl.Metadata"
+	"_Type": "Register.Type.ExtensionControl"
 }

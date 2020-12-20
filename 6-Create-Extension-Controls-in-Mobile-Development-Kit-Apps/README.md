@@ -4,7 +4,7 @@ Customize the look and feel of your MDK app with extension controls using metada
 
 ---
 
-### Description
+### 📌 Description
 
 This folder contains the MDK metadata projects which is the end result of each tutorial part of [Create Extension Controls in Mobile Development Kit (MDK) Apps](https://developers.sap.com/mission.mobile-dev-kit-controls.html) mission.
 The samples include:
@@ -23,7 +23,7 @@ Clone the repository or download it to your file system.
 
 ---
 
-### How to Obtain Support
+### 📞 How to Obtain Support
 
 For any issue you encounter with
 

@@ -2,7 +2,7 @@
  Display a customer order list and its details
  
 ***
-### Description
+### 📌 Description
 
 This folder contains the MDK metadata project which is the end result of [Extend an MDK App with Customer Orders](https://developers.sap.com/tutorials/cp-mobile-dev-kit-customer-order.html) tutorial.
 

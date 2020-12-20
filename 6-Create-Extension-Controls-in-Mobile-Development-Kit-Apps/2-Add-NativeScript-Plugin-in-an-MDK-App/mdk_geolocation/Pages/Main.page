@@ -10,7 +10,7 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "Coordinates",
-							"Value": "GetCoordinates.js",
+							"Value": "/MDK_Geolocation/Rules/GetCoordinates.js",
 							"Visible": true
 						}
 					],

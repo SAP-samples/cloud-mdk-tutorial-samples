@@ -1,7 +1,7 @@
 # Level Up with the Mobile Development Kit
 Become proficient with the mobile development kit by learning how to handle an error archive, add styling, deep link, and leverage OData annotations.
 ***
-### Description
+### 📌 Description
 This folder contains the MDK metadata projects which is the end result of each tutorial part of [Level Up with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) group.
 
 The samples include:
@@ -17,7 +17,7 @@ The samples include:
 
 
 ***
-### How to Obtain Support
+### 📞 How to Obtain Support
 For any issue you encounter with 
 * the *resources* in this repository, please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
 * the *tutorials* associated with them, please create a new `Issue` by clicking on the **Provide Feedback** option available in the tutorial page.

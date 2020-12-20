@@ -1,0 +1,16 @@
+#clientSecret=<Enter the clientsecret from your XSUAA service instance>
+#
+#Sun Dec 20 21:02:28 UTC 2020
+clientId=<Enter the clientid from your XSUAA service instance>
+Description=Sample backend V2 - Cloud Foundry SAP Mobile Services
+Type=HTTP
+HTML5.DynamicDestination=true
+Authentication=OAuth2JWTBearer
+WebIDEUsage=odata_gen
+Name=SampleServiceV2
+WebIDEEnabled=true
+MobileEnabled=true
+tokenServiceURL=<Enter the url from your XSUAA service instance>/oauth/token
+ProxyType=Internet
+URL=<Enter your Backend endpoint URL>
+tokenServiceURLType=Dedicated

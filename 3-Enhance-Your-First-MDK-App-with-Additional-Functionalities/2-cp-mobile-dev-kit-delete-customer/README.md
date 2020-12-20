@@ -2,7 +2,7 @@
 Allow the user to delete a customer record in an MDK app
 
 ***
-### Description
+### 📌 Description
 
 This folder contains the MDK metadata project which is the end result of [Delete a Customer Record in an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-delete-customer.html) tutorial.
 

@@ -4,7 +4,7 @@ Explore the mobile development kit SDK and build a custom Android/iOS client, en
 
 ---
 
-### Description
+### 📌 Description
 
 This folder contains the MDK metadata projects which is the end result of each tutorial part of [Brand Your Customized App with Mobile Development Kit SDK](https://developers.sap.com/mission.mobile-dev-kit-brand.html) mission.
 The samples include:
@@ -21,7 +21,7 @@ Clone the repository or download it to your file system.
 
 ---
 
-### How to Obtain Support
+### 📞 How to Obtain Support
 
 For any issue you encounter with
 

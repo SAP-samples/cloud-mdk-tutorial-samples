@@ -21,5 +21,5 @@
 		"type": "object"
 	},
 	"Module": "MySliderModule",
-	"_Type": "Register.Type.ExtensionControl.Metadata"
+	"_Type": "Register.Type.ExtensionControl"
 }
