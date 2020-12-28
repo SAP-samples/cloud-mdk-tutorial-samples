@@ -4,6 +4,10 @@
 		{
 			"Sections": [
 				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
 					"EmptySection": {
 						"Caption": "No Orders Found",
 						"FooterVisible": false
@@ -11,11 +15,16 @@
 					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"DetailImageIsCircular": false,
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"StatusText": "$(C,{GrossAmount},,'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"Subhead": "{CustomerId}",
 						"SubstatusText": "{LifeCycleStatusName}",
 						"Title": "{SalesOrderId}"
@@ -26,7 +35,7 @@
 					},
 					"Target": {
 						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$top=5&$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc",
+						"QueryOptions": "$filter=CustomerId eq '{CustomerId}'&$top=5&$orderby=CreatedAt desc",
 						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,

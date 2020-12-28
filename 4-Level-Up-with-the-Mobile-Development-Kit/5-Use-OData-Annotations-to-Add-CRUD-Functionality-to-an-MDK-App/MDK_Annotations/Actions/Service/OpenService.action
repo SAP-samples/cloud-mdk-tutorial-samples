@@ -1,9 +1,0 @@
-{
-	"Service": "/MDK_Annotations/Services/Sample.service",
-	"_Type": "Action.Type.ODataService.Open",
-	"OnSuccess": "/MDK_Annotations/Actions/Service/CreateOpenServiceSuccessMessage.action",
-	"OnFailure": "/MDK_Annotations/Actions/Service/CreateOpenServiceFailureMessage.action",
-	"ActionResult": {
-		"_Name": "init"
-	}
-}

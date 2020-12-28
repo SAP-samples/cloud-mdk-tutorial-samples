@@ -1,5 +1,5 @@
 {
-	"Message": "Sync offline data service failure - {{#ActionResults:sync/#Property:error}}",
+	"Message": "Sync offline data service failure - {#ActionResults:sync/error}",
 	"Duration": 7,
 	"Animated": true,
 	"_Type": "Action.Type.BannerMessage"

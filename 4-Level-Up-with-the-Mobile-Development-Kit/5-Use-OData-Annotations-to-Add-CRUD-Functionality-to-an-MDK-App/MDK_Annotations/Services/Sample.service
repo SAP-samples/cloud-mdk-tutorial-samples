@@ -1,6 +1,5 @@
 {
-    "AppId": "com.sap.mdk.demo",
-    "DestinationName": "com.sap.mdk.annotation",
+    "DestinationName": "SampleServiceV2",
     "OfflineEnabled": false,
     "LanguageURLParam": "sap-language",
     "OnlineOptions": {},

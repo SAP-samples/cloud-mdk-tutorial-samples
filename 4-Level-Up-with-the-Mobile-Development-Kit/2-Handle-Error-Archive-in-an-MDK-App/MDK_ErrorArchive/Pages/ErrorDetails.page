@@ -4,6 +4,10 @@
 		{
 			"Sections": [
 				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -14,6 +18,11 @@
 					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"DetailImageIsCircular": false,
 						"OnPress": "/MDK_ErrorArchive/Rules/DecideWhichEditPage.js",
 						"PreserveIconStackSpacing": false,

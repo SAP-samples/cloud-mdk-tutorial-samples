@@ -40,7 +40,7 @@
 				"Clickable": true,
 				"Enabled": true,
 				"OnPress": "/DemoSampleApp/Actions/Service/SyncStartedMessage.action",
-				"Visible": true,
+				"Visible": "$(PLT,true,true,false)",
 				"_Name": "UploadToolbarItem",
 				"_Type": "Control.Type.ToolbarItem"
 			}

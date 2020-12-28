@@ -6,7 +6,7 @@
 		"Query": "Customers"
 	}
 ],
-	"_Type": "Action.Type.OfflineOData.Initialize",
+	"_Type": "Action.Type.ODataService.Initialize",
 	"ShowActivityIndicator": true,
 	"ActivityIndicatorText": "Downloading...",
 	"ActionResult": {

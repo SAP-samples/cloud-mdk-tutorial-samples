@@ -22,6 +22,11 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Description": "{Country}",
 						"DetailImageIsCircular": false,
 						"Footnote": "{DateOfBirth}",

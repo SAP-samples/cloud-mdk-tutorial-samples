@@ -1,5 +1,5 @@
 {
-	"Message": "Update entity failure - {{#ActionResults:update/#Property:error}}",
+	"Message": "Update entity failure - {#ActionResults:update/error}",
 	"Duration": 7,
 	"Animated": true,
 	"_Type": "Action.Type.BannerMessage"

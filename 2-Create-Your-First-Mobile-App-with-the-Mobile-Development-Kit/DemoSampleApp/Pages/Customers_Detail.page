@@ -19,7 +19,7 @@
 					"ObjectHeader": {
 						"BodyText": "{DateOfBirth}",
 						"Description": "{CustomerId}",
-						"DetailImage": "res://mdk_logo.png",
+						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"Footnote": "{EmailAddress}",
 						"HeadlineText": "{LastName}",

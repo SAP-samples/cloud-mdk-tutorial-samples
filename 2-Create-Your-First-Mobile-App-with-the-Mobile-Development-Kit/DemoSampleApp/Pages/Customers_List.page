@@ -15,11 +15,20 @@
 								"ActivityValue": "{EmailAddress}"
 							}
 						],
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Description": "{City}",
 						"DetailImage": "res://contact.png",
-						"Headline": "{FirstName}",
+						"Headline": "{LastName}",
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Detail.action",
-						"Subheadline": "{LastName}"
+						"Subheadline": "{FirstName}"
+					},
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
 					},
 					"EmptySection": {
 						"FooterVisible": false

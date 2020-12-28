@@ -27,7 +27,7 @@
 					"ObjectHeader": {
 						"BodyText": "{DateOfBirth}",
 						"Description": "{CustomerId}",
-						"DetailImage": "res://mdk_logo.png",
+						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"Footnote": "{EmailAddress}",
 						"HeadlineText": "{LastName}",
@@ -73,6 +73,10 @@
 					"_Type": "Section.Type.KeyValue"
 				},
 				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
 					"DataSubscriptions": [
 						"SalesOrderHeaders"
 					],
@@ -96,6 +100,11 @@
 					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"DetailImageIsCircular": false,
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,

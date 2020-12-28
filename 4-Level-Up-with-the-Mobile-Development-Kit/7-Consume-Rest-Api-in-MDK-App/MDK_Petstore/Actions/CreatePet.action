@@ -5,7 +5,7 @@
 		"RequestProperties": {
 			"Body": {
 				"name": "#Control:FCCreatePet/#Value",
-				"status": "#Control:FCCreateStatus/#Value"
+				"status": "#Control:FCCreatePet/#Value"
 			},
 			"Method": "POST"
 		},

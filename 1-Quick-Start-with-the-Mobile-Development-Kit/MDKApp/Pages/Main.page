@@ -42,7 +42,8 @@
 			"_Name": "UploadToolbarItem",
 			"_Type": "Control.Type.ToolbarItem",
 			"Caption": "Sync",
-			"OnPress": "/MDKApp/Actions/Service/SyncStartedMessage.action"
+			"OnPress": "/MDKApp/Actions/Service/SyncStartedMessage.action",
+			"Visible": "$(PLT,true,true,false)"
 		}]
 	}
 }

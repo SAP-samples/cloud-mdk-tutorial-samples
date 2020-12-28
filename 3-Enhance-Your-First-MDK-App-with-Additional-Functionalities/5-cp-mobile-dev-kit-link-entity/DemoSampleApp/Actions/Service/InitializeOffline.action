@@ -25,5 +25,5 @@
 	"OnSuccess": "/DemoSampleApp/Actions/LogSetState.action",
 	"Service": "/DemoSampleApp/Services/Sample.service",
 	"ShowActivityIndicator": true,
-	"_Type": "Action.Type.OfflineOData.Initialize"
+	"_Type": "Action.Type.ODataService.Initialize"
 }

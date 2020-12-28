@@ -16,12 +16,21 @@
 		{
 			"Sections": [
 				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
 					"EmptySection": {
 						"FooterVisible": false
 					},
 					"HighlightSelectedItem": false,
 					"ObjectCell": {
 						"AccessoryType": "none",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{status}",

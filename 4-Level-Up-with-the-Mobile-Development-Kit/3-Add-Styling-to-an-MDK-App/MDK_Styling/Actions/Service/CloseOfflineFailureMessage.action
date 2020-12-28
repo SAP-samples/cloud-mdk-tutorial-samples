@@ -1,5 +1,5 @@
 {
-	"Message": "Failure closing data service - {{#ActionResults:close/#Property:error}}",
+	"Message": "Failure closing data service - {#ActionResults:close/error}",
 	"NumberOfLines": 1,
 	"Duration": 3,
 	"Animated": true,
