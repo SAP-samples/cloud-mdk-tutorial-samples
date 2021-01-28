@@ -49,7 +49,7 @@
 				"Clickable": true,
 				"Enabled": true,
 				"OnPress": "/DemoSampleApp/Actions/LogUpload.action",
-				"Visible": true,
+				"Visible": "$(PLT,true,true,false)",
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"
 			}

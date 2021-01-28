@@ -39,6 +39,7 @@
 					},
 					"Target": {
 						"EntitySet": "Customers",
+						"QueryOptions": "$orderby=LastName",
 						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,

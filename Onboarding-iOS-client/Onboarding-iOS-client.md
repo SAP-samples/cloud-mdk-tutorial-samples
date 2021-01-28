@@ -10,7 +10,7 @@
 
     ![MDK](img_3.png)
 
-4. Enter your credentails to login to SAP Cloud Platform and tap **Log On** to authenticate.
+4. Enter your credentails to login to SAP Business Technology Platform (BTP) and tap **Log On** to authenticate.
 
     ![MDK](img_4.png)
 

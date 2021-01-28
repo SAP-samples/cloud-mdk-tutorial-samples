@@ -1,5 +1,5 @@
 # Create Your First Mobile App with the Mobile Development Kit (MDK)
-Build a cross-platform native offline mobile app from scratch with the SAP Cloud Platform Mobile Services mobile development kit.
+Build a cross-platform native offline mobile app from scratch with the SAP Mobile Services mobile development kit.
 
 ***
 ### 📌 Description

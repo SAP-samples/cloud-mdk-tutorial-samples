@@ -1,5 +1,5 @@
 # Enable Push Notifications in the MDK Public Store Client
-Use the SAP Cloud Platform Mobile Services to enable push notifications in the MDK public store client.
+Use the SAP Mobile Services to enable push notifications in the MDK public store client.
 
 ***
 ### 📌 Description

@@ -1,16 +1,4 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Create.action",
-				"Position": "right",
-				"SystemItem": "Add",
-				"Text": "Item",
-				"Visible": true
-			}
-		]
-	},
 	"Caption": "Customers",
 	"Controls": [
 		{
@@ -51,6 +39,7 @@
 					},
 					"Target": {
 						"EntitySet": "Customers",
+						"QueryOptions": "$orderby=LastName",
 						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,

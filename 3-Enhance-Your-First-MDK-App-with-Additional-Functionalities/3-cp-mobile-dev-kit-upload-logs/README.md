@@ -1,5 +1,5 @@
 # Upload Logs from an MDK App
-Allow users to upload logs from an MDK app to SAP Cloud Platform Mobile Services
+Allow users to upload logs from an MDK app to SAP Mobile Services
 
 ***
 ### 📌 Description

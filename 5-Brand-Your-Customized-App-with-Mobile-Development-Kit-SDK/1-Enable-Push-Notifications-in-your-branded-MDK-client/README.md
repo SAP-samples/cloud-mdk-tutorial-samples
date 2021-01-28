@@ -1,5 +1,5 @@
 # Enable Push Notifications in Your Branded MDK Client
-Use the SAP Cloud Platform Mobile Services to enable push notifications in your branded MDK client.
+Use the SAP Mobile Services to enable push notifications in your branded MDK client.
 
 ***
 ### Description

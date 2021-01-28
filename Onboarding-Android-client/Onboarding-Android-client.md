@@ -2,7 +2,7 @@
 
     ![MDK](img_1.png)
 
-2. Tap **GET STARTED** to connect MDK client to SAP Cloud Platform.
+2. Tap **GET STARTED** to connect MDK client to SAP Business Technology Platform (BTP).
 
     ![MDK](img_2.png)
 
@@ -14,7 +14,7 @@
 
     ![MDK](img_4.png)
 
-5. Enter your credentials to login to SAP Cloud Platform and tap **Log On** to authenticate.
+5. Enter your credentials to login to SAP BTP and tap **Log On** to authenticate.
 
     ![MDK](img_5.png)
 

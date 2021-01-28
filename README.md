@@ -20,8 +20,8 @@ The samples include:
 - How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations
 
 * How to create your branded MDK client
-  _ using Cloud Build Service
-  _ using MDK SDK
+  - using Cloud Build Service
+  - using MDK SDK
 * How to write a custom extension controls in MDK Apps
 * How to add NativeScript Plugins in an MDK App
 
@@ -48,13 +48,13 @@ Please be advised that any downloads are subject to the following:
 
 ### 🚦 Requirements
 
-The included resources run in available on any SAP Cloud Platform account.
+The included resources run in available on any SAP Business Technology Platform (BTP) account.
 To use the resources you need to have:
 
-1. An SAP Cloud Platform account. Users who don't have an account can register for a free trial account.
-   See [Sign up for a free trial account on SAP Cloud Platform](https://www.sap.com/developer/tutorials/hcp-create-trial-account.html).
+1. An SAP BTP account. Users who don't have an account can register for a free trial account.
+   See [Sign up for a free trial account on SAP Business Technology Platform](https://www.sap.com/developer/tutorials/hcp-create-trial-account.html).
 
-2. Some of the resources connect to the **Sample OData Service**. This service is part of SAP Cloud Platform Mobile Services cockpit based on ESPM model (Enterprise Sales & Procurement Model) and is available for developers to use during development and testing. The sample OData service also lets you evaluate how delta tokens are handled in your test application. This service is specific to an SCP account.
+2. Some of the resources connect to the **Sample OData Service**. This service is part of SAP Mobile Services cockpit based on ESPM model (Enterprise Sales & Procurement Model) and is available for developers to use during development and testing. The sample OData service also lets you evaluate how delta tokens are handled in your test application. This service is specific to an SCP account.
 
 ---
 
