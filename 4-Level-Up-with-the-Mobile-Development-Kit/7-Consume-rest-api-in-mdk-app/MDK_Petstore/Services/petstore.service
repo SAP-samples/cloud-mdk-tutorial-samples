@@ -1,0 +1,6 @@
+{
+	"DestinationName": "swagger.petstore",
+	"OfflineEnabled": false,
+	"RestService": true,
+	"SourceType": "Mobile"
+}
