@@ -1,0 +1,71 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Petstore/Actions/NavToPet_Create.action",
+				"Position": "right",
+				"SystemItem": "Add",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Main",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCell": {
+						"AccessoryType": "none",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{status}",
+						"Subhead": "Pet Name: {name}",
+						"Title": "Pet ID: {id}"
+					},
+					"Target": {
+						"Path": "/pet/findByStatus?status=available",
+						"RequestProperties": {
+							"Method": "GET"
+						},
+						"Service": "/MDK_Petstore/Services/petstore.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/MDK_Petstore/Actions/Logout.action",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}
