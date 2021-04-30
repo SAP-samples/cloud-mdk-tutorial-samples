@@ -6,6 +6,8 @@
 
     ![MDK](img_2.png)
 
+> If you already have the MDK client on-boarded, click *GET STARTED* and *SCAN NEW QR CODE* to continue.
+
 3. Once scan is succeeded, tap **Continue**.
 
     ![MDK](img_3.png)

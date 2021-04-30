@@ -1,30 +1,28 @@
-1. Launch **`Mobile Svcs`** app on your Android device. Tap **AGREE** on `End User License Agreement`.
+1. Launch **`Mobile Svcs`** app on your Android device. Tap **SCAN** to start the device camera for scanning the onboarding QR code.
+    
+    ![MDK](img-1.png)
 
-    ![MDK](img_1.png)
+ > If you already have the MDK client on-boarded, click *GET STARTED* and *SCAN NEW QR CODE* to continue.
 
-2. Tap **GET STARTED** to connect MDK client to SAP Business Technology Platform (BTP).
+2. Tap **AGREE** on `End User License Agreement`.
 
-    ![MDK](img_2.png)
+    ![MDK](img-2.png)
 
-3. Tap **QR CODE SCAN** to start the device camera for scanning the onboarding QR code.
+3. Once scan is succeeded, tap **CONTINUE**.
 
-    ![MDK](img_3.png)
+    ![MDK](img-3.png)
 
-4. Once scan is succeeded, tap **CONTINUE**.
+4. Enter your credentials to login to SAP BTP and tap **Log On** to authenticate.
 
-    ![MDK](img_4.png)
+    ![MDK](img-4.png)
 
-5. Enter your credentials to login to SAP BTP and tap **Log On** to authenticate.
+5. Choose a passcode with at least 8 characters for unlocking the app and tap **NEXT**.
 
-    ![MDK](img_5.png)
+    ![MDK](img-5.png)    
 
-6. Choose a passcode with at least 8 characters for unlocking the app and tap **NEXT**.
+6. Confirm the passcode and tap **DONE**.
 
-    ![MDK](img_6.png)
-
-7. Confirm the passcode and tap **DONE**.
-
-    ![MDK](img_7.png)
+    ![MDK](img-6.png)
 
     Optionally, you can enable Biometric authentication to get faster access to the app data.
 
