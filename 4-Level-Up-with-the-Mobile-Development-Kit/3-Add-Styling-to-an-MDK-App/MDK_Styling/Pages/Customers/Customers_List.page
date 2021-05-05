@@ -5,7 +5,8 @@
 				"IsIconCircular": false,
 				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Create.action",
 				"Position": "right",
-				"SystemItem": "Add"
+				"SystemItem": "Add",
+				"Text": ""
 			}
 		]
 	},

@@ -24,7 +24,8 @@
 						"DetailImageIsCircular": false,
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "$(C,{GrossAmount},,'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"Selected": false,
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"Subhead": "{CustomerId}",
 						"SubstatusText": "{LifeCycleStatusName}",
 						"Title": "{SalesOrderId}"
@@ -33,9 +34,14 @@
 						"BarcodeScanner": true,
 						"Enabled": true
 					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					},
 					"Target": {
 						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$filter=CustomerId eq '{CustomerId}'&$top=5&$orderby=CreatedAt desc",
+						"QueryOptions": "$top=5&$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc",
 						"Service": "/DemoSampleApp/Services/Sample.service"
 					},
 					"Visible": true,

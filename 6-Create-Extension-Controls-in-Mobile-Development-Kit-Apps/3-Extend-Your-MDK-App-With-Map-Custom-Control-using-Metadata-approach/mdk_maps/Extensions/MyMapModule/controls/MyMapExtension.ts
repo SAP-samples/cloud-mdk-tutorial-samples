@@ -108,7 +108,7 @@ export class MyMapClass extends IControl {
         this._mapView.onDestroy();
     }
 
-    //In case of iOS you'll use CLGeocoder API to convert a address to get latitude and longitude.
+    //In case of iOS you'll use CLGeocoder API to convert an address to get latitude and longitude.
     //NOTE - API getlatlang is called only on ios devices
 
     private getlatlang(customerAddress) {

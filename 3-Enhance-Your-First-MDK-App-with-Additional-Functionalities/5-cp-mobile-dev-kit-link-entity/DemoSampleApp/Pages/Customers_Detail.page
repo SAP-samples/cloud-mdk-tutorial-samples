@@ -45,7 +45,7 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "Address",
-							"Value": "{{#Property:HouseNumber}} {{#Property:Street}}",
+							"Value": "{HouseNumber} {Street}",
 							"Visible": true
 						},
 						{
@@ -108,13 +108,19 @@
 						"DetailImageIsCircular": false,
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"PreserveIconStackSpacing": false,
+						"Selected": false,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"SubstatusText": "{CurrencyCode}",
 						"Title": "{SalesOrderId}"
 					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					},
 					"Target": {
-						"EntitySet": "{{#Property:@odata.readLink}}/SalesOrders",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
 						"Service": "/DemoSampleApp/Services/Sample.service"
 					},

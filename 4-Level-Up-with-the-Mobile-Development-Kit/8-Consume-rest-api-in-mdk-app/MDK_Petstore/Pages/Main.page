@@ -33,9 +33,15 @@
 						},
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
+						"Selected": false,
 						"StatusText": "{status}",
 						"Subhead": "Pet Name: {name}",
 						"Title": "Pet ID: {id}"
+					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					},
 					"Target": {
 						"Path": "/pet/findByStatus?status=available",

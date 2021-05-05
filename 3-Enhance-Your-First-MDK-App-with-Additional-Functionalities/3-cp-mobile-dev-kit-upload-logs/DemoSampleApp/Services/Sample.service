@@ -4,5 +4,6 @@
     "LanguageURLParam": "sap-language",
     "OnlineOptions": {},
     "PathSuffix": "",
-    "SourceType": "Mobile"
+    "SourceType": "Mobile",
+    "ServiceUrl":""
 }

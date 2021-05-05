@@ -5,13 +5,15 @@
 				"IsIconCircular": false,
 				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Edit.action",
 				"Position": "right",
-				"SystemItem": "Edit"
+				"SystemItem": "Edit",
+				"Text": ""
 			},
 			{
 				"IsIconCircular": false,
 				"OnPress": "/MDK_Styling/Rules/Customers/Customers_DeleteConfirmation.js",
 				"Position": "right",
-				"SystemItem": "Trash"
+				"SystemItem": "Trash",
+				"Text": ""
 			}
 		]
 	},

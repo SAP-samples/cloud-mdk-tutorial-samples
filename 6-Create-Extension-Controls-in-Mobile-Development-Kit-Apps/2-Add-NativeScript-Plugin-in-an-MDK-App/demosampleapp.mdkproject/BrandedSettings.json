@@ -5,7 +5,7 @@
     "EnableOverrides": false,
     "AppId": "",
     "ClientId": "",
-    "SapCloudPlatformEndpoint": "",
+    "ServerUrl": "",
     "AuthorizationEndpointUrl": "",
     "RedirectUrl": "",
     "TokenUrl": ""
@@ -43,7 +43,7 @@
     "ConnectionSettings": {
       "AppId": "<Enter your SAP CPms app ID here>",
       "ClientId": "<Enter your SAP CPms Client ID here>",
-      "SapCloudPlatformEndpoint": "<Enter your SAP CPms Endpoint here>",
+      "ServerUrl": "<Enter your SAP CPms Endpoint here>",
       "AuthorizationEndpointUrl": "<Enter your SAP CPms Authorization Endpoint here>",
       "RedirectUrl": "<Enter your SAP CPms Authorization Redirect URL here>",
       "TokenUrl": "<Enter your SAP CPms Authorization Token Url here>"

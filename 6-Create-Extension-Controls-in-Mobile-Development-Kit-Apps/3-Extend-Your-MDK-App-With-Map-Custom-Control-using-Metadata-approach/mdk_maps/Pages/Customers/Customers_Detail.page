@@ -36,7 +36,7 @@
 					"Height": 600,
 					"Module": "MyMapModule",
 					"Visible": true,
-					"_Name": "SectionExtension0",
+					"_Name": "SectionExtension1",
 					"_Type": "Section.Type.Extension"
 				}
 			],

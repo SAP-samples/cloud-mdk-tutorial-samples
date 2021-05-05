@@ -1,0 +1,52 @@
+{
+	"Caption": "SalesOrderHeaders",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{CurrencyCode}",
+						"DetailImageIsCircular": false,
+						"Footnote": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{LifeCycleStatus}",
+						"Subhead": "{CustomerId}",
+						"SubstatusText": "{LifeCycleStatusName}",
+						"Title": "$(DT,{CreatedAt},'','',{format:'medium'})"
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"Enabled": true,
+						"MinimumCharacterThreshold": 3,
+						"Placeholder": "Item Search"
+					},
+					"Target": {
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "",
+						"Service": "/MDK_i18n_l10n/Services/Sample.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "SalesOrderHeaders_List",
+	"_Type": "Page"
+}

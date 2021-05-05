@@ -45,7 +45,7 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "Address",
-							"Value": "{{#Property:HouseNumber}} {{#Property:Street}}",
+							"Value": "{HouseNumber} {Street}",
 							"Visible": true
 						},
 						{

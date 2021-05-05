@@ -26,8 +26,14 @@
 						"DetailImageIsCircular": false,
 						"OnPress": "/MDK_ErrorArchive/Rules/DecideWhichEditPage.js",
 						"PreserveIconStackSpacing": false,
+						"Selected": false,
 						"Subhead": "{@odata.id}",
 						"Title": "Edit Affected Entity"
+					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					},
 					"Target": "{AffectedEntity}",
 					"Visible": true,

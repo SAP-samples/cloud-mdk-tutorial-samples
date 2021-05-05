@@ -1,8 +1,9 @@
 {
-    "DestinationName": "com.sap.edm.sampleservice.v2",
+    "DestinationName": "SampleServiceV2",
     "OfflineEnabled": false,
     "LanguageURLParam": "sap-language",
     "OnlineOptions": {},
     "PathSuffix": "",
-    "SourceType": "Mobile"
+    "SourceType": "Mobile",
+    "ServiceUrl":""
 }

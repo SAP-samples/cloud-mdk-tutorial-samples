@@ -1,0 +1,74 @@
+{
+	"Caption": "SalesOrderHeaders Details",
+
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CreatedAt}",
+				"Subhead": "{CustomerId}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{GrossAmount}",
+				"Description": "{CurrencyCode}",
+				"StatusText": "{LifeCycleStatus}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{LifeCycleStatusName}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CreatedAt",
+		"Value": "{CreatedAt}"
+	},
+	{
+		"KeyName": "CurrencyCode",
+		"Value": "{CurrencyCode}"
+	},
+	{
+		"KeyName": "CustomerId",
+		"Value": "{CustomerId}"
+	},
+	{
+		"KeyName": "GrossAmount",
+		"Value": "{GrossAmount}"
+	},
+	{
+		"KeyName": "LifeCycleStatus",
+		"Value": "{LifeCycleStatus}"
+	},
+	{
+		"KeyName": "LifeCycleStatusName",
+		"Value": "{LifeCycleStatusName}"
+	},
+	{
+		"KeyName": "NetAmount",
+		"Value": "{NetAmount}"
+	},
+	{
+		"KeyName": "SalesOrderId",
+		"Value": "{SalesOrderId}"
+	},
+	{
+		"KeyName": "TaxAmount",
+		"Value": "{TaxAmount}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail"
+}

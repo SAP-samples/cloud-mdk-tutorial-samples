@@ -1,0 +1,21 @@
+{
+	"Service": "/MDK_i18n_l10n/Services/Sample.service",
+	"DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	},
+	{
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/MDK_i18n_l10n/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/MDK_i18n_l10n/Actions/Service/InitializeOfflineFailureMessage.action"
+}

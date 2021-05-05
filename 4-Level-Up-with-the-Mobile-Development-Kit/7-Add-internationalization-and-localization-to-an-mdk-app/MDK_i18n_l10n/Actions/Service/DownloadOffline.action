@@ -1,0 +1,18 @@
+{
+	"Service": "/MDK_i18n_l10n/Services/Sample.service",
+	"DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	},
+	{
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/MDK_i18n_l10n/Actions/Service/SyncFailureMessage.action"
+}

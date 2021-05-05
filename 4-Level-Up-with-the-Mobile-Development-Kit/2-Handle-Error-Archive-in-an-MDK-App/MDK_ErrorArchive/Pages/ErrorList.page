@@ -23,12 +23,18 @@
 						"DetailImageIsCircular": false,
 						"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
 						"PreserveIconStackSpacing": false,
+						"Selected": false,
 						"StatusText": "{RequestMethod}",
 						"Subhead": "{RequestURL}",
 						"Title": "{HTTPStatusCode}"
 					},
 					"Search": {
 						"Enabled": true
+					},
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					},
 					"Target": {
 						"EntitySet": "ErrorArchive",
