@@ -1,0 +1,46 @@
+{
+	"Caption": "Customers",
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{Country}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_Detail.action",
+				"StatusImage": "",
+				"Title": "{City}",
+				"Footnote": "{DateOfBirth}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{EmailAddress}",
+				"Subhead": "{CustomerId}",
+				"SubstatusText": "{FirstName}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Customers",
+				"Service": "/MDK_Maps/Services/Sample.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Customers_List"
+}
