@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckBarcodeScannerPrerequisite",
+	"OnSuccess":"/BarcodeScanning/Rules/BarcodeScanner/CheckBarcodeScannerPrerequisiteResult.js",
+	"OnFailure":"/BarcodeScanning/Actions/BarcodeScanner/CheckBarcodeScannerPrerequisiteFailure.action",
+	"ActionResult": {
+	"_Name": "CheckCamera"
+}
+}

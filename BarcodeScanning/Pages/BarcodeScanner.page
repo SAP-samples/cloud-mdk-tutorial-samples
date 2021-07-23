@@ -1,0 +1,24 @@
+{
+	"Caption": "BarcodeScanner",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Clickable": true,
+				"Enabled": "{IsCameraReady}",
+				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action",
+				"SystemItem": "Camera",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "BarcodeScanner",
+	"_Type": "Page"
+}

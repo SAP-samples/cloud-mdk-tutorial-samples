@@ -1,0 +1,69 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/BarcodeScanning/Services/sample.service",
+						"EntitySet": "Products",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{Name}",
+						"Subhead": "{CategoryName}",
+						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"SubstatusText": "/BarcodeScanning/Rules/Products/GetPromoDiscount.js",
+						"DetailImage": "/BarcodeScanning/Rules/Products/GetProductImage.js",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/BarcodeScanning/Actions/Products/NavToProduct_Detail.action",
+						"Styles": {
+							"StatusText": "Price",
+							"SubstatusText": "Discount"
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Product Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_List",
+	"Caption": "Products",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Position": "left",
+				"IsIconCircular": false,
+				"Visible": false,
+				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/filter.action",
+				"Text": "filter"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

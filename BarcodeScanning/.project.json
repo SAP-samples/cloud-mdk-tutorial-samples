@@ -1,0 +1,47 @@
+{
+	"Credential": "cf",
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.mdk.jk&ClientId=57656aea-008f-4eae-9582-2077ae3dc4aa&ServerUrl=https://dw-pm-dw-pm-com-sap-mdk-jk.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://dw-pm-dw-pm-com-sap-mdk-jk.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://dw-pm-dw-pm-com-sap-mdk-jk.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://dw-pm-dw-pm-com-sap-mdk-jk.cfapps.eu10.hana.ondemand.com&TokenUrl=https://dw-pm-dw-pm-com-sap-mdk-jk.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "789ae929-dd1f-4604-b9f5-d5536224dd54",
+		"Space": "f31584f5-d146-45ce-b56c-64971afff6e1"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/789ae929-dd1f-4604-b9f5-d5536224dd54/space/f31584f5-d146-45ce-b56c-64971afff6e1",
+		"AppId": "com.sap.mdk.jk",
+		"Destination": [
+			"com.sap.edm.sampleservice.v2",
+			"com.sap.mdk.jk.mediav2",
+			"com.sap.mdk.jk.mediav4",
+			"com.sap.mdk.jk.annotation",
+			"com.sap.mdk.petstore",
+			"Northwind",
+			"Mahlwerk",
+			"SAP_Gateway",
+			"simplecrm",
+			"ES5_SEPMRA_PROD_MAN",
+			"vmw_catalogservice",
+			"SampleServiceV4",
+			"SampleServiceV2",
+			"vmw",
+			"DEST_SAM2010_PPROP",
+			"DEST_SAM2010_ONLINE_PPROP",
+			"APIHubDefect",
+			"CustomerMaterial",
+			"SampleServiceV2CF",
+			"velotics",
+			"incident",
+			"incident2",
+			"ProcessWarehouseTask",
+			"ProcessWarehouseTask_CraveInfoTech"
+		]
+	},
+	"Build": {
+		"SourceMap": false
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "download"
+	},
+	"Service": "/BarcodeScanning/Services/sample.service",
+	"DefiningRequests": [
+		{
+			"Name": "Products",
+			"Query": "Products",
+			"AutomaticallyRetrievesStreams": true
+		},
+			{
+			"Name": "ProductCategories",
+			"Query": "ProductCategories"
+		},
+			{
+			"Name": "Stock",
+			"Query": "Stock"
+		}
+		
+	]
+}

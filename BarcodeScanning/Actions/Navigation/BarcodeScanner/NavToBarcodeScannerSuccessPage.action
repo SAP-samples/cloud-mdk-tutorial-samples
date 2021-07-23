@@ -1,0 +1,6 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/BarcodeScanning/Pages/BarcodeScannerResult.page",
+	"_Type": "Action.Type.Navigation",
+	"ModalPage": false
+}

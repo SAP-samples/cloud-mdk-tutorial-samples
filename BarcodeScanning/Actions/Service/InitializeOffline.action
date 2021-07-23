@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/BarcodeScanning/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/BarcodeScanning/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"ShowActivityIndicator": true,
+	"Service": "/BarcodeScanning/Services/sample.service",
+	"DefiningRequests": [
+		{
+			"Name": "Products",
+			"Query": "Products",
+			"AutomaticallyRetrievesStreams": true
+		},
+			{
+			"Name": "ProductCategories",
+			"Query": "ProductCategories"
+		}
+		,
+			{
+			"Name": "Stock",
+			"Query": "Stock"
+		}
+		
+	]
+}

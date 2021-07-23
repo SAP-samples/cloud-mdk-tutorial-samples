@@ -1,0 +1,63 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "From a search bar",
+							"TextAlignment": "center",
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "Simple Property control text input",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action"
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Barcode scanner action - option1",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/BarcodeScanning/Actions/Navigation/BarcodeScanner/NavToBarcodeScannerSuccessPage.action"
+						},
+                        	{
+							"_Name": "SectionButton3",
+							"Title": "Barcode scanner action - option2",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List_copy.action"
+						}
+						
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Barcode Scanning",
+	"ToolBar": {
+		"Controls": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "LogoutToolbarItem",
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/BarcodeScanning/Actions/Logout.action"
+			}
+		]
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Cancel.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Complete.action",
+				"Position": "right",
+				"SystemItem": "Done",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Filter Page",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+					
+						{
+							"AllowEmptySelection": true,
+							"AllowMultipleSelection": true,
+							"Caption": "Int Type",
+							"FilterProperty": [
+								{
+									"DisplayValue": "= 30",
+									"ReturnValue": "Price eq 30"
+								},
+								{
+									"DisplayValue": "< 30",
+									"ReturnValue": "Price lt 30"
+								},
+								{
+									"DisplayValue": "> 30",
+									"ReturnValue": "Price gt 30"
+								}
+							],
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellFilter0",
+							"_Type": "Control.Type.FormCell.Filter"
+						}
+		
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Result": [
+		"#Page:FormCell/#Control:FormCellFilter0/#Value"
+	],
+	"_Name": "FormCell",
+	"_Type": "Page"
+}

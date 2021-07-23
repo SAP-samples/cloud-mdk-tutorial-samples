@@ -1,0 +1,134 @@
+{
+	"Caption": "Update Product",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/BarcodeScanning/Actions/Products/Products_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "Category",
+		"_Name": "Category",
+		"Value": "{Category}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CategoryName",
+		"_Name": "CategoryName",
+		"Value": "{CategoryName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CurrencyCode",
+		"_Name": "CurrencyCode",
+		"Value": "{CurrencyCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "DimensionDepth",
+		"_Name": "DimensionDepth",
+		"Value": "{DimensionDepth}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "DimensionHeight",
+		"_Name": "DimensionHeight",
+		"Value": "{DimensionHeight}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "DimensionUnit",
+		"_Name": "DimensionUnit",
+		"Value": "{DimensionUnit}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "DimensionWidth",
+		"_Name": "DimensionWidth",
+		"Value": "{DimensionWidth}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LongDescription",
+		"_Name": "LongDescription",
+		"Value": "{LongDescription}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Name",
+		"_Name": "Name",
+		"Value": "{Name}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PictureUrl",
+		"_Name": "PictureUrl",
+		"Value": "{PictureUrl}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Price",
+		"_Name": "Price",
+		"Value": "{Price}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductId",
+		"_Name": "ProductId",
+		"Value": "{ProductId}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityUnit",
+		"_Name": "QuantityUnit",
+		"Value": "{QuantityUnit}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShortDescription",
+		"_Name": "ShortDescription",
+		"Value": "{ShortDescription}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "SupplierId",
+		"_Name": "SupplierId",
+		"Value": "{SupplierId}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "UpdatedTimestamp",
+		"Value": "{UpdatedTimestamp}",
+		"Caption": "UpdatedTimestamp",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "Weight",
+		"_Name": "Weight",
+		"Value": "{Weight}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "WeightUnit",
+		"_Name": "WeightUnit",
+		"Value": "{WeightUnit}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_Edit"
+}

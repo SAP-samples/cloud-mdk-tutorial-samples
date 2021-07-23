@@ -1,0 +1,8 @@
+{
+	"Animated": true,
+	"Duration": 3,
+	"IsIconHidden": false,
+	"Message": "Barcode scanning failed",
+	"NumberOfLines": 2,
+	"_Type": "Action.Type.ToastMessage"
+}

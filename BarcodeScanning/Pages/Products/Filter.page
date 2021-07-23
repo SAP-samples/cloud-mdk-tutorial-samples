@@ -1,0 +1,60 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "ProductCategory",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"FilterProperty": "{CategoryName}",
+							"PickerItems": {
+								"Target": {
+									"Service": "/BarcodeScanning/Services/sample.service",
+									"EntitySet": "ProductCategories"
+								},
+								"DisplayValue": "{CategoryName}",
+								"ReturnValue": "{CategoryName}"
+							}
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "FilterPage",
+	"Caption": "FilterPage",
+	"ActionBar": {
+		"Items": [
+			{
+				"Text": "Item",
+				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Complete.action",
+				"Position": "right",
+				"SystemItem": "Done",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		]
+	},
+	"Result": [
+		"#Page:FilterPage/#Control:FormCellListPicker0/#FilterValue"
+	]
+}

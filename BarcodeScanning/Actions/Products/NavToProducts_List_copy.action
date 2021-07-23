@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/BarcodeScanning/Pages/Products/Products_List_copy.page",
+	"NavigationType": "Cross"
+}
