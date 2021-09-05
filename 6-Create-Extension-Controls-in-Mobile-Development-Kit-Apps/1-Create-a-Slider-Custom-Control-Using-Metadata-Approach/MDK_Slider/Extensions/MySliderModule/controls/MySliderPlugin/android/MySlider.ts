@@ -1,7 +1,5 @@
-import { Observable } from 'tns-core-modules/data/observable';
-import { View } from 'tns-core-modules/ui/core/view';
-import { layout } from 'tns-core-modules/ui/core/view';
-import { device as Device } from 'tns-core-modules/platform';
+import { Observable } from '@nativescript/core/data/observable';
+import {​​​​​​ Device, View, Utils }​​​​​​ from'@nativescript/core';
 /*
   This is a way to keep iOS and Android implementation of your extension separate
   We will encapsulate the MySlider class definition inside a function called GetMySliderClass
@@ -49,7 +47,7 @@ export function GetMySliderClass() {
         public createNativeView(): Object {
             //Create an Android label
             this._label = new android.widget.TextView(this._androidcontext);
-            const labelBottomPaddingInPx = layout.round(layout.toDevicePixels(8)); // For top & bottom padding, always 16dp
+            const labelBottomPaddingInPx = Utils.layout.round(Utils.layout.toDevicePixels(8)); // For top & bottom padding, always 16dp
             this._label.setPadding(0, 0, 0, labelBottomPaddingInPx);
             this._label.setLayoutParams(new android.view.ViewGroup.LayoutParams(-1, -2));
 
@@ -62,8 +60,8 @@ export function GetMySliderClass() {
             this._layout.setOrientation(android.widget.LinearLayout.VERTICAL);
             this._layout.setLayoutParams(new android.view.ViewGroup.LayoutParams(-1, -1));
 
-            const hortPaddingInPx = layout.round(layout.toDevicePixels(getPadding()));
-            const vertPaddingInPx = layout.round(layout.toDevicePixels(16)); // For top & bottom padding, always 16dp
+            const hortPaddingInPx = Utils.layout.round(Utils.layout.toDevicePixels(getPadding()));
+            const vertPaddingInPx = Utils.layout.round(Utils.layout.toDevicePixels(16)); // For top & bottom padding, always 16dp
             this._layout.setPadding(hortPaddingInPx, vertPaddingInPx, hortPaddingInPx, vertPaddingInPx);
             this._layout.addView(this._label);
             this._layout.addView(this._seekbar);

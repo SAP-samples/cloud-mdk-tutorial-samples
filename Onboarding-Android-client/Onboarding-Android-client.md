@@ -1,18 +1,23 @@
-1. Launch **`Mobile Svcs`** app on your Android device. Tap **SCAN** to start the device camera for scanning the onboarding QR code.
+>Depending on your device's appearance, UI in the MDK client changes accordingly.
+1. Launch **`Mobile Svcs`** app on your Android device. 
+Tap **AGREE** on `End User License Agreement`.
+
+![MDK](img-2.png)
     
-    ![MDK](img-1.png)
+    
+2. Tap **SCAN** to start the device camera for scanning the onboarding QR code.
+    
+![MDK](img-1.png)
 
- > If you already have the MDK client on-boarded, click *GET STARTED* and *SCAN NEW QR CODE* to continue.
+ > If you already have the MDK client on-boarded, tap *GET STARTED* and *SCAN NEW QR CODE* to continue.
 
-2. Tap **AGREE** on `End User License Agreement`.
 
-    ![MDK](img-2.png)
 
 3. Once scan is succeeded, tap **CONTINUE**.
 
     ![MDK](img-3.png)
 
-4. Enter your credentials to login to SAP BTP and tap **Log On** to authenticate.
+4. Enter your credentails to login to SAP Business Technology Platform (BTP) and tap **Log On** to authenticate.
 
     ![MDK](img-4.png)
 
@@ -28,8 +33,6 @@
 
     ![MDK](img_7.1.png)
 
-8. Tap **OK**.
+8. Tap **NOW** to accept the deployed metadata definitions.
 
     ![MDK](img_8.png)
-
-    The MDK client receives deployed metadata definitions as a bundle.

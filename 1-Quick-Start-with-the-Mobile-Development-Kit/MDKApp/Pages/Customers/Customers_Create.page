@@ -1,86 +1,93 @@
 {
 	"ActionBar": {
-		"Items": [{
-			"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
-			"Position": "left",
-			"SystemItem": "Cancel"
-		}, {
-			"OnPress": "/MDKApp/Actions/Customers/Customers_CreateEntity.action",
-			"Position": "right",
-			"SystemItem": "Save"
-		}]
+		"Items": [
+			{
+				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/MDKApp/Actions/Customers/Customers_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
 	},
 	"Caption": "Create Customer",
-	"Controls": [{
-		"Sections": [{
-			"Controls": [
-	{
-		"Caption": "City",
-		"_Name": "City",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "Country",
-		"_Name": "Country",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "CustomerId",
-		"_Name": "CustomerId",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Mode": "Date",
-		"_Name": "DateOfBirth",
-		"Caption": "DateOfBirth",
-		"_Type": "Control.Type.FormCell.DatePicker"
-	},
-	{
-		"Caption": "EmailAddress",
-		"_Name": "EmailAddress",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "FirstName",
-		"_Name": "FirstName",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "HouseNumber",
-		"_Name": "HouseNumber",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "LastName",
-		"_Name": "LastName",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "PhoneNumber",
-		"_Name": "PhoneNumber",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "PostalCode",
-		"_Name": "PostalCode",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "Street",
-		"_Name": "Street",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Mode": "Date",
-		"_Name": "UpdatedTimestamp",
-		"Caption": "UpdatedTimestamp",
-		"_Type": "Control.Type.FormCell.DatePicker"
-	}
-]
-		}],
-		"_Name": "FormCellContainer",
-		"_Type": "Control.Type.FormCellContainer"
-	}],
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerId",
+							"_Name": "CustomerId",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "DateTime",
+							"_Name": "DateOfBirth",
+							"Caption": "DateOfBirth",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "EmailAddress",
+							"_Name": "EmailAddress",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FirstName",
+							"_Name": "FirstName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HouseNumber",
+							"_Name": "HouseNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastName",
+							"_Name": "LastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PhoneNumber",
+							"_Name": "PhoneNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "DateTime",
+							"_Name": "UpdatedTimestamp",
+							"Caption": "UpdatedTimestamp",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
 	"_Type": "Page",
 	"_Name": "Customers_Create"
 }

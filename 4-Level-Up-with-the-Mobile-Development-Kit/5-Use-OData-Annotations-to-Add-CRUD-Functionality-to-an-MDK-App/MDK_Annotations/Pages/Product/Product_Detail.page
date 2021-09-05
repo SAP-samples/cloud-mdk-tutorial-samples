@@ -16,7 +16,7 @@
 		"Sections": [{
 			"ObjectHeader": {
 				"DetailImage": "",
-				"HeadlineText": "",
+				"HeadlineText": "{Name}",
 				"Subhead": "",
 				"Tags": ["{Price}"],
 				"BodyText": "",
@@ -34,22 +34,19 @@
 				"UseTopPadding": true
 			},
 			"KeyAndValues": [{
-				"KeyName": "$(L,PRODUCT_ID)",
-				"Value": "{ProductId}"
-			}, {
-				"KeyName": "$(L,NAME)",
+				"KeyName": "$(L,PRODUCT_NAME)",
 				"Value": "{Name}"
 			}, {
-				"KeyName": "$(L,CATEGORY)",
+				"KeyName": "$(L,PRODUCT_CATEGORY)",
 				"Value": "{Category}"
 			}, {
-				"KeyName": "$(L,CURRENCY_CODE)",
-				"Value": "{CurrencyCode}"
-			}, {
-				"KeyName": "$(L,SHORT_DESCRIPTION)",
+				"KeyName": "$(L,PRODUCT_SHORT_DESCRIPTION)",
 				"Value": "{ShortDescription}"
 			}, {
-				"KeyName": "$(L,PRICE)",
+				"KeyName": "$(L,PRODUCT_LONG_DESCRIPTION)",
+				"Value": "{LongDescription}"
+			}, {
+				"KeyName": "$(L,PRODUCT_PRICE)",
 				"Value": "{Price}"
 			}],
 			"_Type": "Section.Type.KeyValue"
@@ -59,16 +56,16 @@
 				"UseTopPadding": true
 			},
 			"KeyAndValues": [{
-				"KeyName": "$(L,WEIGHT)",
+				"KeyName": "$(L,PRODUCT_WEIGHT)",
 				"Value": "{Weight}"
 			}, {
-				"KeyName": "$(L,HEIGHT)",
+				"KeyName": "$(L,PRODUCT_HEIGHT)",
 				"Value": "{DimensionHeight}"
 			}, {
-				"KeyName": "$(L,DEPTH)",
+				"KeyName": "$(L,PRODUCT_DEPTH)",
 				"Value": "{DimensionDepth}"
 			}, {
-				"KeyName": "$(L,WIDTH)",
+				"KeyName": "$(L,PRODUCT_WIDTH)",
 				"Value": "{DimensionWidth}"
 			}],
 			"_Type": "Section.Type.KeyValue"

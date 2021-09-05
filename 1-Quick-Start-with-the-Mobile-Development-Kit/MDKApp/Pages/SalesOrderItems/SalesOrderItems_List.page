@@ -1,50 +1,63 @@
 {
 	"Caption": "SalesOrderItems",
 	"ActionBar": {
-		"Items": [{
-			"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Create.action",
-			"Position": "right",
-			"SystemItem": "Add"
-		}]
+		"Items": [
+			{
+				"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
 	},
-	"Controls": [{
-		"Sections": [{
-			"Header": {
-
-				"UseTopPadding": false
-			},
-			"ObjectCell": {
-				"AccessoryType": "disclosureIndicator",
-				"Description": "{DeliveryDate}",
-				"DetailImage": "",
-				"DetailImageIsCircular": false,
-				"Icons": [],
-				"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
-				"StatusImage": "",
-				"Title": "{CurrencyCode}",
-				"Footnote": "{ItemNumber}",
-				"PreserveIconStackSpacing": false,
-				"StatusText": "{NetAmount}",
-				"Subhead": "{GrossAmount}",
-				"SubstatusText": "{ProductId}"
-			},
-			"Search": {
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{GrossAmount}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{DeliveryDate}",
+						"SubstatusText": "{ProductId}"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "SalesOrderItems",
+						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
 				"Enabled": true,
-				"Placeholder": "Item Search",
-				"BarcodeScanner": true,
-				"Delay": 500,
-				"MinimumCharacterThreshold": 3
+				"Text": "Loading, please wait..."
 			},
-			"Target": {
-				"EntitySet": "SalesOrderItems",
-				"Service": "/MDKApp/Services/Sample.service",
-				"QueryOptions": ""
-			},
-			"_Type": "Section.Type.ObjectTable"
-		}],
-		"_Type": "Control.Type.SectionedTable",
-		"_Name": "SectionedTable"
-	}],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
 	"_Type": "Page",
 	"_Name": "SalesOrderItems_List"
 }

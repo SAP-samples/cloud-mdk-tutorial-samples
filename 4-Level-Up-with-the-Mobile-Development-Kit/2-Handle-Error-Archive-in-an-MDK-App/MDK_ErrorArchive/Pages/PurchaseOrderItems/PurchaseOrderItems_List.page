@@ -1,50 +1,63 @@
 {
 	"Caption": "PurchaseOrderItems",
 	"ActionBar": {
-		"Items": [{
-			"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Create.action",
-			"Position": "right",
-			"SystemItem": "Add"
-		}]
+		"Items": [
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
 	},
-	"Controls": [{
-		"Sections": [{
-			"Header": {
-
-				"UseTopPadding": false
-			},
-			"ObjectCell": {
-				"AccessoryType": "disclosureIndicator",
-				"Description": "{GrossAmount}",
-				"DetailImage": "",
-				"DetailImageIsCircular": false,
-				"Icons": [],
-				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
-				"StatusImage": "",
-				"Title": "{CurrencyCode}",
-				"Footnote": "{NetAmount}",
-				"PreserveIconStackSpacing": false,
-				"StatusText": "{ProductId}",
-				"Subhead": "{ItemNumber}",
-				"SubstatusText": "{PurchaseOrderId}"
-			},
-			"Search": {
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{ItemNumber}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{NetAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ProductId}",
+						"Subhead": "{GrossAmount}",
+						"SubstatusText": "{PurchaseOrderId}"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "PurchaseOrderItems",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
 				"Enabled": true,
-				"Placeholder": "Item Search",
-				"BarcodeScanner": true,
-				"Delay": 500,
-				"MinimumCharacterThreshold": 3
+				"Text": "Loading, please wait..."
 			},
-			"Target": {
-				"EntitySet": "PurchaseOrderItems",
-				"Service": "/MDK_ErrorArchive/Services/Sample.service",
-				"QueryOptions": ""
-			},
-			"_Type": "Section.Type.ObjectTable"
-		}],
-		"_Type": "Control.Type.SectionedTable",
-		"_Name": "SectionedTable"
-	}],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
 	"_Type": "Page",
 	"_Name": "PurchaseOrderItems_List"
 }

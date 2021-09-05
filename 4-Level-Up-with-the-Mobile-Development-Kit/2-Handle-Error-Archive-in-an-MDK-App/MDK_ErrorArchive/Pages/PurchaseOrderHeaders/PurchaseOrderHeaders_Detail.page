@@ -1,70 +1,77 @@
 {
-	"Caption": "PurchaseOrderHeaders Details",
-
+	"Caption": "PurchaseOrderHeader",
 	"ActionBar": {
-		"Items": [{
-			"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action",
-			"Position": "right",
-			"SystemItem": "Edit"
-		}, {
-			"OnPress": "/MDK_ErrorArchive/Rules/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js",
-			"Position": "right",
-			"SystemItem": "Trash"
-		}]
-	},
-	"Controls": [{
-		"Sections": [{
-			"ObjectHeader": {
-				"DetailImage": "",
-				"HeadlineText": "{CurrencyCode}",
-				"Subhead": "{NetAmount}",
-				"Tags": [],
-				"BodyText": "",
-				"Footnote": "{PurchaseOrderId}",
-				"Description": "{GrossAmount}",
-				"StatusText": "{SupplierId}",
-				"StatusImage": "",
-				"SubstatusImage": "",
-				"SubstatusText": "{TaxAmount}"
+		"Items": [
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
 			},
-			"_Type": "Section.Type.ObjectHeader"
-		}, {
-			"KeyAndValues": [
-	{
-		"KeyName": "CurrencyCode",
-		"Value": "{CurrencyCode}"
+			{
+				"OnPress": "/MDK_ErrorArchive/Rules/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
 	},
-	{
-		"KeyName": "GrossAmount",
-		"Value": "{GrossAmount}"
-	},
-	{
-		"KeyName": "NetAmount",
-		"Value": "{NetAmount}"
-	},
-	{
-		"KeyName": "PurchaseOrderId",
-		"Value": "{PurchaseOrderId}"
-	},
-	{
-		"KeyName": "SupplierId",
-		"Value": "{SupplierId}"
-	},
-	{
-		"KeyName": "TaxAmount",
-		"Value": "{TaxAmount}"
-	}
-],
-			"Layout": {
-				"NumberOfColumns": 2
-			},
-			"MaxItemCount": 1,
-			"_Name": "SectionKeyValue0",
-			"_Type": "Section.Type.KeyValue"
-		}],
-		"_Type": "Control.Type.SectionedTable",
-		"_Name": "SectionedTable"
-	}],
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "",
+						"HeadlineText": "{CurrencyCode}",
+						"Subhead": "{GrossAmount}",
+						"Tags": [],
+						"BodyText": "",
+						"Footnote": "{PurchaseOrderId}",
+						"Description": "{NetAmount}",
+						"StatusText": "{SupplierId}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{TaxAmount}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "PurchaseOrderId",
+							"Value": "{PurchaseOrderId}"
+						},
+						{
+							"KeyName": "SupplierId",
+							"Value": "{SupplierId}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
 	"_Type": "Page",
 	"_Name": "PurchaseOrderHeaders_Detail"
 }

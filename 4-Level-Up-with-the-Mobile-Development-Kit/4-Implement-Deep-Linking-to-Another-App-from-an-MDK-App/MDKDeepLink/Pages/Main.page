@@ -1,60 +1,64 @@
 {
-	"Caption": "Main",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Buttons": [
-						{
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js",
-							"TextAlignment": "center",
-							"Title": "Open SAP Mobile Cards",
-							"Visible": true
-						},
-						{
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPFioriClient.js",
-							"TextAlignment": "center",
-							"Title": "Open SAP Fiori Client",
-							"Visible": true
-						},
-						{
-							"OnPress": "/MDKDeepLink/Rules/OpenUI5.js",
-							"TextAlignment": "center",
-							"Title": "Open UI5 App",
-							"Visible": true
-						},
-						{
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js",
-							"TextAlignment": "center",
-							"Title": "Open SAP.com page",
-							"Visible": true
-						}
-					],
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Visible": true,
-					"_Name": "SectionButtonTable0",
-					"_Type": "Section.Type.ButtonTable"
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Open SAP Mobile Cards",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js"
+						},
+						{
+							"_Name": "SectionButton4",
+							"Title": "Open SAP Fiori Client",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPFioriClient.js"
+						},
+						{
+							"_Name": "SectionButton5",
+							"Title": "Open UI5 App",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenUI5.js"
+						},
+						{
+							"_Name": "SectionButton6",
+							"Title": "Open SAP.com page",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js"
+						}
+					]
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
-				"Caption": "Logout",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDKDeepLink/Actions/Logout.action",
-				"Visible": true,
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/MDKDeepLink/Actions/Logout.action"
 			}
 		]
-	},
-	"_Name": "Main",
-	"_Type": "Page"
+	}
 }

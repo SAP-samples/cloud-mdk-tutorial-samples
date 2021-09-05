@@ -1,29 +1,29 @@
 {
-	"ActionResult": {
-		"_Name": "init"
+    "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+    "DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
 	},
-	"ActivityIndicatorText": "Downloading...",
-	"DefiningRequests": [
-		{
-			"Name": "Customers",
-			"Query": "Customers"
-		},
-		{
-			"Name": "Products",
-			"Query": "Products"
-		},
-		{
-			"Name": "SalesOrderHeaders",
-			"Query": "SalesOrderHeaders"
-		},
-		{
-			"Name": "SalesOrderItems",
-			"Query": "SalesOrderItems"
-		}
-	],
-	"OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action",
-	"OnSuccess": "/DemoSampleApp/Actions/LogSetState.action",
-	"Service": "/DemoSampleApp/Services/Sample.service",
-	"ShowActivityIndicator": true,
-	"_Type": "Action.Type.ODataService.Initialize"
+	{
+		"Name": "Products",
+		"Query": "Products"
+	},
+	{
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	},
+	{
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	}
+],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
 }

@@ -1,8 +1,8 @@
 {
   "AppName": "DemoSampleApp",
   "AppVersion": "1.0.0",
-  "BundleID": "com.sap.mdk.demo",
-  "Externals": ["nativescript-geolocation","ui/enums"],
-  "NSPlugins": ["nativescript-geolocation"],
+  "BundleID": "<Your bundle ID>",
+  "Externals": ["@nativescript/geolocation"],
+  "NSPlugins": ["@nativescript/geolocation"],
   "UrlScheme": "mdkclient"
 }

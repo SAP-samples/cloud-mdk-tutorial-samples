@@ -1,101 +1,104 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action",
-				"Position": "left",
-				"SystemItem": "Cancel",
-				"Text": "Item",
-				"Visible": true
-			},
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Actions/SalesOrderHeaders_CreateEntity.action",
-				"Position": "right",
-				"SystemItem": "Save",
-				"Text": "Item",
-				"Visible": true
-			}
-		]
-	},
-	"Caption": "Create Order",
 	"Controls": [
 		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
 			"Sections": [
 				{
 					"Controls": [
 						{
-							"Caption": "CurrencyCode",
-							"IsEditable": true,
-							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
 							"Value": "EUR",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateCurrencyCode",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "NetAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "CurrencyCode",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "18.010",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateNetAmount",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "TaxAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "NetAmount",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "108.010",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateTaxAmount",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "GrossAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "TaxAmount",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "126.02",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateGrossAmount",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "LifeCycleStatus",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "GrossAmount",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "N",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateLifeCycleStatus",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "LifeCycleStatusName",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "LifeCycleStatus",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "New",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateLifeCycleStatusName",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "Creation Date",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Mode": "datetime",
+							"Caption": "LifeCycleStatusName",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
 							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
 							"_Name": "FCCreatedate",
-							"_Type": "Control.Type.FormCell.DatePicker"
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Creation Date",
+							"Mode": "datetime"
 						}
 					],
 					"Visible": true
 				}
-			],
-			"_Name": "FormCellContainer0",
-			"_Type": "Control.Type.FormCellContainer"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "SalesOrderHeaders_Create",
-	"_Type": "Page"
+	"Caption": "Create Order",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/SalesOrderHeaders_CreateEntity.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

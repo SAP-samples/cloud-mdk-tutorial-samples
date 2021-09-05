@@ -1,89 +1,95 @@
 {
-	"Caption": "Error Details",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"DataPaging": {
-						"PageSize": 50,
-						"ShowLoadingIndicator": false
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "/MDK_ErrorArchive/Rules/GetAffectedEntityHeaderCaption.js"
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "{AffectedEntity}",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Header": {
-						"Caption": "/MDK_ErrorArchive/Rules/GetAffectedEntityHeaderCaption.js",
-						"UseTopPadding": true
-					},
-					"HighlightSelectedItem": false,
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"DetailImageIsCircular": false,
-						"OnPress": "/MDK_ErrorArchive/Rules/DecideWhichEditPage.js",
-						"PreserveIconStackSpacing": false,
-						"Selected": false,
+						"Title": "Edit Affected Entity",
 						"Subhead": "{@odata.id}",
-						"Title": "Edit Affected Entity"
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_ErrorArchive/Rules/DecideWhichEditPage.js",
+						"Selected": false
 					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
 						"LongPressToEnable": "None",
 						"Mode": "None"
-					},
-					"Target": "{AffectedEntity}",
-					"Visible": true,
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					}
 				},
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"KeyAndValues": [
 						{
-							"KeyName": "HTTP Status Code",
 							"Value": "{HTTPStatusCode}",
+							"_Name": "KeyValue0",
+							"KeyName": "HTTP Status Code",
 							"Visible": true
 						},
 						{
-							"KeyName": "Request Method",
 							"Value": "{RequestMethod}",
+							"_Name": "KeyValue1",
+							"KeyName": "Request Method",
 							"Visible": true
 						},
 						{
-							"KeyName": "Request URL",
 							"Value": "{RequestURL}",
+							"_Name": "KeyValue2",
+							"KeyName": "Request URL",
 							"Visible": true
 						},
 						{
-							"KeyName": "Request Body",
 							"Value": "{RequestBody}",
+							"_Name": "KeyValue3",
+							"KeyName": "Request Body",
 							"Visible": true
 						},
 						{
-							"KeyName": "Error Message",
 							"Value": "{Message}",
+							"_Name": "KeyValue4",
+							"KeyName": "Error Message",
 							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 1
-					},
-					"MaxItemCount": 1,
-					"Visible": true,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "ErrorDetails",
-	"_Type": "Page"
+	"Caption": "Error Details"
 }

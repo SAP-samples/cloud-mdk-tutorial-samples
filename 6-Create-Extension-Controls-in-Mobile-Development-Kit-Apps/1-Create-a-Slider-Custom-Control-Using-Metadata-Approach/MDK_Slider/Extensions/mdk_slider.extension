@@ -1,25 +1,25 @@
 {
-	"Class": "MySliderClass",
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "MySliderModule",
 	"Control": "MySliderExtension",
+	"Class": "MySliderClass",
 	"Display": "/MDK_Slider/Images/slider.png",
 	"ExtensionPropertiesSchema": {
+		"type": "object",
 		"BindType": "",
 		"properties": {
 			"MaxValue": {
-				"BindType": "",
-				"type": "number"
+				"type": "number",
+				"BindType": ""
 			},
 			"MinValue": {
-				"BindType": "",
-				"type": "number"
+				"type": "number",
+				"BindType": ""
 			},
 			"Title": {
-				"BindType": "",
-				"type": "string"
+				"type": "string",
+				"BindType": ""
 			}
-		},
-		"type": "object"
-	},
-	"Module": "MySliderModule",
-	"_Type": "Register.Type.ExtensionControl"
+		}
+	}
 }

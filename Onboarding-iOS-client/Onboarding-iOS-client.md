@@ -1,3 +1,4 @@
+>Depending on your device's appearance, UI in the MDK client changes accordingly.
 1. Launch **`Mobile Svcs`** app on your iOS device. Tap **Agree** on `End User License Agreement`.
 
     ![MDK](img_1.png)
@@ -6,7 +7,7 @@
 
     ![MDK](img_2.png)
 
-> If you already have the MDK client on-boarded, click *GET STARTED* and *SCAN NEW QR CODE* to continue.
+> If you already have the MDK client on-boarded, click *Start* and *Scan new QR code* to continue.
 
 3. Once scan is succeeded, tap **Continue**.
 
@@ -28,8 +29,6 @@
 
     ![MDK](img_7.png)
 
-8. Tap **OK**.
+8. Tap **Now** to accept the deployed metadata definitions.
 
     ![MDK](img_8.png)
-
-    The MDK client receives deployed metadata definitions as a bundle.

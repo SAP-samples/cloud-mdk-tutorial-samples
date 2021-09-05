@@ -1,54 +1,56 @@
 {
-	"Caption": "$(L,'main_title')",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Buttons": [
-						{
-							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action",
-							"TextAlignment": "center",
-							"Title": "$(L,'customers_title')"
-						},
-						{
-							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
-							"TextAlignment": "center",
-							"Title": "$(L,'salesOrderHeaders_title')"
-						}
-					],
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"_Name": "SectionButtonTable0",
-					"_Type": "Section.Type.ButtonTable"
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "$(L,'customers_title')",
+							"TextAlignment": "center",
+							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "$(L,'salesOrderHeaders_title')",
+							"TextAlignment": "center",
+							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
+						}
+					]
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "$(L,'main_title')",
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
-				"Caption": "$(L,'logout_button')",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDK_i18n_l10n/Actions/Logout.action",
-				"Visible": true,
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "$(L,'logout_button')",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/MDK_i18n_l10n/Actions/Logout.action"
 			},
 			{
-				"Caption": "$(L,'sync_button')",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDK_i18n_l10n/Actions/Service/SyncStartedMessage.action",
-				"Visible": "$(PLT,true,true,false)",
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "UploadToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "$(L,'sync_button')",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_i18n_l10n/Actions/Service/SyncStartedMessage.action"
 			}
 		]
-	},
-	"_Name": "Main",
-	"_Type": "Page"
+	}
 }

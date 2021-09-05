@@ -1,5 +1,4 @@
-import { View } from 'tns-core-modules/ui/core/view';
-
+import {​​​​​​View}​​​​​​ from'@nativescript/core';
 /*
   This is a way to keep iOS and Android implementation of your extension separate
   You will encapsulate the MySlider class definition inside a function called GetMySliderClass
@@ -13,6 +12,7 @@ export function GetMySliderClass() {
      */
 
     // This is a class that handles the native event callbacks
+    @NativeClass()
     class SliderHandler extends NSObject {
 
         //This handler function will be called whenever the slider's value is changed

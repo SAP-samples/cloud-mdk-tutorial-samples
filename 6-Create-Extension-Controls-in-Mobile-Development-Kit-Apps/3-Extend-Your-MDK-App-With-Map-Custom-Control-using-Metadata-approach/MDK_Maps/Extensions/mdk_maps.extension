@@ -1,43 +1,43 @@
 {
-	"Class": "MyMapClass",
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "MyMapModule",
 	"Control": "MyMapExtension",
+	"Class": "MyMapClass",
 	"Display": "/MDK_Maps/Images/map.png",
 	"ExtensionPropertiesSchema": {
+		"type": "object",
 		"BindType": "",
 		"properties": {
 			"Prop": {
+				"type": "object",
 				"BindType": "",
 				"properties": {
 					"City": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					},
 					"Country": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					},
 					"HouseNumber": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					},
 					"LastName": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					},
 					"PostalCode": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					},
 					"Street": {
-						"BindType": "",
-						"type": "string"
+						"type": "string",
+						"BindType": ""
 					}
-				},
-				"type": "object"
+				}
 			}
-		},
-		"type": "object"
-	},
-	"Module": "MyMapModule",
-	"_Type": "Register.Type.ExtensionControl"
+		}
+	}
 }

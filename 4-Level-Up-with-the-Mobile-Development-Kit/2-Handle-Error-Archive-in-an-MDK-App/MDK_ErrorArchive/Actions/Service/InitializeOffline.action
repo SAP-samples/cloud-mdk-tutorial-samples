@@ -1,21 +1,20 @@
 {
-	"Service": "/MDK_ErrorArchive/Services/Sample.service",
-	"DefiningRequests": [
-	{
-		"Name": "PurchaseOrderHeaders",
-		"Query": "PurchaseOrderHeaders"
-	},
-	{
-		"Name": "PurchaseOrderItems",
-		"Query": "PurchaseOrderItems"
-	}
-],
-	"_Type": "Action.Type.ODataService.Initialize",
-	"ShowActivityIndicator": true,
-	"ActivityIndicatorText": "Downloading...",
-	"ActionResult": {
-		"_Name": "init"
-	},
-	"OnSuccess": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineSuccessMessage.action",
-	"OnFailure": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineFailureMessage.action"
+    "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/MDK_ErrorArchive/Actions/Service/InitializeOfflineFailureMessage.action"
 }

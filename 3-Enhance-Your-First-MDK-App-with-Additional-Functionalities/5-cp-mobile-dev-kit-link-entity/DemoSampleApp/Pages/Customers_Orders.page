@@ -1,58 +1,58 @@
 {
-	"Caption": "Customer Orders",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"DataPaging": {
-						"PageSize": 50,
-						"ShowLoadingIndicator": false
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$top=5&$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc"
 					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
 					"EmptySection": {
 						"Caption": "No Orders Found",
 						"FooterVisible": false
 					},
-					"HighlightSelectedItem": false,
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
-						"DetailImageIsCircular": false,
-						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
-						"PreserveIconStackSpacing": false,
-						"Selected": false,
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"Title": "{SalesOrderId}",
 						"Subhead": "{CustomerId}",
+						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatusName}",
-						"Title": "{SalesOrderId}"
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
+						"Selected": false
 					},
 					"Search": {
-						"BarcodeScanner": true,
-						"Enabled": true
+						"Enabled": true,
+						"BarcodeScanner": true
 					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
 						"LongPressToEnable": "None",
 						"Mode": "None"
-					},
-					"Target": {
-						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$top=5&$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc",
-						"Service": "/DemoSampleApp/Services/Sample.service"
-					},
-					"Visible": true,
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_Orders",
-	"_Type": "Page"
+	"Caption": "Customer Orders"
 }

@@ -1,28 +1,34 @@
 {
-	"Caption": "Customers Details",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Subhead": "{City}",
+						"Footnote": "{CustomerId}",
 						"Description": "{Country}",
-						"Footnote": "{DateOfBirth}",
-						"HeadlineText": "{City}",
-						"StatusText": "{EmailAddress}",
-						"Subhead": "{CustomerId}",
-						"SubstatusText": "{FirstName}",
+						"StatusText": "{DateOfBirth}",
+						"SubstatusText": "{EmailAddress}",
+						"HeadlineText": "{FirstName}",
 						"Tags": [
 						]
 					},
-					"_Name": "SectionObjectHeader0",
-					"_Type": "Section.Type.ObjectHeader"
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
 				},
 				{
-					"Class": "MyMapClass",
-					"Control": "MyMapExtension",
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Height": 600,
+					"Module": "MyMapModule",
+					"Control": "MyMapExtension",
+					"Class": "MyMapClass",
 					"ExtensionProperties": {
 						"Prop": {
 							"City": "{City}",
@@ -32,18 +38,12 @@
 							"PostalCode": "{PostalCode}",
 							"Street": "{Street}"
 						}
-					},
-					"Height": 600,
-					"Module": "MyMapModule",
-					"Visible": true,
-					"_Name": "SectionExtension1",
-					"_Type": "Section.Type.Extension"
+					}
 				}
-			],
-			"_Name": "SectionedTable",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"_Type": "Page"
+	"Caption": "Customer"
 }

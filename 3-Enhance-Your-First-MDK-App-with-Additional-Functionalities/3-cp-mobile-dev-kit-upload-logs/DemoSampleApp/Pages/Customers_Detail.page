@@ -1,82 +1,89 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
-				"Position": "right",
-				"SystemItem": "Edit",
-				"Text": "Item",
-				"Visible": true
-			},
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js",
-				"Position": "right",
-				"SystemItem": "Trash",
-				"Text": "Item",
-				"Visible": true
-			}
-		]
-	},
-	"Caption": "Customer Detail",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"BodyText": "{DateOfBirth}",
+						"Subhead": "{FirstName}",
+						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerId}",
+						"StatusText": "{PhoneNumber}",
 						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
-						"Footnote": "{EmailAddress}",
-						"HeadlineText": "{LastName}",
-						"StatusText": "{PhoneNumber}",
-						"Subhead": "{FirstName}"
+						"BodyText": "{DateOfBirth}",
+						"HeadlineText": "{LastName}"
 					},
-					"Visible": true,
+					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
-					"_Type": "Section.Type.ObjectHeader"
+					"Visible": true
 				},
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"KeyAndValues": [
 						{
-							"KeyName": "Address",
 							"Value": "{HouseNumber} {Street}",
+							"_Name": "KeyValue0",
+							"KeyName": "Address",
 							"Visible": true
 						},
 						{
-							"KeyName": "City",
 							"Value": "{City}",
+							"_Name": "KeyValue1",
+							"KeyName": "City",
 							"Visible": true
 						},
 						{
-							"KeyName": "Postal Code",
 							"Value": "{PostalCode}",
+							"_Name": "KeyValue2",
+							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
-							"KeyName": "Country",
 							"Value": "{Country}",
+							"_Name": "KeyValue3",
+							"KeyName": "Country",
 							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"Visible": true,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"_Type": "Page"
+	"Caption": "Customers Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

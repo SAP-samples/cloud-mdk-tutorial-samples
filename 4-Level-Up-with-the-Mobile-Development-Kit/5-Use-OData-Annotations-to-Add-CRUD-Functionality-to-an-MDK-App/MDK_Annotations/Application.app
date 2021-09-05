@@ -8,5 +8,6 @@
 	"OnWillUpdate": "/MDK_Annotations/Rules/OnWillUpdate.js",
 	"OnDidUpdate": "/MDK_Annotations/Actions/Service/InitializeOnline.action",
 	"Styles": "/MDK_Annotations/Styles/Styles.less",
-	"Localization": "/MDK_Annotations/i18n/i18n.properties"
+	"Localization": "/MDK_Annotations/i18n/i18n.properties",
+	"_SchemaVersion": "6.0"
 }

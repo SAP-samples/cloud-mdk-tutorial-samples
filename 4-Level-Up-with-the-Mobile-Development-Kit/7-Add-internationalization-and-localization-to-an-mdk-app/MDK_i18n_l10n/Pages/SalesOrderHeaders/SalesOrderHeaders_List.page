@@ -1,52 +1,60 @@
 {
-	"Caption": "SalesOrderHeaders",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Header": {
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "SalesOrderHeaders",
+						"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
+						"Title": "{LifeCycleStatusName}",
+						"Subhead": "$(DT,{CreatedAt},'','',{format:'medium'})",
+						"Footnote": "{CustomerId}",
 						"Description": "{CurrencyCode}",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"SubstatusText": "{LifeCycleStatus}",
 						"DetailImageIsCircular": false,
-						"Footnote": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{LifeCycleStatus}",
-						"Subhead": "{CustomerId}",
-						"SubstatusText": "{LifeCycleStatusName}",
-						"Title": "$(DT,{CreatedAt},'','',{format:'medium'})"
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
 					},
 					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
 						"BarcodeScanner": true,
 						"Delay": 500,
-						"Enabled": true,
-						"MinimumCharacterThreshold": 3,
-						"Placeholder": "Item Search"
+						"MinimumCharacterThreshold": 3
 					},
-					"Target": {
-						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "",
-						"Service": "/MDK_i18n_l10n/Services/Sample.service"
-					},
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					}
 				}
 			],
-			"_Name": "SectionedTable",
-			"_Type": "Control.Type.SectionedTable"
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			}
 		}
 	],
+	"_Type": "Page",
 	"_Name": "SalesOrderHeaders_List",
-	"_Type": "Page"
+	"Caption": "SalesOrderHeaders"
 }

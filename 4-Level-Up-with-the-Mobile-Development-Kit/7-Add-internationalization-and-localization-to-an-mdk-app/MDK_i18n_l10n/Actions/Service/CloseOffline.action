@@ -1,10 +1,10 @@
 {
-	"_Type": "Action.Type.OfflineOData.Close",
-	"Service": "/MDK_i18n_l10n/Services/Sample.service",
-	"Force": true,
-	"ActionResult": {
-		"_Name": "close"
-	},
-	"OnSuccess": "/MDK_i18n_l10n/Actions/Service/CloseOfflineSuccessMessage.action",
-	"OnFailure": "/MDK_i18n_l10n/Actions/Service/CloseOfflineFailureMessage.action"
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/MDK_i18n_l10n/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/MDK_i18n_l10n/Actions/Service/CloseOfflineFailureMessage.action"
 }

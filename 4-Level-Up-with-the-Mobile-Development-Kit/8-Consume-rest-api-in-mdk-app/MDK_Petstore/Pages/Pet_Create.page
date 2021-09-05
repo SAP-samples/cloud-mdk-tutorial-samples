@@ -1,54 +1,57 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/MDK_Petstore/Actions/ClosePage.action",
-				"Position": "left",
-				"SystemItem": "Cancel",
-				"Text": "Item",
-				"Visible": true
-			},
-			{
-				"IsIconCircular": false,
-				"OnPress": "/MDK_Petstore/Actions/CreatePet.action",
-				"Position": "right",
-				"SystemItem": "Save",
-				"Text": "Item",
-				"Visible": true
-			}
-		]
-	},
-	"Caption": "Create Pet",
 	"Controls": [
 		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
 			"Sections": [
 				{
 					"Controls": [
 						{
-							"Caption": "Pet Name",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreatePet",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Enter Value",
-							"_Name": "FCCreatePet",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "Pet Name",
+							"PlaceHolder": "Enter Value"
 						},
 						{
-							"Caption": "Status",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateStatus",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Enter Value",
-							"_Name": "FCCreateStatus",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Caption": "Status",
+							"PlaceHolder": "Enter Value"
 						}
 					],
 					"Visible": true
 				}
-			],
-			"_Name": "FormCellContainer0",
-			"_Type": "Control.Type.FormCellContainer"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Pet_Create",
-	"_Type": "Page"
+	"Caption": "Create Pet",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Petstore/Actions/ClosePage.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Petstore/Actions/CreatePet.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

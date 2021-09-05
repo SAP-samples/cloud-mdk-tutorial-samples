@@ -1,6 +1,6 @@
 {
-	"Service": "/DemoSampleApp/Services/Sample.service",
-	"DefiningRequests": [
+    "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+    "DefiningRequests": [
 	{
 		"Name": "Customers",
 		"Query": "Customers"
@@ -18,12 +18,12 @@
 		"Query": "SalesOrderItems"
 	}
 ],
-	"_Type": "Action.Type.ODataService.Initialize",
-	"ShowActivityIndicator": true,
-	"ActivityIndicatorText": "Downloading...",
-	"ActionResult": {
-		"_Name": "init"
-	},
-	"OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
-	"OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
 }

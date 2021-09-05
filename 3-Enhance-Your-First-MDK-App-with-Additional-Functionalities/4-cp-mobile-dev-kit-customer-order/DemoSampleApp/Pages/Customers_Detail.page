@@ -1,135 +1,144 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
-				"Position": "right",
-				"SystemItem": "Edit",
-				"Text": "Item",
-				"Visible": true
-			},
-			{
-				"IsIconCircular": false,
-				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js",
-				"Position": "right",
-				"SystemItem": "Trash",
-				"Text": "Item",
-				"Visible": true
-			}
-		]
-	},
-	"Caption": "Customer Detail",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"BodyText": "{DateOfBirth}",
+						"Subhead": "{FirstName}",
+						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerId}",
+						"StatusText": "{PhoneNumber}",
 						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
-						"Footnote": "{EmailAddress}",
-						"HeadlineText": "{LastName}",
-						"StatusText": "{PhoneNumber}",
-						"Subhead": "{FirstName}"
+						"BodyText": "{DateOfBirth}",
+						"HeadlineText": "{LastName}"
 					},
-					"Visible": true,
+					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
-					"_Type": "Section.Type.ObjectHeader"
+					"Visible": true
 				},
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"KeyAndValues": [
 						{
-							"KeyName": "Address",
 							"Value": "{HouseNumber} {Street}",
+							"_Name": "KeyValue0",
+							"KeyName": "Address",
 							"Visible": true
 						},
 						{
-							"KeyName": "City",
 							"Value": "{City}",
+							"_Name": "KeyValue1",
+							"KeyName": "City",
 							"Visible": true
 						},
 						{
-							"KeyName": "Postal Code",
 							"Value": "{PostalCode}",
+							"_Name": "KeyValue2",
+							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
-							"KeyName": "Country",
 							"Value": "{Country}",
+							"_Name": "KeyValue3",
+							"KeyName": "Country",
 							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"Visible": true,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				},
 				{
-					"DataPaging": {
-						"PageSize": 50,
-						"ShowLoadingIndicator": false
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
 					},
+					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "Customer Orders"
+					},
+					"Footer": {
+						"_Name": "SectionFooter1",
+						"Caption": "See All",
+						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
+						"AccessoryType": "disclosureIndicator",
+						"FooterStyle": "attribute",
+						"Visible": true,
+						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
+						"UseBottomPadding": false
+					},
+					"Visible": true,
 					"EmptySection": {
 						"Caption": "No Customer Orders Found",
 						"FooterVisible": false
 					},
-					"Footer": {
-						"AccessoryType": "disclosureIndicator",
-						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
-						"Caption": "See All",
-						"FooterStyle": "attribute",
-						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
-						"UseBottomPadding": false,
-						"Visible": true
-					},
-					"Header": {
-						"Caption": "Customer Orders",
-						"UseTopPadding": true
-					},
-					"HighlightSelectedItem": false,
 					"ObjectCell": {
+						"Title": "{SalesOrderId}",
+						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"SubstatusText": "{CurrencyCode}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
+						"Selected": false,
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
-						},
-						"DetailImageIsCircular": false,
-						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
-						"PreserveIconStackSpacing": false,
-						"Selected": false,
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
-						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
-						"SubstatusText": "{CurrencyCode}",
-						"Title": "{SalesOrderId}"
+						}
 					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
 						"LongPressToEnable": "None",
 						"Mode": "None"
-					},
-					"Target": {
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc",
-						"Service": "/DemoSampleApp/Services/Sample.service"
-					},
-					"Visible": true,
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"_Type": "Page"
+	"Caption": "Customers Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

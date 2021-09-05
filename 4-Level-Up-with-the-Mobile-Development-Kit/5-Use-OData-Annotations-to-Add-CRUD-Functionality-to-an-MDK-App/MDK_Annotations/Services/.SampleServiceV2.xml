@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
     <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
         <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ESPM">
             <EntityType Name="Customer">
@@ -282,45 +282,45 @@
                 </ReferentialConstraint>
             </Association>
             <EntityContainer Name="ESPMContainer" m:IsDefaultEntityContainer="true">
-                <EntitySet EntityType="ESPM.Customer" Name="Customers"/>
-                <EntitySet EntityType="ESPM.Supplier" Name="Suppliers"/>
-                <EntitySet EntityType="ESPM.Product" Name="Products"/>
-                <EntitySet EntityType="ESPM.ProductCategory" Name="ProductCategories"/>
-                <EntitySet EntityType="ESPM.ProductText" Name="ProductTexts"/>
-                <EntitySet EntityType="ESPM.Stock" Name="Stock"/>
-                <EntitySet EntityType="ESPM.PurchaseOrderHeader" Name="PurchaseOrderHeaders"/>
-                <EntitySet EntityType="ESPM.PurchaseOrderItem" Name="PurchaseOrderItems"/>
-                <EntitySet EntityType="ESPM.SalesOrderHeader" Name="SalesOrderHeaders"/>
-                <EntitySet EntityType="ESPM.SalesOrderItem" Name="SalesOrderItems"/>
-                <AssociationSet Association="ESPM.Customer_to_SalesOrderHeaders" Name="Customer_to_SalesOrderHeaders">
+                <EntitySet EntityType="ESPM.Customer" Name="Customers" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.Supplier" Name="Suppliers" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.Product" Name="Products" sap:creatable="false" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.ProductCategory" Name="ProductCategories" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.ProductText" Name="ProductTexts" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.Stock" Name="Stock" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.PurchaseOrderHeader" Name="PurchaseOrderHeaders" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.PurchaseOrderItem" Name="PurchaseOrderItems" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.SalesOrderHeader" Name="SalesOrderHeaders" sap:searchable="false"/>
+                <EntitySet EntityType="ESPM.SalesOrderItem" Name="SalesOrderItems" sap:searchable="false"/>
+                <AssociationSet Association="ESPM.Customer_to_SalesOrderHeaders" Name="Customer_to_SalesOrderHeaders" sap:searchable="false">
                     <End EntitySet="Customers" Role="Customer"/>
                     <End EntitySet="SalesOrderHeaders" Role="SalesOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.Supplier_to_PurchaseOrderHeaders" Name="Supplier_to_PurchaseOrderHeaders">
+                <AssociationSet Association="ESPM.Supplier_to_PurchaseOrderHeaders" Name="Supplier_to_PurchaseOrderHeaders" sap:searchable="false">
                     <End EntitySet="Suppliers" Role="Supplier"/>
                     <End EntitySet="PurchaseOrderHeaders" Role="PurchaseOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.Supplier_to_Products" Name="Supplier_to_Products">
+                <AssociationSet Association="ESPM.Supplier_to_Products" Name="Supplier_to_Products" sap:searchable="false">
                     <End EntitySet="Suppliers" Role="Supplier"/>
                     <End EntitySet="Products" Role="Product"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.Product_to_PurchaseOrderItems" Name="Product_to_PurchaseOrderItems">
+                <AssociationSet Association="ESPM.Product_to_PurchaseOrderItems" Name="Product_to_PurchaseOrderItems" sap:searchable="false">
                     <End EntitySet="Products" Role="Product"/>
                     <End EntitySet="PurchaseOrderItems" Role="PurchaseOrderItem"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.Product_to_SalesOrderItems" Name="Product_to_SalesOrderItems">
+                <AssociationSet Association="ESPM.Product_to_SalesOrderItems" Name="Product_to_SalesOrderItems" sap:searchable="false">
                     <End EntitySet="SalesOrderItems" Role="SalesOrderItem"/>
                     <End EntitySet="Products" Role="Product"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.Product_to_Stock" Name="Product_to_Stock">
+                <AssociationSet Association="ESPM.Product_to_Stock" Name="Product_to_Stock" sap:searchable="false">
                     <End EntitySet="Products" Role="Product"/>
                     <End EntitySet="Stock" Role="Stock"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.PurchaseOrderHeader_to_PurchaseOrderItems" Name="PurchaseOrderHeader_to_PurchaseOrderItems">
+                <AssociationSet Association="ESPM.PurchaseOrderHeader_to_PurchaseOrderItems" Name="PurchaseOrderHeader_to_PurchaseOrderItems" sap:searchable="false">
                     <End EntitySet="PurchaseOrderItems" Role="PurchaseOrderItem"/>
                     <End EntitySet="PurchaseOrderHeaders" Role="PurchaseOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Association="ESPM.SalesOrderHeader_to_SalesOrderItems" Name="SalesOrderHeader_to_SalesOrderItems">
+                <AssociationSet Association="ESPM.SalesOrderHeader_to_SalesOrderItems" Name="SalesOrderHeader_to_SalesOrderItems" sap:searchable="false">
                     <End EntitySet="SalesOrderItems" Role="SalesOrderItem"/>
                     <End EntitySet="SalesOrderHeaders" Role="SalesOrderHeader"/>
                 </AssociationSet>
@@ -333,6 +333,34 @@
                 </FunctionImport>
             </EntityContainer>
             <Annotations Target="ESPM.Product" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record Type="Capabilities.DeleteRestrictionsType">
+                        <PropertyValue Bool="false" Property="Deletable"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record Type="Capabilities.InsertRestrictionsType">
+                        <PropertyValue Bool="false" Property="Insertable"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record Type="Capabilities.UpdateRestrictionsType">
+                        <PropertyValue Bool="false" Property="Updatable"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>
+                            ProductId
+                        </PropertyPath>
+                        <PropertyPath>
+                            Name
+                        </PropertyPath>
+                        <PropertyPath>
+                            Category
+                        </PropertyPath>
+                    </Collection>
+                </Annotation>
                 <Annotation Term="UI.Facets">
                     <Collection>
                         <Record Type="UI.ReferenceFacet">
@@ -343,28 +371,25 @@
                 <Annotation Term="UI.Identification">
                     <Collection>
                         <Record Type="UI.DataField">
-                            <PropertyValue Path="ProductId" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_ID}"/>
-                        </Record>
-                        <Record Type="UI.DataField">
                             <PropertyValue Path="Name" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;NAME}"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_NAME}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="Category" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;CATEGORY}"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Path="CurrencyCode" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;CURRENCY_CODE}"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_CATEGORY}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="ShortDescription" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;SHORT_DESCRIPTION}"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_SHORT_DESCRIPTION}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="LongDescription" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_LONG_DESCRIPTION}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="Price" Property="Value"/>
-                            <PropertyValue Property="Label" String="{@i18n&gt;PRICE}"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_PRICE}"/>
                         </Record>
                     </Collection>
                 </Annotation>
@@ -384,19 +409,19 @@
                             <Collection>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Path="Weight" Property="Value"/>
-                                    <PropertyValue Property="Label" String="{@i18n&gt;WEIGHT}"/>
+                                    <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_WEIGHT}"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Path="DimensionHeight" Property="Value"/>
-                                    <PropertyValue Property="Label" String="{@i18n&gt;HEIGHT}"/>
+                                    <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_HEIGHT}"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Path="DimensionDepth" Property="Value"/>
-                                    <PropertyValue Property="Label" String="{@i18n&gt;DEPTH}"/>
+                                    <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_DEPTH}"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Path="DimensionWidth" Property="Value"/>
-                                    <PropertyValue Property="Label" String="{@i18n&gt;WIDTH}"/>
+                                    <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_WIDTH}"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -404,17 +429,17 @@
                 </Annotation>
                 <Annotation Term="UI.DataPoint">
                     <Record Type="UI.DataPointType">
-                        <PropertyValue Property="Title" String="{@i18n&gt;PRICE}"/>
+                        <PropertyValue Property="Title" String="{@i18n&gt;PRODUCT_PRICE}"/>
                         <PropertyValue Path="Price" Property="Value"/>
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.HeaderInfo">
                     <Record Type="UI.HeaderInfoType">
-                        <PropertyValue Property="TypeName" String="{@i18n&gt;PRODUCT}"/>
-                        <PropertyValue Property="TypeNamePlural" String="{@i18n&gt;PRODUCTS}"/>
+                        <PropertyValue Property="TypeName" String="{@i18n&gt;PRODUCT_TYPE}"/>
+                        <PropertyValue Property="TypeNamePlural" String="{@i18n&gt;PRODUCT_TYPES}"/>
                         <PropertyValue Property="Title">
                             <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" String="{@i18n&gt;SAMPLE_SERVICE_PRODUCTS}"/>
+                                <PropertyValue Path="Name" Property="Value"/>
                             </Record>
                         </PropertyValue>
                         <PropertyValue Property="Description">
@@ -422,25 +447,94 @@
                                 <PropertyValue Path="LongDescription" Property="Value"/>
                             </Record>
                         </PropertyValue>
-                        <PropertyValue Path="PictureUrl" Property="ImageUrl"/>
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="ProductId" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_PRODUCT_ID}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="Name" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_NAME}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="Category" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_CATEGORY}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="ShortDescription" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_SHORT_DESCRIPTION}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Path="Price" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_PRICE}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="DimensionHeight" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_HEIGHT}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="DimensionDepth" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_DEPTH}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="DimensionWidth" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_WIDTH}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="DimensionUnit" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_UNIT}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="Weight" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_WEIGHT}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="WeightUnit" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_WEIGHT_UNIT}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="QuantityUnit" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_QUANTITY_UNIT}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="CategoryName" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_CATEGORY_NAME}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="CurrencyCode" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_CURENCY_CODE}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="LongDescription" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_LONG_DESCRIPTION}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="PictureUrl" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_PICTURE_URL}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="SupplierId" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_SUPPLIER_ID}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Path="UpdatedTimestamp" Property="Value"/>
+                            <PropertyValue Property="Label" String="{@i18n&gt;PRODUCT_UPDATE_TIMESTAMP}"/>
+                            <Annotation EnumMember="UI.ImportanceType/Low" Term="UI.Importance"/>
                         </Record>
                     </Collection>
                 </Annotation>

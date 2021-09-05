@@ -1,6 +1,6 @@
 {
-	"ModalPage": true,
-	"NavigationType": "Cross",
+	"_Type": "Action.Type.Navigation",
 	"PageToOpen": "/DemoSampleApp/Pages/SalesOrderHeaders_Create.page",
-	"_Type": "Action.Type.Navigation"
+	"ModalPage": true,
+	"NavigationType": "Cross"
 }

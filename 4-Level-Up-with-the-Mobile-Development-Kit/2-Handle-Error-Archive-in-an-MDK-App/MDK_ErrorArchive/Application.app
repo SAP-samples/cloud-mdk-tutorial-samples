@@ -8,5 +8,6 @@
 	"OnWillUpdate": "/MDK_ErrorArchive/Rules/OnWillUpdate.js",
 	"OnDidUpdate": "/MDK_ErrorArchive/Actions/Service/InitializeOffline.action",
 	"Styles": "/MDK_ErrorArchive/Styles/Styles.less",
-	"Localization": "/MDK_ErrorArchive/i18n/i18n.properties"
+	"Localization": "/MDK_ErrorArchive/i18n/i18n.properties",
+	"_SchemaVersion": "6.0"
 }

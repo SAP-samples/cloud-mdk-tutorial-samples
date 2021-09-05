@@ -1,54 +1,54 @@
 {
-	"Caption": "Error List",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"DataPaging": {
-						"PageSize": 50,
-						"ShowLoadingIndicator": false
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+						"EntitySet": "ErrorArchive"
 					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
 					"EmptySection": {
 						"Caption": "No Sync Errors Found",
 						"FooterVisible": false
 					},
-					"HighlightSelectedItem": false,
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"DetailImageIsCircular": false,
-						"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
-						"PreserveIconStackSpacing": false,
-						"Selected": false,
-						"StatusText": "{RequestMethod}",
+						"Title": "{HTTPStatusCode}",
 						"Subhead": "{RequestURL}",
-						"Title": "{HTTPStatusCode}"
+						"StatusText": "{RequestMethod}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorDetails.action",
+						"Selected": false
 					},
 					"Search": {
 						"Enabled": true
 					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
 						"LongPressToEnable": "None",
 						"Mode": "None"
-					},
-					"Target": {
-						"EntitySet": "ErrorArchive",
-						"Service": "/MDK_ErrorArchive/Services/Sample.service"
-					},
-					"Visible": true,
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "ErrorList",
-	"_Type": "Page"
+	"Caption": "Error List"
 }

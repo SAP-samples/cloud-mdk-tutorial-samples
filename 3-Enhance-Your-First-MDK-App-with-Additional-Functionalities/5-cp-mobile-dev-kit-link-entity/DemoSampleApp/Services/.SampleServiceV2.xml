@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
     <edmx:DataServices m:DataServiceVersion="1.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
         <Schema Namespace="ESPM" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
             <EntityType Name="Customer">
@@ -282,45 +282,45 @@
                 </ReferentialConstraint>
             </Association>
             <EntityContainer Name="ESPMContainer" m:IsDefaultEntityContainer="true">
-                <EntitySet Name="Customers" EntityType="ESPM.Customer"/>
-                <EntitySet Name="Suppliers" EntityType="ESPM.Supplier"/>
-                <EntitySet Name="Products" EntityType="ESPM.Product"/>
-                <EntitySet Name="ProductCategories" EntityType="ESPM.ProductCategory"/>
-                <EntitySet Name="ProductTexts" EntityType="ESPM.ProductText"/>
-                <EntitySet Name="Stock" EntityType="ESPM.Stock"/>
-                <EntitySet Name="PurchaseOrderHeaders" EntityType="ESPM.PurchaseOrderHeader"/>
-                <EntitySet Name="PurchaseOrderItems" EntityType="ESPM.PurchaseOrderItem"/>
-                <EntitySet Name="SalesOrderHeaders" EntityType="ESPM.SalesOrderHeader"/>
-                <EntitySet Name="SalesOrderItems" EntityType="ESPM.SalesOrderItem"/>
-                <AssociationSet Name="Customer_to_SalesOrderHeaders" Association="ESPM.Customer_to_SalesOrderHeaders">
+                <EntitySet Name="Customers" EntityType="ESPM.Customer" sap:searchable="false"/>
+                <EntitySet Name="Suppliers" EntityType="ESPM.Supplier" sap:searchable="false"/>
+                <EntitySet Name="Products" EntityType="ESPM.Product" sap:searchable="false" sap:creatable="false"/>
+                <EntitySet Name="ProductCategories" EntityType="ESPM.ProductCategory" sap:searchable="false"/>
+                <EntitySet Name="ProductTexts" EntityType="ESPM.ProductText" sap:searchable="false"/>
+                <EntitySet Name="Stock" EntityType="ESPM.Stock" sap:searchable="false"/>
+                <EntitySet Name="PurchaseOrderHeaders" EntityType="ESPM.PurchaseOrderHeader" sap:searchable="false"/>
+                <EntitySet Name="PurchaseOrderItems" EntityType="ESPM.PurchaseOrderItem" sap:searchable="false"/>
+                <EntitySet Name="SalesOrderHeaders" EntityType="ESPM.SalesOrderHeader" sap:searchable="false"/>
+                <EntitySet Name="SalesOrderItems" EntityType="ESPM.SalesOrderItem" sap:searchable="false"/>
+                <AssociationSet Name="Customer_to_SalesOrderHeaders" Association="ESPM.Customer_to_SalesOrderHeaders" sap:searchable="false">
                     <End EntitySet="Customers" Role="Customer"/>
                     <End EntitySet="SalesOrderHeaders" Role="SalesOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Name="Supplier_to_PurchaseOrderHeaders" Association="ESPM.Supplier_to_PurchaseOrderHeaders">
+                <AssociationSet Name="Supplier_to_PurchaseOrderHeaders" Association="ESPM.Supplier_to_PurchaseOrderHeaders" sap:searchable="false">
                     <End EntitySet="Suppliers" Role="Supplier"/>
                     <End EntitySet="PurchaseOrderHeaders" Role="PurchaseOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Name="Supplier_to_Products" Association="ESPM.Supplier_to_Products">
+                <AssociationSet Name="Supplier_to_Products" Association="ESPM.Supplier_to_Products" sap:searchable="false">
                     <End EntitySet="Suppliers" Role="Supplier"/>
                     <End EntitySet="Products" Role="Product"/>
                 </AssociationSet>
-                <AssociationSet Name="Product_to_PurchaseOrderItems" Association="ESPM.Product_to_PurchaseOrderItems">
+                <AssociationSet Name="Product_to_PurchaseOrderItems" Association="ESPM.Product_to_PurchaseOrderItems" sap:searchable="false">
                     <End EntitySet="Products" Role="Product"/>
                     <End EntitySet="PurchaseOrderItems" Role="PurchaseOrderItem"/>
                 </AssociationSet>
-                <AssociationSet Name="Product_to_SalesOrderItems" Association="ESPM.Product_to_SalesOrderItems">
+                <AssociationSet Name="Product_to_SalesOrderItems" Association="ESPM.Product_to_SalesOrderItems" sap:searchable="false">
                     <End EntitySet="SalesOrderItems" Role="SalesOrderItem"/>
                     <End EntitySet="Products" Role="Product"/>
                 </AssociationSet>
-                <AssociationSet Name="Product_to_Stock" Association="ESPM.Product_to_Stock">
+                <AssociationSet Name="Product_to_Stock" Association="ESPM.Product_to_Stock" sap:searchable="false">
                     <End EntitySet="Products" Role="Product"/>
                     <End EntitySet="Stock" Role="Stock"/>
                 </AssociationSet>
-                <AssociationSet Name="PurchaseOrderHeader_to_PurchaseOrderItems" Association="ESPM.PurchaseOrderHeader_to_PurchaseOrderItems">
+                <AssociationSet Name="PurchaseOrderHeader_to_PurchaseOrderItems" Association="ESPM.PurchaseOrderHeader_to_PurchaseOrderItems" sap:searchable="false">
                     <End EntitySet="PurchaseOrderItems" Role="PurchaseOrderItem"/>
                     <End EntitySet="PurchaseOrderHeaders" Role="PurchaseOrderHeader"/>
                 </AssociationSet>
-                <AssociationSet Name="SalesOrderHeader_to_SalesOrderItems" Association="ESPM.SalesOrderHeader_to_SalesOrderItems">
+                <AssociationSet Name="SalesOrderHeader_to_SalesOrderItems" Association="ESPM.SalesOrderHeader_to_SalesOrderItems" sap:searchable="false">
                     <End EntitySet="SalesOrderItems" Role="SalesOrderItem"/>
                     <End EntitySet="SalesOrderHeaders" Role="SalesOrderHeader"/>
                 </AssociationSet>

@@ -1,57 +1,63 @@
 {
-	"Caption": "Order Details",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"KeyAndValues": [
 						{
-							"KeyName": "Order Number",
 							"Value": "{SalesOrderId}",
+							"_Name": "KeyValue0",
+							"KeyName": "Order Number",
 							"Visible": true
 						},
 						{
-							"KeyName": "Status",
 							"Value": "{LifeCycleStatusName}",
+							"_Name": "KeyValue1",
+							"KeyName": "Status",
 							"Visible": true
 						},
 						{
-							"KeyName": "Created At",
 							"Value": "$(D,{CreatedAt},'','',{format:'medium'})",
+							"_Name": "KeyValue2",
+							"KeyName": "Created At",
 							"Visible": true
 						},
 						{
-							"KeyName": "Net Amount",
 							"Value": "$(C,{NetAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+							"_Name": "KeyValue3",
+							"KeyName": "Net Amount",
 							"Visible": true
 						},
 						{
-							"KeyName": "Tax Amount",
 							"Value": "$(C,{TaxAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+							"_Name": "KeyValue4",
+							"KeyName": "Tax Amount",
 							"Visible": true
 						},
 						{
-							"KeyName": "Total Amount",
 							"Value": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+							"_Name": "KeyValue5",
+							"KeyName": "Total Amount",
 							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"Visible": true,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "SalesOrders_Details",
-	"_Type": "Page"
+	"Caption": "Order Details"
 }

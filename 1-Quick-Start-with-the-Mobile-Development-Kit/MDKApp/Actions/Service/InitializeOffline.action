@@ -1,29 +1,28 @@
 {
-	"Service": "/MDKApp/Services/Sample.service",
-	"DefiningRequests": [
-	{
-		"Name": "Customers",
-		"Query": "Customers"
-	},
-	{
-		"Name": "Products",
-		"Query": "Products"
-	},
-	{
-		"Name": "SalesOrderHeaders",
-		"Query": "SalesOrderHeaders"
-	},
-	{
-		"Name": "SalesOrderItems",
-		"Query": "SalesOrderItems"
-	}
-],
-	"_Type": "Action.Type.ODataService.Initialize",
-	"ShowActivityIndicator": true,
-	"ActivityIndicatorText": "Downloading...",
-	"ActionResult": {
-		"_Name": "init"
-	},
-	"OnSuccess": "/MDKApp/Actions/Service/InitializeOfflineSuccessMessage.action",
-	"OnFailure": "/MDKApp/Actions/Service/InitializeOfflineFailureMessage.action"
+    "Service": "/MDKApp/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/MDKApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/MDKApp/Actions/Service/InitializeOfflineFailureMessage.action"
 }

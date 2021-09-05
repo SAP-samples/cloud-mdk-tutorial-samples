@@ -1,6 +1,6 @@
 {
 	"DestinationName": "swagger_petstore",
 	"OfflineEnabled": false,
-	"RestService": true,
-	"SourceType": "Mobile"
+	"SourceType": "Mobile",
+	"RestService": true
 }

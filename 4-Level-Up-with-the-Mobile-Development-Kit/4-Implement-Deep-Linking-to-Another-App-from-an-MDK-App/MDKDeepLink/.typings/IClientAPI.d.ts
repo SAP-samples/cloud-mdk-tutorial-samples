@@ -1,4 +1,4 @@
-/// version: MDK SDK 5.2
+/// version: MDK SDK 6.0
 
 /**
  * A designer-facing interface that provides access to a context.

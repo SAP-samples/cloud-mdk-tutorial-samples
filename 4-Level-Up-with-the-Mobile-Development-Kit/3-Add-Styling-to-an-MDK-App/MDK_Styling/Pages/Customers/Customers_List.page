@@ -1,66 +1,76 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Create.action",
-				"Position": "right",
-				"SystemItem": "Add",
-				"Text": ""
-			}
-		]
-	},
-	"Caption": "Customers",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Header": {
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Customers",
+						"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
 						"ContextMenu": {
 							"Items": [
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
+						"Title": "{FirstName}",
+						"Subhead": "{City}",
+						"Footnote": "{CustomerId}",
 						"Description": "{Country}",
+						"StatusText": "{DateOfBirth}",
+						"SubstatusText": "{EmailAddress}",
 						"DetailImageIsCircular": false,
-						"Footnote": "{DateOfBirth}",
-						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{EmailAddress}",
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"Styles": {
 							"Title": "ObjectTableTitle"
-						},
-						"Subhead": "{CustomerId}",
-						"SubstatusText": "{FirstName}",
-						"Title": "{City}"
+						}
 					},
 					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
 						"BarcodeScanner": true,
 						"Delay": 500,
-						"Enabled": true,
-						"MinimumCharacterThreshold": 3,
-						"Placeholder": "Item Search"
+						"MinimumCharacterThreshold": 3
 					},
-					"Target": {
-						"EntitySet": "Customers",
-						"QueryOptions": "",
-						"Service": "/MDK_Styling/Services/Sample.service"
-					},
-					"_Name": "SectionObjectTable0",
-					"_Type": "Section.Type.ObjectTable"
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					}
 				}
 			],
-			"_Name": "SectionedTable",
-			"_Type": "Control.Type.SectionedTable"
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			}
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_List",
-	"_Type": "Page"
+	"Caption": "Customers",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Create.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

@@ -1,79 +1,86 @@
 {
 	"Caption": "Update PurchaseOrderItem",
 	"ActionBar": {
-		"Items": [{
-			"Position": "left",
-			"SystemItem": "Cancel",
-			"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action"
-		}, {
-			"Position": "right",
-			"SystemItem": "Save",
-			"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/PurchaseOrderItems_UpdateEntity.action"
-		}]
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/PurchaseOrderItems_UpdateEntity.action"
+			}
+		]
 	},
-	"Controls": [{
-		"Sections": [{
-			"Caption": "",
-			"Controls": [
-	{
-		"Caption": "CurrencyCode",
-		"_Name": "CurrencyCode",
-		"Value": "{CurrencyCode}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "GrossAmount",
-		"_Name": "GrossAmount",
-		"Value": "{GrossAmount}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "ItemNumber",
-		"_Name": "ItemNumber",
-		"Value": "{ItemNumber}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "NetAmount",
-		"_Name": "NetAmount",
-		"Value": "{NetAmount}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "ProductId",
-		"_Name": "ProductId",
-		"Value": "{ProductId}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "PurchaseOrderId",
-		"_Name": "PurchaseOrderId",
-		"Value": "{PurchaseOrderId}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "Quantity",
-		"_Name": "Quantity",
-		"Value": "{Quantity}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "QuantityUnit",
-		"_Name": "QuantityUnit",
-		"Value": "{QuantityUnit}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	},
-	{
-		"Caption": "TaxAmount",
-		"_Name": "TaxAmount",
-		"Value": "{TaxAmount}",
-		"_Type": "Control.Type.FormCell.SimpleProperty"
-	}
-]
-		}],
-		"_Name": "PageOneFormCell",
-		"_Type": "Control.Type.FormCellContainer"
-	}],
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GrossAmount",
+							"_Name": "GrossAmount",
+							"Value": "{GrossAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ItemNumber",
+							"_Name": "ItemNumber",
+							"Value": "{ItemNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"_Name": "NetAmount",
+							"Value": "{NetAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductId",
+							"_Name": "ProductId",
+							"Value": "{ProductId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PurchaseOrderId",
+							"_Name": "PurchaseOrderId",
+							"Value": "{PurchaseOrderId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Quantity",
+							"_Name": "Quantity",
+							"Value": "{Quantity}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "QuantityUnit",
+							"_Name": "QuantityUnit",
+							"Value": "{QuantityUnit}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxAmount",
+							"_Name": "TaxAmount",
+							"Value": "{TaxAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
 	"_Type": "Page",
 	"_Name": "PurchaseOrderItems_Edit"
 }

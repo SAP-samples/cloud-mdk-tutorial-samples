@@ -1,12 +1,17 @@
 {
+	"_Type": "Action.Type.ODataService.CreateRelatedEntity",
 	"OnFailure": "/DemoSampleApp/Actions/CreateSalesOrderHeaderEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderHeaders"
+	},
 	"ParentLink": {
-		"Property": "SalesOrders",
 		"Target": {
 			"EntitySet": "Customers",
 			"ReadLink": "{@odata.readLink}"
-		}
+		},
+		"Property": "SalesOrders"
 	},
 	"Properties": {
 		"CreatedAt": "#Control:FCCreatedate/#Value",
@@ -16,10 +21,5 @@
 		"LifeCycleStatusName": "#Control:FCCreateLifeCycleStatusName/#Value",
 		"NetAmount": "#Control:FCCreateNetAmount/#Value",
 		"TaxAmount": "#Control:FCCreateTaxAmount/#Value"
-	},
-	"Target": {
-		"EntitySet": "SalesOrderHeaders",
-		"Service": "/DemoSampleApp/Services/Sample.service"
-	},
-	"_Type": "Action.Type.ODataService.CreateRelatedEntity"
+	}
 }

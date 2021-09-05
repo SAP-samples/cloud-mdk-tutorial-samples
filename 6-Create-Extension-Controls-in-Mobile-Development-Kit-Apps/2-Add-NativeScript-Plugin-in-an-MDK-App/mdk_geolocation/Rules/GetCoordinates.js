@@ -1,5 +1,5 @@
-import * as geolocation from "nativescript-geolocation";
-import { Accuracy } from "tns-core-modules/ui/enums";
+import * as geolocation from "@nativescript/geolocation";
+import { CoreTypes } from "@nativescript/core";
 export default function GetCoordinates(context) {
     var logger = context.getLogger();
     console.log("Current Log Level: " + logger.getLevel());
@@ -10,7 +10,7 @@ export default function GetCoordinates(context) {
     }
     // Get current location with high accuracy
     return geolocation.getCurrentLocation({
-        desiredAccuracy: Accuracy.high, //This will return the finest location available
+        desiredAccuracy: CoreTypes.Accuracy.high, //This will return the finest location available
         updateDistance: 5, //Update distance filter in meters.
         timeout: 11000 //How long to wait for a location in ms.
     }).then(function (loc) {

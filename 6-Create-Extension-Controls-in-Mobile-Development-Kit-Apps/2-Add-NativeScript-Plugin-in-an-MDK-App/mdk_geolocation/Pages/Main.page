@@ -1,45 +1,46 @@
 {
-	"Caption": "Main",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
 					"KeyAndValues": [
 						{
-							"KeyName": "Coordinates",
 							"Value": "/MDK_Geolocation/Rules/GetCoordinates.js",
+							"_Name": "KeyValue0",
+							"KeyName": "Coordinates",
 							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
 					"Layout": {
 						"NumberOfColumns": 1
-					},
-					"MaxItemCount": 1,
-					"Visible": true,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
-				"Caption": "Logout",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDK_Geolocation/Actions/Logout.action",
-				"Visible": true,
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/MDK_Geolocation/Actions/Logout.action"
 			}
 		]
-	},
-	"_Name": "Main",
-	"_Type": "Page"
+	}
 }

@@ -1,18 +1,17 @@
 {
-	"Service": "/MDK_ErrorArchive/Services/Sample.service",
-	"DefiningRequests": [
-	{
-		"Name": "PurchaseOrderHeaders",
-		"Query": "PurchaseOrderHeaders"
-	},
-	{
-		"Name": "PurchaseOrderItems",
-		"Query": "PurchaseOrderItems"
-	}
-],
-	"_Type": "Action.Type.OfflineOData.Download",
-	"ActionResult": {
-		"_Name": "sync"
-	},
-	"OnFailure": "/MDK_ErrorArchive/Actions/Service/SyncFailureMessage.action"
+    "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/MDK_ErrorArchive/Actions/Service/SyncFailureMessage.action"
 }

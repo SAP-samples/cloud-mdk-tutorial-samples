@@ -1,60 +1,63 @@
 {
-	"Caption": "Main",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Buttons": [
-						{
-							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
-							"TextAlignment": "center",
-							"Title": "PurchaseOrderHeaders"
-						},
-						{
-							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
-							"TextAlignment": "center",
-							"Title": "PurchaseOrderItems"
-						},
-						{
-							"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorList.action",
-							"TextAlignment": "center",
-							"Title": "Error Archive",
-							"Visible": true
-						}
-					],
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"_Name": "SectionButtonTable0",
-					"_Type": "Section.Type.ButtonTable"
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "PurchaseOrderHeaders",
+							"TextAlignment": "center",
+							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "PurchaseOrderItems",
+							"TextAlignment": "center",
+							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action"
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Error Archive",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/MDK_ErrorArchive/Actions/ShowErrorList.action"
+						}
+					]
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
-				"Caption": "Logout",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDK_ErrorArchive/Actions/Logout.action",
-				"Visible": true,
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/MDK_ErrorArchive/Actions/Logout.action"
 			},
 			{
-				"Caption": "Sync",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/MDK_ErrorArchive/Actions/Service/SyncStartedMessage.action",
-				"Visible": "$(PLT,true,true,false)",
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "UploadToolbarItem",
-				"_Type": "Control.Type.ToolbarItem"
+				"Caption": "Sync",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_ErrorArchive/Actions/Service/SyncStartedMessage.action"
 			}
 		]
-	},
-	"_Name": "Main",
-	"_Type": "Page"
+	}
 }

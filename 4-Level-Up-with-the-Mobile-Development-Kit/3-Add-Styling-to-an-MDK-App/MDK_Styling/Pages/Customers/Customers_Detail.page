@@ -1,116 +1,174 @@
 {
-	"ActionBar": {
-		"Items": [
-			{
-				"IsIconCircular": false,
-				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Edit.action",
-				"Position": "right",
-				"SystemItem": "Edit",
-				"Text": ""
-			},
-			{
-				"IsIconCircular": false,
-				"OnPress": "/MDK_Styling/Rules/Customers/Customers_DeleteConfirmation.js",
-				"Position": "right",
-				"SystemItem": "Trash",
-				"Text": ""
-			}
-		]
-	},
-	"Caption": "Customers Details",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Subhead": "{City}",
+						"Footnote": "{CustomerId}",
 						"Description": "{Country}",
-						"Footnote": "{DateOfBirth}",
-						"HeadlineText": "{City}",
-						"StatusText": "{EmailAddress}",
+						"StatusText": "{DateOfBirth}",
+						"SubstatusText": "{EmailAddress}",
+						"HeadlineText": "{FirstName}",
+						"Tags": [
+						],
 						"Styles": {
+							"ObjectHeader": "objectHeaderBackground",
 							"BodyText": "objectHeaderBodyText",
 							"Description": "objectHeaderDescription",
 							"Footnote": "objectHeaderFootNote",
 							"HeadlineText": "objectHeaderHeadline",
-							"ObjectHeader": "objectHeaderBackground",
 							"StatusText": "objectHeaderStatus",
 							"Subhead": "objectHeaderSubhead",
 							"SubstatusText": "objectHeaderSubStatus"
-						},
-						"Subhead": "{CustomerId}",
-						"SubstatusText": "{FirstName}",
-						"Tags": [
-						]
+						}
 					},
-					"_Name": "SectionObjectHeader0",
-					"_Type": "Section.Type.ObjectHeader"
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
 				},
 				{
+					"KeyAndValues": [
+						{
+							"Value": "{City}",
+							"_Name": "KeyValue0",
+							"KeyName": "City"
+						},
+						{
+							"Value": "{Country}",
+							"_Name": "KeyValue1",
+							"KeyName": "Country"
+						},
+						{
+							"Value": "{CustomerId}",
+							"_Name": "KeyValue2",
+							"KeyName": "CustomerId"
+						},
+						{
+							"Value": "{DateOfBirth}",
+							"_Name": "KeyValue3",
+							"KeyName": "DateOfBirth"
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Name": "KeyValue4",
+							"KeyName": "EmailAddress"
+						},
+						{
+							"Value": "{FirstName}",
+							"_Name": "KeyValue5",
+							"KeyName": "FirstName"
+						},
+						{
+							"Value": "{HouseNumber}",
+							"_Name": "KeyValue6",
+							"KeyName": "HouseNumber"
+						},
+						{
+							"Value": "{LastName}",
+							"_Name": "KeyValue7",
+							"KeyName": "LastName"
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Name": "KeyValue8",
+							"KeyName": "PhoneNumber"
+						},
+						{
+							"Value": "{PostalCode}",
+							"_Name": "KeyValue9",
+							"KeyName": "PostalCode"
+						},
+						{
+							"Value": "{Street}",
+							"_Name": "KeyValue10",
+							"KeyName": "Street"
+						},
+						{
+							"Value": "{UpdatedTimestamp}",
+							"_Name": "KeyValue11",
+							"KeyName": "UpdatedTimestamp"
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"KeyAndValues": [
-						{
-							"KeyName": "City",
-							"Value": "{City}"
-						},
-						{
-							"KeyName": "Country",
-							"Value": "{Country}"
-						},
-						{
-							"KeyName": "CustomerId",
-							"Value": "{CustomerId}"
-						},
-						{
-							"KeyName": "DateOfBirth",
-							"Value": "{DateOfBirth}"
-						},
-						{
-							"KeyName": "EmailAddress",
-							"Value": "{EmailAddress}"
-						},
-						{
-							"KeyName": "FirstName",
-							"Value": "{FirstName}"
-						},
-						{
-							"KeyName": "HouseNumber",
-							"Value": "{HouseNumber}"
-						},
-						{
-							"KeyName": "LastName",
-							"Value": "{LastName}"
-						},
-						{
-							"KeyName": "PhoneNumber",
-							"Value": "{PhoneNumber}"
-						},
-						{
-							"KeyName": "PostalCode",
-							"Value": "{PostalCode}"
-						},
-						{
-							"KeyName": "Street",
-							"Value": "{Street}"
-						},
-						{
-							"KeyName": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}"
-						}
-					],
 					"Layout": {
 						"NumberOfColumns": 2
-					},
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{HouseNumber}",
+							"_Name": "KeyValue12",
+							"KeyName": "HouseNumber"
+						},
+						{
+							"Value": "{Street}",
+							"_Name": "KeyValue13",
+							"KeyName": "Street"
+						},
+						{
+							"Value": "{City}",
+							"_Name": "KeyValue14",
+							"KeyName": "City"
+						},
+						{
+							"Value": "{Country}",
+							"_Name": "KeyValue15",
+							"KeyName": "Country"
+						},
+						{
+							"Value": "{PostalCode}",
+							"_Name": "KeyValue16",
+							"KeyName": "PostalCode"
+						}
+					],
 					"MaxItemCount": 1,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValueAddress",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "Address"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
 				}
-			],
-			"_Name": "SectionedTable",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
+	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"_Type": "Page"
+	"Caption": "Customer",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/MDK_Styling/Rules/Customers/Customers_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
 }

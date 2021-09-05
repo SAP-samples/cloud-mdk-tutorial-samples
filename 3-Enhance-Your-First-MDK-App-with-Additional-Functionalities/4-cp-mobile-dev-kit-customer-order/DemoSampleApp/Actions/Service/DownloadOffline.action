@@ -1,6 +1,6 @@
 {
-	"Service": "/DemoSampleApp/Services/Sample.service",
-	"DefiningRequests": [
+    "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+    "DefiningRequests": [
 	{
 		"Name": "Customers",
 		"Query": "Customers"
@@ -18,9 +18,9 @@
 		"Query": "SalesOrderItems"
 	}
 ],
-	"_Type": "Action.Type.OfflineOData.Download",
-	"ActionResult": {
-		"_Name": "sync"
-	},
-	"OnFailure": "/DemoSampleApp/Actions/Service/SyncFailureMessage.action"
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/DemoSampleApp/Actions/Service/SyncFailureMessage.action"
 }
