@@ -15,24 +15,25 @@ Tap **AGREE** on `End User License Agreement`.
 
 3. Once scan is succeeded, tap **CONTINUE**.
 
-    ![MDK](img-3.png)
+![MDK](img-3.png)
 
-4. Enter your credentails to login to SAP Business Technology Platform (BTP) and tap **Log On** to authenticate.
+4. Enter your credentials to login to SAP Business Technology Platform (BTP).
 
-    ![MDK](img-4.png)
+![MDK](img-4.png)
+![MDK](img-4.1.png)
 
 5. Choose a passcode with at least 8 characters for unlocking the app and tap **NEXT**.
 
-    ![MDK](img-5.png)    
+![MDK](img-5.png)    
 
 6. Confirm the passcode and tap **DONE**.
 
-    ![MDK](img-6.png)
+![MDK](img-6.png)
 
-    Optionally, you can enable Biometric authentication to get faster access to the app data.
+Optionally, you can enable Biometric authentication to get faster access to the app data.
 
-    ![MDK](img_7.1.png)
+![MDK](img_7.1.png)
 
 8. Tap **NOW** to accept the deployed metadata definitions.
 
-    ![MDK](img_8.png)
+![MDK](img_8.png)
