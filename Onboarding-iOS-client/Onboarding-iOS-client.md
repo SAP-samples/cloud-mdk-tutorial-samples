@@ -13,9 +13,10 @@
 
     ![MDK](img_3.png)
 
-4. Enter your credentails to login to SAP Business Technology Platform (BTP) and tap **Log On** to authenticate.
+4. Enter your credentials to login to SAP Business Technology Platform (BTP).
 
     ![MDK](img_4.png)
+    ![MDK](img_4.1.png)
 
 5. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
