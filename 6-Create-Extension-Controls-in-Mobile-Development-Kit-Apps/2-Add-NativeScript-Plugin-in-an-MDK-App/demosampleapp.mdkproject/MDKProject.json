@@ -1,8 +1,0 @@
-{
-  "AppName": "DemoSampleApp",
-  "AppVersion": "1.0.0",
-  "BundleID": "<Your bundle ID>",
-  "Externals": ["@nativescript/geolocation"],
-  "NSPlugins": ["@nativescript/geolocation"],
-  "UrlScheme": "mdkclient"
-}
