@@ -3,6 +3,6 @@
   "AppVersion": "1.0.0",
   "BundleID": "<Your bundle ID>",
   "Externals": ["@nativescript/geolocation"],
-  "NSPlugins": ["@nativescript/geolocation"],
+  "NSPlugins": ["@nativescript/geolocation@8.0.0"],
   "UrlScheme": "mdkclient"
 }

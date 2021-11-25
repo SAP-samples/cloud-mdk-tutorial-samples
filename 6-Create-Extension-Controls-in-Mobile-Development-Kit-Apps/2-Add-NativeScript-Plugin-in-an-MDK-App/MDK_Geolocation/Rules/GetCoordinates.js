@@ -1,12 +1,13 @@
 import * as geolocation from "@nativescript/geolocation";
 import { CoreTypes } from "@nativescript/core";
-export default function GetCoordinates(context) {
+export default async function GetCoordinates(context) {
     var logger = context.getLogger();
     console.log("Current Log Level: " + logger.getLevel());
     // check if geolocation is not enabled
-    if (!geolocation.isEnabled()) {
+        var locationIsEnabled = await geolocation.isEnabled();
+    if (!locationIsEnabled) {
         // request for the user to enable it
-        geolocation.enableLocationRequest();
+        await geolocation.enableLocationRequest();
     }
     // Get current location with high accuracy
     return geolocation.getCurrentLocation({
@@ -18,7 +19,6 @@ export default function GetCoordinates(context) {
             console.log(loc);
             console.log('\nCurrent Location: (' + loc.latitude + ',' + loc.longitude + ')');
             logger.log(loc.toString());
-
             var locMessage = '(' + "Latitude:" + loc.latitude + ',' + "Longitude:" + loc.longitude + ')';
             logger.log('Current Location: ' + locMessage, 'INFO');
             return locMessage;
