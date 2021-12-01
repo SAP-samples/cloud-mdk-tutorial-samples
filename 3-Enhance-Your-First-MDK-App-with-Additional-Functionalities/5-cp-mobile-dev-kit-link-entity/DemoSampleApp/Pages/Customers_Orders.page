@@ -26,7 +26,7 @@
 						"Title": "{SalesOrderId}",
 						"Subhead": "{CustomerId}",
 						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatusName}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,

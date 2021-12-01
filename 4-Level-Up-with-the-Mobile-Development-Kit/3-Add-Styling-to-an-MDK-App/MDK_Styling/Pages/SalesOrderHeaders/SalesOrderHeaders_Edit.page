@@ -1,0 +1,105 @@
+{
+	"Caption": "Update SalesOrderHeader",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/MDK_Styling/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/SalesOrderHeaders_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Mode": "DateTime",
+							"_Name": "CreatedAt",
+							"Value": "{CreatedAt}",
+							"Caption": "CreatedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{CustomerId}",
+								"ReturnValue": "{CustomerId}",
+								"Target": {
+									"EntitySet": "Customers",
+									"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"Value": "{CustomerId}",
+							"_Name": "CustomerId",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "GrossAmount",
+							"_Name": "GrossAmount",
+							"Value": "{GrossAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifeCycleStatus",
+							"_Name": "LifeCycleStatus",
+							"Value": "{LifeCycleStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifeCycleStatusName",
+							"_Name": "LifeCycleStatusName",
+							"Value": "{LifeCycleStatusName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"_Name": "NetAmount",
+							"Value": "{NetAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOrderId",
+							"_Name": "SalesOrderId",
+							"Value": "{SalesOrderId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxAmount",
+							"_Name": "TaxAmount",
+							"Value": "{TaxAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Edit"
+}

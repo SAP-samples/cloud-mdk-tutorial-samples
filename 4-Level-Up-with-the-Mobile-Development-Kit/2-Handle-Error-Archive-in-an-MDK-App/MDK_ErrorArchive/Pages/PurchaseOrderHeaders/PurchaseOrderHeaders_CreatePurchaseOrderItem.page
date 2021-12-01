@@ -1,0 +1,112 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/PurchaseOrderHeaders_CreatePurchaseOrderItem.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create PurchaseOrderItem",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ItemNumber",
+							"KeyboardType": "Number",
+							"_Name": "ItemNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"_Name": "ProductId",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "PurchaseOrderId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{PurchaseOrderId}",
+								"ReturnValue": "{PurchaseOrderId}",
+								"Target": {
+									"EntitySet": "PurchaseOrderHeaders",
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"_Name": "PurchaseOrderId",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{PurchaseOrderId}"
+						},
+						{
+							"Caption": "Quantity",
+							"KeyboardType": "Number",
+							"_Name": "Quantity",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "QuantityUnit",
+							"_Name": "QuantityUnit",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderHeaders_CreatePurchaseOrderItem"
+}

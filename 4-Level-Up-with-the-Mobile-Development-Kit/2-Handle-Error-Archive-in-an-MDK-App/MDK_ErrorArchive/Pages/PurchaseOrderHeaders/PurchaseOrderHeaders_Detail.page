@@ -8,9 +8,9 @@
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDK_ErrorArchive/Rules/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js",
+				"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/PurchaseOrderHeaders_DetailPopover.action",
 				"Position": "Right",
-				"SystemItem": "Trash"
+				"Caption": "More"
 			}
 		]
 	},
@@ -66,7 +66,35 @@
 					"MaxItemCount": 1,
 					"_Name": "SectionKeyValue0",
 					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Items"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{ItemNumber}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{NetAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ProductId}",
+						"Subhead": "{GrossAmount}",
+						"SubstatusText": "{PurchaseOrderId}",
+						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/Items",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
 				}
+			],
+			"DataSubscriptions": [
+				"PurchaseOrderItems"
 			],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable"

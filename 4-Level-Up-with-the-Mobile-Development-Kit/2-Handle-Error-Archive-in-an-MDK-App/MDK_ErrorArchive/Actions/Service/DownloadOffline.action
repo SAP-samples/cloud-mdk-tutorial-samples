@@ -1,6 +1,10 @@
 {
     "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
     "DefiningRequests": [{
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        },
+        {
             "Name": "PurchaseOrderHeaders",
             "Query": "PurchaseOrderHeaders"
         },

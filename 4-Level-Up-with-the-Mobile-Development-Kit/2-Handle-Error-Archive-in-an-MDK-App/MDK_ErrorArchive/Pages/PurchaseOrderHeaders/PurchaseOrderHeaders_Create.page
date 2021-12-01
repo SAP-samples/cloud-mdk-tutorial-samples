@@ -26,11 +26,13 @@
 						},
 						{
 							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
 							"_Name": "GrossAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "NetAmount",
+							"KeyboardType": "Number",
 							"_Name": "NetAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -41,11 +43,27 @@
 						},
 						{
 							"Caption": "SupplierId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SupplierName}",
+								"ReturnValue": "{SupplierId}",
+								"Target": {
+									"EntitySet": "Suppliers",
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"_Name": "SupplierId",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
 							"_Name": "TaxAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}

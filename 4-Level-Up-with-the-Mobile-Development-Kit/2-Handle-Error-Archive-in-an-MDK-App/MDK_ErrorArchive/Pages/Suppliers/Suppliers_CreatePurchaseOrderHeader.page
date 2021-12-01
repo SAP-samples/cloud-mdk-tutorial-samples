@@ -1,0 +1,80 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/Suppliers_CreatePurchaseOrderHeader.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create PurchaseOrderHeader",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PurchaseOrderId",
+							"_Name": "PurchaseOrderId",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SupplierName}",
+								"ReturnValue": "{SupplierId}",
+								"Target": {
+									"EntitySet": "Suppliers",
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"_Name": "SupplierId",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{SupplierId}"
+						},
+						{
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Suppliers_CreatePurchaseOrderHeader"
+}

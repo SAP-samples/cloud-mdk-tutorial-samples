@@ -8,9 +8,9 @@
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Rules/Customers/Customers_DeleteConfirmation.js",
+				"OnPress": "/MDKApp/Actions/Customers/Customers_DetailPopover.action",
 				"Position": "Right",
-				"SystemItem": "Trash"
+				"Caption": "More"
 			}
 		]
 	},
@@ -123,7 +123,35 @@
 					"MaxItemCount": 1,
 					"_Name": "SectionKeyValueAddress",
 					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrders"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{CurrencyCode}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LifeCycleStatusName}",
+						"Footnote": "{CustomerId}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{GrossAmount}",
+						"Subhead": "{CreatedAt}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+						"Service": "/MDKApp/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
 				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
 			],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable"

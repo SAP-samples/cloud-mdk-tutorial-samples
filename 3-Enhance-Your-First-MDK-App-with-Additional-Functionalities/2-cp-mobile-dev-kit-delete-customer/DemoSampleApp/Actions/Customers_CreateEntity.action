@@ -7,7 +7,6 @@
 		"EntitySet": "Customers"
 	},
 	"Properties": {
-		"City": "",
 		"DateOfBirth": "#Control:FCCreateDOB/#Value",
 		"EmailAddress": "#Control:FCCreateEmail/#Value",
 		"FirstName": "#Control:FCCreateFirstName/#Value",

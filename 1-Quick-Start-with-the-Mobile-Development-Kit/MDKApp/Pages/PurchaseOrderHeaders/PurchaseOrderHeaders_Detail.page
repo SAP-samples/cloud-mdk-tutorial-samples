@@ -1,0 +1,105 @@
+{
+	"Caption": "PurchaseOrderHeader",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/PurchaseOrderHeaders_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "",
+						"HeadlineText": "{CurrencyCode}",
+						"Subhead": "{GrossAmount}",
+						"Tags": [],
+						"BodyText": "",
+						"Footnote": "{PurchaseOrderId}",
+						"Description": "{NetAmount}",
+						"StatusText": "{SupplierId}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{TaxAmount}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "PurchaseOrderId",
+							"Value": "{PurchaseOrderId}"
+						},
+						{
+							"KeyName": "SupplierId",
+							"Value": "{SupplierId}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Items"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{ItemNumber}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{NetAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ProductId}",
+						"Subhead": "{GrossAmount}",
+						"SubstatusText": "{PurchaseOrderId}",
+						"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/Items",
+						"Service": "/MDKApp/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PurchaseOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PurchaseOrderHeaders_Detail"
+}

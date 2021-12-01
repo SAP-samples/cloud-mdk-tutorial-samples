@@ -13,28 +13,28 @@
 					},
 					"Buttons": [
 						{
-							"_Name": "SectionButton0",
+							"_Name": "SectionButton2",
 							"Title": "Open SAP Mobile Cards",
 							"TextAlignment": "center",
 							"Visible": true,
 							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js"
 						},
 						{
-							"_Name": "SectionButton4",
+							"_Name": "SectionButton1",
 							"Title": "Open SAP Fiori Client",
 							"TextAlignment": "center",
 							"Visible": true,
 							"OnPress": "/MDKDeepLink/Rules/OpenSAPFioriClient.js"
 						},
 						{
-							"_Name": "SectionButton5",
+							"_Name": "SectionButton0",
 							"Title": "Open UI5 App",
 							"TextAlignment": "center",
 							"Visible": true,
 							"OnPress": "/MDKDeepLink/Rules/OpenUI5.js"
 						},
 						{
-							"_Name": "SectionButton6",
+							"_Name": "SectionButton3",
 							"Title": "Open SAP.com page",
 							"TextAlignment": "center",
 							"Visible": true,

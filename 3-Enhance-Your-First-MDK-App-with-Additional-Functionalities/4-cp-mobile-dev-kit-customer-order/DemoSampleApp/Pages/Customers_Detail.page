@@ -71,7 +71,7 @@
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter1",
+						"_Name": "SectionFooter0",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "disclosureIndicator",
@@ -86,6 +86,11 @@
 						"FooterVisible": false
 					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Title": "{SalesOrderId}",
 						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
@@ -94,12 +99,7 @@
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -117,7 +117,7 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Customers Detail",
+	"Caption": "Customer Detail",
 	"ActionBar": {
 		"Items": [
 			{
@@ -139,6 +139,6 @@
 				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

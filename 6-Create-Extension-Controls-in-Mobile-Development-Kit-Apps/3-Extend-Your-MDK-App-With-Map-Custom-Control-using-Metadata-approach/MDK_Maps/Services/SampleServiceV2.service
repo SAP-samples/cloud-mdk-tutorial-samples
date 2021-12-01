@@ -1,7 +1,7 @@
 {
     "DestinationName": "SampleServiceV2",
     "OfflineEnabled": false,
-    "LanguageURLParam": "sap-language",
+    "LanguageURLParam": "",
     "OnlineOptions": {},
     "PathSuffix": "",
     "SourceType": "Mobile",

@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add SalesOrderItem",
+            "OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_CreateSalesOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/MDK_Styling/Rules/SalesOrderHeaders/SalesOrderHeaders_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

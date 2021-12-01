@@ -13,18 +13,24 @@
 					"Buttons": [
 						{
 							"_Name": "SectionButton0",
+							"Title": "Suppliers",
+							"TextAlignment": "center",
+							"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/NavToSuppliers_List.action"
+						},
+						{
+							"_Name": "SectionButton1",
 							"Title": "PurchaseOrderHeaders",
 							"TextAlignment": "center",
 							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action"
 						},
 						{
-							"_Name": "SectionButton1",
+							"_Name": "SectionButton2",
 							"Title": "PurchaseOrderItems",
 							"TextAlignment": "center",
 							"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action"
 						},
 						{
-							"_Name": "SectionButton2",
+							"_Name": "SectionButton3",
 							"Title": "Error Archive",
 							"TextAlignment": "center",
 							"Visible": true,

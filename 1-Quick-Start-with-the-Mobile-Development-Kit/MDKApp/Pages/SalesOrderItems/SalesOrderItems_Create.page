@@ -32,26 +32,45 @@
 						},
 						{
 							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
 							"_Name": "GrossAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ItemNumber",
+							"KeyboardType": "Number",
 							"_Name": "ItemNumber",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "NetAmount",
+							"KeyboardType": "Number",
 							"_Name": "NetAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Quantity",
+							"KeyboardType": "Number",
 							"_Name": "Quantity",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -62,11 +81,27 @@
 						},
 						{
 							"Caption": "SalesOrderId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SalesOrderId}",
+								"ReturnValue": "{SalesOrderId}",
+								"Target": {
+									"EntitySet": "SalesOrderHeaders",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"_Name": "SalesOrderId",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
 							"_Name": "TaxAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="__PACKAGE__" xmlns:tools="http://schemas.android.com/tools" android:versionCode="1" android:versionName="1.0">
+	<!-- Always include this permission -->
+	<!-- This permission is for "approximate" location data -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<!-- Include only if your app benefits from precise location access. -->
+	<!-- This permission is for "precise" location data -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<!--
+	Required only when requesting background location access on
+	Android 10 (API level 29) and higher.
+	-->
+	<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+	<application>
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="Enter your API Key generated in step 6" />
+	</application>
+</manifest>

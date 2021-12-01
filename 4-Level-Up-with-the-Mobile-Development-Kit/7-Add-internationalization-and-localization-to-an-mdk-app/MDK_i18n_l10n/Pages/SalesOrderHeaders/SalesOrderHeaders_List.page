@@ -6,6 +6,7 @@
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",

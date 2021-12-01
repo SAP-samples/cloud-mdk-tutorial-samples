@@ -10,7 +10,7 @@
         "GrossAmount": "#Control:GrossAmount/#Value",
         "NetAmount": "#Control:NetAmount/#Value",
         "PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-        "SupplierId": "#Control:SupplierId/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
         "TaxAmount": "#Control:TaxAmount/#Value"
     },
     "UpdateLinks": [],

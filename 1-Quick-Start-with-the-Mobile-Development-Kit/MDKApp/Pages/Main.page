@@ -18,9 +18,19 @@
 							"Title": "Products"
 						},
 						{
+							"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
+							"TextAlignment": "center",
+							"Title": "PurchaseOrderHeaders"
+						},
+						{
 							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"TextAlignment": "center",
 							"Title": "SalesOrderHeaders"
+						},
+						{
+							"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
+							"TextAlignment": "center",
+							"Title": "PurchaseOrderItems"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",

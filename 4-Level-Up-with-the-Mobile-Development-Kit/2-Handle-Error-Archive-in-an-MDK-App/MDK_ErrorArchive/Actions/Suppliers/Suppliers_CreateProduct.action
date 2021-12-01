@@ -1,0 +1,40 @@
+{
+    "ParentLink": {
+        "Property": "Products",
+        "Target": {
+            "EntitySet": "Suppliers",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/MDK_ErrorArchive/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MDK_ErrorArchive/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DimensionDepth": "#Control:DimensionDepth/#Value",
+        "DimensionHeight": "#Control:DimensionHeight/#Value",
+        "DimensionUnit": "#Control:DimensionUnit/#Value",
+        "DimensionWidth": "#Control:DimensionWidth/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "PictureUrl": "#Control:PictureUrl/#Value",
+        "Price": "#Control:Price/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
+        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
+        "Weight": "#Control:Weight/#Value",
+        "WeightUnit": "#Control:WeightUnit/#Value"
+    },
+    "Media": "#Control:Attachment/#Value",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedMedia"
+}

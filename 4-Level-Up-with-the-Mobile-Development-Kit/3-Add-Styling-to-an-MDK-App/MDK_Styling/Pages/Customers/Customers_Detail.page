@@ -1,6 +1,9 @@
 {
 	"Controls": [
 		{
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [
@@ -143,6 +146,39 @@
 					"Layout": {
 						"NumberOfColumns": 2
 					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader1",
+						"UseTopPadding": true,
+						"Caption": "SalesOrders"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+						"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"Title": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"Footnote": "{CustomerId}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					}
 				}
 			]
 		}
@@ -162,13 +198,12 @@
 			},
 			{
 				"_Name": "ActionBarItem1",
-				"Caption": "",
-				"SystemItem": "Trash",
+				"Caption": "More",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"OnPress": "/MDK_Styling/Rules/Customers/Customers_DeleteConfirmation.js"
+				"OnPress": "/MDK_Styling/Actions/Customers/Customers_DetailPopover.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

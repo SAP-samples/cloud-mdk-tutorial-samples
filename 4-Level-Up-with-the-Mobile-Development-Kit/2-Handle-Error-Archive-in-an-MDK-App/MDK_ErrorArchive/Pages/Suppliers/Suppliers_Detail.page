@@ -1,0 +1,180 @@
+{
+	"Caption": "Supplier",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/NavToSuppliers_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/Suppliers_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "",
+						"HeadlineText": "{SupplierName}",
+						"Subhead": "{City}",
+						"Tags": [],
+						"BodyText": "",
+						"Footnote": "{EmailAddress}",
+						"Description": "{Country}",
+						"StatusText": "{HouseNumber}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{PhoneNumber}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "City",
+							"Value": "{City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}"
+						},
+						{
+							"KeyName": "EmailAddress",
+							"Value": "{EmailAddress}"
+						},
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}"
+						},
+						{
+							"KeyName": "PhoneNumber",
+							"Value": "{PhoneNumber}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}"
+						},
+						{
+							"KeyName": "SupplierId",
+							"Value": "{SupplierId}"
+						},
+						{
+							"KeyName": "SupplierName",
+							"Value": "{SupplierName}"
+						},
+						{
+							"KeyName": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Address"
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}"
+						},
+						{
+							"KeyName": "City",
+							"Value": "{City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValueAddress",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Products"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{CategoryName}",
+						"DetailImage": "/MDK_ErrorArchive/Services/SampleServiceV2.service/{@odata.readLink}/$value",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Name}",
+						"Footnote": "{CurrencyCode}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{DimensionDepth}",
+						"Subhead": "{Category}",
+						"SubstatusText": "{DimensionHeight}",
+						"OnPress": "/MDK_ErrorArchive/Actions/Products/NavToProducts_Detail.action"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/Products",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "PurchaseOrders"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{NetAmount}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{PurchaseOrderId}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{SupplierId}",
+						"Subhead": "{GrossAmount}",
+						"SubstatusText": "{TaxAmount}",
+						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Detail.action"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/PurchaseOrders",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"Products",
+				"PurchaseOrderHeaders"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Suppliers_Detail"
+}

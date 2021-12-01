@@ -36,11 +36,13 @@
 						},
 						{
 							"Caption": "DimensionDepth",
+							"KeyboardType": "Number",
 							"_Name": "DimensionDepth",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "DimensionHeight",
+							"KeyboardType": "Number",
 							"_Name": "DimensionHeight",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -51,6 +53,7 @@
 						},
 						{
 							"Caption": "DimensionWidth",
+							"KeyboardType": "Number",
 							"_Name": "DimensionWidth",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -71,13 +74,29 @@
 						},
 						{
 							"Caption": "Price",
+							"KeyboardType": "Number",
 							"_Name": "Price",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{ProductId}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Stock",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "QuantityUnit",
@@ -91,8 +110,23 @@
 						},
 						{
 							"Caption": "SupplierId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SupplierName}",
+								"ReturnValue": "{SupplierId}",
+								"Target": {
+									"EntitySet": "Suppliers",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"_Name": "SupplierId",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Mode": "DateTime",
@@ -102,6 +136,7 @@
 						},
 						{
 							"Caption": "Weight",
+							"KeyboardType": "Number",
 							"_Name": "Weight",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -109,6 +144,22 @@
 							"Caption": "WeightUnit",
 							"_Name": "WeightUnit",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AttachmentTitle": "Media",
+							"AttachmentAddTitle": "Browse",
+							"AttachmentActionType": [
+								"AddPhoto",
+								"TakePhoto",
+								"SelectFile"
+							],
+							"AllowedFileTypes": [
+								"jpg",
+								"png",
+								"gif"
+							],
+							"_Name": "Attachment",
+							"_Type": "Control.Type.FormCell.Attachment"
 						}
 					]
 				}

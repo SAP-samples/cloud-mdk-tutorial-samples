@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/MDKApp/Rules/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

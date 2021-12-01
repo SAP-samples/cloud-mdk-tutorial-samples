@@ -11,10 +11,10 @@
         "GrossAmount": "#Control:GrossAmount/#Value",
         "ItemNumber": "#Control:ItemNumber/#Value",
         "NetAmount": "#Control:NetAmount/#Value",
-        "ProductId": "#Control:ProductId/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
         "Quantity": "#Control:Quantity/#Value",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
-        "SalesOrderId": "#Control:SalesOrderId/#Value",
+        "SalesOrderId": "#Control:SalesOrderId/#SelectedValue",
         "TaxAmount": "#Control:TaxAmount/#Value"
     },
     "UpdateLinks": [],

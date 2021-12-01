@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/MDK_ErrorArchive/Actions/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/MDK_ErrorArchive/Rules/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

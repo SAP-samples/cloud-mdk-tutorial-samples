@@ -1,0 +1,93 @@
+{
+	"Caption": "Update Supplier",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/MDK_ErrorArchive/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/Suppliers_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"Value": "{City}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"Value": "{Country}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "EmailAddress",
+							"_Name": "EmailAddress",
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HouseNumber",
+							"_Name": "HouseNumber",
+							"Value": "{HouseNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PhoneNumber",
+							"_Name": "PhoneNumber",
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"Value": "{PostalCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"Value": "{Street}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierId",
+							"_Name": "SupplierId",
+							"Value": "{SupplierId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierName",
+							"_Name": "SupplierName",
+							"Value": "{SupplierName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "DateTime",
+							"_Name": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}",
+							"Caption": "UpdatedTimestamp",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Suppliers_Edit"
+}

@@ -61,7 +61,7 @@
 				"OnPress": "/MDK_Petstore/Actions/NavToPet_Create.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	},
 	"ToolBar": {
 		"Items": [

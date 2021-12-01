@@ -99,6 +99,6 @@
 				"OnPress": "/DemoSampleApp/Actions/SalesOrderHeaders_CreateEntity.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

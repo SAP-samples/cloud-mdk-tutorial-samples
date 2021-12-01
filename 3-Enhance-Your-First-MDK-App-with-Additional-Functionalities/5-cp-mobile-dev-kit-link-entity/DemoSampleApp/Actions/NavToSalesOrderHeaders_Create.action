@@ -2,5 +2,5 @@
 	"_Type": "Action.Type.Navigation",
 	"PageToOpen": "/DemoSampleApp/Pages/SalesOrderHeaders_Create.page",
 	"ModalPage": true,
-	"NavigationType": "Cross"
+	"NavigationType": "Inner"
 }

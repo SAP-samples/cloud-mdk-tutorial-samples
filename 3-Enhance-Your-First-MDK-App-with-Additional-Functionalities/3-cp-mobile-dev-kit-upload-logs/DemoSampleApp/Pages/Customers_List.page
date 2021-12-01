@@ -33,14 +33,14 @@
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Detail.action",
 						"ActivityItems": [
 							{
+								"_Name": "SectionContactCell0ActivityItems0",
 								"ActivityType": "Phone",
-								"ActivityValue": "{PhoneNumber}",
-								"_Name": "SectionContactCell0ActivityItem1"
+								"ActivityValue": "{PhoneNumber}"
 							},
 							{
+								"_Name": "SectionContactCell0ActivityItems1",
 								"ActivityType": "Email",
-								"ActivityValue": "{EmailAddress}",
-								"_Name": "SectionContactCell0ActivityItem2"
+								"ActivityValue": "{EmailAddress}"
 							}
 						]
 					},
@@ -67,6 +67,6 @@
 				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Create.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

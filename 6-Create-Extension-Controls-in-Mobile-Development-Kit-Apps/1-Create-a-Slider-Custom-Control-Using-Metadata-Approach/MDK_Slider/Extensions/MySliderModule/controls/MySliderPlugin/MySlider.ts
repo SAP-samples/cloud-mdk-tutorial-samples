@@ -1,3 +1,4 @@
+
 import * as application from '@nativescript/core/application';
 export let MySlider;
 let MySliderModule;

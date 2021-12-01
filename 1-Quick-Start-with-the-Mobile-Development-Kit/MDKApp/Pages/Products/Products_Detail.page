@@ -8,9 +8,9 @@
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Rules/Products/Products_DeleteConfirmation.js",
+				"OnPress": "/MDKApp/Actions/Products/Products_DetailPopover.action",
 				"Position": "Right",
-				"SystemItem": "Trash"
+				"Caption": "More"
 			}
 		]
 	},
@@ -19,7 +19,7 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"DetailImage": "",
+						"DetailImage": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value",
 						"HeadlineText": "{Name}",
 						"Subhead": "{Category}",
 						"Tags": [],
@@ -116,6 +116,7 @@
 					"_Type": "Section.Type.KeyValue"
 				}
 			],
+			"DataSubscriptions": [],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable"
 		}

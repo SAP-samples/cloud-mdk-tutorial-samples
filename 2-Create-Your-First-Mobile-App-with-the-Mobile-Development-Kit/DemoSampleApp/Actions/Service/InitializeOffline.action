@@ -1,23 +1,23 @@
 {
     "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-    "DefiningRequests": [
-	{
-		"Name": "Customers",
-		"Query": "Customers"
-	},
-	{
-		"Name": "Products",
-		"Query": "Products"
-	},
-	{
-		"Name": "SalesOrderHeaders",
-		"Query": "SalesOrderHeaders"
-	},
-	{
-		"Name": "SalesOrderItems",
-		"Query": "SalesOrderItems"
-	}
-],
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products",
+            "AutomaticallyRetrievesStreams": true
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        }
+    ],
     "_Type": "Action.Type.ODataService.Initialize",
     "ShowActivityIndicator": true,
     "ActivityIndicatorText": "Downloading...",

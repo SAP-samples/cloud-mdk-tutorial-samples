@@ -80,6 +80,7 @@
 					"_Type": "Section.Type.KeyValue"
 				}
 			],
+			"DataSubscriptions": [],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable"
 		}

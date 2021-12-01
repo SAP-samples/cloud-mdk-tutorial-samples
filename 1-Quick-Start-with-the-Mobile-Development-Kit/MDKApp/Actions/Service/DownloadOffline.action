@@ -6,11 +6,20 @@
         },
         {
             "Name": "Products",
-            "Query": "Products"
+            "Query": "Products",
+            "AutomaticallyRetrievesStreams": true
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
         },
         {
             "Name": "SalesOrderHeaders",
             "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
         },
         {
             "Name": "SalesOrderItems",

@@ -36,16 +36,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Email",
-							"PlaceHolder": "Enter Value"
-						},
-						{
-							"Value": "Enter Date",
-							"_Type": "Control.Type.FormCell.DatePicker",
-							"_Name": "FCCreateDOB",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Caption": "DOB",
-							"Mode": "date"
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Email"
 						}
 					],
 					"Visible": true
@@ -77,6 +69,6 @@
 				"OnPress": "/DemoSampleApp/Actions/Customers_CreateEntity.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

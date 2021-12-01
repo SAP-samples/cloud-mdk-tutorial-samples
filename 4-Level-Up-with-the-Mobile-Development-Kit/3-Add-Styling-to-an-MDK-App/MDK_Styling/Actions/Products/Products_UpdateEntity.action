@@ -17,10 +17,10 @@
         "Name": "#Control:Name/#Value",
         "PictureUrl": "#Control:PictureUrl/#Value",
         "Price": "#Control:Price/#Value",
-        "ProductId": "#Control:ProductId/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
         "ShortDescription": "#Control:ShortDescription/#Value",
-        "SupplierId": "#Control:SupplierId/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
         "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
         "Weight": "#Control:Weight/#Value",
         "WeightUnit": "#Control:WeightUnit/#Value"

@@ -1,5 +1,4 @@
 {
-    "CreateLinks": [],
     "OnFailure": "/MDK_Styling/Actions/CreateEntityFailureMessage.action",
     "OnSuccess": "/MDK_Styling/Actions/CreateEntitySuccessMessage.action",
     "Properties": {
@@ -14,14 +13,15 @@
         "Name": "#Control:Name/#Value",
         "PictureUrl": "#Control:PictureUrl/#Value",
         "Price": "#Control:Price/#Value",
-        "ProductId": "#Control:ProductId/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
         "ShortDescription": "#Control:ShortDescription/#Value",
-        "SupplierId": "#Control:SupplierId/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
         "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
         "Weight": "#Control:Weight/#Value",
         "WeightUnit": "#Control:WeightUnit/#Value"
     },
+    "Media": "#Control:Attachment/#Value",
     "Target": {
         "EntitySet": "Products",
         "Service": "/MDK_Styling/Services/SampleServiceV2.service"
@@ -29,5 +29,5 @@
     "ActionResult": {
         "_Name": "create"
     },
-    "_Type": "Action.Type.ODataService.CreateEntity"
+    "_Type": "Action.Type.ODataService.CreateMedia"
 }

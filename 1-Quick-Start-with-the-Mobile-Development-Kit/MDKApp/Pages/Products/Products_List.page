@@ -19,7 +19,7 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{CategoryName}",
-						"DetailImage": "",
+						"DetailImage": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value",
 						"DetailImageIsCircular": false,
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/Products/NavToProducts_Detail.action",

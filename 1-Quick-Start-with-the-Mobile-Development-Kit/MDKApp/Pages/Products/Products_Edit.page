@@ -42,12 +42,14 @@
 							"Caption": "DimensionDepth",
 							"_Name": "DimensionDepth",
 							"Value": "{DimensionDepth}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "DimensionHeight",
 							"_Name": "DimensionHeight",
 							"Value": "{DimensionHeight}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -60,6 +62,7 @@
 							"Caption": "DimensionWidth",
 							"_Name": "DimensionWidth",
 							"Value": "{DimensionWidth}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -84,13 +87,29 @@
 							"Caption": "Price",
 							"_Name": "Price",
 							"Value": "{Price}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ProductId",
-							"_Name": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{ProductId}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Stock",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"Value": "{ProductId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Name": "ProductId",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "QuantityUnit",
@@ -106,9 +125,24 @@
 						},
 						{
 							"Caption": "SupplierId",
-							"_Name": "SupplierId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SupplierName}",
+								"ReturnValue": "{SupplierId}",
+								"Target": {
+									"EntitySet": "Suppliers",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"Value": "{SupplierId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Name": "SupplierId",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Mode": "DateTime",
@@ -121,6 +155,7 @@
 							"Caption": "Weight",
 							"_Name": "Weight",
 							"Value": "{Weight}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{

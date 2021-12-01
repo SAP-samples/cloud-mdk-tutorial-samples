@@ -37,30 +37,49 @@
 							"Caption": "GrossAmount",
 							"_Name": "GrossAmount",
 							"Value": "{GrossAmount}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ItemNumber",
 							"_Name": "ItemNumber",
 							"Value": "{ItemNumber}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "NetAmount",
 							"_Name": "NetAmount",
 							"Value": "{NetAmount}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "ProductId",
-							"_Name": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"Value": "{ProductId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Name": "ProductId",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Quantity",
 							"_Name": "Quantity",
 							"Value": "{Quantity}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -71,14 +90,30 @@
 						},
 						{
 							"Caption": "SalesOrderId",
-							"_Name": "SalesOrderId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{SalesOrderId}",
+								"ReturnValue": "{SalesOrderId}",
+								"Target": {
+									"EntitySet": "SalesOrderHeaders",
+									"Service": "/MDKApp/Services/SampleServiceV2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
 							"Value": "{SalesOrderId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Name": "SalesOrderId",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "TaxAmount",
 							"_Name": "TaxAmount",
 							"Value": "{TaxAmount}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					]

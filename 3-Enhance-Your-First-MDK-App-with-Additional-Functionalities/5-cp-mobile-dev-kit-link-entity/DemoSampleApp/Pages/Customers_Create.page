@@ -36,7 +36,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Email",
-							"PlaceHolder": "Enter Value"
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Email"
 						},
 						{
 							"Value": "Enter Date",
@@ -77,6 +78,6 @@
 				"OnPress": "/DemoSampleApp/Actions/Customers_CreateEntity.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

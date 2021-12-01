@@ -8,7 +8,7 @@
     "Properties": {
         "CreatedAt": "#Control:CreatedAt/#Value",
         "CurrencyCode": "#Control:CurrencyCode/#Value",
-        "CustomerId": "#Control:CustomerId/#Value",
+        "CustomerId": "#Control:CustomerId/#SelectedValue",
         "GrossAmount": "#Control:GrossAmount/#Value",
         "LifeCycleStatus": "#Control:LifeCycleStatus/#Value",
         "LifeCycleStatusName": "#Control:LifeCycleStatusName/#Value",

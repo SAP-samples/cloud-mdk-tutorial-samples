@@ -6,6 +6,7 @@
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",
@@ -71,6 +72,6 @@
 				"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Create.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

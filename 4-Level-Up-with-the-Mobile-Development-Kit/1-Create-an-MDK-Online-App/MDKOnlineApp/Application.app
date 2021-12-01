@@ -9,5 +9,5 @@
 	"OnDidUpdate": "/MDKOnlineApp/Actions/Service/InitializeOnline.action",
 	"Styles": "/MDKOnlineApp/Styles/Styles.less",
 	"Localization": "/MDKOnlineApp/i18n/i18n.properties",
-	"_SchemaVersion": "6.0"
+	"_SchemaVersion": "6.1"
 }

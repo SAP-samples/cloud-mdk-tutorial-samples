@@ -52,6 +52,6 @@
 				"OnPress": "/MDK_Petstore/Actions/CreatePet.action"
 			}
 		],
-		"_Name": "ActionBar0"
+		"_Name": "ActionBar1"
 	}
 }

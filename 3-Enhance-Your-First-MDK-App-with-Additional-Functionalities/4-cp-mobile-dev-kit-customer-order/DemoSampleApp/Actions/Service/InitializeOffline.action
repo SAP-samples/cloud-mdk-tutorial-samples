@@ -1,29 +1,30 @@
 {
-    "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-    "DefiningRequests": [
-	{
-		"Name": "Customers",
-		"Query": "Customers"
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
 	},
-	{
-		"Name": "Products",
-		"Query": "Products"
-	},
-	{
-		"Name": "SalesOrderHeaders",
-		"Query": "SalesOrderHeaders"
-	},
-	{
-		"Name": "SalesOrderItems",
-		"Query": "SalesOrderItems"
-	}
-],
-    "_Type": "Action.Type.ODataService.Initialize",
-    "ShowActivityIndicator": true,
-    "ActivityIndicatorText": "Downloading...",
-    "ActionResult": {
-        "_Name": "init"
-    },
-    "OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
-    "OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
+	"OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/DemoSampleApp/Actions/LogSetState.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+	"DefiningRequests": [
+		{
+			"Name": "Customers",
+			"Query": "Customers"
+		},
+		{
+			"Name": "Products",
+			"Query": "Products",
+			"AutomaticallyRetrievesStreams": true
+		},
+		{
+			"Name": "SalesOrderHeaders",
+			"Query": "SalesOrderHeaders"
+		},
+		{
+			"Name": "SalesOrderItems",
+			"Query": "SalesOrderItems"
+		}
+	]
 }
