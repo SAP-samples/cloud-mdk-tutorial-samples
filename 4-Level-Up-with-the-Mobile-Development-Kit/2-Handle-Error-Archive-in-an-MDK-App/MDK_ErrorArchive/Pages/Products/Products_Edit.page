@@ -1,5 +1,5 @@
 {
-	"Caption": "Update {@i18n&gt;PRODUCT_TYPE}",
+	"Caption": "Update $(L,PRODUCT_TYPE)",
 	"ActionBar": {
 		"Items": [
 			{
@@ -145,7 +145,7 @@
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "UpdatedTimestamp",
 							"Value": "{UpdatedTimestamp}",
 							"Caption": "UpdatedTimestamp",

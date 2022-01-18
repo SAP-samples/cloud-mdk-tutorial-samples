@@ -1,0 +1,54 @@
+{
+    "Caption": "SalesOrderHeaders",
+    "ActionBar": {
+        "Items": []
+    },
+    "Controls": [{
+        "Sections": [{
+            "Header": {
+
+                "UseTopPadding": false
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "{CurrencyCode}",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "OnPress": "/MDK_Maps/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+                "StatusImage": "",
+                "Title": "{LifeCycleStatusName}",
+                "Footnote": "{CustomerId}",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "{GrossAmount}",
+                "Subhead": "{CreatedAt}",
+                "SubstatusText": "{LifeCycleStatus}"
+            },
+            "Search": {
+                "Enabled": true,
+                "Placeholder": "Item Search",
+                "BarcodeScanner": true,
+                "Delay": 500,
+                "MinimumCharacterThreshold": 3
+            },
+            "DataPaging": {
+                "ShowLoadingIndicator": true,
+                "LoadingIndicatorText": "Loading more items, please wait..."
+            },
+            "Target": {
+                "EntitySet": "SalesOrderHeaders",
+                "Service": "/MDK_Maps/Services/SampleServiceV2.service",
+                "QueryOptions": ""
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }],
+        "LoadingIndicator": {
+            "Enabled": true,
+            "Text": "Loading, please wait..."
+        },
+        "_Type": "Control.Type.SectionedTable",
+        "_Name": "SectionedTable"
+    }],
+    "_Type": "Page",
+    "_Name": "SalesOrderHeaders_List"
+}

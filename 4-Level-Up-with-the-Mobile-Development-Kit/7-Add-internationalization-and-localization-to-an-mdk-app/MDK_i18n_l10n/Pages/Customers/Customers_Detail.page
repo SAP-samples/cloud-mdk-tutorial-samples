@@ -107,7 +107,32 @@
             "MaxItemCount": 1,
             "_Name": "SectionKeyValueAddress",
             "_Type": "Section.Type.KeyValue"
+        }, {
+            "Header": {
+                "Caption": "SalesOrders"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "{CurrencyCode}",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{LifeCycleStatusName}",
+                "Footnote": "{CustomerId}",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "{GrossAmount}",
+                "Subhead": "{CreatedAt}",
+                "SubstatusText": "{LifeCycleStatus}",
+                "OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+            },
+            "Target": {
+                "EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+                "Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
         }],
+        "DataSubscriptions": ["SalesOrderHeaders"],
         "_Type": "Control.Type.SectionedTable",
         "_Name": "SectionedTable"
     }],

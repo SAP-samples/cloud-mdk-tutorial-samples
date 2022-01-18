@@ -1,6 +1,9 @@
 {
 	"Controls": [
 		{
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [

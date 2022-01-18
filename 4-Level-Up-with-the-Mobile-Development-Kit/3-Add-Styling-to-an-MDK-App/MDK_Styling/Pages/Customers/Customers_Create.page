@@ -35,7 +35,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "DateOfBirth",
 							"Caption": "DateOfBirth",
 							"_Type": "Control.Type.FormCell.DatePicker"
@@ -76,7 +76,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "UpdatedTimestamp",
 							"Caption": "UpdatedTimestamp",
 							"_Type": "Control.Type.FormCell.DatePicker"

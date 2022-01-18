@@ -23,11 +23,6 @@
 							"Title": "PurchaseOrderHeaders"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
-							"TextAlignment": "center",
-							"Title": "SalesOrderHeaders"
-						},
-						{
 							"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
 							"TextAlignment": "center",
 							"Title": "PurchaseOrderItems"
@@ -36,6 +31,11 @@
 							"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
 							"TextAlignment": "center",
 							"Title": "SalesOrderItems"
+						},
+						{
+							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+							"TextAlignment": "center",
+							"Title": "SalesOrderHeaders"
 						}
 					],
 					"_Name": "SectionButtonTable0",

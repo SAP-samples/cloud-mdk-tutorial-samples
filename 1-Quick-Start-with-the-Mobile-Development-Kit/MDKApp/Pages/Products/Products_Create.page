@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create Product",
+	"Caption": "Create $(L,PRODUCT_TYPE)",
 	"Controls": [
 		{
 			"Sections": [
@@ -129,7 +129,7 @@
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "UpdatedTimestamp",
 							"Caption": "UpdatedTimestamp",
 							"_Type": "Control.Type.FormCell.DatePicker"

@@ -38,6 +38,15 @@
 							"Caption": "Email",
 							"PlaceHolder": "Enter Value",
 							"KeyboardType": "Email"
+						},
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCCreateDOB",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "DOB",
+							"Mode": "date"
 						}
 					],
 					"Visible": true

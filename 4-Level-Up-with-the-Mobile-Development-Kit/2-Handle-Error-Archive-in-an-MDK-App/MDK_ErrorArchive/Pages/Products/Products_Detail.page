@@ -1,5 +1,5 @@
 {
-	"Caption": "{@i18n&gt;PRODUCT_TYPE}",
+	"Caption": "$(L,PRODUCT_TYPE)",
 	"ActionBar": {
 		"Items": [
 			{

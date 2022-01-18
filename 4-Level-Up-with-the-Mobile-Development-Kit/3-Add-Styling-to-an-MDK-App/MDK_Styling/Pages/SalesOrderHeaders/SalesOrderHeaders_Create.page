@@ -20,7 +20,7 @@
 				{
 					"Controls": [
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "CreatedAt",
 							"Caption": "CreatedAt",
 							"_Type": "Control.Type.FormCell.DatePicker"

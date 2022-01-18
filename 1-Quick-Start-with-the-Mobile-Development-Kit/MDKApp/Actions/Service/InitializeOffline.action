@@ -14,16 +14,16 @@
             "Query": "PurchaseOrderHeaders"
         },
         {
-            "Name": "SalesOrderHeaders",
-            "Query": "SalesOrderHeaders"
-        },
-        {
             "Name": "PurchaseOrderItems",
             "Query": "PurchaseOrderItems"
         },
         {
             "Name": "SalesOrderItems",
             "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
         }
     ],
     "_Type": "Action.Type.ODataService.Initialize",

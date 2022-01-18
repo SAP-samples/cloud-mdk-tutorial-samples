@@ -25,7 +25,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "DeliveryDate",
 							"Caption": "DeliveryDate",
 							"_Type": "Control.Type.FormCell.DatePicker"

@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create {@i18n&gt;PRODUCT_TYPE}",
+	"Caption": "Create Product",
 	"Controls": [
 		{
 			"Sections": [
@@ -130,7 +130,7 @@
 							"Value": "{SupplierId}"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "UpdatedTimestamp",
 							"Caption": "UpdatedTimestamp",
 							"_Type": "Control.Type.FormCell.DatePicker"
@@ -170,5 +170,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Suppliers_Create{@i18n&gt;PRODUCT_TYPE}"
+	"_Name": "Suppliers_CreateProduct"
 }

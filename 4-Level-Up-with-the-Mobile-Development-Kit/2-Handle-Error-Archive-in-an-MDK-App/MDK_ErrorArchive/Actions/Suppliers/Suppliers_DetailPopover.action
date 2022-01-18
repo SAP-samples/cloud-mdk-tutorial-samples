@@ -1,6 +1,6 @@
 {
     "PopoverItems": [{
-            "Title": "Add {@i18n>PRODUCT_TYPE}",
+            "Title": "Add Product",
             "OnPress": "/MDK_ErrorArchive/Actions/Suppliers/NavToSuppliers_CreateProduct.action"
         },
         {

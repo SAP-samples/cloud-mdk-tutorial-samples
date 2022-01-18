@@ -39,7 +39,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "DateOfBirth",
 							"Value": "{DateOfBirth}",
 							"Caption": "DateOfBirth",
@@ -88,7 +88,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "DateTime",
+							"Mode": "Datetime",
 							"_Name": "UpdatedTimestamp",
 							"Value": "{UpdatedTimestamp}",
 							"Caption": "UpdatedTimestamp",
