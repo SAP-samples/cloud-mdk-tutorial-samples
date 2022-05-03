@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.Message",
+    "Message": "Update now?",
+    "Title": "Confirmation",
+    "OKCaption": "OK",
+    "CancelCaption": "CANCEL",
+    "ActionResult": {
+        "_Name": "OnWillUpdate"
+    }
+}

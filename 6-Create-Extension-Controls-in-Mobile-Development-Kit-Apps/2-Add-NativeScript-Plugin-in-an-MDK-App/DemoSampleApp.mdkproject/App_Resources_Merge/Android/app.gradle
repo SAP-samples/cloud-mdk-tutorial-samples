@@ -5,10 +5,5 @@ project.ext {
 }
 dependencies {
 	def googlePlayServicesVersion = project.googlePlayServicesVersion
-	compile "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+	implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
 }
-
-//dependencies {
-	//implementation 'com.squareup.picasso:picasso:2.8'
-//}
-

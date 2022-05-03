@@ -17,5 +17,6 @@
 				"OnPress": "/MDK_Slider/Actions/Logout.action"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }

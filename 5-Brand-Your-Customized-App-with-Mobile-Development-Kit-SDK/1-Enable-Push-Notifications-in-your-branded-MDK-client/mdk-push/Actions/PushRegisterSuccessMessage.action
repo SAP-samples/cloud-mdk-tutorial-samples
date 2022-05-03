@@ -1,6 +1,6 @@
 {
+	"_Type": "Action.Type.Message",
 	"Message": "Push Notification registered",
-	"OKCaption": "OK",
 	"Title": "Success",
-	"_Type": "Action.Type.Message"
+	"OKCaption": "OK"
 }

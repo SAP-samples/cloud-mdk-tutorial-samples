@@ -48,5 +48,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Customer"
+	"Caption": "Customer",
+	"PrefersLargeCaption": true
 }

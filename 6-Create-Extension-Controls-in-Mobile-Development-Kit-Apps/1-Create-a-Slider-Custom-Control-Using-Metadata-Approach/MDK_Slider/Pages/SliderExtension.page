@@ -38,6 +38,7 @@
 	"_Type": "Page",
 	"_Name": "SliderExtension",
 	"Caption": "SliderExtension",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{

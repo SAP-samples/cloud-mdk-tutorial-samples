@@ -1,8 +1,9 @@
 {
-	"Localization": "/mdk_push/i18n/i18n.properties",
-	"MainPage": "/mdk_push/Pages/Main.page",
-	"OnDidUpdate": "/mdk_push/Actions/PushRegister.action",
-	"OnWillUpdate": "/mdk_push/Rules/OnWillUpdate.js",
-	"Styles": "/mdk_push/Styles/Styles.less",
-	"_Name": "mdk_push"
+	"MainPage": "/MDK_Push/Pages/Main.page",
+	"OnWillUpdate": "/MDK_Push/Rules/OnWillUpdate.js",
+	"OnDidUpdate": "/MDK_Push/Actions/PushRegister.action",
+	"Styles": "/MDK_Push/Styles/Styles.less",
+	"Localization": "/MDK_Push/i18n/i18n.properties",
+	"_SchemaVersion": "6.2",
+	"_Name": "MDK_Push"
 }

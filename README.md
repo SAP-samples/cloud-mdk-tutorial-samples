@@ -16,7 +16,7 @@ The samples include:
 - How to add CRUD (Create, Read, Update & Delete) functionality.
 - How to store the data locally, make some transactions against the local database (offline store), upload the changes to the backend
 - How to add client side validation rule
-- How to implement deep linking from an MDK app to open an installed app like SAP Mobile Cards, SAP Fiori Client or how to open a web page 
+- How to implement deep linking from an MDK app to open an installed app like SAP Mobile Cards or how to open a web page 
 - How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations, Localization & Internationlaization.
 
 * How to create your branded MDK client

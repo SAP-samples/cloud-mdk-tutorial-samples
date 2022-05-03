@@ -30,5 +30,6 @@
 				"OnPress": "/MDK_Maps/Actions/Logout.action"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }

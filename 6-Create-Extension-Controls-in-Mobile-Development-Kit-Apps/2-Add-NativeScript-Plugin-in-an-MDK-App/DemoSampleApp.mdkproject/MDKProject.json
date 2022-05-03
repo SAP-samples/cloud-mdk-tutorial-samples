@@ -1,4 +1,5 @@
 {
+  "App Display Name": "Demo Sample App",
   "AppName": "DemoSampleApp",
   "AppVersion": "1.0.0",
   "BundleID": "<Your bundle ID>",

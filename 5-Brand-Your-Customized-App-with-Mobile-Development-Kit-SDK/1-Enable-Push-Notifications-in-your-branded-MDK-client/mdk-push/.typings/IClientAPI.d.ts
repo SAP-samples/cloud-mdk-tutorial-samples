@@ -1,4 +1,4 @@
-/// version: MDK SDK 4.1
+/// version: MDK SDK 5.2
 
 /**
  * A designer-facing interface that provides access to a context.
@@ -33,6 +33,19 @@ interface IClientAPI {
   formatScientific(value: number, customLocale?: string, customOptions?: any): string;
   // Display in time format
   formatTime(date: Date, customLocale?: string, customTimeZone?: string, customOptions?: any): string;
+/** 
+   * This method converts base64 string to binary data
+   * @param base64 base64 string 
+   * @returns a promise with a binary data once it is resolved
+   */
+  base64StringToBinary(base64: string): Promise<any>;
+  /** 
+   * This method formats MDK base64 string with content type
+   * @param base64 base64 string
+   * @param contentType base64 content type like "image/jpeg", "application/pdf"
+   * @returns formatted base64 string. 
+   */
+  formatBase64String(base64: string, contentType: string): string;
   // Get the data which provides additional information about an app event, such as
   // an app launch or exit, if such an event just occurred.
   getAppEventData(): any;
@@ -57,12 +70,31 @@ interface IClientAPI {
   isCurrentPage(pageName: string): boolean;
   // Get whether or not the media object for the supplied readLink exists and is local
   isMediaLocal(serviceName: string, entitySet: string, readLink: string): Promise<boolean>;
-  // Perform a query on an entity set. Returns a Promise which resolves to the result of the operation.
-  read(serviceName: string, entitySet: string, properties: string[], queryOptions?: string): Promise<any>;
-  // Perform create odata entity. Returns a Promise which resolves to the result of the operation.
+  /**
+   * Perform a query on an entity set. Returns a Promise which resolves to the result of the operation
+   * 
+   * @param serviceName service name
+   * @param entitySet entityset name
+   * @param properties list of properties to be read
+   * @param queryOptions query optins
+   * @param headers request headers
+   * @param requestOptions request options
+   * @returns returns a Promise which resolves to the result of the operation
+   */
+  read(serviceName: string, entitySet: string, properties: string[], 
+    queryOptions?: string, headers?: Object, requestOptions?: Object): Promise<any>;
+/**
+   * Perform an operation to create odata entity. Returns a Promise which resolves to the result of the operation.
+   * @param serviceName service name
+   * @param entitySet entityset name
+   * @param properties an object to sotre the propterties object with key/value pair
+   * @param createLinks list of readlinks
+   * @param headers an object to sotre the header object with key/value pair
+   */
   create(serviceName: string, entitySet: string, properties: {key: string, value: any}, 
-                createLinks: ILinkSpecifierProxy[], headers: {key: string, value: any}): Promise<any> ;
-  // Return the value for any given definition like rule/action path/global path/binding/targetpath etc
+    createLinks: ILinkSpecifierProxy[], headers?: {key: string, value: any}, 
+    requestOptions?: { key: string, value: any }): Promise<any> ;
+// Return the value for any given definition like rule/action path/global path/binding/targetpath etc
   getDefinitionValue(target: string): Promise<any>;
   // Localize text
   localizeText(key: string, dynamicParams?: string[]): string;
@@ -76,9 +108,19 @@ interface IClientAPI {
   getRegions(): Object;
   // Get version of application, definitions, SDK & etc
   getVersionInfo(): Object;  
-  // Perform a count on an entity set. Returns a Promise which resolves to the result of the operation.
-  count(serviceName: string, entitySet: string, queryOptions?: string): Promise<number>;
-  // create LinkSpecifierProxy to be consumed by odata link action. one of queryOptions or readLink is required.
+/**
+   * Perform a count on an entity set. 
+   *
+   * @param serviceName service name
+   * @param entitySet entityset name
+   * @param queryOptions query options
+   * @param headers request headers
+   * @param requestOptions request options
+   * @returns returns a Promise which resolves to the result of the operation
+   */
+  count(serviceName: string, entitySet: string, queryOptions?: string, 
+    headers?: Object, requestOptions?: Object): Promise<number>;
+// create LinkSpecifierProxy to be consumed by odata link action. one of queryOptions or readLink is required.
   createLinkSpecifierProxy(property: string, entitySet: string, queryOptions?: string,
     readLink?: string): ILinkSpecifierProxy;
   // answers the question if a dowload is in progress for this readLink 
@@ -109,13 +151,101 @@ interface IClientAPI {
    */ 
   dismissActivityIndicator(id?: number): void;
   // Invoke an OData function import. Returns a Promise which resolves to the result(if existing) of the operation.
-  callFunction(serviceName: string, oFunction: {Name: string, Parameters?: { key: string, value: any }}): Promise<any>;
+  callFunction(serviceName: string, oFunction: {Name: string, Parameters?: { key: string, value: any }}, headers?: Object): Promise<any>;
   /**
    * Update an existing progress banner with new text.  If no progress banner action is in progress, no banner will be 
    * displayed.
    * @param message - The text to show on the progress banner
    */
   updateProgressBanner(message: string): void;
+   /**
+   * Get the singleton instance of the LoggerManager.
+   * If it has not been initialized yet, it throws exception
+   */
+  getLogger(): any;
+  /**
+   * Initializes the LoggerManager and adds the log file handlers
+   * 
+   * @param fileName Optional, File name of the local log file on the client device. 
+   * If missing, default value is ClientLog.txt
+   * @param maxFileSize Optional, Max file size before rollover of 
+   * the local log file on the client device. If missing, default value is 5MB
+   */
+  initializeLogger(fileName: string, maxFileSize: number);
+  /**
+   * Determine if it is in demo mode
+   */
+  isDemoMode(): Boolean;
+  /**
+   * This method is to get AppId used for application in SAP Mobile Services.
+   */
+  getMobileServiceAppId(): string;
+  /**
+   * This method is to get Endpoint Url of connection to application in Mobile Services on SAP 
+   * Cloud Platform .
+   */
+  getMobileServiceEndpointUrl(): string;
+  /**
+   * This method is to send a request to application's SAP Mobile Services.
+   * 
+   * * Example of the `params` parameter: <br/>
+   * ```json
+   * {
+   *   "method": "<string>", 
+   *   "header": {
+   *     "<key1>": "<value as string>",
+   *     "<key2>": "<and so on>",
+   *   }, 
+   *   "body": "<string>"
+   * }
+   * ```
+   * 
+   * @param path Relative path of request via application's SAP Mobile Services.
+   * @param params Optional. An object consists of `method`, `header`, and `body` of request.<br/>
+   * Note: If params is not given, request is set as GET method by default. See description above for the example.<br/>
+   *   <li> `method` is string representing the HTTP Method to use. Supported value for methods are:
+   * GET, HEAD, POST, PUT, DELETE, PATCH, CONNECT, OPTIONS, and TRACE.<br/>
+   *   <li> `header` should be an object with key-value pair<br/>
+   *   <li> `body` should be a string converted from data payload based on the "Content-Type" set in `header`.
+   */
+  sendRequest(path: string, params?: any): Promise<any>;
+  /**
+   * Send a request to application's SAP Mobile Services
+   * @deprecated - use the new sendRequest API
+   */
+  sendMobileServiceRequest(path: string, params?: any): Promise<any>;
+  /**
+   * Get SAP Passport header value
+   * 
+   * @returns it returns a string 
+   * of SAP Passport value to be used on request header.
+   * The header name to be used is "SAP-PASSPORT"
+   * 
+   * @param componentName Name of the initial component. Default to 'MDK' if empty or null.
+   * @param action Name of executed action. Default to null if empty.
+   * @param traceFlag Trace configuration. Accepted values are: 
+   * StatisticsOnly, SAPTraceLevel_SQL, SAPTraceLevel_Buffer, SAPTraceLevel_Enqueu, SAPTraceLevel_RFC, 
+   * SAPTraceLevel_Permission, SAPTraceLevel_Free, SAPTraceLevel_CFunction, DSR_ABAP_Trace_Flag, 
+   * SAPTraceLevel_ABAPCondens0, SAPTraceLevel_ABAPCondens1, DSR_SAT_Trace_Flag, ESP_WebService_Flag,
+   * HTTP, TRCLVL_None, TRCLVL_Low, TRCLVL_Medium, TRCLVL_High
+   * Default to 'TRCLVL_Low' if empty or null.
+   * @param componentType Type of initial component. Accepted values are:
+   * Undefined, Webas, J2EE, Trex, ICM, Gateway, CPIC, Browser, TraceLib, DotNet, Eclipse, PI_For_SAP_Sender,
+   * SCP_For_NonSAP_Sender, PI_For_NonSAP_Sender, SAP_Partner, SCP_Request_Or_Determination_Later_In_Processing,
+   * S4, SFSF, Ariba, Concur, Fieldglass, Callidus, BYD, IBP, Hybris, SMB_B1, Industry_Cloud, Leonardo,
+   * Customer_Checkout, CoPilot
+   * Default to 'Undefined' if empty or null.
+   * @param prevComponentName Optional. Name of previous component. Default to initial component name if unspecified.
+   * @param userId Optional. ID of user who is processing the request. Default to '<dummy>' if unspecified.
+   */
+  getSAPPassportHeaderValue(componentName: string, action: string, traceFlag: string, componentType: string, prevComponentName?: string, userId?: string): string;
+  /**
+   * Set the application icon badge number
+   * Note: This function is for iOS only
+   * 
+   * @param badge the number to set
+   */
+  setApplicationIconBadgeNumber(badge: number);
 }
 
 /**
@@ -201,7 +331,7 @@ interface IControlProxy extends IClientAPI {
    * 
    * @param value visible state
    */
-  setVisible(value: boolean);
+  setVisible(value: boolean, redraw: boolean);
 }
 
 /**
@@ -305,6 +435,10 @@ interface IFormCellTargetProxy {
    */
   getReturnValue(): string;
   /**
+   * @return {boolean}
+   */
+  getServerSidePaging(): boolean;
+  /**  
    * @return {string}
    */
   getService(): string;
@@ -328,6 +462,10 @@ interface IFormCellTargetProxy {
    * @param {string} 
    */
   setReturnValue(value: string);
+  /**
+   * @param {boolean}
+   */
+  setServerSidePaging(value: boolean);
 }
 
 interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
@@ -399,6 +537,12 @@ interface ISectionedTableProxy extends IControlProxy {
    */
   searchString: string;
   /**
+   * This method set search string for this section table
+   * @param searchString the search string set to the search control
+   * @return boolean return true if the setting success 
+   */
+  setSearchString(searchString: string): boolean;
+  /**
    * Factory method to construct an instance of DataQueryBuilder
    */
   dataQueryBuilder(query: string): any;
@@ -406,6 +550,22 @@ interface ISectionedTableProxy extends IControlProxy {
    * Get all of the sections that the table contains.
    */
   getSections(): ISectionProxy[];
+  /**
+   * Gets the associated control by name.  This searches
+   * controls in FormCell sections.
+   * 
+   * @param {string} name The control name specified by the _Name
+   * definition property.
+   * 
+   * @return {any} The control assocated with the name parameter
+   */
+  getControl(name: string): IControlProxy;
+  /**
+   * This method returns the controls in all FormCell sections for this section table
+   * 
+   * @return {IControlProxy[]} The controls for this container 
+   */
+  getControls(): IControlProxy[];
 }
 
 interface ISectionProxy {
@@ -445,6 +605,22 @@ interface ISectionProxy {
    * @param {PressedItem} pressedItem the pressed object cell in the section
    */
   setIndicatorState(newState: string, pressedItem: any);
+  /**
+   * Gets the associated control by name.  This searches
+   * controls in this section if it is a FormCell section.
+   * 
+   * @param {string} name The control name specified by the _Name
+   * definition property.
+   * 
+   * @return {any} The control assocated with the name parameter
+   */
+  getControl(name: string): IControlProxy;
+  /**
+   * This method returns the controls in this section if it is FormCell section
+   * 
+   * @return {IControlProxy[]} The controls for this container 
+   */
+  getControls(): IControlProxy[];
 }
 
 /**
@@ -506,6 +682,58 @@ interface IToolbarProxy extends IControlProxy {
    * @return {IControlProxy[]} The controls for this container 
    */
   getToolbarControls(): IControlProxy[];
+}
+
+/**
+ * A designer-facing interface that provides access to a bottomnavigation and tabs control
+ * 
+ * It is passed to rules to provide access to a tab items
+ * for application specific customizations.
+ */
+interface ITabControlProxy extends IControlProxy {
+  /**
+   * @returns {IControlProxy[]} list of items in the tab control
+   */
+  tabItems: IControlProxy[];
+  /**
+   * Set tab item caption by item name
+   */
+  setItemCaption(tabItemName: string, newCaption: string);
+  /**
+   * Set selected tab item by name for tab control
+   */
+  setSelectedTabItemByName(tabItemName: string);
+  /**
+   * Set selected tab item by index for tab control
+   */
+  setSelectedTabItemByIndex(tabItemIndex: number);
+  /**
+   * @returns {string} tab item caption based on tab item name
+   */
+  getItemCaption(tabItemName: string): string;
+  /**
+   * @returns {string} selected tab item name
+   */
+  getSelectedTabItemName(): number;
+  /**
+   * @returns {number} selected tab item index
+   */
+  getSelectedTabItemIndex(): number;
+}
+
+/**
+ * A designer-facing interface that provides access to a tab item.
+ * 
+ * It is passed to rules to provide access to a tab item
+ * for application specific customizations.
+ * 
+ * In addition it provides access to the IControlProxy interface.
+ */
+interface ITabItemProxy extends IControlProxy {
+  /**
+   * Set item caption
+   */
+  setCaption(newCaption: string);
 }
 
 /**

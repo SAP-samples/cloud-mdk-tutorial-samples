@@ -5,12 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"KeyAndValues": [
 						{
 							"Value": "/MDK_Geolocation/Rules/GetCoordinates.js",
@@ -20,16 +14,27 @@
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 1
 					}
 				}
-			]
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "loading, please wait.."
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
+	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
 			{
