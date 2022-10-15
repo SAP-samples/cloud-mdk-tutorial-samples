@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create PurchaseOrderItem",
+	"Caption": "Create PurchaseOrderItem Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -49,14 +49,12 @@
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
 								"ReturnValue": "{ProductId}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "ProductId",
@@ -69,14 +67,12 @@
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{PurchaseOrderId}",
 								"ReturnValue": "{PurchaseOrderId}",
 								"Target": {
 									"EntitySet": "PurchaseOrderHeaders",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "PurchaseOrderId",

@@ -4,11 +4,11 @@
 	"ActionBar": {
 		"Items": [{
 			"OnPress": "/MDK_Annotations/Actions/Product/NavToProduct_Edit.action",
-			"Position": "right",
+			"Position": "Right",
 			"SystemItem": "Edit"
 		}, {
 			"OnPress": "/MDK_Annotations/Rules/Product/Product_DeleteConfirmation.js",
-			"Position": "right",
+			"Position": "Right",
 			"SystemItem": "Trash"
 		}]
 	},
@@ -74,5 +74,6 @@
 		"_Name": "SectionedTable"
 	}],
 	"_Type": "Page",
-	"_Name": "Product_Detail"
+	"_Name": "Product_Detail",
+	"PrefersLargeCaption": true
 }

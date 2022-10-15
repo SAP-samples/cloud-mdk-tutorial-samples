@@ -37,14 +37,12 @@
 							"IsEditable": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{CustomerId}",
 								"ReturnValue": "{CustomerId}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "CustomerId",

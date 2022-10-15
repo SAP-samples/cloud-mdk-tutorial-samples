@@ -19,8 +19,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{GrossAmount}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
 						"StatusImage": "",
@@ -30,6 +36,9 @@
 						"StatusText": "{NetAmount}",
 						"Subhead": "{DeliveryDate}",
 						"SubstatusText": "{ProductId}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,
@@ -59,5 +68,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "SalesOrderItems_List"
+	"_Name": "SalesOrderItems_List",
+	"PrefersLargeCaption": true
 }

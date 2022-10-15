@@ -1,0 +1,5 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "PageToOpen": "/MDK_i18n_l10n/Pages/ErrorArchive/ErrorArchive_Detail.page",
+    "NavigationType": "Inner"
+}

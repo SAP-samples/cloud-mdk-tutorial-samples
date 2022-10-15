@@ -55,14 +55,12 @@
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
 								"ReturnValue": "{ProductId}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "ProductId",
@@ -86,14 +84,12 @@
 							"IsEditable": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{SalesOrderId}",
 								"ReturnValue": "{SalesOrderId}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "SalesOrderId",

@@ -9,7 +9,7 @@
 					"Target": {
 						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
 						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$top=5&$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc"
+						"QueryOptions": "$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -26,11 +26,25 @@
 						"Title": "{SalesOrderId}",
 						"Subhead": "{CustomerId}",
 						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatusName}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"Selected": false
 					},
@@ -54,5 +68,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Orders",
-	"Caption": "Customer Orders"
+	"Caption": "Customer Orders",
+	"PrefersLargeCaption": true
 }

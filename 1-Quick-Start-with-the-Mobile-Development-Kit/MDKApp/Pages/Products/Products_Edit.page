@@ -1,5 +1,10 @@
 {
 	"Caption": "Update $(L,PRODUCT_TYPE)",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -94,22 +99,20 @@
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{ProductId}",
 								"ReturnValue": "{ProductId}",
 								"Target": {
 									"EntitySet": "Stock",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{ProductId}",
 							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.ListPicker"
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
 						},
 						{
 							"Caption": "QuantityUnit",
@@ -127,17 +130,14 @@
 							"Caption": "SupplierId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
 								"ReturnValue": "{SupplierId}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{SupplierId}",

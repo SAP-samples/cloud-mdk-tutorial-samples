@@ -27,7 +27,8 @@
 							"IsVisible": true,
 							"Caption": "Manual Entry",
 							"PlaceHolder": "Enter number to set the slider ext's value",
-							"OnValueChange": "/MDK_Slider/Rules/SetExtensionValue.js"
+							"OnValueChange": "/MDK_Slider/Rules/SetExtensionValue.js",
+							"Enabled": true
 						}
 					],
 					"Visible": true
@@ -38,7 +39,6 @@
 	"_Type": "Page",
 	"_Name": "SliderExtension",
 	"Caption": "SliderExtension",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{

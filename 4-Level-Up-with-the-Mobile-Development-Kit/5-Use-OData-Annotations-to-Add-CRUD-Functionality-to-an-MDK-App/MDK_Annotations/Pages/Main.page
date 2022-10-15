@@ -8,6 +8,7 @@
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
+	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
 			{
@@ -21,11 +22,21 @@
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_Annotations/Actions/AppUpdateProgressBanner.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "ToolbarItem0",
 				"Caption": "Products",
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
+				"Style": "",
 				"OnPress": "/MDK_Annotations/Actions/Product/NavToProduct_List.action"
 			}
 		]

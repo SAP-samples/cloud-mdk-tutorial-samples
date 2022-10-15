@@ -19,8 +19,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{CurrencyCode}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
 						"StatusImage": "",
@@ -30,6 +36,9 @@
 						"StatusText": "{GrossAmount}",
 						"Subhead": "{CreatedAt}",
 						"SubstatusText": "{LifeCycleStatus}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,
@@ -59,5 +68,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "SalesOrderHeaders_List"
+	"_Name": "SalesOrderHeaders_List",
+	"PrefersLargeCaption": true
 }

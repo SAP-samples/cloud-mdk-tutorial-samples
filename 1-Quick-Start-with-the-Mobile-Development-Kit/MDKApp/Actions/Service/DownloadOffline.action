@@ -6,8 +6,7 @@
         },
         {
             "Name": "Products",
-            "Query": "Products",
-            "AutomaticallyRetrievesStreams": true
+            "Query": "Products"
         },
         {
             "Name": "PurchaseOrderHeaders",
@@ -18,17 +17,18 @@
             "Query": "PurchaseOrderItems"
         },
         {
-            "Name": "SalesOrderItems",
-            "Query": "SalesOrderItems"
-        },
-        {
             "Name": "SalesOrderHeaders",
             "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
         }
     ],
     "_Type": "Action.Type.OfflineOData.Download",
     "ActionResult": {
         "_Name": "sync"
     },
-    "OnFailure": "/MDKApp/Actions/Service/SyncFailureMessage.action"
+    "OnFailure": "/MDKApp/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/MDKApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
 }

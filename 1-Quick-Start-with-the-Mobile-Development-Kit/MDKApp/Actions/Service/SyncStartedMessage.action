@@ -1,6 +1,6 @@
 {
     "Message": "Upload in progress...",
-    "CompletionMessage": "Upload Successful",
+    "CompletionMessage": "Sync completed",
     "CompletionTimeout": 7,
     "OnSuccess": "/MDKApp/Actions/Service/UploadOffline.action",
     "OnFailure": "/MDKApp/Actions/Service/SyncFailureMessage.action",

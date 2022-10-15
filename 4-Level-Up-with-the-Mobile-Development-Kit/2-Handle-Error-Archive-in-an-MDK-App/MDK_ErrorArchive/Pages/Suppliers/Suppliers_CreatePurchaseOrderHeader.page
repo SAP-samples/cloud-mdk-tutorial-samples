@@ -48,14 +48,12 @@
 							"IsEditable": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
 								"ReturnValue": "{SupplierId}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "SupplierId",

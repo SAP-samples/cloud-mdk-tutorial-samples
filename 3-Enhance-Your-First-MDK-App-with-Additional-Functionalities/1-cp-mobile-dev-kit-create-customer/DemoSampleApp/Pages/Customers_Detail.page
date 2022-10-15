@@ -13,7 +13,10 @@
 						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
-						"HeadlineText": "{LastName}"
+						"HeadlineText": "{LastName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
@@ -23,25 +26,25 @@
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
-							"_Name": "KeyValue0",
+							"_Name": "KeyValue3",
 							"KeyName": "Address",
 							"Visible": true
 						},
 						{
 							"Value": "{City}",
-							"_Name": "KeyValue1",
+							"_Name": "KeyValue4",
 							"KeyName": "City",
 							"Visible": true
 						},
 						{
 							"Value": "{PostalCode}",
-							"_Name": "KeyValue2",
+							"_Name": "KeyValue5",
 							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
 							"Value": "{Country}",
-							"_Name": "KeyValue3",
+							"_Name": "KeyValue6",
 							"KeyName": "Country",
 							"Visible": true
 						}
@@ -62,7 +65,8 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Customer Detail",
+	"Caption": "Details",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{

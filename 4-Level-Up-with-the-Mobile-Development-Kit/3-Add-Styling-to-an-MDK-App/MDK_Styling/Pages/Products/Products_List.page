@@ -19,8 +19,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{CategoryName}",
-						"DetailImage": "/MDK_Styling/Services/SampleServiceV2.service/{@odata.readLink}/$value",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/MDK_Styling/Services/SampleServiceV2.service/{@odata.readLink}/$value"
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_Detail.action",
 						"StatusImage": "",
@@ -30,6 +36,9 @@
 						"StatusText": "{DimensionDepth}",
 						"Subhead": "{Category}",
 						"SubstatusText": "{DimensionHeight}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,
@@ -59,5 +68,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_List"
+	"_Name": "Products_List",
+	"PrefersLargeCaption": true
 }

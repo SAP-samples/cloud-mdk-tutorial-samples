@@ -1,5 +1,10 @@
 {
 	"Caption": "$(L,PRODUCT_TYPE)",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value",
 						"HeadlineText": "{Name}",
 						"Subhead": "{Category}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{CurrencyCode}",
 						"Description": "{CategoryName}",
@@ -122,5 +127,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_Detail"
+	"_Name": "Products_Detail",
+	"PrefersLargeCaption": true
 }

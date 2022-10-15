@@ -1,6 +1,5 @@
 {
 	"_Type": "Action.Type.Navigation",
 	"PageToOpen": "/MDK_Petstore/Pages/Pet_Create.page",
-	"ModalPage": true,
-	"NavigationType": "Inner"
+	"ModalPage": true
 }

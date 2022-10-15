@@ -101,7 +101,7 @@
                 <Property Name="MinStock" Nullable="true" Precision="13" Scale="3" Type="Edm.Decimal"/>
                 <Property MaxLength="255" Name="ProductId" Nullable="false" Type="Edm.String"/>
                 <Property Name="Quantity" Nullable="true" Precision="13" Scale="3" Type="Edm.Decimal"/>
-                <Property Name="QuantityLessMin" Nullable="true" Type="Edm.Boolean"/>
+                <Property Name="QuantityLessMin" Nullable="false" Type="Edm.Boolean"/>
                 <Property Name="UpdatedTimestamp" Type="Edm.DateTime"/>
                 <NavigationProperty FromRole="Stock" Name="ProductDetails" Relationship="ESPM.Product_to_Stock" ToRole="Product"/>
             </EntityType>

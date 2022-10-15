@@ -1,5 +1,10 @@
 {
-	"Caption": "Update SalesOrderHeader",
+	"Caption": "Update SalesOrderHeader Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -37,17 +42,14 @@
 							"Caption": "CustomerId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{CustomerId}",
 								"ReturnValue": "{CustomerId}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{CustomerId}",
@@ -84,7 +86,8 @@
 							"Caption": "SalesOrderId",
 							"_Name": "SalesOrderId",
 							"Value": "{SalesOrderId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
 						},
 						{
 							"Caption": "TaxAmount",

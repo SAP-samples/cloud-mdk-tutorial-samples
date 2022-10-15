@@ -13,7 +13,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "First Name",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "{LastName}",
@@ -22,7 +23,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Last Name",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "{PhoneNumber}",
@@ -31,7 +33,9 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Phone",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Phone",
+							"Enabled": true
 						},
 						{
 							"Value": "{EmailAddress}",
@@ -40,7 +44,9 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Email",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Email",
+							"Enabled": true
 						}
 					],
 					"Visible": true
@@ -54,7 +60,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "ActionBarItem0",
+				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
 				"Position": "Left",
@@ -63,7 +69,7 @@
 				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
-				"_Name": "ActionBarItem1",
+				"_Name": "ActionBarItem2",
 				"Caption": "Item",
 				"SystemItem": "Save",
 				"Position": "Right",

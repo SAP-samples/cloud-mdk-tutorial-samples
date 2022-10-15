@@ -17,24 +17,38 @@
 					},
 					"_Name": "SectionObjectTable0",
 					"EmptySection": {
+						"Caption": "No record found!",
 						"FooterVisible": false
 					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						},
 						"Title": "{LifeCycleStatusName}",
 						"Subhead": "$(DT,{CreatedAt},'','',{format:'medium'})",
 						"Footnote": "{CustomerId}",
 						"Description": "{CurrencyCode}",
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"StatusText": "$(C,{GrossAmount},'EUR','',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatus}",
-						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							]
+						},
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -57,5 +71,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "SalesOrderHeaders_List",
-	"Caption": "SalesOrderHeaders"
+	"Caption": "SalesOrderHeaders",
+	"PrefersLargeCaption": true
 }

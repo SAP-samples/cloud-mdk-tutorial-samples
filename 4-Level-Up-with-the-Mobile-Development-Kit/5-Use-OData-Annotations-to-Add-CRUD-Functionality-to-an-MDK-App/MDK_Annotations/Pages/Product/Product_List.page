@@ -3,7 +3,7 @@
 	"ActionBar": {
 		"Items": [{
 			"OnPress": "/MDK_Annotations/Actions/Product/NavToProduct_Create.action",
-			"Position": "right",
+			"Position": "Right",
 			"SystemItem": "Add"
 		}]
 	},
@@ -46,5 +46,6 @@
 		"_Name": "SectionedTable"
 	}],
 	"_Type": "Page",
-	"_Name": "Product_List"
+	"_Name": "Product_List",
+	"PrefersLargeCaption": true
 }

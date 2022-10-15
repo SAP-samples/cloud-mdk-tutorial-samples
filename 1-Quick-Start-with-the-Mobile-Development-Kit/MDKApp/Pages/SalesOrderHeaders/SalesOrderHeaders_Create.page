@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create SalesOrderHeader",
+	"Caption": "Create SalesOrderHeader Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -37,14 +37,12 @@
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{CustomerId}",
 								"ReturnValue": "{CustomerId}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "CustomerId",

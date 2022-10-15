@@ -2,11 +2,11 @@
 	"ActionBar": {
 		"Items": [{
 			"OnPress": "/MDK_Annotations/Actions/CloseModalPage_Cancel.action",
-			"Position": "left",
+			"Position": "Left",
 			"SystemItem": "Cancel"
 		}, {
 			"OnPress": "/MDK_Annotations/Actions/Product/Product_CreateEntity.action",
-			"Position": "right",
+			"Position": "Right",
 			"SystemItem": "Save"
 		}]
 	},

@@ -9,33 +9,33 @@
 					"Buttons": [
 						{
 							"OnPress": "/MDKApp/Actions/Customers/NavToCustomers_List.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "Customers"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/Products/NavToProducts_List.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "Products"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "PurchaseOrderHeaders"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "PurchaseOrderItems"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
-							"TextAlignment": "center",
-							"Title": "SalesOrderItems"
+							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+							"Alignment": "Center",
+							"Title": "SalesOrderHeaders"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
-							"TextAlignment": "center",
-							"Title": "SalesOrderHeaders"
+							"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
+							"Alignment": "Center",
+							"Title": "SalesOrderItems"
 						}
 					],
 					"_Name": "SectionButtonTable0",
@@ -60,7 +60,17 @@
 				"Caption": "Sync",
 				"OnPress": "/MDKApp/Actions/Service/SyncStartedMessage.action",
 				"Visible": "$(PLT,true,true,false)"
+			},
+			{
+				"_Name": "UpdateToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Clickable": true,
+				"OnPress": "/MDKApp/Actions/AppUpdateProgressBanner.action",
+				"Visible": "$(PLT,true,true,false)"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }

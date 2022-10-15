@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create PurchaseOrderHeader",
+	"Caption": "Create PurchaseOrderHeader Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -48,14 +48,12 @@
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
 								"ReturnValue": "{SupplierId}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"_Name": "SupplierId",

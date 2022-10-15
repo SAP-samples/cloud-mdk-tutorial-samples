@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.Message",
-	"Message": "Failed to Create Sales Order record",
+	"Message": "Failed to Create Sales Order record - {#ActionResults:create/error}",
 	"Title": "Create Sales Order",
 	"OKCaption": "OK"
 }

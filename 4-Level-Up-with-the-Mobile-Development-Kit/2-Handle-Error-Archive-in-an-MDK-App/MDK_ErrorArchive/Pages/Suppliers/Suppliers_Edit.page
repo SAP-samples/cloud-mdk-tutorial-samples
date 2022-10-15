@@ -1,5 +1,10 @@
 {
-	"Caption": "Update Supplier",
+	"Caption": "Update Supplier Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"EntitySet": "Suppliers",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -66,7 +71,8 @@
 							"Caption": "SupplierId",
 							"_Name": "SupplierId",
 							"Value": "{SupplierId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
 						},
 						{
 							"Caption": "SupplierName",

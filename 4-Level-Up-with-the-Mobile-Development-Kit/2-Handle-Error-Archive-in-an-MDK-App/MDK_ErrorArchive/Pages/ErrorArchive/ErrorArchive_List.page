@@ -1,0 +1,63 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+						"EntitySet": "ErrorArchive"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{HTTPStatusCode}",
+						"Subhead": "{RequestURL}",
+						"Footnote": "{Message}",
+						"StatusText": "{RequestMethod}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							]
+						},
+						"OnPress": "/MDK_ErrorArchive/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ErrorArchive_List",
+	"Caption": "Error List",
+	"PrefersLargeCaption": true
+}

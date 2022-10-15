@@ -17,26 +17,40 @@
 					},
 					"_Name": "SectionObjectTable0",
 					"EmptySection": {
+						"Caption": "No record found!",
 						"FooterVisible": false
 					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						},
 						"Title": "{FirstName}",
 						"Subhead": "{City}",
 						"Footnote": "{CustomerId}",
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
-						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							]
+						},
 						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"Styles": {
 							"Title": "ObjectTableTitle"
+						},
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
 						}
 					},
 					"Search": {
@@ -61,6 +75,7 @@
 	"_Type": "Page",
 	"_Name": "Customers_List",
 	"Caption": "Customers",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{

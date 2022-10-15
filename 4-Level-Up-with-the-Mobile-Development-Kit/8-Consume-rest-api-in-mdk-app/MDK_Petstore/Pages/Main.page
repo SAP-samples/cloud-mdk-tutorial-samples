@@ -26,10 +26,24 @@
 						},
 						"Title": "Pet ID: {id}",
 						"Subhead": "Pet Name: {name}",
+						"DisplayDescriptionInMobile": true,
 						"StatusText": "{status}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
 						"Selected": false
 					},
 					"DataPaging": {
@@ -46,9 +60,14 @@
 			]
 		}
 	],
+	"DesignTimeTarget": {
+		"Service": "",
+		"EntitySet": ""
+	},
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -73,6 +92,15 @@
 				"Visible": true,
 				"Clickable": true,
 				"OnPress": "/MDK_Petstore/Actions/Logout.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_Petstore/Actions/AppUpdateProgressBanner.action"
 			}
 		]
 	}

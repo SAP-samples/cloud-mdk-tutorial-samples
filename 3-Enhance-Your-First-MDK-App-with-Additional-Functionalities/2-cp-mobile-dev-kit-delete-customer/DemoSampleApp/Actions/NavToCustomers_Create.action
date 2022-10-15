@@ -1,6 +1,5 @@
 {
 	"_Type": "Action.Type.Navigation",
 	"PageToOpen": "/DemoSampleApp/Pages/Customers_Create.page",
-	"ModalPage": true,
-	"NavigationType": "Inner"
+	"ModalPage": true
 }

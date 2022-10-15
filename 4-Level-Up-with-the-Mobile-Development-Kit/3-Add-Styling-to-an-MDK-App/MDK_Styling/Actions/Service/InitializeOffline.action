@@ -6,8 +6,7 @@
         },
         {
             "Name": "Products",
-            "Query": "Products",
-            "AutomaticallyRetrievesStreams": true
+            "Query": "Products"
         }
     ],
     "_Type": "Action.Type.ODataService.Initialize",

@@ -2,11 +2,11 @@
 	"Caption": "Update ESPM.Product",
 	"ActionBar": {
 		"Items": [{
-			"Position": "left",
+			"Position": "Left",
 			"SystemItem": "Cancel",
 			"OnPress": "/MDK_Annotations/Actions/CloseModalPage_Cancel.action"
 		}, {
-			"Position": "right",
+			"Position": "Right",
 			"SystemItem": "Save",
 			"OnPress": "/MDK_Annotations/Actions/Product/Product_UpdateEntity.action"
 		}]

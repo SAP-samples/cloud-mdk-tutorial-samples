@@ -27,7 +27,7 @@
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
-				"Text": "loading, please wait.."
+				"Text": "Loading, please wait..."
 			}
 		}
 	],
@@ -45,6 +45,15 @@
 				"Visible": true,
 				"Clickable": true,
 				"OnPress": "/MDK_Geolocation/Actions/Logout.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_Geolocation/Actions/AppUpdateProgressBanner.action"
 			}
 		]
 	}

@@ -1,5 +1,10 @@
 {
-	"Caption": "PurchaseOrderItem",
+	"Caption": "PurchaseOrderItem Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"EntitySet": "PurchaseOrderItems",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "",
 						"HeadlineText": "{CurrencyCode}",
 						"Subhead": "{GrossAmount}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{NetAmount}",
 						"Description": "{ItemNumber}",
@@ -86,5 +91,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "PurchaseOrderItems_Detail"
+	"_Name": "PurchaseOrderItems_Detail",
+	"PrefersLargeCaption": true
 }

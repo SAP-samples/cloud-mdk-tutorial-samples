@@ -1,5 +1,10 @@
 {
-	"Caption": "Update SalesOrderItem",
+	"Caption": "Update SalesOrderItem Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderItems",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -45,7 +50,8 @@
 							"_Name": "ItemNumber",
 							"Value": "{ItemNumber}",
 							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
 						},
 						{
 							"Caption": "NetAmount",
@@ -58,17 +64,14 @@
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
 								"ReturnValue": "{ProductId}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{ProductId}",
@@ -92,22 +95,20 @@
 							"Caption": "SalesOrderId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{SalesOrderId}",
 								"ReturnValue": "{SalesOrderId}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{SalesOrderId}",
 							"_Name": "SalesOrderId",
-							"_Type": "Control.Type.FormCell.ListPicker"
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
 						},
 						{
 							"Caption": "TaxAmount",

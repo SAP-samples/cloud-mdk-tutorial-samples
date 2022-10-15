@@ -1,5 +1,10 @@
 {
-	"Caption": "Update PurchaseOrderItem",
+	"Caption": "Update PurchaseOrderItem Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "PurchaseOrderItems",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -38,7 +43,8 @@
 							"_Name": "ItemNumber",
 							"Value": "{ItemNumber}",
 							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
 						},
 						{
 							"Caption": "NetAmount",
@@ -51,17 +57,14 @@
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
 								"ReturnValue": "{ProductId}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{ProductId}",
@@ -72,22 +75,20 @@
 							"Caption": "PurchaseOrderId",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": false,
-							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
-							"IsVisible": true,
 							"PickerItems": {
 								"DisplayValue": "{PurchaseOrderId}",
 								"ReturnValue": "{PurchaseOrderId}",
 								"Target": {
 									"EntitySet": "PurchaseOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV2.service",
-									"UniqueIdType": "Integer"
+									"Service": "/MDKApp/Services/SampleServiceV2.service"
 								}
 							},
 							"Value": "{PurchaseOrderId}",
 							"_Name": "PurchaseOrderId",
-							"_Type": "Control.Type.FormCell.ListPicker"
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
 						},
 						{
 							"Caption": "Quantity",

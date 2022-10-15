@@ -1,98 +1,121 @@
 {
-    "Caption": "SalesOrderHeader",
-
-    "ActionBar": {
-        "Items": []
-    },
-    "Controls": [{
-        "Sections": [{
-            "ObjectHeader": {
-                "DetailImage": "",
-                "HeadlineText": "{LifeCycleStatusName}",
-                "Subhead": "{CreatedAt}",
-                "Tags": [],
-                "BodyText": "",
-                "Footnote": "{CustomerId}",
-                "Description": "{CurrencyCode}",
-                "StatusText": "{GrossAmount}",
-                "StatusImage": "",
-                "SubstatusImage": "",
-                "SubstatusText": "{LifeCycleStatus}"
-            },
-            "_Type": "Section.Type.ObjectHeader"
-        }, {
-            "KeyAndValues": [{
-                    "KeyName": "CreatedAt",
-                    "Value": "{CreatedAt}"
-                },
-                {
-                    "KeyName": "CurrencyCode",
-                    "Value": "{CurrencyCode}"
-                },
-                {
-                    "KeyName": "CustomerId",
-                    "Value": "{CustomerId}"
-                },
-                {
-                    "KeyName": "GrossAmount",
-                    "Value": "{GrossAmount}"
-                },
-                {
-                    "KeyName": "LifeCycleStatus",
-                    "Value": "{LifeCycleStatus}"
-                },
-                {
-                    "KeyName": "LifeCycleStatusName",
-                    "Value": "{LifeCycleStatusName}"
-                },
-                {
-                    "KeyName": "NetAmount",
-                    "Value": "{NetAmount}"
-                },
-                {
-                    "KeyName": "SalesOrderId",
-                    "Value": "{SalesOrderId}"
-                },
-                {
-                    "KeyName": "TaxAmount",
-                    "Value": "{TaxAmount}"
-                }
-            ],
-            "Layout": {
-                "NumberOfColumns": 2
-            },
-            "MaxItemCount": 1,
-            "_Name": "SectionKeyValue0",
-            "_Type": "Section.Type.KeyValue"
-        }, {
-            "Header": {
-                "Caption": "Items"
-            },
-            "ObjectCell": {
-                "AccessoryType": "disclosureIndicator",
-                "Description": "{GrossAmount}",
-                "DetailImage": "",
-                "DetailImageIsCircular": false,
-                "Icons": [],
-                "StatusImage": "",
-                "Title": "{CurrencyCode}",
-                "Footnote": "{ItemNumber}",
-                "PreserveIconStackSpacing": false,
-                "StatusText": "{NetAmount}",
-                "Subhead": "{DeliveryDate}",
-                "SubstatusText": "{ProductId}",
-                "OnPress": "/MDK_i18n_l10n/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action"
-            },
-            "Target": {
-                "EntitySet": "{#Property:@odata.readLink}/Items",
-                "Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service"
-            },
-            "_Type": "Section.Type.ObjectTable"
-        }],
-        "DataSubscriptions": ["SalesOrderItems"],
-        "_Type": "Control.Type.SectionedTable",
-        "_Name": "SectionedTable"
-    }],
-    "_Type": "Page",
-    "_Name": "SalesOrderHeaders_Detail"
+	"Caption": "SalesOrderHeader Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"BodyText": "",
+						"Footnote": "{CustomerId}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{LifeCycleStatus}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CreatedAt",
+							"Value": "{CreatedAt}"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "CustomerId",
+							"Value": "{CustomerId}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "LifeCycleStatus",
+							"Value": "{LifeCycleStatus}"
+						},
+						{
+							"KeyName": "LifeCycleStatusName",
+							"Value": "{LifeCycleStatusName}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "SalesOrderId",
+							"Value": "{SalesOrderId}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Items"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{GrossAmount}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CurrencyCode}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{DeliveryDate}",
+						"SubstatusText": "{ProductId}",
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/Items",
+						"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail",
+	"PrefersLargeCaption": true
 }

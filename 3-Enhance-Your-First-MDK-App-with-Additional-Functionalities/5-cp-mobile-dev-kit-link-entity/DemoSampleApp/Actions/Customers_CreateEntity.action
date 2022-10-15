@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
 	"OnFailure": "/DemoSampleApp/Actions/CreateCustomerEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
 	"Target": {

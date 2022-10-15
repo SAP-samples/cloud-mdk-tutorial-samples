@@ -13,8 +13,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{Country}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_Detail.action",
 						"StatusImage": "",
@@ -24,6 +30,9 @@
 						"StatusText": "{DateOfBirth}",
 						"Subhead": "{City}",
 						"SubstatusText": "{EmailAddress}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,

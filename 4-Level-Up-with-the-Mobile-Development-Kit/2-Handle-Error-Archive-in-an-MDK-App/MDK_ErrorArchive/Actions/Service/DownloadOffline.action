@@ -17,5 +17,6 @@
     "ActionResult": {
         "_Name": "sync"
     },
-    "OnFailure": "/MDK_ErrorArchive/Actions/Service/SyncFailureMessage.action"
+    "OnFailure": "/MDK_ErrorArchive/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/MDK_ErrorArchive/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
 }

@@ -1,78 +1,89 @@
 {
-    "Caption": "SalesOrderItem",
-
-    "ActionBar": {
-        "Items": []
-    },
-    "Controls": [{
-        "Sections": [{
-            "ObjectHeader": {
-                "DetailImage": "",
-                "HeadlineText": "{CurrencyCode}",
-                "Subhead": "{DeliveryDate}",
-                "Tags": [],
-                "BodyText": "",
-                "Footnote": "{ItemNumber}",
-                "Description": "{GrossAmount}",
-                "StatusText": "{NetAmount}",
-                "StatusImage": "",
-                "SubstatusImage": "",
-                "SubstatusText": "{ProductId}"
-            },
-            "_Type": "Section.Type.ObjectHeader"
-        }, {
-            "KeyAndValues": [{
-                    "KeyName": "CurrencyCode",
-                    "Value": "{CurrencyCode}"
-                },
-                {
-                    "KeyName": "DeliveryDate",
-                    "Value": "{DeliveryDate}"
-                },
-                {
-                    "KeyName": "GrossAmount",
-                    "Value": "{GrossAmount}"
-                },
-                {
-                    "KeyName": "ItemNumber",
-                    "Value": "{ItemNumber}"
-                },
-                {
-                    "KeyName": "NetAmount",
-                    "Value": "{NetAmount}"
-                },
-                {
-                    "KeyName": "ProductId",
-                    "Value": "{ProductId}"
-                },
-                {
-                    "KeyName": "Quantity",
-                    "Value": "{Quantity}"
-                },
-                {
-                    "KeyName": "QuantityUnit",
-                    "Value": "{QuantityUnit}"
-                },
-                {
-                    "KeyName": "SalesOrderId",
-                    "Value": "{SalesOrderId}"
-                },
-                {
-                    "KeyName": "TaxAmount",
-                    "Value": "{TaxAmount}"
-                }
-            ],
-            "Layout": {
-                "NumberOfColumns": 2
-            },
-            "MaxItemCount": 1,
-            "_Name": "SectionKeyValue0",
-            "_Type": "Section.Type.KeyValue"
-        }],
-        "DataSubscriptions": [],
-        "_Type": "Control.Type.SectionedTable",
-        "_Name": "SectionedTable"
-    }],
-    "_Type": "Page",
-    "_Name": "SalesOrderItems_Detail"
+	"Caption": "SalesOrderItem Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderItems",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CurrencyCode}",
+						"Subhead": "{DeliveryDate}",
+						"BodyText": "",
+						"Footnote": "{ItemNumber}",
+						"Description": "{GrossAmount}",
+						"StatusText": "{NetAmount}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{ProductId}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "DeliveryDate",
+							"Value": "{DeliveryDate}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "ItemNumber",
+							"Value": "{ItemNumber}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "ProductId",
+							"Value": "{ProductId}"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}"
+						},
+						{
+							"KeyName": "QuantityUnit",
+							"Value": "{QuantityUnit}"
+						},
+						{
+							"KeyName": "SalesOrderId",
+							"Value": "{SalesOrderId}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderItems_Detail",
+	"PrefersLargeCaption": true
 }

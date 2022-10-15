@@ -13,7 +13,10 @@
 						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
-						"HeadlineText": "{LastName}"
+						"HeadlineText": "{LastName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
@@ -23,25 +26,25 @@
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
-							"_Name": "KeyValue0",
+							"_Name": "KeyValue3",
 							"KeyName": "Address",
 							"Visible": true
 						},
 						{
 							"Value": "{City}",
-							"_Name": "KeyValue1",
+							"_Name": "KeyValue4",
 							"KeyName": "City",
 							"Visible": true
 						},
 						{
 							"Value": "{PostalCode}",
-							"_Name": "KeyValue2",
+							"_Name": "KeyValue5",
 							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
 							"Value": "{Country}",
-							"_Name": "KeyValue3",
+							"_Name": "KeyValue6",
 							"KeyName": "Country",
 							"Visible": true
 						}
@@ -58,20 +61,13 @@
 					}
 				},
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Name": "SectionHeader0",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter0",
+						"_Name": "SectionFooter1",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "disclosureIndicator",
@@ -80,6 +76,13 @@
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
 						"UseBottomPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No Customer Orders Found",
@@ -93,11 +96,25 @@
 						},
 						"Title": "{SalesOrderId}",
 						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{CurrencyCode}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
 						"Selected": false
 					},
@@ -117,7 +134,8 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Customer Detail",
+	"Caption": "Details",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{

@@ -1,141 +1,166 @@
 {
-    "Caption": "Customer",
-
-    "ActionBar": {
-        "Items": []
-    },
-    "Controls": [{
-        "Sections": [{
-            "ObjectHeader": {
-                "DetailImage": "",
-                "HeadlineText": "{FirstName}",
-                "Subhead": "{City}",
-                "Tags": [],
-                "BodyText": "",
-                "Footnote": "{CustomerId}",
-                "Description": "{Country}",
-                "StatusText": "{DateOfBirth}",
-                "StatusImage": "",
-                "SubstatusImage": "",
-                "SubstatusText": "{EmailAddress}"
-            },
-            "_Type": "Section.Type.ObjectHeader"
-        }, {
-            "KeyAndValues": [{
-                    "KeyName": "City",
-                    "Value": "{City}"
-                },
-                {
-                    "KeyName": "Country",
-                    "Value": "{Country}"
-                },
-                {
-                    "KeyName": "CustomerId",
-                    "Value": "{CustomerId}"
-                },
-                {
-                    "KeyName": "DateOfBirth",
-                    "Value": "{DateOfBirth}"
-                },
-                {
-                    "KeyName": "EmailAddress",
-                    "Value": "{EmailAddress}"
-                },
-                {
-                    "KeyName": "FirstName",
-                    "Value": "{FirstName}"
-                },
-                {
-                    "KeyName": "HouseNumber",
-                    "Value": "{HouseNumber}"
-                },
-                {
-                    "KeyName": "LastName",
-                    "Value": "{LastName}"
-                },
-                {
-                    "KeyName": "PhoneNumber",
-                    "Value": "{PhoneNumber}"
-                },
-                {
-                    "KeyName": "PostalCode",
-                    "Value": "{PostalCode}"
-                },
-                {
-                    "KeyName": "Street",
-                    "Value": "{Street}"
-                },
-                {
-                    "KeyName": "UpdatedTimestamp",
-                    "Value": "{UpdatedTimestamp}"
-                }
-            ],
-            "Layout": {
-                "NumberOfColumns": 2
-            },
-            "MaxItemCount": 1,
-            "_Name": "SectionKeyValue0",
-            "_Type": "Section.Type.KeyValue"
-        }, {
-            "Header": {
-                "Caption": "Address"
-            },
-            "KeyAndValues": [{
-                    "KeyName": "HouseNumber",
-                    "Value": "{HouseNumber}"
-                },
-                {
-                    "KeyName": "Street",
-                    "Value": "{Street}"
-                },
-                {
-                    "KeyName": "City",
-                    "Value": "{City}"
-                },
-                {
-                    "KeyName": "Country",
-                    "Value": "{Country}"
-                },
-                {
-                    "KeyName": "PostalCode",
-                    "Value": "{PostalCode}"
-                }
-            ],
-            "Layout": {
-                "NumberOfColumns": 2
-            },
-            "MaxItemCount": 1,
-            "_Name": "SectionKeyValueAddress",
-            "_Type": "Section.Type.KeyValue"
-        }, {
-            "Header": {
-                "Caption": "SalesOrders"
-            },
-            "ObjectCell": {
-                "AccessoryType": "disclosureIndicator",
-                "Description": "{CurrencyCode}",
-                "DetailImage": "",
-                "DetailImageIsCircular": false,
-                "Icons": [],
-                "StatusImage": "",
-                "Title": "{LifeCycleStatusName}",
-                "Footnote": "{CustomerId}",
-                "PreserveIconStackSpacing": false,
-                "StatusText": "{GrossAmount}",
-                "Subhead": "{CreatedAt}",
-                "SubstatusText": "{LifeCycleStatus}",
-                "OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
-            },
-            "Target": {
-                "EntitySet": "{#Property:@odata.readLink}/SalesOrders",
-                "Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service"
-            },
-            "_Type": "Section.Type.ObjectTable"
-        }],
-        "DataSubscriptions": ["SalesOrderHeaders"],
-        "_Type": "Control.Type.SectionedTable",
-        "_Name": "SectionedTable"
-    }],
-    "_Type": "Page",
-    "_Name": "Customers_Detail"
+	"Caption": "Customer Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{FirstName}",
+						"Subhead": "{City}",
+						"BodyText": "",
+						"Footnote": "{CustomerId}",
+						"Description": "{Country}",
+						"StatusText": "{DateOfBirth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{EmailAddress}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "City",
+							"Value": "{City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}"
+						},
+						{
+							"KeyName": "CustomerId",
+							"Value": "{CustomerId}"
+						},
+						{
+							"KeyName": "DateOfBirth",
+							"Value": "{DateOfBirth}"
+						},
+						{
+							"KeyName": "EmailAddress",
+							"Value": "{EmailAddress}"
+						},
+						{
+							"KeyName": "FirstName",
+							"Value": "{FirstName}"
+						},
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}"
+						},
+						{
+							"KeyName": "LastName",
+							"Value": "{LastName}"
+						},
+						{
+							"KeyName": "PhoneNumber",
+							"Value": "{PhoneNumber}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}"
+						},
+						{
+							"KeyName": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Address"
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{Address/HouseNumber}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Address/Street}"
+						},
+						{
+							"KeyName": "City",
+							"Value": "{Address/City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Address/Country}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{Address/PostalCode}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValueAddress",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrders"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{CurrencyCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LifeCycleStatusName}",
+						"Footnote": "{CustomerId}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{GrossAmount}",
+						"Subhead": "{CreatedAt}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+						"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Detail",
+	"PrefersLargeCaption": true
 }

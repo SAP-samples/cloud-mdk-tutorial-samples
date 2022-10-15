@@ -1,5 +1,10 @@
 {
-	"Caption": "Customer",
+	"Caption": "Customer Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "",
 						"HeadlineText": "{FirstName}",
 						"Subhead": "{City}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{CustomerId}",
 						"Description": "{Country}",
@@ -98,23 +103,23 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "HouseNumber",
-							"Value": "{HouseNumber}"
+							"Value": "{Address/HouseNumber}"
 						},
 						{
 							"KeyName": "Street",
-							"Value": "{Street}"
+							"Value": "{Address/Street}"
 						},
 						{
 							"KeyName": "City",
-							"Value": "{City}"
+							"Value": "{Address/City}"
 						},
 						{
 							"KeyName": "Country",
-							"Value": "{Country}"
+							"Value": "{Address/Country}"
 						},
 						{
 							"KeyName": "PostalCode",
-							"Value": "{PostalCode}"
+							"Value": "{Address/PostalCode}"
 						}
 					],
 					"Layout": {
@@ -131,8 +136,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{CurrencyCode}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{LifeCycleStatusName}",
@@ -142,6 +153,9 @@
 						"Subhead": "{CreatedAt}",
 						"SubstatusText": "{LifeCycleStatus}",
 						"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
@@ -158,5 +172,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Customers_Detail"
+	"_Name": "Customers_Detail",
+	"PrefersLargeCaption": true
 }

@@ -1,5 +1,10 @@
 {
-	"Caption": "PurchaseOrderHeader",
+	"Caption": "PurchaseOrderHeader Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"EntitySet": "PurchaseOrderHeaders",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "",
 						"HeadlineText": "{CurrencyCode}",
 						"Subhead": "{GrossAmount}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{PurchaseOrderId}",
 						"Description": "{NetAmount}",
@@ -74,8 +79,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{ItemNumber}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{CurrencyCode}",
@@ -85,6 +96,9 @@
 						"Subhead": "{GrossAmount}",
 						"SubstatusText": "{PurchaseOrderId}",
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{#Property:@odata.readLink}/Items",
@@ -101,5 +115,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "PurchaseOrderHeaders_Detail"
+	"_Name": "PurchaseOrderHeaders_Detail",
+	"PrefersLargeCaption": true
 }

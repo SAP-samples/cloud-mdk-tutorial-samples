@@ -1,4 +1,9 @@
 {
+	"DesignTimeTarget": {
+		"Service": "/MDK_Maps/Services/SampleServiceV2.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
 	"Controls": [
 		{
 			"DataSubscriptions": [
@@ -14,9 +19,12 @@
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
-						"HeadlineText": "{FirstName}",
 						"Tags": [
-						]
+						],
+						"HeadlineText": "{FirstName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0"
@@ -48,6 +56,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Customer",
+	"Caption": "Customer Detail",
 	"PrefersLargeCaption": true
 }

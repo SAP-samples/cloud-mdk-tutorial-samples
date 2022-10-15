@@ -6,13 +6,13 @@
         },
         {
             "Name": "Products",
-            "Query": "Products",
-            "AutomaticallyRetrievesStreams": true
+            "Query": "Products"
         }
     ],
     "_Type": "Action.Type.OfflineOData.Download",
     "ActionResult": {
         "_Name": "sync"
     },
-    "OnFailure": "/MDK_Styling/Actions/Service/SyncFailureMessage.action"
+    "OnFailure": "/MDK_Styling/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/MDK_Styling/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
 }

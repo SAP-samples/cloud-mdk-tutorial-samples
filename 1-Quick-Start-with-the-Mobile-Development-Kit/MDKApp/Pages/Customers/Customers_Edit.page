@@ -1,5 +1,10 @@
 {
-	"Caption": "Update Customer",
+	"Caption": "Update Customer Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -36,7 +41,8 @@
 							"Caption": "CustomerId",
 							"_Name": "CustomerId",
 							"Value": "{CustomerId}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
 						},
 						{
 							"Mode": "Datetime",

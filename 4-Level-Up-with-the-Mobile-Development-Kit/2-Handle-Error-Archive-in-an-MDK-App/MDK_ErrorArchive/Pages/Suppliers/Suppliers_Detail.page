@@ -1,5 +1,10 @@
 {
-	"Caption": "Supplier",
+	"Caption": "Supplier Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"EntitySet": "Suppliers",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "",
 						"HeadlineText": "{SupplierName}",
 						"Subhead": "{City}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{EmailAddress}",
 						"Description": "{Country}",
@@ -90,23 +95,23 @@
 					"KeyAndValues": [
 						{
 							"KeyName": "HouseNumber",
-							"Value": "{HouseNumber}"
+							"Value": "{Address/HouseNumber}"
 						},
 						{
 							"KeyName": "Street",
-							"Value": "{Street}"
+							"Value": "{Address/Street}"
 						},
 						{
 							"KeyName": "City",
-							"Value": "{City}"
+							"Value": "{Address/City}"
 						},
 						{
 							"KeyName": "Country",
-							"Value": "{Country}"
+							"Value": "{Address/Country}"
 						},
 						{
 							"KeyName": "PostalCode",
-							"Value": "{PostalCode}"
+							"Value": "{Address/PostalCode}"
 						}
 					],
 					"Layout": {
@@ -123,8 +128,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{CategoryName}",
-						"DetailImage": "/MDK_ErrorArchive/Services/SampleServiceV2.service/{@odata.readLink}/$value",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/MDK_ErrorArchive/Services/SampleServiceV2.service/{@odata.readLink}/$value"
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{Name}",
@@ -134,6 +145,9 @@
 						"Subhead": "{Category}",
 						"SubstatusText": "{DimensionHeight}",
 						"OnPress": "/MDK_ErrorArchive/Actions/Products/NavToProducts_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{#Property:@odata.readLink}/Products",
@@ -148,8 +162,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{NetAmount}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{CurrencyCode}",
@@ -159,6 +179,9 @@
 						"Subhead": "{GrossAmount}",
 						"SubstatusText": "{TaxAmount}",
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{#Property:@odata.readLink}/PurchaseOrders",
@@ -176,5 +199,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Suppliers_Detail"
+	"_Name": "Suppliers_Detail",
+	"PrefersLargeCaption": true
 }

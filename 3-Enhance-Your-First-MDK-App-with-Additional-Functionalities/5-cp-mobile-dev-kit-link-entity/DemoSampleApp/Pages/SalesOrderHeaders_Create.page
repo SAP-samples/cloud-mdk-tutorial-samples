@@ -13,7 +13,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "CurrencyCode",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "18.010",
@@ -22,7 +23,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "NetAmount",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "108.010",
@@ -31,7 +33,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "TaxAmount",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "126.02",
@@ -40,7 +43,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "GrossAmount",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "N",
@@ -49,7 +53,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "LifeCycleStatus",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "New",
@@ -58,7 +63,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "LifeCycleStatusName",
-							"PlaceHolder": "PlaceHolder"
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
 						},
 						{
 							"Value": "Enter Date",
@@ -67,7 +73,7 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Creation Date",
-							"Mode": "datetime"
+							"Mode": "Datetime"
 						}
 					],
 					"Visible": true

@@ -15,7 +15,17 @@
 				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Logout",
 				"OnPress": "/MDK_Push/Actions/Logout.action"
+			},
+			{
+				"_Name": "UpdateToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Clickable": true,
+				"OnPress": "/MDK_Push/Actions/AppUpdateProgressBanner.action",
+				"Visible": "$(PLT,true,true,false)"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }

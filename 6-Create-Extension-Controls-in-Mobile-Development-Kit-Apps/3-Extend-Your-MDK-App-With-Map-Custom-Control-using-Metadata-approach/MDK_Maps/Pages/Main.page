@@ -9,7 +9,7 @@
 					"Buttons": [
 						{
 							"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_List.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "Customers"
 						}
 					],
@@ -28,6 +28,15 @@
 				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Logout",
 				"OnPress": "/MDK_Maps/Actions/Logout.action"
+			},
+			{
+				"_Name": "UpdateToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Clickable": true,
+				"OnPress": "/MDK_Maps/Actions/AppUpdateProgressBanner.action",
+				"Visible": "$(PLT,true,true,false)"
 			}
 		]
 	},

@@ -19,8 +19,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{ItemNumber}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
 						"StatusImage": "",
@@ -30,6 +36,9 @@
 						"StatusText": "{ProductId}",
 						"Subhead": "{GrossAmount}",
 						"SubstatusText": "{PurchaseOrderId}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,
@@ -59,5 +68,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "PurchaseOrderItems_List"
+	"_Name": "PurchaseOrderItems_List",
+	"PrefersLargeCaption": true
 }

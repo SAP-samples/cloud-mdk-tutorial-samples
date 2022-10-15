@@ -12,7 +12,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Pet Name",
-							"PlaceHolder": "Enter Value"
+							"PlaceHolder": "Enter Value",
+							"Enabled": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -20,7 +21,8 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"Caption": "Status",
-							"PlaceHolder": "Enter Value"
+							"PlaceHolder": "Enter Value",
+							"Enabled": true
 						}
 					],
 					"Visible": true
@@ -34,7 +36,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "ActionBarItem0",
+				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
 				"Position": "Left",
@@ -43,7 +45,7 @@
 				"OnPress": "/MDK_Petstore/Actions/ClosePage.action"
 			},
 			{
-				"_Name": "ActionBarItem1",
+				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Save",
 				"Position": "Right",

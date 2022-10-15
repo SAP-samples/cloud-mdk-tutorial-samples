@@ -14,14 +14,21 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Customers",
-							"TextAlignment": "center",
-							"Style": "MyCustomerButton",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Normal",
+							"ImagePosition": "Leading",
+							"Styles": {
+								"Button": "MyCustomerButton"
+							},
 							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "Products",
-							"TextAlignment": "center",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
 							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action"
 						}
 					]
@@ -32,6 +39,7 @@
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
+	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
 			{
@@ -51,6 +59,15 @@
 				"Visible": "$(PLT,true,true,false)",
 				"Clickable": true,
 				"OnPress": "/MDK_Styling/Actions/Service/SyncStartedMessage.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/MDK_Styling/Actions/AppUpdateProgressBanner.action"
 			}
 		]
 	}

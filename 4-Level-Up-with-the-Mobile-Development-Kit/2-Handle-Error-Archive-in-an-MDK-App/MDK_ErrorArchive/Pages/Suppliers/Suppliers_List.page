@@ -19,8 +19,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{Country}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"OnPress": "/MDK_ErrorArchive/Actions/Suppliers/NavToSuppliers_Detail.action",
 						"StatusImage": "",
@@ -30,6 +36,9 @@
 						"StatusText": "{HouseNumber}",
 						"Subhead": "{City}",
 						"SubstatusText": "{PhoneNumber}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Search": {
 						"Enabled": true,
@@ -59,5 +68,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Suppliers_List"
+	"_Name": "Suppliers_List",
+	"PrefersLargeCaption": true
 }

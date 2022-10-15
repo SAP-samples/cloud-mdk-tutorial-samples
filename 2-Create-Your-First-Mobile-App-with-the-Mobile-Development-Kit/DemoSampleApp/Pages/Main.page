@@ -14,12 +14,23 @@
 					"Buttons": [
 						{
 							"_Name": "SectionButton0",
-							"Title": "Customer List",
-							"TextAlignment": "center",
+							"Title": "Customers",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://customer",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
 							"Visible": true,
 							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action"
+
 						}
-					]
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
 				}
 			]
 		}
@@ -27,6 +38,7 @@
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
+	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
 			{
@@ -46,6 +58,15 @@
 				"Visible": "$(PLT,true,true,false)",
 				"Clickable": true,
 				"OnPress": "/DemoSampleApp/Actions/Service/SyncStartedMessage.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/DemoSampleApp/Actions/AppUpdateProgressBanner.action"
 			}
 		]
 	}

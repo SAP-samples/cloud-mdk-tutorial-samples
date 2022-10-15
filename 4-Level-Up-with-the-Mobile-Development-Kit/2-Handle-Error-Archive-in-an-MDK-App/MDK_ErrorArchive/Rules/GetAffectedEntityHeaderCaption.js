@@ -9,3 +9,4 @@ export default function GetAffectedEntityHeaderCaption(context) {
     }
     return "Affected Entity: " + affectedEntityType;
    }
+   

@@ -1,5 +1,10 @@
 {
-	"Caption": "SalesOrderHeader",
+	"Caption": "SalesOrderHeader Detail",
+	"DesignTimeTarget": {
+		"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
 	"ActionBar": {
 		"Items": [
 			{
@@ -19,10 +24,10 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
+						"Tags": [],
 						"DetailImage": "",
 						"HeadlineText": "{LifeCycleStatusName}",
 						"Subhead": "{CreatedAt}",
-						"Tags": [],
 						"BodyText": "",
 						"Footnote": "{CustomerId}",
 						"Description": "{CurrencyCode}",
@@ -86,8 +91,14 @@
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
 						"Description": "{GrossAmount}",
-						"DetailImage": "",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{CurrencyCode}",
@@ -96,6 +107,9 @@
 						"StatusText": "{NetAmount}",
 						"Subhead": "{DeliveryDate}",
 						"SubstatusText": "{ProductId}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{#Property:@odata.readLink}/Items",
@@ -112,5 +126,6 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "SalesOrderHeaders_Detail"
+	"_Name": "SalesOrderHeaders_Detail",
+	"PrefersLargeCaption": true
 }

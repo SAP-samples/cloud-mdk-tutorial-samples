@@ -1,0 +1,54 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "ErrorArchive"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false,
+						"Caption": "No record found!"
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{HTTPStatusCode}",
+						"Subhead": "{RequestURL}",
+						"Footnote": "{Message}",
+						"StatusText": "{RequestMethod}",
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"OnPress": "/DemoSampleApp/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ErrorArchive_List",
+	"Caption": "Error List",
+	"PrefersLargeCaption": true
+}
