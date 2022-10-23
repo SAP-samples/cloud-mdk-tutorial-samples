@@ -16,20 +16,20 @@
 4. Enter your credentials to login to SAP Business Technology Platform (BTP).
 
     ![MDK](img_4.png)
-    ![MDK](img_4.1.png)
+    ![MDK](img_5.png)
 
 5. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
-    ![MDK](img_5.png)
+    ![MDK](img_6.png)
 
 6. Confirm the passcode and tap **Done**.
 
-    ![MDK](img_6.png)
+    ![MDK](img_7.png)
 
 7. Optionally, you can enable Biometric authentication to get faster access to the app data, tap **Enable**.
 
-    ![MDK](img_7.png)
+    ![MDK](img_8.png)
 
 8. Tap **Now** to accept the deployed metadata definitions.
 
-    ![MDK](img_8.png)
+    ![MDK](img_9.png)
