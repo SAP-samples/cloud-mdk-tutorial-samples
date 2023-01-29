@@ -1,3 +1,4 @@
 {
+    "SkipReset": false,
     "_Type": "Action.Type.Logout"
 }

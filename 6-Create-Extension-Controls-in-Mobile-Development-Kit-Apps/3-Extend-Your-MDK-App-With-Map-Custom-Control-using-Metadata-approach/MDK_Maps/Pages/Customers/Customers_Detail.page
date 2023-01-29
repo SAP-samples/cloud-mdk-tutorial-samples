@@ -19,8 +19,7 @@
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
-						"Tags": [
-						],
+						"Tags": [],
 						"HeadlineText": "{FirstName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",

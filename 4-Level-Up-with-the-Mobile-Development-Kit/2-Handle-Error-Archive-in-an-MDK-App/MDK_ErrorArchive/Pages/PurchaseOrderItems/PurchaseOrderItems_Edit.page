@@ -56,7 +56,7 @@
 						{
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
@@ -74,7 +74,7 @@
 						{
 							"Caption": "PurchaseOrderId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {

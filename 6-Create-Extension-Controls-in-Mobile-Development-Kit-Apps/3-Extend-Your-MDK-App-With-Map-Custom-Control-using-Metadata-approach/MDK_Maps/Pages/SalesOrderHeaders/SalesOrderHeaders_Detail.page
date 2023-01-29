@@ -79,7 +79,7 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{GrossAmount}",
+						"Description": "{DeliveryDate}",
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -90,18 +90,18 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{CurrencyCode}",
-						"Footnote": "{ItemNumber}",
+						"Title": "{ProductId}",
+						"Footnote": "{GrossAmount}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{NetAmount}",
-						"Subhead": "{DeliveryDate}",
-						"SubstatusText": "{ProductId}"
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
 					},
 					"Target": {
-						"EntitySet": "{#Property:@odata.readLink}/Items",
+						"EntitySet": "{@odata.readLink}/Items",
 						"Service": "/MDK_Maps/Services/SampleServiceV2.service"
 					},
 					"_Type": "Section.Type.ObjectTable"

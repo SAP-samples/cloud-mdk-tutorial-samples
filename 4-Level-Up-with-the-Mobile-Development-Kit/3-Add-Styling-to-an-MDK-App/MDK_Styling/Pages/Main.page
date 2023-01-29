@@ -14,11 +14,6 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Customers",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Normal",
-							"ImagePosition": "Leading",
 							"Styles": {
 								"Button": "MyCustomerButton"
 							},
@@ -27,8 +22,6 @@
 						{
 							"_Name": "SectionButton1",
 							"Title": "Products",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
 							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action"
 						}
 					]
@@ -49,7 +42,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/MDK_Styling/Actions/Logout.action"
+				"OnPress": "/MDK_Styling/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",

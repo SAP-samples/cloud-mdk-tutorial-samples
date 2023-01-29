@@ -60,7 +60,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "ActionBarItem1",
+				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
 				"Position": "Left",
@@ -69,7 +69,7 @@
 				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
-				"_Name": "ActionBarItem2",
+				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Save",
 				"Position": "Right",

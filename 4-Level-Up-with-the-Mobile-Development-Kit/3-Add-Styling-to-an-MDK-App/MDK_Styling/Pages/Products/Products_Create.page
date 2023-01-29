@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create $(L,PRODUCT_TYPE)",
+	"Caption": "Create Product Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -81,7 +81,7 @@
 						{
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
@@ -109,7 +109,7 @@
 						{
 							"Caption": "SupplierId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,

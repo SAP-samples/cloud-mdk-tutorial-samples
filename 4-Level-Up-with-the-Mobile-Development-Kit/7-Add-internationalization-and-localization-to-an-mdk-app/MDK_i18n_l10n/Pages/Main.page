@@ -5,10 +5,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Layout": {
-						"LayoutType": "Vertical",
-						"HorizontalAlignment": "Leading"
-					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
 					"EmptySection": {
@@ -18,21 +14,11 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "$(L,'customers_title')",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Normal",
-							"ImagePosition": "Leading",
 							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "$(L,'salesOrderHeaders_title')",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Normal",
-							"ImagePosition": "Leading",
 							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
 						}
 					]
@@ -53,7 +39,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/MDK_i18n_l10n/Actions/Logout.action"
+				"OnPress": "/MDK_i18n_l10n/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",

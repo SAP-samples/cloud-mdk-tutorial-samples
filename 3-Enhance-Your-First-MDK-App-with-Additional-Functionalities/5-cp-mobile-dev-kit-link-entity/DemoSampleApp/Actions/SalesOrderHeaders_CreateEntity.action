@@ -1,7 +1,7 @@
 {
 	"_Type": "Action.Type.ODataService.CreateRelatedEntity",
 	"ActionResult": {
-		"_Name": "create"
+		"_Name": "SalesOrderHeaders_CreateEntity"
 	},
 	"OnFailure": "/DemoSampleApp/Actions/CreateSalesOrderHeaderEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
@@ -22,6 +22,7 @@
 		"GrossAmount": "#Control:FCCreateGrossAmount/#Value",
 		"LifeCycleStatus": "#Control:FCCreateLifeCycleStatus/#Value",
 		"LifeCycleStatusName": "#Control:FCCreateLifeCycleStatusName/#Value",
-		"NetAmount": "#Control:FCCreateNetAmount/#Value"
+		"NetAmount": "#Control:FCCreateNetAmount/#Value",
+		"TaxAmount": "#Control:FCCreateTaxAmount/#Value"
 	}
 }

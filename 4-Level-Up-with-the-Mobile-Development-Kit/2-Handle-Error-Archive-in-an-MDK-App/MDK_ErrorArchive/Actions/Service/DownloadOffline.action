@@ -1,16 +1,16 @@
 {
     "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
     "DefiningRequests": [{
-            "Name": "Suppliers",
-            "Query": "Suppliers"
-        },
-        {
             "Name": "PurchaseOrderHeaders",
             "Query": "PurchaseOrderHeaders"
         },
         {
             "Name": "PurchaseOrderItems",
             "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
         }
     ],
     "_Type": "Action.Type.OfflineOData.Download",

@@ -18,7 +18,7 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{ItemNumber}",
+						"Description": "{GrossAmount}",
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -30,11 +30,11 @@
 						"Icons": [],
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
 						"StatusImage": "",
-						"Title": "{CurrencyCode}",
-						"Footnote": "{NetAmount}",
+						"Title": "{ProductId}",
+						"Footnote": "{ItemNumber}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{ProductId}",
-						"Subhead": "{GrossAmount}",
+						"StatusText": "{NetAmount}",
+						"Subhead": "{CurrencyCode}",
 						"SubstatusText": "{PurchaseOrderId}"
 					},
 					"EmptySection": {

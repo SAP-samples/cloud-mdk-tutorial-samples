@@ -10,8 +10,6 @@
 						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerId}",
 						"StatusText": "{PhoneNumber}",
-						"DetailImage": "sap-icon://customer",
-						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
@@ -26,25 +24,25 @@
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
-							"_Name": "KeyValue3",
+							"_Name": "KeyValue0",
 							"KeyName": "Address",
 							"Visible": true
 						},
 						{
 							"Value": "{City}",
-							"_Name": "KeyValue4",
+							"_Name": "KeyValue1",
 							"KeyName": "City",
 							"Visible": true
 						},
 						{
 							"Value": "{PostalCode}",
-							"_Name": "KeyValue5",
+							"_Name": "KeyValue2",
 							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
 							"Value": "{Country}",
-							"_Name": "KeyValue6",
+							"_Name": "KeyValue3",
 							"KeyName": "Country",
 							"Visible": true
 						}
@@ -61,13 +59,20 @@
 					}
 				},
 				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Name": "SectionHeader0",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter1",
+						"_Name": "SectionFooter0",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "disclosureIndicator",
@@ -76,13 +81,6 @@
 						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
 						"UseBottomPadding": false
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No Customer Orders Found",
@@ -90,8 +88,7 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{SalesOrderId}",
@@ -99,20 +96,16 @@
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{CurrencyCode}",
-						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "disclosureIndicator",
-						"Tags": [
-						],
+						"AccessoryType": "none",
+						"Tags": [],
 						"AvatarStack": {
-							"Avatars": [
-							],
+							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
-							"Avatars": [
-							],
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",

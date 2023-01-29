@@ -29,27 +29,12 @@
 						"SubstatusText": "{EmailAddress}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Tags": [
-						],
-						"AvatarStack": {
-							"Avatars": [
-								{
-									"Image": ""
-								}
-							],
-							"ImageIsCircular": false
-						},
-						"AvatarGrid": {
-							"Avatars": [
-							]
-						},
 						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"Styles": {
 							"Title": "ObjectTableTitle"
 						},
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						}
 					},

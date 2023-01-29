@@ -19,30 +19,25 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{SalesOrderId}",
 						"Subhead": "{CustomerId}",
 						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatusName}",
-						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Tags": [
-						],
+						"Tags": [],
 						"AvatarStack": {
-							"Avatars": [
-							],
+							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
-							"Avatars": [
-							],
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",

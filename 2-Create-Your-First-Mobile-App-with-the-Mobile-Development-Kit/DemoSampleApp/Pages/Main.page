@@ -15,16 +15,9 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Customers",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
 							"Image": "sap-icon://customer",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
 							"Visible": true,
 							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action"
-
 						}
 					],
 					"Layout": {
@@ -48,7 +41,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/DemoSampleApp/Actions/Logout.action"
+				"OnPress": "/DemoSampleApp/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",

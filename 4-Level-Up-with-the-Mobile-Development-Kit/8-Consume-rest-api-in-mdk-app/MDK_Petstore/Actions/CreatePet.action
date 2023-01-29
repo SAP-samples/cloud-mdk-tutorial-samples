@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "CreatePet"
+	},
 	"OnSuccess": "/MDK_Petstore/Actions/ClosePage_Complete.action",
 	"Target": {
 		"Service": "/MDK_Petstore/Services/petstore.service",

@@ -12,7 +12,7 @@
 							"_Name": "FCCreateCurrencyCode",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "CurrencyCode",
+							"Caption": "Currency Code",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -22,7 +22,7 @@
 							"_Name": "FCCreateNetAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "NetAmount",
+							"Caption": "Net Amount",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -32,7 +32,7 @@
 							"_Name": "FCCreateTaxAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "TaxAmount",
+							"Caption": "Tax Amount",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -42,7 +42,7 @@
 							"_Name": "FCCreateGrossAmount",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "GrossAmount",
+							"Caption": "Gross Amount",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -52,7 +52,7 @@
 							"_Name": "FCCreateLifeCycleStatus",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "LifeCycleStatus",
+							"Caption": "Lifecycle Status",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},
@@ -62,7 +62,7 @@
 							"_Name": "FCCreateLifeCycleStatusName",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Caption": "LifeCycleStatusName",
+							"Caption": "Lifecycle Status Name",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true
 						},

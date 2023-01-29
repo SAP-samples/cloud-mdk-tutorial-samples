@@ -19,8 +19,7 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "Edit Affected Entity",
@@ -29,19 +28,6 @@
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Tags": [
-						],
-						"AvatarStack": {
-							"Avatars": [
-							],
-							"ImageIsCircular": true,
-							"ImageHasBorder": false
-						},
-						"AvatarGrid": {
-							"Avatars": [
-							],
-							"ImageIsCircular": true
-						},
 						"OnPress": "/MDK_ErrorArchive/Rules/ErrorArchive/ErrorArchive_DecideWhichEditPage.js",
 						"Selected": false
 					},

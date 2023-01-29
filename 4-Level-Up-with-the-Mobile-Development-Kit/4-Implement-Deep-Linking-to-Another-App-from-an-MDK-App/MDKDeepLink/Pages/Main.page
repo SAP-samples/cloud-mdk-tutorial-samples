@@ -17,26 +17,14 @@
 					},
 					"Buttons": [
 						{
-							"_Name": "SectionButton0",
+							"_Name": "SectionButton1",
 							"Title": "Open SAP Mobile Cards",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
 							"Visible": true,
 							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js"
 						},
 						{
-							"_Name": "SectionButton1",
+							"_Name": "SectionButton0",
 							"Title": "Open sap.com page",
-							"TextAlignment": "Center",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
 							"Visible": true,
 							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js"
 						}
@@ -58,7 +46,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/MDKDeepLink/Actions/Logout.action"
+				"OnPress": "/MDKDeepLink/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",

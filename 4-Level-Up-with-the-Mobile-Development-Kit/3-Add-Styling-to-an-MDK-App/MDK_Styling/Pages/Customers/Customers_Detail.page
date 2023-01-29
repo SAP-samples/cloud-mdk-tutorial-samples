@@ -19,8 +19,7 @@
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
-						"Tags": [
-						],
+						"Tags": [],
 						"HeadlineText": "{FirstName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
@@ -163,7 +162,7 @@
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"Service": "/MDK_Styling/Services/SampleServiceV2.service"
 					},
 					"_Name": "SectionObjectTable0",
@@ -172,11 +171,6 @@
 						"FooterVisible": false
 					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						},
 						"Title": "{LifeCycleStatusName}",
 						"Subhead": "{CreatedAt}",
 						"Footnote": "{CustomerId}",
@@ -185,21 +179,11 @@
 						"SubstatusText": "{LifeCycleStatus}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"Tags": [
-						],
-						"AvatarStack": {
-							"Avatars": [
-								{
-									"Image": ""
-								}
-							],
-							"ImageIsCircular": false
-						},
-						"AvatarGrid": {
-							"Avatars": [
-							]
-						},
-						"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+						"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					}
 				}
 			]

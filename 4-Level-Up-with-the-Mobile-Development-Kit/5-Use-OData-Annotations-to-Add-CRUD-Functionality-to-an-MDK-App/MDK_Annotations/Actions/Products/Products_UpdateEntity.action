@@ -1,0 +1,34 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/MDK_Annotations/Services/SampleServiceV2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DimensionDepth": "#Control:DimensionDepth/#Value",
+        "DimensionHeight": "#Control:DimensionHeight/#Value",
+        "DimensionUnit": "#Control:DimensionUnit/#Value",
+        "DimensionWidth": "#Control:DimensionWidth/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "PictureUrl": "#Control:PictureUrl/#Value",
+        "Price": "#Control:Price/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
+        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
+        "Weight": "#Control:Weight/#Value",
+        "WeightUnit": "#Control:WeightUnit/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/MDK_Annotations/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/MDK_Annotations/Actions/UpdateEntityFailureMessage.action"
+}

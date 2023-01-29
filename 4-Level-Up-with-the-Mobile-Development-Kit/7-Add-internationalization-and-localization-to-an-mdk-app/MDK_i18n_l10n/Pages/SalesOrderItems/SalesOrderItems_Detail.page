@@ -15,15 +15,15 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{CurrencyCode}",
-						"Subhead": "{DeliveryDate}",
+						"HeadlineText": "{ProductId}",
+						"Subhead": "{CurrencyCode}",
 						"BodyText": "",
-						"Footnote": "{ItemNumber}",
-						"Description": "{GrossAmount}",
-						"StatusText": "{NetAmount}",
+						"Footnote": "{GrossAmount}",
+						"Description": "{DeliveryDate}",
+						"StatusText": "{ItemNumber}",
 						"StatusImage": "",
 						"SubstatusImage": "",
-						"SubstatusText": "{ProductId}"
+						"SubstatusText": "{NetAmount}"
 					},
 					"_Type": "Section.Type.ObjectHeader"
 				},

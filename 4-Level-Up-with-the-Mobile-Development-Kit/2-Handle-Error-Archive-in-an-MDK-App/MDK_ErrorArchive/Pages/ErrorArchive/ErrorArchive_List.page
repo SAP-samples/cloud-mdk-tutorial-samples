@@ -13,32 +13,23 @@
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
-						"Caption": "No record found!",
-						"FooterVisible": false
+						"FooterVisible": false,
+						"Caption": "No record found!"
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{HTTPStatusCode}",
 						"Subhead": "{RequestURL}",
 						"Footnote": "{Message}",
 						"StatusText": "{RequestMethod}",
-						"PreserveIconStackSpacing": false,
-						"AccessoryType": "none",
-						"Tags": [
-						],
 						"AvatarStack": {
-							"Avatars": [
-							],
 							"ImageIsCircular": false
 						},
-						"AvatarGrid": {
-							"Avatars": [
-							]
-						},
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
 						"OnPress": "/MDK_ErrorArchive/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
 						"Selected": false
 					},

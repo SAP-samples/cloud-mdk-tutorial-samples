@@ -20,8 +20,7 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "Pet ID: {id}",
@@ -31,19 +30,6 @@
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
-						"Tags": [
-						],
-						"AvatarStack": {
-							"Avatars": [
-							],
-							"ImageIsCircular": true,
-							"ImageHasBorder": false
-						},
-						"AvatarGrid": {
-							"Avatars": [
-							],
-							"ImageIsCircular": true
-						},
 						"Selected": false
 					},
 					"DataPaging": {
@@ -60,10 +46,6 @@
 			]
 		}
 	],
-	"DesignTimeTarget": {
-		"Service": "",
-		"EntitySet": ""
-	},
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
@@ -91,7 +73,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/MDK_Petstore/Actions/Logout.action"
+				"OnPress": "/MDK_Petstore/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",

@@ -1,6 +1,9 @@
 {
 	"_Type": "Action.Type.Message",
-	"Message": "Failed to Create Sales Order record - {#ActionResults:create/error}",
+	"ActionResult": {
+		"_Name": "CreateSalesOrderHeaderEntityFailureMessage"
+	},
+	"Message": "Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}",
 	"Title": "Create Sales Order",
 	"OKCaption": "OK"
 }

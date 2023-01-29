@@ -23,8 +23,7 @@
 					"ContactCell": {
 						"ContextMenu": {
 							"PerformFirstActionWithFullSwipe": true,
-							"Items": [
-							]
+							"Items": []
 						},
 						"DetailImage": "",
 						"Headline": "{LastName}",

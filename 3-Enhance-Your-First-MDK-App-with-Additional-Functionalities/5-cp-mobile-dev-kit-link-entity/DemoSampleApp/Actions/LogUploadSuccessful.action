@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "LogUploadSuccessful"
+	},
 	"Message": "Log File Uploaded",
 	"NumberOfLines": 1,
 	"Duration": 3,

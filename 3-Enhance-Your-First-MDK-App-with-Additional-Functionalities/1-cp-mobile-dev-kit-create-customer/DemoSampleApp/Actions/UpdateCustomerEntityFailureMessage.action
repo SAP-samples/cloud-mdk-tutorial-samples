@@ -1,6 +1,9 @@
 {
 	"_Type": "Action.Type.Message",
-	"Message": "Failed to Save Customer Updates - {#ActionResults:update/error}",
+	"ActionResult": {
+		"_Name": "UpdateCustomerEntityFailureMessage"
+	},
+	"Message": "Failed to Save Customer Updates - {#ActionResults:Customers_UpdateEntity/error}",
 	"Title": "Update Customer",
 	"OKCaption": "OK"
 }

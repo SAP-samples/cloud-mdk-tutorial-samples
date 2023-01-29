@@ -1,4 +1,7 @@
 {
 	"_Type": "Action.Type.Logger.SetLevel",
+	"ActionResult": {
+		"_Name": "LogSetLevel"
+	},
 	"Level": "Trace"
 }

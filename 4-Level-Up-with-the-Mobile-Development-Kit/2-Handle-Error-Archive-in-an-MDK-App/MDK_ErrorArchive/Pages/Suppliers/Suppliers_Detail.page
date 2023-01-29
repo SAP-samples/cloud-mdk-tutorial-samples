@@ -150,7 +150,7 @@
 						"Caption": "No record found!"
 					},
 					"Target": {
-						"EntitySet": "{#Property:@odata.readLink}/Products",
+						"EntitySet": "{@odata.readLink}/Products",
 						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
@@ -161,7 +161,7 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{NetAmount}",
+						"Description": "{GrossAmount}",
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -172,11 +172,11 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{CurrencyCode}",
-						"Footnote": "{PurchaseOrderId}",
+						"Title": "{PurchaseOrderId}",
+						"Footnote": "{NetAmount}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{SupplierId}",
-						"Subhead": "{GrossAmount}",
+						"Subhead": "{CurrencyCode}",
 						"SubstatusText": "{TaxAmount}",
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Detail.action"
 					},
@@ -184,7 +184,7 @@
 						"Caption": "No record found!"
 					},
 					"Target": {
-						"EntitySet": "{#Property:@odata.readLink}/PurchaseOrders",
+						"EntitySet": "{@odata.readLink}/PurchaseOrders",
 						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
 					},
 					"_Type": "Section.Type.ObjectTable"

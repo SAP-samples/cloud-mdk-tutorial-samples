@@ -14,7 +14,7 @@
 				"_Name": "LogoutToolbarItem",
 				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Logout",
-				"OnPress": "/MDK_Slider/Actions/Logout.action"
+				"OnPress": "/MDK_Slider/Actions/LogoutMessage.action"
 			},
 			{
 				"_Name": "UpdateToolbarItem",

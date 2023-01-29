@@ -1,5 +1,5 @@
 {
-    "DestinationName": "SampleServiceV2",
+    "DestinationName": "com.sap.mdk.jk.annotation",
     "OfflineEnabled": false,
     "LanguageURLParam": "",
     "OnlineOptions": {},

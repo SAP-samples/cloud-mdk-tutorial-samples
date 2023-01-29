@@ -2,6 +2,5 @@
 	"_Type": "Action.Type.Message",
 	"Message": "Do you want to leave the current app?",
 	"Title": "Confirm",
-	"OKCaption": "OK",
-	"CancelCaption": "Cancel"
+	"OKCaption": "OK"
 }

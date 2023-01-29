@@ -26,12 +26,12 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{CurrencyCode}",
-						"Subhead": "{GrossAmount}",
+						"HeadlineText": "{ProductId}",
+						"Subhead": "{CurrencyCode}",
 						"BodyText": "",
-						"Footnote": "{NetAmount}",
-						"Description": "{ItemNumber}",
-						"StatusText": "{ProductId}",
+						"Footnote": "{ItemNumber}",
+						"Description": "{GrossAmount}",
+						"StatusText": "{NetAmount}",
 						"StatusImage": "",
 						"SubstatusImage": "",
 						"SubstatusText": "{PurchaseOrderId}"

@@ -1,9 +1,8 @@
 {
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"ActionResult": {
-		"_Name": "update"
+		"_Name": "Customers_UpdateEntity"
 	},
-	"OnFailure": "/DemoSampleApp/Actions/UpdateCustomerEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
 	"ValidationRule": "/DemoSampleApp/Rules/EmailValidation.js",
 	"Target": {

@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "DeleteCustomerEntityFailureMessage"
+	},
 	"Message": "Delete entity failure - {#ActionResults:delete/error}",
 	"Title": "Delete Customer",
 	"OKCaption": "OK"

@@ -1,5 +1,5 @@
 {
-	"Caption": "Update $(L,PRODUCT_TYPE)",
+	"Caption": "Update Product Detail",
 	"DesignTimeTarget": {
 		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
 		"EntitySet": "Products",
@@ -98,7 +98,7 @@
 						{
 							"Caption": "ProductId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
@@ -129,7 +129,7 @@
 						{
 							"Caption": "SupplierId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {

@@ -2,7 +2,23 @@
 	"Controls": [
 		{
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable0"
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Products",
+							"OnPress": "/MDK_Annotations/Actions/Products/NavToProducts_List.action"
+						}
+					]
+				}
+			]
 		}
 	],
 	"_Type": "Page",
@@ -18,7 +34,7 @@
 				"Enabled": true,
 				"Visible": true,
 				"Clickable": true,
-				"OnPress": "/MDK_Annotations/Actions/Logout.action"
+				"OnPress": "/MDK_Annotations/Actions/LogoutMessage.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",
@@ -28,16 +44,6 @@
 				"Visible": "$(PLT,true,true,false)",
 				"Clickable": true,
 				"OnPress": "/MDK_Annotations/Actions/AppUpdateProgressBanner.action"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "ToolbarItem0",
-				"Caption": "Products",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
-				"Style": "",
-				"OnPress": "/MDK_Annotations/Actions/Product/NavToProduct_List.action"
 			}
 		]
 	}

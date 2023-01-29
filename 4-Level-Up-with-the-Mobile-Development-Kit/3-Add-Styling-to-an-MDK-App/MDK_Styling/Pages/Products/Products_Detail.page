@@ -1,5 +1,5 @@
 {
-	"Caption": "$(L,PRODUCT_TYPE)",
+	"Caption": "Product Detail",
 	"DesignTimeTarget": {
 		"Service": "/MDK_Styling/Services/SampleServiceV2.service",
 		"EntitySet": "Products",
