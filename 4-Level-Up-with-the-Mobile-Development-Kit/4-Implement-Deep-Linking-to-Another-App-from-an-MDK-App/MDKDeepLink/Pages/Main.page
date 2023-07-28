@@ -20,13 +20,17 @@
 							"_Name": "SectionButton1",
 							"Title": "Open SAP Mobile Cards",
 							"Visible": true,
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js"
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"_Name": "SectionButton0",
 							"Title": "Open sap.com page",
 							"Visible": true,
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js"
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					]
 				}

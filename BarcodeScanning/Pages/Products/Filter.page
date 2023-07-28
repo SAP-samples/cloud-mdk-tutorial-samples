@@ -1,7 +1,7 @@
 {
 	"Controls": [
 		{
-			"_Type": "Control.Type.FormCellContainer",
+			"_Type": "Control.Type.SectionedTable",
 			"_Name": "FormCellContainer0",
 			"Sections": [
 				{
@@ -34,7 +34,9 @@
 							}
 						}
 					],
-					"Visible": true
+					"Visible": true,
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainer0SectionFormCell0"
 				}
 			]
 		}
@@ -45,9 +47,9 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"Text": "Item",
+				"Caption": "Item",
 				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Complete.action",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Done",
 				"IsIconCircular": false,
 				"Visible": true
@@ -56,5 +58,6 @@
 	},
 	"Result": [
 		"#Page:FilterPage/#Control:FormCellListPicker0/#FilterValue"
-	]
+	],
+	"PrefersLargeCaption": true
 }

@@ -4,17 +4,17 @@
 			{
 				"IsIconCircular": false,
 				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Cancel.action",
-				"Position": "left",
+				"Position": "Left",
 				"SystemItem": "Cancel",
-				"Text": "Item",
+				"Caption": "Item",
 				"Visible": true
 			},
 			{
 				"IsIconCircular": false,
 				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Complete.action",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Done",
-				"Text": "Item",
+				"Caption": "Item",
 				"Visible": true
 			}
 		]
@@ -22,10 +22,10 @@
 	"Caption": "Filter Page",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
 					"Controls": [
-					
 						{
 							"AllowEmptySelection": true,
 							"AllowMultipleSelection": true,
@@ -49,18 +49,19 @@
 							"_Name": "FormCellFilter0",
 							"_Type": "Control.Type.FormCell.Filter"
 						}
-		
 					],
-					"Visible": true
+					"Visible": true,
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainer0SectionFormCell0"
 				}
 			],
-			"_Name": "FormCellContainer0",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "FormCellContainer0"
 		}
 	],
 	"Result": [
 		"#Page:FormCell/#Control:FormCellFilter0/#Value"
 	],
 	"_Name": "FormCell",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

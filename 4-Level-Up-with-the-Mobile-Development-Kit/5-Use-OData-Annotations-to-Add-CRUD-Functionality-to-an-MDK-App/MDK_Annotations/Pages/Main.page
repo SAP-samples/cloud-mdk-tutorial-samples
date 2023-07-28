@@ -14,7 +14,9 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Products",
-							"OnPress": "/MDK_Annotations/Actions/Products/NavToProducts_List.action"
+							"OnPress": "/MDK_Annotations/Actions/Products/NavToProducts_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					]
 				}

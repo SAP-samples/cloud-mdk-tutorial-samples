@@ -14,31 +14,38 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "From a search bar",
-							"TextAlignment": "center",
-							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action"
+							"Alignment": "Center",
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "Simple Property control text input",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Visible": true,
-							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action"
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"_Name": "SectionButton2",
 							"Title": "Barcode scanner action - option1",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Visible": true,
-							"OnPress": "/BarcodeScanning/Actions/Navigation/BarcodeScanner/NavToBarcodeScannerSuccessPage.action"
+							"OnPress": "/BarcodeScanning/Actions/Navigation/BarcodeScanner/NavToBarcodeScannerSuccessPage.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
-                        	{
+						{
 							"_Name": "SectionButton3",
 							"Title": "Barcode scanner action - option2",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Visible": true,
-							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List_copy.action"
+							"OnPress": "/BarcodeScanning/Actions/Products/NavToProducts_List_copy.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
-						
 					]
 				}
 			]
@@ -48,7 +55,7 @@
 	"_Name": "Main",
 	"Caption": "Barcode Scanning",
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
 				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
@@ -59,5 +66,6 @@
 				"OnPress": "/BarcodeScanning/Actions/Logout.action"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }

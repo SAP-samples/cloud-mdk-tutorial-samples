@@ -17,12 +17,16 @@
 							"Styles": {
 								"Button": "MyCustomerButton"
 							},
-							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action"
+							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "Products",
-							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action"
+							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					]
 				}

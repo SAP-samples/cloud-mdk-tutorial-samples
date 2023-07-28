@@ -25,7 +25,9 @@
 						"Title": "Edit Affected Entity",
 						"Subhead": "{@odata.id}",
 						"DisplayDescriptionInMobile": true,
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"OnPress": "/MDK_ErrorArchive/Rules/ErrorArchive/ErrorArchive_DecideWhichEditPage.js",

@@ -1,7 +1,7 @@
 {
 	"Controls": [
 		{
-			"_Type": "Control.Type.FormCellContainer",
+			"_Type": "Control.Type.SectionedTable",
 			"_Name": "FormCellContainer0",
 			"Sections": [
 				{
@@ -62,8 +62,9 @@
 							"Caption": "Currency"
 						}
 					],
-					"Caption": "Product",
-					"Visible": true
+					"Visible": true,
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainer0SectionFormCell0"
 				},
 				{
 					"Controls": [
@@ -104,8 +105,9 @@
 							"KeyboardType": "DateTime"
 						}
 					],
-					"Caption": "Dimensions",
-					"Visible": true
+					"Visible": true,
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainer0SectionFormCell1"
 				},
 				{
 					"Controls": [
@@ -128,8 +130,9 @@
 							"KeyboardType": "DateTime"
 						}
 					],
-					"Caption": "Weight",
-					"Visible": true
+					"Visible": true,
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainer0SectionFormCell2"
 				}
 			]
 		}
@@ -142,20 +145,21 @@
 			{
 				"_Name": "ActionBarItem0",
 				"SystemItem": "Cancel",
-				"Position": "left",
+				"Position": "Left",
 				"IsIconCircular": false,
 				"OnPress": "/BarcodeScanning/Actions/CloseModalCanceled.action",
-				"Text": "Cancel"
+				"Caption": "Cancel"
 			},
 			{
 				"_Name": "ActionBarItem1",
 				"SystemItem": "Done",
-				"Position": "right",
+				"Position": "Right",
 				"IsIconCircular": false,
 				"OnPress": "/BarcodeScanning/Actions/Products/UpdateProductDetails.action",
-				"Text": "Done"
+				"Caption": "Done"
 			}
 		],
 		"_Name": "ActionBar0"
-	}
+	},
+	"PrefersLargeCaption": true
 }

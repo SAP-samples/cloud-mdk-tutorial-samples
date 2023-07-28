@@ -21,9 +21,9 @@
 	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
-					"Caption": "",
 					"Controls": [
 						{
 							"Caption": "City",
@@ -100,13 +100,15 @@
 							"Caption": "UpdatedTimestamp",
 							"_Type": "Control.Type.FormCell.DatePicker"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "PageOneFormCellSectionFormCell0"
 				}
 			],
-			"_Name": "PageOneFormCell",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "PageOneFormCell"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Customers_Edit"
+	"_Name": "Customers_Edit",
+	"PrefersLargeCaption": true
 }

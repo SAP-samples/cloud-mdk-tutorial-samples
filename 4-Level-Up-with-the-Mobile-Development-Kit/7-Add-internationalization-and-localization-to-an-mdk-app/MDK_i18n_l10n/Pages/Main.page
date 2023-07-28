@@ -14,12 +14,16 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "$(L,'customers_title')",
-							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action"
+							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "$(L,'salesOrderHeaders_title')",
-							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
+							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					]
 				}

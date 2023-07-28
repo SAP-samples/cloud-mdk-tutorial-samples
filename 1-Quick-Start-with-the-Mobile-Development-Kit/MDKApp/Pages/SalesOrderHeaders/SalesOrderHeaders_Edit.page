@@ -21,9 +21,9 @@
 	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
-					"Caption": "",
 					"Controls": [
 						{
 							"Mode": "Datetime",
@@ -96,13 +96,15 @@
 							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "PageOneFormCellSectionFormCell0"
 				}
 			],
-			"_Name": "PageOneFormCell",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "PageOneFormCell"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "SalesOrderHeaders_Edit"
+	"_Name": "SalesOrderHeaders_Edit",
+	"PrefersLargeCaption": true
 }

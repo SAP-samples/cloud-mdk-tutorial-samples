@@ -21,16 +21,21 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{Name}",
 						"Subhead": "{CategoryName}",
 						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "/BarcodeScanning/Rules/Products/GetPromoDiscount.js",
-						"DetailImage": "/BarcodeScanning/Rules/Products/GetProductImage.js",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/BarcodeScanning/Rules/Products/GetProductImage.js"
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"OnPress": "/BarcodeScanning/Actions/Products/NavToProduct_Detail.action",
@@ -57,13 +62,14 @@
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
-				"Position": "left",
+				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": false,
 				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/filter.action",
-				"Text": "filter"
+				"Caption": "filter"
 			}
 		],
 		"_Name": "ActionBar0"
-	}
+	},
+	"PrefersLargeCaption": true
 }

@@ -21,9 +21,9 @@
 	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
-					"Caption": "",
 					"Controls": [
 						{
 							"Caption": "CurrencyCode",
@@ -110,13 +110,15 @@
 							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "PageOneFormCellSectionFormCell0"
 				}
 			],
-			"_Name": "PageOneFormCell",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "PageOneFormCell"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "PurchaseOrderItems_Edit"
+	"_Name": "PurchaseOrderItems_Edit",
+	"PrefersLargeCaption": true
 }

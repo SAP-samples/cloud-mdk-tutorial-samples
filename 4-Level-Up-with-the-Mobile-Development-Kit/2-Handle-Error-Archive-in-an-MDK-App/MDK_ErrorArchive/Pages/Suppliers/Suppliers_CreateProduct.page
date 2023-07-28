@@ -16,6 +16,7 @@
 	"Caption": "Create Product",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
 					"Controls": [
@@ -158,13 +159,15 @@
 							"_Name": "Attachment",
 							"_Type": "Control.Type.FormCell.Attachment"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainerSectionFormCell0"
 				}
 			],
-			"_Name": "FormCellContainer",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "FormCellContainer"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Suppliers_CreateProduct"
+	"_Name": "Suppliers_CreateProduct",
+	"PrefersLargeCaption": true
 }

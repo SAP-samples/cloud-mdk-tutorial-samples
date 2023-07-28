@@ -17,7 +17,9 @@
 							"Title": "Customers",
 							"Image": "sap-icon://customer",
 							"Visible": true,
-							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action"
+							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					],
 					"Layout": {

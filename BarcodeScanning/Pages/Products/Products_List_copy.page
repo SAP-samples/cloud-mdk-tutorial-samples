@@ -23,9 +23,15 @@
 						"Subhead": "{CategoryName}",
 						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "/BarcodeScanning/Rules/Products/GetPromoDiscount.js",
-						"DetailImage": "/BarcodeScanning/Rules/Products/GetProductImage.js",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/BarcodeScanning/Rules/Products/GetProductImage.js"
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"OnPress": "/BarcodeScanning/Actions/Products/NavToProduct_Detail.action",
-						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"Styles": {
@@ -33,8 +39,7 @@
 							"SubstatusText": "Discount"
 						},
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						}
 					},
@@ -56,14 +61,15 @@
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Camera",
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner_copy.action",
-				"Text": "filter"
+				"Caption": "filter"
 			}
 		],
 		"_Name": "ActionBar0"
-	}
+	},
+	"PrefersLargeCaption": true
 }

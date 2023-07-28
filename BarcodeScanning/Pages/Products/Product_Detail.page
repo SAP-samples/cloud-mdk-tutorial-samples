@@ -4,9 +4,9 @@
 			{
 				"IsIconCircular": false,
 				"OnPress": "/BarcodeScanning/Actions/Products/NavToProduct_Detail_Edit.action",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Edit",
-				"Text": "Edit",
+				"Caption": "Edit",
 				"Visible": true
 			}
 		]
@@ -26,8 +26,14 @@
 						{
 							"ObjectCell": {
 								"AccessoryType": "none",
-								"DetailImage": "/BarcodeScanning/Rules/Products/GetProductImage.js",
-								"DetailImageIsCircular": false,
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/BarcodeScanning/Rules/Products/GetProductImage.js"
+										}
+									],
+									"ImageIsCircular": false
+								},
 								"PreserveIconStackSpacing": false,
 								"StatusText": "$(C,{Price},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 								"Styles": {
@@ -171,5 +177,6 @@
 		}
 	],
 	"_Name": "Product_Detail",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

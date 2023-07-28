@@ -10,32 +10,44 @@
 						{
 							"OnPress": "/MDKApp/Actions/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
-							"Title": "Customers"
+							"Title": "Customers",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/Products/NavToProducts_List.action",
 							"Alignment": "Center",
-							"Title": "Products"
+							"Title": "Products",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
 							"Alignment": "Center",
-							"Title": "PurchaseOrderHeaders"
+							"Title": "PurchaseOrderHeaders",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
 							"Alignment": "Center",
-							"Title": "PurchaseOrderItems"
+							"Title": "PurchaseOrderItems",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"Alignment": "Center",
-							"Title": "SalesOrderHeaders"
+							"Title": "SalesOrderHeaders",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						},
 						{
 							"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_List.action",
 							"Alignment": "Center",
-							"Title": "SalesOrderItems"
+							"Title": "SalesOrderItems",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					],
 					"_Name": "SectionButtonTable0",

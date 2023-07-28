@@ -19,7 +19,6 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Customers",
-							"TextAlignment": "Center",
 							"Alignment": "Center",
 							"ButtonType": "Text",
 							"Semantic": "Tint",

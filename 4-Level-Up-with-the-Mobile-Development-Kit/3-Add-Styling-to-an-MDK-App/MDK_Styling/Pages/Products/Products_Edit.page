@@ -21,9 +21,9 @@
 	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
-					"Caption": "",
 					"Controls": [
 						{
 							"Caption": "Category",
@@ -164,13 +164,15 @@
 							"Value": "{WeightUnit}",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "PageOneFormCellSectionFormCell0"
 				}
 			],
-			"_Name": "PageOneFormCell",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "PageOneFormCell"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_Edit"
+	"_Name": "Products_Edit",
+	"PrefersLargeCaption": true
 }

@@ -4,6 +4,6 @@
 	"OnDidUpdate": "/MDK_Push/Actions/PushRegister.action",
 	"Styles": "/MDK_Push/Styles/Styles.less",
 	"Localization": "/MDK_Push/i18n/i18n.properties",
-	"_SchemaVersion": "6.2",
+	"_SchemaVersion": "23.4",
 	"_Name": "MDK_Push"
 }

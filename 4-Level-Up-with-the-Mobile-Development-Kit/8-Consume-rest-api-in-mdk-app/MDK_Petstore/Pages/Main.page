@@ -27,7 +27,9 @@
 						"Subhead": "Pet Name: {name}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{status}",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"Selected": false

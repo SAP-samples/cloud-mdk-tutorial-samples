@@ -7,7 +7,7 @@
 		}
 	],
 	"ToolBar": {
-		"Controls": [
+		"Items": [
 			{
 				"Clickable": true,
 				"Enabled": "{IsCameraReady}",
@@ -20,5 +20,6 @@
 		]
 	},
 	"_Name": "BarcodeScanner",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

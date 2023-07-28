@@ -32,13 +32,14 @@
 			{
 				"_Name": "ActionBarItem0",
 				"SystemItem": "Camera",
-				"Position": "left",
+				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action",
-				"Text": ""
+				"Caption": ""
 			}
 		],
 		"_Name": "ActionBar0"
-	}
+	},
+	"PrefersLargeCaption": true
 }

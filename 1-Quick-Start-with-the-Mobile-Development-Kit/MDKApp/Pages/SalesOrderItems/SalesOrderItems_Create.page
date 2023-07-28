@@ -16,6 +16,7 @@
 	"Caption": "Create SalesOrderItem Detail",
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
 					"Controls": [
@@ -101,13 +102,15 @@
 							"_Name": "TaxAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					]
+					],
+					"_Type": "Section.Type.FormCell",
+					"_Name": "FormCellContainerSectionFormCell0"
 				}
 			],
-			"_Name": "FormCellContainer",
-			"_Type": "Control.Type.FormCellContainer"
+			"_Name": "FormCellContainer"
 		}
 	],
 	"_Type": "Page",
-	"_Name": "SalesOrderItems_Create"
+	"_Name": "SalesOrderItems_Create",
+	"PrefersLargeCaption": true
 }
