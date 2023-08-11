@@ -1,9 +1,10 @@
 {
-  "App Display Name": "Demo Sample App",
-  "AppName": "DemoSampleApp",
+  "AppDisplayName": "Geolocation",
+  "AppName": "MDKGeolocation",
   "AppVersion": "1.0.0",
-  "BundleID": "<Your bundle ID>",
+  "AndroidVersionCode": "Auto",
+  "BundleID": "<Enter your bundle ID>",
   "Externals": ["@nativescript/geolocation"],
-  "NSPlugins": ["@nativescript/geolocation@8.0.0"],
-  "UrlScheme": "mdkclient"
+  "NSPlugins": ["@nativescript/geolocation"],
+  "UrlScheme": "mdkgeolocation"
 }
