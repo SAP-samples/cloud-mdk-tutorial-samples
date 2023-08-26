@@ -9,5 +9,5 @@
 	"OnDidUpdate": "/MDK_Styling/Actions/Service/InitializeOffline.action",
 	"Styles": "/MDK_Styling/Styles/Styles.less",
 	"Localization": "/MDK_Styling/i18n/i18n.properties",
-	"_SchemaVersion": "23.4"
+	"_SchemaVersion": "23.8"
 }

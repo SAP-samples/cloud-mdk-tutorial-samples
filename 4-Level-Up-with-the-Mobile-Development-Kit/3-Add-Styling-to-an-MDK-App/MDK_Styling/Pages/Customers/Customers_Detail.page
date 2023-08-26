@@ -144,6 +144,7 @@
 					"_Name": "SectionKeyValueAddress",
 					"Header": {
 						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
 						"UseTopPadding": true,
 						"Caption": "Address"
 					},
@@ -157,6 +158,7 @@
 				{
 					"Header": {
 						"_Name": "SectionHeader1",
+						"AccessoryType": "none",
 						"UseTopPadding": true,
 						"Caption": "SalesOrders"
 					},
@@ -179,6 +181,15 @@
 						"SubstatusText": "{LifeCycleStatus}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"OnPress": "/MDK_Styling/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
 						"ContextMenu": {
 							"Items": [],

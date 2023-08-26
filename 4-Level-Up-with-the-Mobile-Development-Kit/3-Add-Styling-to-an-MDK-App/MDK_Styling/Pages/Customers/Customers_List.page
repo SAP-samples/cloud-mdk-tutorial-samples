@@ -7,6 +7,7 @@
 				{
 					"Header": {
 						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",
@@ -29,6 +30,15 @@
 						"SubstatusText": "{EmailAddress}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
 						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"Styles": {
 							"Title": "ObjectTableTitle"

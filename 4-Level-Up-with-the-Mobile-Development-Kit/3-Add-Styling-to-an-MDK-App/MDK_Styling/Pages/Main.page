@@ -14,19 +14,23 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "Customers",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
 							"Styles": {
 								"Button": "MyCustomerButton"
 							},
-							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action",
-							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "Products",
-							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action",
+							"Alignment": "Center",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action"
 						}
 					]
 				}

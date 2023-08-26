@@ -4,5 +4,5 @@
 	"Styles": "/MDKDeepLink/Styles/Styles.less",
 	"Localization": "/MDKDeepLink/i18n/i18n.properties",
 	"_Name": "MDKDeepLink",
-	"_SchemaVersion": "23.4"
+	"_SchemaVersion": "23.8"
 }

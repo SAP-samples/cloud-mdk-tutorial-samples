@@ -5,34 +5,49 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Layout": {
-						"LayoutType": "Vertical",
-						"HorizontalAlignment": "Leading"
-					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Buttons": [
 						{
-							"_Name": "SectionButton1",
+							"_Name": "SectionButton0",
 							"Title": "Open SAP Mobile Cards",
-							"Visible": true,
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js",
+							"Alignment": "Center",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPMobileCards.js"
 						},
 						{
-							"_Name": "SectionButton0",
+							"_Name": "SectionButton1",
 							"Title": "Open sap.com page",
-							"Visible": true,
-							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js",
+							"Alignment": "Center",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/MDKDeepLink/Rules/OpenSAPcom.js"
 						}
-					]
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
 				}
 			]
 		}

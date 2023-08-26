@@ -10,6 +10,7 @@
 					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
 						"UseTopPadding": true,
 						"Caption": "Affected Entity: {#Page:-Current/AffectedEntity/@odata.type}"
 					},
@@ -17,21 +18,35 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
-						},
 						"Title": "Edit Affected Entity",
 						"Subhead": "{@odata.id}",
 						"DisplayDescriptionInMobile": true,
-						"AvatarStack": {
-							"ImageIsCircular": false
-						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
 						"OnPress": "/MDK_ErrorArchive/Rules/ErrorArchive/ErrorArchive_DecideWhichEditPage.js",
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,

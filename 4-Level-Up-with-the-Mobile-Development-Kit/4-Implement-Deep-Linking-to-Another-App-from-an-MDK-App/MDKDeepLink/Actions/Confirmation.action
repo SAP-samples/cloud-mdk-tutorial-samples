@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Confirmation"
+	},
 	"Message": "Do you want to leave the current app?",
 	"Title": "Confirm",
 	"OKCaption": "OK",

@@ -1,5 +1,5 @@
 {
-    "Service": "/MDK_Annotations/Services/com_sap_mdk_jk_annotation.service",
+    "Service": "/MDK_Annotations/Services/SampleServiceV2.service",
     "_Type": "Action.Type.ODataService.Initialize",
     "ShowActivityIndicator": true,
     "OnSuccess": "/MDK_Annotations/Actions/Service/InitializeOnlineSuccessMessage.action",

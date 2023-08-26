@@ -1,52 +1,44 @@
 {
+	"Caption": "Main",
 	"Controls": [
 		{
-			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable0",
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Buttons": [
 						{
-							"_Name": "SectionButton0",
-							"Title": "Products",
 							"OnPress": "/MDK_Annotations/Actions/Products/NavToProducts_List.action",
-							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"TextAlignment": "center",
+							"Title": "Products"
 						}
-					]
+					],
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
 				}
 			]
 		}
 	],
-	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
+	"_Type": "Page",
 	"ToolBar": {
 		"Items": [
 			{
-				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Logout",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
 				"OnPress": "/MDK_Annotations/Actions/LogoutMessage.action"
 			},
 			{
-				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "UpdateToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Update",
 				"Enabled": true,
-				"Visible": "$(PLT,true,true,false)",
 				"Clickable": true,
-				"OnPress": "/MDK_Annotations/Actions/AppUpdateProgressBanner.action"
+				"OnPress": "/MDK_Annotations/Actions/AppUpdateProgressBanner.action",
+				"Visible": "$(PLT,true,true,false)"
 			}
 		]
-	}
+	},
+	"PrefersLargeCaption": true
 }
