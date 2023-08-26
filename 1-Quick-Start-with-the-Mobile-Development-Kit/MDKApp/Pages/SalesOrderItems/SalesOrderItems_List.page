@@ -18,7 +18,7 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"Description": "{GrossAmount}",
+						"Description": "{DeliveryDate}",
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -30,12 +30,12 @@
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
 						"StatusImage": "",
-						"Title": "{CurrencyCode}",
-						"Footnote": "{ItemNumber}",
+						"Title": "{ProductId}",
+						"Footnote": "{GrossAmount}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{NetAmount}",
-						"Subhead": "{DeliveryDate}",
-						"SubstatusText": "{ProductId}"
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"

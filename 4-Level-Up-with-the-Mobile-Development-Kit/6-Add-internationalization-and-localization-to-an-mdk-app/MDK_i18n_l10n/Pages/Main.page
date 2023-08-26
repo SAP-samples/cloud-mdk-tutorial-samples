@@ -14,16 +14,20 @@
 						{
 							"_Name": "SectionButton0",
 							"Title": "$(L,'customers_title')",
-							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action",
+							"Alignment": "Center",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Name": "SectionButton1",
 							"Title": "$(L,'salesOrderHeaders_title')",
-							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+							"Alignment": "Center",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
 						}
 					]
 				}

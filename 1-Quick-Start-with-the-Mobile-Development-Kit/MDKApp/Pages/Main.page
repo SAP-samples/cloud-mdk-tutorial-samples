@@ -29,13 +29,6 @@
 							"Semantic": "Tint"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
-							"Alignment": "Center",
-							"Title": "PurchaseOrderItems",
-							"ButtonType": "Text",
-							"Semantic": "Tint"
-						},
-						{
 							"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"Alignment": "Center",
 							"Title": "SalesOrderHeaders",
@@ -64,7 +57,7 @@
 				"_Name": "LogoutToolbarItem",
 				"_Type": "Control.Type.ToolbarItem",
 				"Caption": "Logout",
-				"OnPress": "/MDKApp/Actions/Logout.action"
+				"OnPress": "/MDKApp/Actions/LogoutMessage.action"
 			},
 			{
 				"_Name": "UploadToolbarItem",

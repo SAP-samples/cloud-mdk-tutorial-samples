@@ -21,9 +21,11 @@
 	},
 	"Controls": [
 		{
-			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
 					"Controls": [
 						{
 							"Caption": "CurrencyCode",
@@ -55,7 +57,7 @@
 						{
 							"Caption": "SupplierId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
@@ -77,12 +79,11 @@
 							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					],
-					"_Type": "Section.Type.FormCell",
-					"_Name": "PageOneFormCellSectionFormCell0"
+					]
 				}
 			],
-			"_Name": "PageOneFormCell"
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
 		}
 	],
 	"_Type": "Page",

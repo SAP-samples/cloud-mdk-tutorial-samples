@@ -9,5 +9,5 @@
 	"OnDidUpdate": "/MDK_Maps/Actions/Service/InitializeOnline.action",
 	"Styles": "/MDK_Maps/Styles/Styles.less",
 	"Localization": "/MDK_Maps/i18n/i18n.properties",
-	"_SchemaVersion": "23.4"
+	"_SchemaVersion": "23.8"
 }

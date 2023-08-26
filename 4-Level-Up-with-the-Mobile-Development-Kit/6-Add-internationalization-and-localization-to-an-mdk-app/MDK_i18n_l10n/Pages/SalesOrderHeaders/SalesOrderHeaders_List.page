@@ -7,6 +7,7 @@
 				{
 					"Header": {
 						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",
@@ -21,10 +22,6 @@
 						"FooterVisible": false
 					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
-						},
 						"Title": "{LifeCycleStatusName}",
 						"Subhead": "$(DT,{CreatedAt},'','',{format:'medium'})",
 						"Footnote": "{CustomerId}",
@@ -33,7 +30,20 @@
 						"SubstatusText": "{LifeCycleStatus}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
-						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,

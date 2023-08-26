@@ -158,7 +158,7 @@
 						"Caption": "No record found!"
 					},
 					"Target": {
-						"EntitySet": "{#Property:@odata.readLink}/SalesOrders",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"Service": "/MDKApp/Services/SampleServiceV2.service"
 					},
 					"_Type": "Section.Type.ObjectTable"

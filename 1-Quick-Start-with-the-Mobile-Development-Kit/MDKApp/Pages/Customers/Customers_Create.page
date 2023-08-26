@@ -16,9 +16,11 @@
 	"Caption": "Create Customer Detail",
 	"Controls": [
 		{
-			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
 					"Controls": [
 						{
 							"Caption": "City",
@@ -82,12 +84,11 @@
 							"Caption": "UpdatedTimestamp",
 							"_Type": "Control.Type.FormCell.DatePicker"
 						}
-					],
-					"_Type": "Section.Type.FormCell",
-					"_Name": "FormCellContainerSectionFormCell0"
+					]
 				}
 			],
-			"_Name": "FormCellContainer"
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
 		}
 	],
 	"_Type": "Page",

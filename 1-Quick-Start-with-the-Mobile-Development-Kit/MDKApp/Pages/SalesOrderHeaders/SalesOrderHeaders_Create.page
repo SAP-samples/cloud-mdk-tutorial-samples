@@ -16,9 +16,11 @@
 	"Caption": "Create SalesOrderHeader Detail",
 	"Controls": [
 		{
-			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
 					"Controls": [
 						{
 							"Mode": "Datetime",
@@ -34,7 +36,7 @@
 						{
 							"Caption": "CustomerId",
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
@@ -82,12 +84,11 @@
 							"_Name": "TaxAmount",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
-					],
-					"_Type": "Section.Type.FormCell",
-					"_Name": "FormCellContainerSectionFormCell0"
+					]
 				}
 			],
-			"_Name": "FormCellContainer"
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
 		}
 	],
 	"_Type": "Page",
