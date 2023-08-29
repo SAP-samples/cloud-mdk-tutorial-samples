@@ -1,9 +1,13 @@
-export default function OpenSAPMobileCards(context) {
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+export default function OpenSAPMobileCards(clientAPI) {
     // Get the Nativescript Utils Module
-    const utilsModule = context.nativescript.utilsModule;
+    const utilsModule = clientAPI.nativescript.utilsModule;
     // Get the Nativescript Platform Module
-    const platformModule = context.nativescript.platformModule;
-    return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+    const platformModule = clientAPI.nativescript.platformModule;
+    return clientAPI.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
         if (result.data) {
             //This will open SAP Mobile Cards app
             if (platformModule.isIOS) {

@@ -1,0 +1,74 @@
+{
+  "_comment": "You only need to define the properties that you want to override, otherwise omit them. The following list includes sample string value for each property, however, we recommend that you use $(L, <your_loc_key>) API for the value for better internationalization support",
+  "OnboardingCustomizations": {
+    "eulaTitleString": "End User License Agreement",
+    "agreeButtonString": "Agree",
+    "disagreeButtonString": "Disagree",
+
+    "eulaRejectAlertTitleText": "Without consent, you will not be able to continue onboarding.",
+    "eulaRejectAlertQuitBtnText": "Quit Process",
+    "eulaRejectAlertConsentBtnText": "Give Consent",
+
+    "scanButtonString": "Scan",
+
+    "networkUnreachableFailureString": "Network unreachable. Please try again later.",
+    "retryButtonString": "Retry",
+
+    "invalidConnectionTitle": "Invalid Connection",
+    "invalidConnectionMessage": "The connection settings contains URL that is not in allowed domains",
+
+    "selectOptionString": "Please select an option",
+    "continueWithSameAppString": "Use current application",
+    "scanNewQRCodeString": "Scan new QR code",
+
+    "authenticationFailedMessageString": "Failed to onboard!",
+
+    "choosePasscodeTitleString": "Choose Passcode",
+    "setPasscodeMessageFormat": "Choose a passcode with at least %d characters for unlocking the app.",
+    "includeRequiredGroupMessage": "Include the following:",
+    "lowerCaseLabelString": "Lower case (a-z)",
+    "upperCaseLabelString": "Upper case (A-Z)",
+    "digitsLabelString": "Digits (0-9)",
+    "nonAlphabeticLabelString": "Symbols (!@#...)",
+    "nextItemString": "Next",
+
+    "confirmPasscodeTitleString": "Confirm Passcode",
+    "enterPasscodeAgainString": "Enter your passcode again.",
+    "confirmPasscodeString": "Confirm the passcode you created.",
+
+    "passcodeNotMatchMessageString": "Passcodes did not match. Try again.",
+
+    "faceIDTitleString": "Face ID",
+    "faceIDMessage1String": "Enabling Face ID will give you faster access to your information.",
+    "faceIDMessage2String": "You can turn this feature on or off at anytime from Settings.",
+    "notNowButtonString": "Not Now",
+    "enableButtonString": "Enable",
+    "learnMoreFaceIDLinkString": "Learn more about Face ID",
+
+    "touchIDTitleString": "Touch ID",
+    "touchIDMessage1String": "Enabling Touch ID will give you faster access to your information.",
+    "touchIDMessage2String": "You can turn this feature On or Off anytime from Settings.",
+    "learnMoreTouchIDLinkString": "Learn more about Touch ID",
+
+    "authenticateWithFaceIDMessageString": "Authenticate with Face ID",
+
+    "authenticateWithTouchIDMessageString": "Authenticate with Touch ID",
+
+    "passcodeTitleString": "Passcode",
+    "enterYourPasscodeMessageString": "Enter your passcode",
+    "attemptsLeftMessageFormat": "You have %d attempts left.",
+    "resetPasscodeButtonString": "Reset Client",
+    "resetClientButtonString": "Reset Client",
+
+    "oneAttempLeftMessageFormat": "You have 1 attempt left.",
+
+    "changePasscodeTitleString": "Change Passcode",
+    "enterYourCurrentPasscodeMessageString": "Enter your current passcode.",
+
+    "maxAttemptsReachedMessageString": "No more attempts left",
+    "enterCredentialsMessageString": "Please start the onboarding process again!",
+    "okButtonString": "Ok",
+
+    "switchUserButtonLabelString": "Switch or Add User"
+  }
+}
