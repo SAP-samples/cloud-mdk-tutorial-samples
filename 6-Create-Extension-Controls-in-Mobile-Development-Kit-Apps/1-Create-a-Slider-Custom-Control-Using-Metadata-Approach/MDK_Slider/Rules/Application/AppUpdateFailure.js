@@ -37,7 +37,7 @@ export default function AppUpdateFailure(clientAPI) {
             break;
     }
     return clientAPI.getPageProxy().executeAction({
-        "Name": "/MDK_Slider/Actions/AppUpdateFailureMessage.action",
+        "Name": "/MDK_Slider/Actions/Application/AppUpdateFailureMessage.action",
         "Properties": {
             "Duration": 0,
             "Message": message

@@ -1,6 +1,10 @@
-export default function SetExtensionValue(context) {
+/**
+* Describe this function...
+* @param {IClientAPI} clientAPI
+*/
+export default function SetExtensionValue(clientAPI) {
     console.log("In SetExtensionValue");
-    let srcValue = context.getValue();
-    let targetCtrl = context.evaluateTargetPath("#Page:SliderExtension/#Control:MyExtensionControlName");
+    let srcValue = clientAPI.getValue();
+    let targetCtrl = clientAPI.evaluateTargetPath("#Page:Main/#Control:MyExtensionControlName");
     targetCtrl.setValue(srcValue);
 }

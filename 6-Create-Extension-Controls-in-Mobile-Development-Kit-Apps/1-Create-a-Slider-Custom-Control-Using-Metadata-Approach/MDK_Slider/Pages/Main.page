@@ -1,31 +1,84 @@
 {
-	"Caption": "Main",
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Extension",
+							"_Name": "MyExtensionControlName",
+							"Module": "MySliderModule",
+							"Control": "MySliderExtension",
+							"Class": "MySliderClass",
+							"ExtensionProperties": {
+								"MaxValue": 200,
+								"MinValue": 10,
+								"Title": "Counter"
+							},
+							"Height": 72,
+							"IsVisible": true,
+							"Separator": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Manual Entry",
+							"PlaceHolder": "Enter number to set the slider ext's value",
+							"OnValueChange": "/MDK_Slider/Rules/SetExtensionValue.js",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					]
+				}
+			]
 		}
 	],
-	"_Name": "Main",
 	"_Type": "Page",
-	"ToolBar": {
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem",
-				"Caption": "Logout",
-				"OnPress": "/MDK_Slider/Actions/LogoutMessage.action"
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Slider/Actions/Application/UserMenuPopover.action"
 			},
 			{
-				"_Name": "UpdateToolbarItem",
-				"_Type": "Control.Type.ToolbarItem",
-				"Caption": "Update",
-				"Enabled": true,
-				"Clickable": true,
-				"OnPress": "/MDK_Slider/Actions/AppUpdateProgressBanner.action",
-				"Visible": "$(PLT,true,true,false)"
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_Slider/Actions/ShowMessage.action"
 			}
-		]
-	},
-	"PrefersLargeCaption": true
+		],
+		"_Name": "ActionBar1"
+	}
 }
