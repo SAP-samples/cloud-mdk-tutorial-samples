@@ -29,7 +29,7 @@
 							"ImageIsCircular": false
 						},
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "none",
+						"AccessoryType": "None",
 						"OnPress": "/MDK_Styling/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
 						"Selected": false
 					},

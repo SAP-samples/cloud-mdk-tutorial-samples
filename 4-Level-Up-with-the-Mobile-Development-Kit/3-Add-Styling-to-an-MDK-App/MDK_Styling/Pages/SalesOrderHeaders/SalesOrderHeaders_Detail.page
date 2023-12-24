@@ -89,7 +89,7 @@
 						"Caption": "Items"
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{DeliveryDate}",
 						"AvatarStack": {
 							"Avatars": [

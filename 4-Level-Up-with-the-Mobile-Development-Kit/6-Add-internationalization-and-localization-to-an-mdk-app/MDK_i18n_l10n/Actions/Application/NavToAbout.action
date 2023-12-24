@@ -1,0 +1,5 @@
+{
+    "ModalPage": true,
+    "PageToOpen": "/MDK_i18n_l10n/Pages/Application/About.page",
+    "_Type": "Action.Type.Navigation"
+}

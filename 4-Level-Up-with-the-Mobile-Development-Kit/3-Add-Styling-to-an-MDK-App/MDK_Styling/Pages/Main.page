@@ -1,14 +1,26 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"Buttons": [
 						{
@@ -18,6 +30,9 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
 							"Styles": {
 								"Button": "MyCustomerButton"
 							},
@@ -30,9 +45,16 @@
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
 							"OnPress": "/MDK_Styling/Actions/Products/NavToProducts_List.action"
 						}
-					]
+					],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					}
 				}
 			]
 		}
@@ -41,35 +63,18 @@
 	"_Name": "Main",
 	"Caption": "Main",
 	"PrefersLargeCaption": true,
-	"ToolBar": {
+	"ActionBar": {
 		"Items": [
 			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "LogoutToolbarItem",
-				"Caption": "Logout",
-				"Enabled": true,
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
 				"Visible": true,
-				"Clickable": true,
-				"OnPress": "/MDK_Styling/Actions/LogoutMessage.action"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "UploadToolbarItem",
-				"Caption": "Sync",
-				"Enabled": true,
-				"Visible": "$(PLT,true,true,false)",
-				"Clickable": true,
-				"OnPress": "/MDK_Styling/Actions/Service/SyncStartedMessage.action"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "UpdateToolbarItem",
-				"Caption": "Update",
-				"Enabled": true,
-				"Visible": "$(PLT,true,true,false)",
-				"Clickable": true,
-				"OnPress": "/MDK_Styling/Actions/AppUpdateProgressBanner.action"
+				"OnPress": "/MDK_Styling/Actions/Application/UserMenuPopover.action"
 			}
-		]
+		],
+		"_Name": "ActionBar1"
 	}
 }

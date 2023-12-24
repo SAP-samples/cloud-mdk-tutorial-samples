@@ -10,7 +10,7 @@
 					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Name": "SectionHeader0",
-						"AccessoryType": "none",
+						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Affected Entity: {#Page:-Current/AffectedEntity/@odata.type}"
 					},
@@ -30,7 +30,7 @@
 						"Subhead": "{@odata.id}",
 						"DisplayDescriptionInMobile": true,
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [],

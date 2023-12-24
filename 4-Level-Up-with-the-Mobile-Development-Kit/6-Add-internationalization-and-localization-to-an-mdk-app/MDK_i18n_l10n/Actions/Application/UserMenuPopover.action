@@ -1,0 +1,47 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"PopoverItems": [
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://synchronize",
+			"OnPress": "/MDK_i18n_l10n/Actions/Service/SyncStartedMessage.action",
+			"Title": "Sync Changes",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://headset",
+			"OnPress": "/MDK_i18n_l10n/Actions/Application/NavToSupport.action",
+			"Title": "$(L,'support_popovermenuitem')",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://refresh",
+			"OnPress": "/MDK_i18n_l10n/Actions/Application/AppUpdateProgressBanner.action",
+			"Title": "Check for Updates",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://hint",
+			"OnPress": "/MDK_i18n_l10n/Actions/Application/NavToAbout.action",
+			"Title": "$(L,'about_popovermenuitem')",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://reset",
+			"OnPress": "/MDK_i18n_l10n/Actions/Application/ResetMessage.action",
+			"Title": "Reset",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://log",
+			"OnPress": "/MDK_i18n_l10n/Actions/Application/Logout.action",
+			"Title": "Logout",
+			"Visible": "/MDK_i18n_l10n/Rules/Application/ClientIsMultiUserMode.js"
+		}
+	]
+}

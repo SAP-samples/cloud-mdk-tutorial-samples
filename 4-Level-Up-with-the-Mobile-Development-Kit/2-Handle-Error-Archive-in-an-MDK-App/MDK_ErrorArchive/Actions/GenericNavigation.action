@@ -1,0 +1,7 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "ActionResult": {
+        "_Name": "GenericNavigation"
+    },
+    "PageToOpen": "/MDK_ErrorArchive/Pages/Main.page"
+}

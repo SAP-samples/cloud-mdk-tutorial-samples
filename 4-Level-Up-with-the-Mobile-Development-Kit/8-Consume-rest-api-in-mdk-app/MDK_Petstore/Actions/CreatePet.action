@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "CreatePet"
 	},
-	"OnSuccess": "/MDK_Petstore/Actions/ClosePage_Complete.action",
+	"OnSuccess": "/MDK_Petstore/Actions/CloseModalPage_Complete.action",
 	"Target": {
 		"Service": "/MDK_Petstore/Services/petstore.service",
 		"Path": "/pet",

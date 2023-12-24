@@ -134,7 +134,7 @@
 						"Caption": "SalesOrders"
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{CurrencyCode}",
 						"AvatarStack": {
 							"Avatars": [

@@ -1,32 +1,27 @@
 {
-	"Caption": "Main",
-	"Controls": [
-		{
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable",
-			"Sections": []
-		}
-	],
-	"_Name": "Main",
-	"_Type": "Page",
-	"ToolBar": {
-		"Items": [
-			{
-				"_Name": "LogoutToolbarItem",
-				"_Type": "Control.Type.ToolbarItem",
-				"Caption": "Logout",
-				"OnPress": "/MDKOnlineApp/Actions/LogoutMessage.action"
-			},
-			{
-				"_Name": "UpdateToolbarItem",
-				"_Type": "Control.Type.ToolbarItem",
-				"Caption": "Update",
-				"Enabled": true,
-				"Clickable": true,
-				"OnPress": "/MDKOnlineApp/Actions/AppUpdateProgressBanner.action",
-				"Visible": "$(PLT,true,true,false)"
-			}
-		]
-	},
-	"PrefersLargeCaption": true
+    "Controls": [{
+        "FilterFeedbackBar": {
+            "ShowAllFilters": false,
+            "_Type": "Control.Type.FilterFeedbackBar"
+        },
+        "_Name": "SectionedTable0",
+        "_Type": "Control.Type.SectionedTable",
+        "Sections": []
+    }],
+    "_Name": "Main",
+    "_Type": "Page",
+    "Caption": "Main",
+    "PrefersLargeCaption": true,
+    "ActionBar": {
+        "Items": [{
+            "_Name": "ActionBarItem0",
+            "Caption": "User Menu",
+            "Icon": "sap-icon://customer",
+            "Position": "Right",
+            "IsIconCircular": false,
+            "Visible": true,
+            "OnPress": "/MDKOnlineApp/Actions/Application/UserMenuPopover.action"
+        }],
+        "_Name": "ActionBar1"
+    }
 }

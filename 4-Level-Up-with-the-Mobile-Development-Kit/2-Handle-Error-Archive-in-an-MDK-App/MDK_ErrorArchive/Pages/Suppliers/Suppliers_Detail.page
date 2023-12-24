@@ -126,7 +126,7 @@
 						"Caption": "Products"
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{CategoryName}",
 						"AvatarStack": {
 							"Avatars": [
@@ -160,7 +160,7 @@
 						"Caption": "PurchaseOrders"
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{GrossAmount}",
 						"AvatarStack": {
 							"Avatars": [

@@ -16,14 +16,13 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"DataPaging": {
-						"ShowLoadingIndicator": false,
-						"PageSize": 50
-					},
 					"ContactCell": {
+						"Visible": true,
 						"ContextMenu": {
 							"PerformFirstActionWithFullSwipe": true,
-							"Items": []
+							"Items": [],
+							"LeadingItems": [],
+							"TrailingItems": []
 						},
 						"DetailImage": "",
 						"Headline": "{LastName}",
@@ -43,16 +42,38 @@
 							}
 						]
 					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
 					"Search": {
 						"Enabled": true,
 						"BarcodeScanner": true
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Customers_List",
 	"Caption": "Customers",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

@@ -1,5 +1,5 @@
 {
-	"Caption": "Update $(L,PRODUCT_TYPE)",
+	"Caption": "Update Product Detail",
 	"DesignTimeTarget": {
 		"Service": "/MDKApp/Services/SampleServiceV2.service",
 		"EntitySet": "Products",

@@ -17,7 +17,7 @@
 						"UseTopPadding": false
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{Country}",
 						"AvatarStack": {
 							"Avatars": [

@@ -77,7 +77,7 @@
 						"Caption": "Items"
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{GrossAmount}",
 						"AvatarStack": {
 							"Avatars": [

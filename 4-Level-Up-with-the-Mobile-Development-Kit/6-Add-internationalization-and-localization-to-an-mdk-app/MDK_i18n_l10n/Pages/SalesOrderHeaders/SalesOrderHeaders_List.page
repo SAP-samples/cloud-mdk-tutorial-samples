@@ -7,7 +7,7 @@
 				{
 					"Header": {
 						"_Name": "SectionHeader0",
-						"AccessoryType": "none",
+						"AccessoryType": "None",
 						"UseTopPadding": false
 					},
 					"_Type": "Section.Type.ObjectTable",
@@ -17,9 +17,17 @@
 						"QueryOptions": ""
 					},
 					"_Name": "SectionObjectTable0",
+					"Visible": true,
 					"EmptySection": {
 						"Caption": "No record found!",
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"ObjectCell": {
 						"Title": "{LifeCycleStatusName}",
@@ -29,7 +37,7 @@
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{LifeCycleStatus}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
@@ -37,12 +45,19 @@
 									"Image": ""
 								}
 							],
-							"ImageIsCircular": false
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
 						},
 						"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"Selected": false,
 						"ContextMenu": {
 							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
 						}
 					},
 					"Search": {
@@ -55,12 +70,17 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					}
+					},
+					"HighlightSelectedItem": false
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
+			},
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
 			}
 		}
 	],

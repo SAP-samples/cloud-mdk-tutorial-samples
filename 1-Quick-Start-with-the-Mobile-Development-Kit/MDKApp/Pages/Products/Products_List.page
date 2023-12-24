@@ -1,5 +1,5 @@
 {
-	"Caption": "$(L,PRODUCT_TYPES)",
+	"Caption": "Products",
 	"ActionBar": {
 		"Items": [
 			{
@@ -17,7 +17,7 @@
 						"UseTopPadding": false
 					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"AccessoryType": "DisclosureIndicator",
 						"Description": "{CategoryName}",
 						"AvatarStack": {
 							"Avatars": [

@@ -10,11 +10,14 @@
 						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerId}",
 						"StatusText": "{PhoneNumber}",
+						"DetailImage": "sap-icon://customer",
+						"Tags": [],
 						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading"
+						"SubstatusImagePosition": "Leading",
+						"Labels": []
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
@@ -54,11 +57,22 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
@@ -78,5 +92,9 @@
 			}
 		],
 		"_Name": "ActionBar1"
+	},
+	"DesignTimeTarget": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+		"EntitySet": "Customers"
 	}
 }

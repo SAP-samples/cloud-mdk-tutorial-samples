@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/MDKDeepLink/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/MDKDeepLink/Rules/Application/AppUpdateSuccess.js"
+}

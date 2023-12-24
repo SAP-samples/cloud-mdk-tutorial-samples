@@ -13,6 +13,10 @@
             "Query": "PurchaseOrderHeaders"
         },
         {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
             "Name": "SalesOrderHeaders",
             "Query": "SalesOrderHeaders"
         },

@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"Caption": "Create $(L,PRODUCT_TYPE)",
+	"Caption": "Create Product Detail",
 	"Controls": [
 		{
 			"Sections": [
