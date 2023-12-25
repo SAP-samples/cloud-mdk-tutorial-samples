@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
@@ -10,6 +14,13 @@
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"KeyAndValues": [
 						{
@@ -35,26 +46,18 @@
 	"_Name": "Main",
 	"Caption": "Main",
 	"PrefersLargeCaption": true,
-	"ToolBar": {
+	"ActionBar": {
 		"Items": [
 			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "LogoutToolbarItem",
-				"Caption": "Logout",
-				"Enabled": true,
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
 				"Visible": true,
-				"Clickable": true,
-				"OnPress": "/MDK_Geolocation/Actions/LogoutMessage.action"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "UpdateToolbarItem",
-				"Caption": "Update",
-				"Enabled": true,
-				"Visible": "$(PLT,true,true,false)",
-				"Clickable": true,
-				"OnPress": "/MDK_Geolocation/Actions/AppUpdateProgressBanner.action"
+				"OnPress": "/MDK_Geolocation/Actions/Application/UserMenuPopover.action"
 			}
-		]
+		],
+		"_Name": "ActionBar1"
 	}
 }

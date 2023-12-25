@@ -23,10 +23,12 @@
 						"HeadlineText": "{FirstName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading"
+						"SubstatusImagePosition": "Leading",
+						"Labels": []
 					},
 					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0"
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
 				},
 				{
 					"_Type": "Section.Type.Extension",
@@ -34,6 +36,13 @@
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"Height": 600,
 					"Module": "MyMapModule",
@@ -50,7 +59,11 @@
 						}
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",

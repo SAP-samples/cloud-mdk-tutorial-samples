@@ -1,7 +1,7 @@
 /**
- * Describe this function...
- * @param {IClientAPI} clientAPI
- */
+* Describe this function...
+* @param {IClientAPI} clientAPI
+*/
 import * as geolocation from "@nativescript/geolocation";
 import { CoreTypes } from "@nativescript/core";
 export default async function GetCoordinates(clientAPI) {

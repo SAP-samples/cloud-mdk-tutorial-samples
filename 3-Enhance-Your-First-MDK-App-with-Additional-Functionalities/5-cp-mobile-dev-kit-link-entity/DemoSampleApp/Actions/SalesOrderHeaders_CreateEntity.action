@@ -3,7 +3,13 @@
 	"ActionResult": {
 		"_Name": "SalesOrderHeaders_CreateEntity"
 	},
-	"OnFailure": "/DemoSampleApp/Actions/CreateSalesOrderHeaderEntityFailureMessage.action",
+	"OnFailure": {
+		"Name": "/DemoSampleApp/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}",
+			"Title": "Create Sales Order"
+		}
+	},
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
 	"Target": {
 		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",

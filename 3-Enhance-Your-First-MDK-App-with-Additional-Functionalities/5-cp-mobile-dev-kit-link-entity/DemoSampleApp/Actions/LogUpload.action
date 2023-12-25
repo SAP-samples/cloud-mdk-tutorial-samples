@@ -1,7 +1,0 @@
-{
-	"_Type": "Action.Type.Logger.Upload",
-	"ActionResult": {
-		"_Name": "LogUpload"
-	},
-	"OnSuccess": "/DemoSampleApp/Actions/LogUploadSuccessful.action"
-}

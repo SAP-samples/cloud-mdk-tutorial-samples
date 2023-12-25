@@ -1,10 +1,8 @@
 {
-  "AppDisplayName": "Maps",
-  "AppName": "MDKMaps",
+  "AppDisplayName": "DemoSampleApp",
+  "AppName": "DemoSampleApp",
   "AppVersion": "1.0.0",
   "AndroidVersionCode": "Auto",
   "BundleID": "<Your bundle ID>",
-  "Externals": [],
-  "NSPlugins": [],
   "UrlScheme": "mdkmaps"
 }

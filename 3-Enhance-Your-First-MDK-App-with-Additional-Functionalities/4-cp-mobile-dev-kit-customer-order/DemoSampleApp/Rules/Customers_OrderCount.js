@@ -1,7 +1,7 @@
 /**
- * Describe this function...
- * @param {IClientAPI} clientAPI
- */
+* Describe this function...
+* @param {IClientAPI} clientAPI
+*/
 export default function CustomerOrderCount(clientAPI) {
     //The following currentCustomer will retrieve the current customer record
     const currentCustomer = clientAPI.getPageProxy().binding.CustomerId;

@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
@@ -10,11 +14,14 @@
 						"Footnote": "{EmailAddress}",
 						"Description": "{CustomerId}",
 						"StatusText": "{PhoneNumber}",
+						"DetailImage": "sap-icon://customer",
+						"Tags": [],
 						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading"
+						"SubstatusImagePosition": "Leading",
+						"Labels": []
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
@@ -54,6 +61,13 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
@@ -67,7 +81,8 @@
 					},
 					"_Name": "SectionObjectTable0",
 					"Header": {
-						"_Name": "SectionHeader0",
+						"_Name": "SectionHeader2",
+						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
@@ -75,10 +90,15 @@
 						"_Name": "SectionFooter0",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
-						"AccessoryType": "disclosureIndicator",
-						"FooterStyle": "attribute",
+						"AccessoryType": "DisclosureIndicator",
+						"FooterStyle": "Attribute",
 						"Visible": true,
-						"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Orders.action",
+						"OnPress": {
+							"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/DemoSampleApp/Pages/Customers_Orders.page"
+							}
+						},
 						"UseBottomPadding": false
 					},
 					"Visible": true,
@@ -86,10 +106,19 @@
 						"Caption": "No Customer Orders Found",
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"ObjectCell": {
 						"ContextMenu": {
 							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
 						},
 						"Title": "{SalesOrderId}",
 						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
@@ -97,30 +126,24 @@
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{CurrencyCode}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "none",
+						"AccessoryType": "None",
 						"Tags": [],
 						"AvatarStack": {
-							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
-							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"OnPress": "/DemoSampleApp/Actions/NavToSalesOrders_Details.action",
+						"OnPress": {
+							"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
+							}
+						},
 						"Selected": false
 					},
-					"DataPaging": {
-						"ShowLoadingIndicator": false,
-						"PageSize": 50
-					},
-					"HighlightSelectedItem": false,
-					"Selection": {
-						"ExitOnLastDeselect": true,
-						"LongPressToEnable": "None",
-						"Mode": "None"
-					}
+					"HighlightSelectedItem": false
 				}
 			]
 		}

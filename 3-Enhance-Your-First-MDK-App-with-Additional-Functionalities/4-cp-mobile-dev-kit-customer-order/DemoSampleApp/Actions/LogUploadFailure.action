@@ -1,9 +1,0 @@
-{
-	"_Type": "Action.Type.Message",
-	"ActionResult": {
-		"_Name": "LogUploadFailure"
-	},
-	"Message": "Failed to upload client logs - {#ActionResults:LogUpload/error}",
-	"Title": "Upload Client Logs",
-	"OKCaption": "OK"
-}
