@@ -3,7 +3,7 @@
  * @param {IClientAPI} clientAPI
  */
 export default function OnWillUpdate(clientAPI) {
-    return clientAPI.executeAction('/DemoSampleApp/Actions/OnWillUpdate.action').then((result) => {
+    return clientAPI.executeAction('/DemoSampleApp/Actions/Application/OnWillUpdate.action').then((result) => {
         if (result.data) {
             return clientAPI.executeAction('/DemoSampleApp/Actions/Service/CloseOffline.action').then(
                 (success) => Promise.resolve(success),

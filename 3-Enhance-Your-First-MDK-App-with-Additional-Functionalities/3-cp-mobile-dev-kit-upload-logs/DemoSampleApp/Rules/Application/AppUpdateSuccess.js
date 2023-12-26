@@ -19,7 +19,7 @@ export default function AppUpdateSuccess(clientAPI) {
         let versionNum = result.split(': ')[1];
         if (result.startsWith('Current version is already up to date')) {
             return clientAPI.getPageProxy().executeAction({
-                "Name": "/DemoSampleApp/Actions/AppUpdateSuccessMessage.action",
+                "Name": "/DemoSampleApp/Actions/Application/AppUpdateSuccessMessage.action",
                 "Properties": {
                     "Message": `You are already using the latest version: ${versionNum}`,
                     "NumberOfLines": 2
@@ -28,7 +28,7 @@ export default function AppUpdateSuccess(clientAPI) {
         } else if (result === 'AppUpdate feature is not enabled or no new revision found.') {
             message = 'No Application metadata found. Please deploy your application and try again.';
             return clientAPI.getPageProxy().executeAction({
-                "Name": "/DemoSampleApp/Actions/AppUpdateSuccessMessage.action",
+                "Name": "/DemoSampleApp/Actions/Application/AppUpdateSuccessMessage.action",
                 "Properties": {
                     "Duration": 5,
                     "Message": message,
