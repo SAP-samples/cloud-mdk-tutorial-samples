@@ -174,5 +174,9 @@
 			}
 		],
 		"_Name": "ActionBar1"
+	},
+	"DesignTimeTarget": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+		"EntitySet": "Customers"
 	}
 }

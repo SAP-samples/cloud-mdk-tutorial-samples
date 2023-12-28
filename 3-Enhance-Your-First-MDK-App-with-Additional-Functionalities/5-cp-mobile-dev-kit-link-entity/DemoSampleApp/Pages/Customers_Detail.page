@@ -197,5 +197,9 @@
 				}
 			}
 		]
+	},
+		"DesignTimeTarget": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+		"EntitySet": "Customers"
 	}
 }
