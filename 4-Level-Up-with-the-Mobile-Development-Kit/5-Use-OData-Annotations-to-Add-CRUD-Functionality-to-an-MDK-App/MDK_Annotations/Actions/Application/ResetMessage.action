@@ -1,8 +1,8 @@
 {
-    "CancelCaption": "No",
+    "_Type": "Action.Type.Message",
     "Message": "This action will remove all data and return to the Welcome screen. Any local data will be lost. Are you sure you want to continue?",
+    "Title": "Reset",
     "OKCaption": "Yes",
-    "OnOK": "/MDK_Annotations/Rules/ResetAppSettingsAndLogout.js",
-    "Title": "Logout",
-    "_Type": "Action.Type.Message"
+    "OnOK": "/MDK_Annotations/Rules/Application/ResetAppSettingsAndLogout.js",
+    "CancelCaption": "No"
 }

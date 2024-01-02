@@ -1,10 +1,14 @@
-export default function ResetAppSettingsAndLogout(context) {
-    let logger = context.getLogger();
-    let platform = context.nativescript.platformModule;
-    let appSettings = context.nativescript.appSettingsModule;
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+export default function ResetAppSettingsAndLogout(clientAPI) {
+    let logger = clientAPI.getLogger();
+    let platform = clientAPI.nativescript.platformModule;
+    let appSettings = clientAPI.nativescript.appSettingsModule;
     var appId;
     if (platform && (platform.isIOS || platform.isAndroid)) {
-        appId = context.evaluateTargetPath('#Application/#AppData/MobileServiceAppId');
+        appId = clientAPI.evaluateTargetPath('#Application/#AppData/MobileServiceAppId');
     } else {
         appId = 'WindowsClient';
     }
@@ -19,6 +23,6 @@ export default function ResetAppSettingsAndLogout(context) {
         logger.log(`ERROR: AppSettings cleanup failure - ${err}`, 'ERROR');
     } finally {
         // Logout 
-        return context.getPageProxy().executeAction('/MDK_Annotations/Actions/Logout.action');
+        return clientAPI.getPageProxy().executeAction('/MDK_Annotations/Actions/Application/Reset.action');
     }
 }

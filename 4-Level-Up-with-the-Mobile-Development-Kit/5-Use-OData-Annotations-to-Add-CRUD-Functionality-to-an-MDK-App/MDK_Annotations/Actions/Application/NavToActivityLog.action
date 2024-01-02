@@ -1,0 +1,5 @@
+{
+    "ModalPage": true,
+    "PageToOpen": "/MDK_Annotations/Pages/Application/UserActivityLog.page",
+    "_Type": "Action.Type.Navigation"
+}
