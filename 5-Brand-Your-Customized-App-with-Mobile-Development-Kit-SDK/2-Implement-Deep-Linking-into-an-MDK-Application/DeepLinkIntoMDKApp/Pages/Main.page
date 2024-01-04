@@ -1,0 +1,52 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/DeepLinkIntoMDKApp/Actions/Customers/NavToCustomers_List.action",
+							"Alignment": "Center",
+							"Title": "Customers",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						},
+						{
+							"OnPress": "/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_List.action",
+							"Alignment": "Center",
+							"Title": "Products",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						}
+					],
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DeepLinkIntoMDKApp/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

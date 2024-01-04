@@ -12,7 +12,6 @@ The samples include:
 | Folder                                                                                                                                                                        | Description                                                  | Tutorial                                                                                                                              |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
 | [1-Enable-Push-Notifications-in-your-branded-MDK-client](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/1-Enable-Push-Notifications-in-your-branded-MDK-client) | Use the mobile development kit editor to create a mobile app | [Enable Push Notifications in your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) |
-
 ---
 
 ### Download and Installation
