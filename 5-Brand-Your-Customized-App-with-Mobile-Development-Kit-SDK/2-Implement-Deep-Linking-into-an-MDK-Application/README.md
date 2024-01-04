@@ -4,4 +4,4 @@ Set up the Mobile Development Kit client to accept deep links through URL scheme
 ***
 ### Description
 
-This folder contains the MDK metadata project which is required for [Implement Deep Linking into an MDK Application](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) tutorial.
+This folder contains the MDK metadata project which is required for Implement Deep Linking into an MDK Application tutorial.
