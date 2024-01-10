@@ -1,11 +1,10 @@
 /**
- * Describe this function...
- * @param {IClientAPI} context
- */
+* Describe this function...
+* @param {IClientAPI} context
+*/
 
 export default function LinkDataReceived(context) {
-
-    console.log(`Link Data Received Triggered`);
+    context.getLogger().log(`Link Data Received Triggered`,'Info');
     let linkData = context.getAppEventData();
     let data;
 
@@ -31,13 +30,14 @@ export default function LinkDataReceived(context) {
             }
             break;
         default:
-            console.log(`Unrecognized Link Path ${data.URL}`);
+            context.getLogger().log(`Unrecognized Link Path ${data.URL}`,'Error');
             break;
     }
 }
 
 function openProductByID(context, id) {
-    return context.read('/DeepLinkIntoMDKApp/Services/SampleServiceV2.service', `Products('${id}')`, [], null).then(function (result) {
+    context.getLogger().log(`ID: ${id}`,'Debug');
+    return context.read('/DeepLinkIntoMDKApp/Services/SampleServiceV4.service', `Products(${id})`, [], null).then(function (result) {
         if (result.length) {
             context.getPageProxy().setActionBinding(result.getItem(0));
             return context.getPageProxy().executeAction('/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_Detail.action');
@@ -55,7 +55,7 @@ function openProductListWithFilter(context, parametersObj) {
     if (filterQO.slice(-5) === ' and ') {
         filterQO = filterQO.slice(0, filterQO.length - 5);
     }
-    console.log(`${filterQO}`);
+    context.getLogger().log(`${filterQO}`,'Debug');
     pageData.Controls[0].Sections[0].Target.QueryOptions = filterQO;
     return context.getPageProxy().executeAction({
         "Name": '/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_List.action',
