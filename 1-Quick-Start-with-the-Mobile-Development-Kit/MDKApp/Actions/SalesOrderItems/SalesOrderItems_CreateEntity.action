@@ -8,15 +8,15 @@
         "GrossAmount": "#Control:GrossAmount/#Value",
         "ItemNumber": "#Control:ItemNumber/#Value",
         "NetAmount": "#Control:NetAmount/#Value",
-        "ProductId": "#Control:ProductId/#SelectedValue",
+        "ProductID": "#Control:ProductID/#SelectedValue",
         "Quantity": "#Control:Quantity/#Value",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
-        "SalesOrderId": "#Control:SalesOrderId/#SelectedValue",
+        "SalesOrderID": "#Control:SalesOrderID/#SelectedValue",
         "TaxAmount": "#Control:TaxAmount/#Value"
     },
     "Target": {
         "EntitySet": "SalesOrderItems",
-        "Service": "/MDKApp/Services/SampleServiceV2.service"
+        "Service": "/MDKApp/Services/SampleServiceV4.service"
     },
     "ActionResult": {
         "_Name": "create"

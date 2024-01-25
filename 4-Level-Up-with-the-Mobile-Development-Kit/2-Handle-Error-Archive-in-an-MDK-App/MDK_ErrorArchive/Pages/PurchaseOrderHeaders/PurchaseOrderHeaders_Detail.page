@@ -1,7 +1,7 @@
 {
 	"Caption": "PurchaseOrderHeader Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderHeaders",
 		"QueryOptions": ""
 	},
@@ -26,12 +26,12 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{PurchaseOrderId}",
+						"HeadlineText": "{PurchaseOrderID}",
 						"Subhead": "{CurrencyCode}",
 						"BodyText": "",
 						"Footnote": "{NetAmount}",
 						"Description": "{GrossAmount}",
-						"StatusText": "{SupplierId}",
+						"StatusText": "{SupplierID}",
 						"StatusImage": "",
 						"SubstatusImage": "",
 						"SubstatusText": "{TaxAmount}"
@@ -53,12 +53,12 @@
 							"Value": "{NetAmount}"
 						},
 						{
-							"KeyName": "PurchaseOrderId",
-							"Value": "{PurchaseOrderId}"
+							"KeyName": "PurchaseOrderID",
+							"Value": "{PurchaseOrderID}"
 						},
 						{
-							"KeyName": "SupplierId",
-							"Value": "{SupplierId}"
+							"KeyName": "SupplierID",
+							"Value": "{SupplierID}"
 						},
 						{
 							"KeyName": "TaxAmount",
@@ -89,12 +89,12 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{ProductId}",
+						"Title": "{ProductID}",
 						"Footnote": "{ItemNumber}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{NetAmount}",
 						"Subhead": "{CurrencyCode}",
-						"SubstatusText": "{PurchaseOrderId}",
+						"SubstatusText": "{PurchaseOrderID}",
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
 					},
 					"EmptySection": {
@@ -102,7 +102,7 @@
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/Items",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

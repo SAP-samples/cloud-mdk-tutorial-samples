@@ -34,7 +34,7 @@
 			"Icon": "sap-icon://reset",
 			"OnPress": "/MDK_i18n_l10n/Actions/Application/ResetMessage.action",
 			"Title": "Reset",
-			"Visible": "$(PLT,true,true,false)"
+			"Visible": true
 		},
 		{
 			"Enabled": true,

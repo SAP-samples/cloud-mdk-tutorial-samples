@@ -33,12 +33,13 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "CustomerId",
-							"_Name": "CustomerId",
+							"Caption": "CustomerID",
+							"KeyboardType": "Number",
+							"_Name": "CustomerID",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "Datetime",
+							"Mode": "Date",
 							"_Name": "DateOfBirth",
 							"Caption": "DateOfBirth",
 							"_Type": "Control.Type.FormCell.DatePicker"
@@ -47,6 +48,18 @@
 							"Caption": "EmailAddress",
 							"_Name": "EmailAddress",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gender",
+							"_Name": "Gender",
+							"Segments": [
+								"Male",
+								"Female",
+								"Other",
+								"None",
+								"Unknown"
+							],
+							"_Type": "Control.Type.FormCell.SegmentedControl"
 						},
 						{
 							"Caption": "FirstName",
@@ -77,12 +90,6 @@
 							"Caption": "Street",
 							"_Name": "Street",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						}
 					]
 				}

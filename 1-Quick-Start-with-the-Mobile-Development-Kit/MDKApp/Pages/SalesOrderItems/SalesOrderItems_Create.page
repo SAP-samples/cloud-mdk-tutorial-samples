@@ -28,7 +28,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "Datetime",
+							"Mode": "Date",
 							"_Name": "DeliveryDate",
 							"Caption": "DeliveryDate",
 							"_Type": "Control.Type.FormCell.DatePicker"
@@ -52,7 +52,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
+							"Caption": "ProductID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
@@ -60,13 +60,13 @@
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
-								"ReturnValue": "{ProductId}",
+								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "ProductId",
+							"_Name": "ProductID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -81,21 +81,21 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SalesOrderId",
+							"Caption": "SalesOrderID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{SalesOrderId}",
-								"ReturnValue": "{SalesOrderId}",
+								"DisplayValue": "{SalesOrderID}",
+								"ReturnValue": "{SalesOrderID}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "SalesOrderId",
+							"_Name": "SalesOrderID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{

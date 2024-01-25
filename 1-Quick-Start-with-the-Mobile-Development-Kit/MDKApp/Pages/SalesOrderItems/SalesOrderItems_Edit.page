@@ -1,7 +1,7 @@
 {
 	"Caption": "Update SalesOrderItem Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderItems",
 		"QueryOptions": ""
 	},
@@ -34,7 +34,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Mode": "Datetime",
+							"Mode": "Date",
 							"_Name": "DeliveryDate",
 							"Value": "{DeliveryDate}",
 							"Caption": "DeliveryDate",
@@ -63,21 +63,21 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
+							"Caption": "ProductID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
-								"ReturnValue": "{ProductId}",
+								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{ProductId}",
-							"_Name": "ProductId",
+							"Value": "{ProductID}",
+							"_Name": "ProductID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -94,21 +94,21 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SalesOrderId",
+							"Caption": "SalesOrderID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{SalesOrderId}",
-								"ReturnValue": "{SalesOrderId}",
+								"DisplayValue": "{SalesOrderID}",
+								"ReturnValue": "{SalesOrderID}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{SalesOrderId}",
-							"_Name": "SalesOrderId",
+							"Value": "{SalesOrderID}",
+							"_Name": "SalesOrderID",
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"IsEditable": false
 						},

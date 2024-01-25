@@ -25,7 +25,7 @@
 						"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_Detail.action",
 						"StatusImage": "",
 						"Title": "{FirstName}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{DateOfBirth}",
 						"Subhead": "{City}",
@@ -47,7 +47,7 @@
 					},
 					"Target": {
 						"EntitySet": "Customers",
-						"Service": "/MDK_Maps/Services/SampleServiceV2.service",
+						"Service": "/MDK_Maps/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

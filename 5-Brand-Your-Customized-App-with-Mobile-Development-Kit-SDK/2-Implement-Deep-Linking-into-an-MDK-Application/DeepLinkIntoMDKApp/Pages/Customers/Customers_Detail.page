@@ -1,7 +1,7 @@
 {
 	"Caption": "Customer Detail",
 	"DesignTimeTarget": {
-		"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service",
+		"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"QueryOptions": ""
 	},
@@ -18,7 +18,7 @@
 						"HeadlineText": "{FirstName}",
 						"Subhead": "{City}",
 						"BodyText": "",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"StatusImage": "",
@@ -38,8 +38,8 @@
 							"Value": "{Country}"
 						},
 						{
-							"KeyName": "CustomerId",
-							"Value": "{CustomerId}"
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
 						},
 						{
 							"KeyName": "DateOfBirth",
@@ -72,10 +72,6 @@
 						{
 							"KeyName": "Street",
 							"Value": "{Street}"
-						},
-						{
-							"KeyName": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}"
 						}
 					],
 					"Layout": {
@@ -136,7 +132,7 @@
 						"Icons": [],
 						"StatusImage": "",
 						"Title": "{LifeCycleStatusName}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{GrossAmount}",
 						"Subhead": "{CreatedAt}",
@@ -148,7 +144,7 @@
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service"
+						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

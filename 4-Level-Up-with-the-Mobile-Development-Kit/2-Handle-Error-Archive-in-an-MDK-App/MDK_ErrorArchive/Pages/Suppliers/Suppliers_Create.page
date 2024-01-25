@@ -58,20 +58,15 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
-							"_Name": "SupplierId",
+							"Caption": "SupplierID",
+							"KeyboardType": "Number",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "SupplierName",
 							"_Name": "SupplierName",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						}
 					]
 				}

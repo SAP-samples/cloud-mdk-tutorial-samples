@@ -6,13 +6,13 @@
         "CurrencyCode": "#Control:CurrencyCode/#Value",
         "GrossAmount": "#Control:GrossAmount/#Value",
         "NetAmount": "#Control:NetAmount/#Value",
-        "PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-        "SupplierId": "#Control:SupplierId/#SelectedValue",
+        "PurchaseOrderID": "#Control:PurchaseOrderID/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
         "TaxAmount": "#Control:TaxAmount/#Value"
     },
     "Target": {
         "EntitySet": "PurchaseOrderHeaders",
-        "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
     },
     "ActionResult": {
         "_Name": "create"

@@ -1,5 +1,5 @@
 {
-    "Service": "/MDKApp/Services/SampleServiceV2.service",
+    "Service": "/MDKApp/Services/SampleServiceV4.service",
     "DefiningRequests": [{
             "Name": "Customers",
             "Query": "Customers"

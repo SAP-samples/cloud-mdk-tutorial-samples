@@ -1,7 +1,7 @@
 {
 	"Caption": "SalesOrderHeader Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_Maps/Services/SampleServiceV2.service",
+		"Service": "/MDK_Maps/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders",
 		"QueryOptions": ""
 	},
@@ -18,7 +18,7 @@
 						"HeadlineText": "{LifeCycleStatusName}",
 						"Subhead": "{CreatedAt}",
 						"BodyText": "",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"Description": "{CurrencyCode}",
 						"StatusText": "{GrossAmount}",
 						"StatusImage": "",
@@ -38,8 +38,8 @@
 							"Value": "{CurrencyCode}"
 						},
 						{
-							"KeyName": "CustomerId",
-							"Value": "{CustomerId}"
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
 						},
 						{
 							"KeyName": "GrossAmount",
@@ -58,8 +58,8 @@
 							"Value": "{NetAmount}"
 						},
 						{
-							"KeyName": "SalesOrderId",
-							"Value": "{SalesOrderId}"
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
 						},
 						{
 							"KeyName": "TaxAmount",
@@ -90,7 +90,7 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{ProductId}",
+						"Title": "{ProductID}",
 						"Footnote": "{GrossAmount}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{ItemNumber}",
@@ -102,7 +102,7 @@
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/Items",
-						"Service": "/MDK_Maps/Services/SampleServiceV2.service"
+						"Service": "/MDK_Maps/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

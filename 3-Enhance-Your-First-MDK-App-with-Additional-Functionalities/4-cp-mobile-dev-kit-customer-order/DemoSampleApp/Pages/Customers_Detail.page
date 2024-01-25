@@ -12,22 +12,28 @@
 					"ObjectHeader": {
 						"Subhead": "{FirstName}",
 						"Footnote": "{EmailAddress}",
-						"Description": "{CustomerId}",
+						"Description": "{CustomerID}",
 						"StatusText": "{PhoneNumber}",
 						"DetailImage": "sap-icon://customer",
-						"Tags": [],
+						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading",
-						"Labels": []
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
@@ -61,13 +67,6 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
@@ -75,13 +74,13 @@
 				{
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
 						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
 					},
 					"_Name": "SectionObjectTable0",
 					"Header": {
-						"_Name": "SectionHeader2",
+						"_Name": "SectionHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
@@ -114,25 +113,21 @@
 						"ControlSeparator": true
 					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						},
-						"Title": "{SalesOrderId}",
+						"Title": "{SalesOrderID}",
 						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"SubstatusText": "{CurrencyCode}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "None",
+						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
+							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"OnPress": {
@@ -141,13 +136,32 @@
 								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
 					},
-					"HighlightSelectedItem": false
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
 				}
 			]
 		}
 	],
+	"DesignTimeTarget": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"EntitySet": "Customers"
+	},
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
 	"Caption": "Details",
@@ -174,9 +188,5 @@
 			}
 		],
 		"_Name": "ActionBar1"
-	},
-	"DesignTimeTarget": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-		"EntitySet": "Customers"
 	}
 }

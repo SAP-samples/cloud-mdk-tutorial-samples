@@ -1,7 +1,7 @@
 {
 	"Caption": "Update PurchaseOrderItem Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderItems",
 		"QueryOptions": ""
 	},
@@ -56,39 +56,39 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
+							"Caption": "ProductID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
-								"ReturnValue": "{ProductId}",
+								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{ProductId}",
-							"_Name": "ProductId",
+							"Value": "{ProductID}",
+							"_Name": "ProductID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
-							"Caption": "PurchaseOrderId",
+							"Caption": "PurchaseOrderID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{PurchaseOrderId}",
-								"ReturnValue": "{PurchaseOrderId}",
+								"DisplayValue": "{PurchaseOrderID}",
+								"ReturnValue": "{PurchaseOrderID}",
 								"Target": {
 									"EntitySet": "PurchaseOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{PurchaseOrderId}",
-							"_Name": "PurchaseOrderId",
+							"Value": "{PurchaseOrderID}",
+							"_Name": "PurchaseOrderID",
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"IsEditable": false
 						},

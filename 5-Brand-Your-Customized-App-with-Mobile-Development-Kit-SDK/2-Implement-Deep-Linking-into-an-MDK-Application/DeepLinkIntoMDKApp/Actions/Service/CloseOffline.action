@@ -1,6 +1,6 @@
 {
     "_Type": "Action.Type.OfflineOData.Close",
-    "Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service",
+    "Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
     "Force": true,
     "ActionResult": {
         "_Name": "close"

@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
@@ -8,22 +12,28 @@
 					"ObjectHeader": {
 						"Subhead": "{FirstName}",
 						"Footnote": "{EmailAddress}",
-						"Description": "{CustomerId}",
+						"Description": "{CustomerID}",
 						"StatusText": "{PhoneNumber}",
 						"DetailImage": "sap-icon://customer",
-						"Tags": [],
+						"DetailImageIsCircular": false,
 						"BodyText": "{DateOfBirth}",
 						"HeadlineText": "{LastName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading",
-						"Labels": []
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
@@ -57,24 +67,17 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
+	"DesignTimeTarget": {
+		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"EntitySet": "Customers"
+	},
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
 	"Caption": "Details",
@@ -101,9 +104,5 @@
 			}
 		],
 		"_Name": "ActionBar1"
-	},
-	"DesignTimeTarget": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-		"EntitySet": "Customers"
 	}
 }

@@ -1,5 +1,5 @@
 {
     "_Type": "Action.Type.OpenDocument",
-    "Path": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value",
+    "Path": "/MDKApp/Services/SampleServiceV4.service/{@odata.readLink}/Picture",
     "MimeType": "image/jpeg"
 }

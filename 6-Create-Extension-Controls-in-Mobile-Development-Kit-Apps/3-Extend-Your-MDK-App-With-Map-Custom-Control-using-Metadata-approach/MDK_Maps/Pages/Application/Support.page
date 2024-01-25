@@ -47,7 +47,7 @@
 					},
 					"_Type": "Section.Type.SimplePropertyCollection",
 					"_Name": "SectionSimplePropertyCollection0",
-					"Visible": true,
+					"Visible": "$(PLT,true,true,false)",
 					"EmptySection": {
 						"FooterVisible": false
 					},

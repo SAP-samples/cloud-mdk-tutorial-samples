@@ -1,5 +1,5 @@
 {
-    "Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+    "Service": "/DemoSampleApp/Services/SampleServiceV4.service",
     "DefiningRequests": [{
             "Name": "Customers",
             "Query": "Customers"

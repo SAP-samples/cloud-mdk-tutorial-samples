@@ -1,5 +1,8 @@
 {
 	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ValidationFailure"
+	},
 	"Message": "Email address is not in the correct format recipient @ domain . domaintype",
 	"Title": "Validate Email",
 	"OKCaption": "OK"

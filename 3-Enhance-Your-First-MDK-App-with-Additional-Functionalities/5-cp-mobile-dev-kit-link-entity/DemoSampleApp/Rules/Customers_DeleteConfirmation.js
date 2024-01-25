@@ -1,7 +1,7 @@
 /**
- * Describe this function...
- * @param {IClientAPI} clientAPI
- */
+* Describe this function...
+* @param {IClientAPI} clientAPI
+*/
 export default function Customers_DeleteConfirmation(clientAPI) {
     return clientAPI.executeAction('/DemoSampleApp/Actions/Customers_DeleteConfirmation.action').then((result) => {
         if (result.data) {

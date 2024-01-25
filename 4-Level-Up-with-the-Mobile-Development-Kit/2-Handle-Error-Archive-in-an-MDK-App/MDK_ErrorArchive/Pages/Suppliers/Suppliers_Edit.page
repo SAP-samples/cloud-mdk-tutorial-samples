@@ -1,7 +1,7 @@
 {
 	"Caption": "Update Supplier Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 		"EntitySet": "Suppliers",
 		"QueryOptions": ""
 	},
@@ -70,9 +70,10 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
-							"_Name": "SupplierId",
-							"Value": "{SupplierId}",
+							"Caption": "SupplierID",
+							"_Name": "SupplierID",
+							"Value": "{SupplierID}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"IsEditable": false
 						},
@@ -81,13 +82,6 @@
 							"_Name": "SupplierName",
 							"Value": "{SupplierName}",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						}
 					]
 				}

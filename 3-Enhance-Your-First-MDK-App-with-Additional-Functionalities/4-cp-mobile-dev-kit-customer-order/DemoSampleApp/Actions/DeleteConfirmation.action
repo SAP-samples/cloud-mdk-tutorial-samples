@@ -1,7 +1,0 @@
-{
-	"_Type": "Action.Type.Message",
-	"Message": "Delete current entity?",
-	"Title": "Delete Confirmation",
-	"OKCaption": "OK",
-	"CancelCaption": "Cancel"
-}

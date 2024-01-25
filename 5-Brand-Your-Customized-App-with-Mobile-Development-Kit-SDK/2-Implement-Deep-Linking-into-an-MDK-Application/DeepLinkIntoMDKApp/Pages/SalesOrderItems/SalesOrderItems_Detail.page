@@ -1,0 +1,89 @@
+{
+	"Caption": "SalesOrderItem Detail",
+	"DesignTimeTarget": {
+		"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
+		"EntitySet": "SalesOrderItems",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ProductID}",
+						"Subhead": "{CurrencyCode}",
+						"BodyText": "",
+						"Footnote": "{GrossAmount}",
+						"Description": "{DeliveryDate}",
+						"StatusText": "{ItemNumber}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{NetAmount}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "DeliveryDate",
+							"Value": "{DeliveryDate}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "ItemNumber",
+							"Value": "{ItemNumber}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "ProductID",
+							"Value": "{ProductID}"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}"
+						},
+						{
+							"KeyName": "QuantityUnit",
+							"Value": "{QuantityUnit}"
+						},
+						{
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderItems_Detail",
+	"PrefersLargeCaption": true
+}

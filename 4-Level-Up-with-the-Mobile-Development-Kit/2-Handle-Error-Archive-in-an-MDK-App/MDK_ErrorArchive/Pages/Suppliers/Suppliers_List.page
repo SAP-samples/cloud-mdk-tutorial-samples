@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "Suppliers",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

@@ -13,18 +13,26 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"EntitySet": "Customers",
-						"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+						"Service": "/MDK_Styling/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Name": "SectionObjectTable0",
+					"Visible": true,
 					"EmptySection": {
 						"Caption": "No record found!",
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"ObjectCell": {
 						"Title": "{FirstName}",
 						"Subhead": "{City}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
@@ -37,15 +45,22 @@
 									"Image": ""
 								}
 							],
-							"ImageIsCircular": false
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
 						},
 						"OnPress": "/MDK_Styling/Actions/Customers/NavToCustomers_Detail.action",
 						"Styles": {
 							"Title": "ObjectTableTitle"
 						},
+						"Selected": false,
 						"ContextMenu": {
 							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
 						}
 					},
 					"Search": {
@@ -58,12 +73,17 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					}
+					},
+					"HighlightSelectedItem": false
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
+			},
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
 			}
 		}
 	],

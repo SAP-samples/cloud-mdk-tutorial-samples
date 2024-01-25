@@ -1,5 +1,5 @@
 {
-    "Service": "/MDK_Maps/Services/SampleServiceV2.service",
+    "Service": "/MDK_Maps/Services/SampleServiceV4.service",
     "_Type": "Action.Type.ODataService.Initialize",
     "ShowActivityIndicator": true,
     "OnSuccess": "/MDK_Maps/Actions/Service/InitializeOnlineSuccessMessage.action",

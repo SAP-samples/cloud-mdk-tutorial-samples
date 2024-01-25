@@ -3,10 +3,11 @@
 	"ActionResult": {
 		"_Name": "Customers_UpdateEntity"
 	},
+	"OnFailure": "/DemoSampleApp/Actions/UpdateCustomerEntityFailureMessage.action",
 	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
 	"ValidationRule": "/DemoSampleApp/Rules/EmailValidation.js",
 	"Target": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"ReadLink": "{@odata.readLink}"
 	},

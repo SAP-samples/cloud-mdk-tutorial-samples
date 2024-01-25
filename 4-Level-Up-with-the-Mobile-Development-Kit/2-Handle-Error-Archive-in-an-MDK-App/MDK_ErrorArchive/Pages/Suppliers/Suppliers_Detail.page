@@ -1,7 +1,7 @@
 {
 	"Caption": "Supplier Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 		"EntitySet": "Suppliers",
 		"QueryOptions": ""
 	},
@@ -69,16 +69,12 @@
 							"Value": "{Street}"
 						},
 						{
-							"KeyName": "SupplierId",
-							"Value": "{SupplierId}"
+							"KeyName": "SupplierID",
+							"Value": "{SupplierID}"
 						},
 						{
 							"KeyName": "SupplierName",
 							"Value": "{SupplierName}"
-						},
-						{
-							"KeyName": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}"
 						}
 					],
 					"Layout": {
@@ -131,7 +127,7 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "/MDK_ErrorArchive/Services/SampleServiceV2.service/{@odata.readLink}/$value"
+									"Image": "/MDK_ErrorArchive/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
 								}
 							],
 							"ImageIsCircular": false
@@ -151,7 +147,7 @@
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/Products",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				},
@@ -172,10 +168,10 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{PurchaseOrderId}",
+						"Title": "{PurchaseOrderID}",
 						"Footnote": "{NetAmount}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{SupplierId}",
+						"StatusText": "{SupplierID}",
 						"Subhead": "{CurrencyCode}",
 						"SubstatusText": "{TaxAmount}",
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Detail.action"
@@ -185,7 +181,7 @@
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/PurchaseOrders",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

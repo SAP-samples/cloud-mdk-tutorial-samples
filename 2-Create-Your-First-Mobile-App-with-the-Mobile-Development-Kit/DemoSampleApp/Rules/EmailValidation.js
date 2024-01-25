@@ -1,7 +1,7 @@
 /**
- * Describe this function...
- * @param {IClientAPI} clientAPI
- */
+* Describe this function...
+* @param {IClientAPI} clientAPI
+*/
 export default function EmailValidation(clientAPI) {
     //The following evaluateTargetPath will retrieve the current value of the email control
     if ((clientAPI.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@')) === -1) {

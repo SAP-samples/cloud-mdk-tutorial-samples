@@ -10,13 +10,12 @@
         "PhoneNumber": "#Control:PhoneNumber/#Value",
         "PostalCode": "#Control:PostalCode/#Value",
         "Street": "#Control:Street/#Value",
-        "SupplierId": "#Control:SupplierId/#Value",
-        "SupplierName": "#Control:SupplierName/#Value",
-        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+        "SupplierID": "#Control:SupplierID/#Value",
+        "SupplierName": "#Control:SupplierName/#Value"
     },
     "Target": {
         "EntitySet": "Suppliers",
-        "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
     },
     "ActionResult": {
         "_Name": "create"

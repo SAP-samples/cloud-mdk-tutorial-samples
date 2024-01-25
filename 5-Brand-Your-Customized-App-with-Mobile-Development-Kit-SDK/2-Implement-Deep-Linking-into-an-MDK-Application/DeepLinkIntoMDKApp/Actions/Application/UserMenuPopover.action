@@ -32,7 +32,7 @@
             "Icon": "sap-icon://reset",
             "OnPress": "/DeepLinkIntoMDKApp/Actions/Application/ResetMessage.action",
             "Title": "Reset",
-            "Visible": "$(PLT,true,true,false)"
+            "Visible": true
         },
         {
             "Enabled": true,

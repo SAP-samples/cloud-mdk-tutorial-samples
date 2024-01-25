@@ -1,7 +1,7 @@
 {
 	"Caption": "Update Customer Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"QueryOptions": ""
 	},
@@ -40,14 +40,15 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "CustomerId",
-							"_Name": "CustomerId",
-							"Value": "{CustomerId}",
+							"Caption": "CustomerID",
+							"_Name": "CustomerID",
+							"Value": "{CustomerID}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"IsEditable": false
 						},
 						{
-							"Mode": "Datetime",
+							"Mode": "Date",
 							"_Name": "DateOfBirth",
 							"Value": "{DateOfBirth}",
 							"Caption": "DateOfBirth",
@@ -58,6 +59,19 @@
 							"_Name": "EmailAddress",
 							"Value": "{EmailAddress}",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gender",
+							"_Name": "Gender",
+							"Value": "{Gender}",
+							"Segments": [
+								"Male",
+								"Female",
+								"Other",
+								"None",
+								"Unknown"
+							],
+							"_Type": "Control.Type.FormCell.SegmentedControl"
 						},
 						{
 							"Caption": "FirstName",
@@ -94,13 +108,6 @@
 							"_Name": "Street",
 							"Value": "{Street}",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						}
 					]
 				}

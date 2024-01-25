@@ -22,7 +22,7 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value"
+									"Image": "/MDKApp/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
 								}
 							],
 							"ImageIsCircular": false
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "Products",
-						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"Service": "/MDKApp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

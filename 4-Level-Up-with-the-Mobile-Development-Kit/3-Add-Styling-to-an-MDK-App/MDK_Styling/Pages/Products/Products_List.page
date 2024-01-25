@@ -1,5 +1,5 @@
 {
-	"Caption": "Products",
+	"Caption": "$(L,PRODUCT_TYPES)",
 	"ActionBar": {
 		"Items": [
 			{
@@ -22,7 +22,7 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "/MDK_Styling/Services/SampleServiceV2.service/{@odata.readLink}/$value"
+									"Image": "/MDK_Styling/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
 								}
 							],
 							"ImageIsCircular": false
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "Products",
-						"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+						"Service": "/MDK_Styling/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

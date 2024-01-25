@@ -1,7 +1,7 @@
 {
 	"Caption": "Update PurchaseOrderHeader Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+		"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderHeaders",
 		"QueryOptions": ""
 	},
@@ -48,28 +48,29 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "PurchaseOrderId",
-							"_Name": "PurchaseOrderId",
-							"Value": "{PurchaseOrderId}",
+							"Caption": "PurchaseOrderID",
+							"_Name": "PurchaseOrderID",
+							"Value": "{PurchaseOrderID}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"IsEditable": false
 						},
 						{
-							"Caption": "SupplierId",
+							"Caption": "SupplierID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
-								"ReturnValue": "{SupplierId}",
+								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{SupplierId}",
-							"_Name": "SupplierId",
+							"Value": "{SupplierID}",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{

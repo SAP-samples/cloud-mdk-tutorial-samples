@@ -1,7 +1,7 @@
 {
 	"Caption": "PurchaseOrderItem Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderItems",
 		"QueryOptions": ""
 	},
@@ -26,7 +26,7 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{ProductId}",
+						"HeadlineText": "{ProductID}",
 						"Subhead": "{CurrencyCode}",
 						"BodyText": "",
 						"Footnote": "{ItemNumber}",
@@ -34,7 +34,7 @@
 						"StatusText": "{NetAmount}",
 						"StatusImage": "",
 						"SubstatusImage": "",
-						"SubstatusText": "{PurchaseOrderId}"
+						"SubstatusText": "{PurchaseOrderID}"
 					},
 					"_Type": "Section.Type.ObjectHeader"
 				},
@@ -57,12 +57,12 @@
 							"Value": "{NetAmount}"
 						},
 						{
-							"KeyName": "ProductId",
-							"Value": "{ProductId}"
+							"KeyName": "ProductID",
+							"Value": "{ProductID}"
 						},
 						{
-							"KeyName": "PurchaseOrderId",
-							"Value": "{PurchaseOrderId}"
+							"KeyName": "PurchaseOrderID",
+							"Value": "{PurchaseOrderID}"
 						},
 						{
 							"KeyName": "Quantity",

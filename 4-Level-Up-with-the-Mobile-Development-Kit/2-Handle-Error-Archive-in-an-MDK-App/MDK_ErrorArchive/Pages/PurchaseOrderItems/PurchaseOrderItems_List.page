@@ -30,12 +30,12 @@
 						"Icons": [],
 						"OnPress": "/MDK_ErrorArchive/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
 						"StatusImage": "",
-						"Title": "{ProductId}",
+						"Title": "{ProductID}",
 						"Footnote": "{ItemNumber}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{NetAmount}",
 						"Subhead": "{CurrencyCode}",
-						"SubstatusText": "{PurchaseOrderId}"
+						"SubstatusText": "{PurchaseOrderID}"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "PurchaseOrderItems",
-						"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+						"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

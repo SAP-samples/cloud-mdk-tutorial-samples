@@ -1,7 +1,7 @@
 {
 	"Caption": "SalesOrderHeader Detail",
 	"DesignTimeTarget": {
-		"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service",
+		"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders",
 		"QueryOptions": ""
 	},
@@ -18,7 +18,7 @@
 						"HeadlineText": "{LifeCycleStatusName}",
 						"Subhead": "{CreatedAt}",
 						"BodyText": "",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"Description": "{CurrencyCode}",
 						"StatusText": "{GrossAmount}",
 						"StatusImage": "",
@@ -38,8 +38,8 @@
 							"Value": "{CurrencyCode}"
 						},
 						{
-							"KeyName": "CustomerId",
-							"Value": "{CustomerId}"
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
 						},
 						{
 							"KeyName": "GrossAmount",
@@ -58,8 +58,8 @@
 							"Value": "{NetAmount}"
 						},
 						{
-							"KeyName": "SalesOrderId",
-							"Value": "{SalesOrderId}"
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
 						},
 						{
 							"KeyName": "TaxAmount",
@@ -90,19 +90,20 @@
 						},
 						"Icons": [],
 						"StatusImage": "",
-						"Title": "{ProductId}",
+						"Title": "{ProductID}",
 						"Footnote": "{GrossAmount}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{ItemNumber}",
 						"Subhead": "{CurrencyCode}",
-						"SubstatusText": "{NetAmount}"
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/DeepLinkIntoMDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/Items",
-						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service"
+						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

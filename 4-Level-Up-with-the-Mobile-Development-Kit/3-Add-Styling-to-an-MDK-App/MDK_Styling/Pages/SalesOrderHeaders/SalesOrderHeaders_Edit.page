@@ -1,7 +1,7 @@
 {
 	"Caption": "Update SalesOrderHeader Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_Styling/Services/SampleServiceV2.service",
+		"Service": "/MDK_Styling/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders",
 		"QueryOptions": ""
 	},
@@ -41,21 +41,21 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "CustomerId",
+							"Caption": "CustomerID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{CustomerId}",
-								"ReturnValue": "{CustomerId}",
+								"DisplayValue": "{CustomerID}",
+								"ReturnValue": "{CustomerID}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+									"Service": "/MDK_Styling/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{CustomerId}",
-							"_Name": "CustomerId",
+							"Value": "{CustomerID}",
+							"_Name": "CustomerID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -85,9 +85,10 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SalesOrderId",
-							"_Name": "SalesOrderId",
-							"Value": "{SalesOrderId}",
+							"Caption": "SalesOrderID",
+							"_Name": "SalesOrderID",
+							"Value": "{SalesOrderID}",
+							"KeyboardType": "Number",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"IsEditable": false
 						},

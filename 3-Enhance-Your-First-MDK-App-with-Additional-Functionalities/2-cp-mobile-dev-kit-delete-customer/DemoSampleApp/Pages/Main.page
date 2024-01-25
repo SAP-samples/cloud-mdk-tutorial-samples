@@ -31,7 +31,9 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://customer",
 							"ImagePosition": "Leading",
+							"FullWidth": false,
 							"Visible": true,
+							"Enabled": true,
 							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action"
 						}
 					],

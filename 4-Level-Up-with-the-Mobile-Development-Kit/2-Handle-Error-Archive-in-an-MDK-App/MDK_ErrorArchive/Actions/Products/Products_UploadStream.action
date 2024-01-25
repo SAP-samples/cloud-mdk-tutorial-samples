@@ -1,0 +1,17 @@
+{
+    "_Type": "Action.Type.ODataService.UploadStream",
+    "Target": {
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
+        "EntitySet": "Products",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Picture": "#Control:Picture/#Value"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "uploadstream"
+    },
+    "OnSuccess": "/MDK_ErrorArchive/Actions/UploadStreamSuccessMessage.action",
+    "OnFailure": "/MDK_ErrorArchive/Actions/UploadStreamFailureMessage.action"
+}

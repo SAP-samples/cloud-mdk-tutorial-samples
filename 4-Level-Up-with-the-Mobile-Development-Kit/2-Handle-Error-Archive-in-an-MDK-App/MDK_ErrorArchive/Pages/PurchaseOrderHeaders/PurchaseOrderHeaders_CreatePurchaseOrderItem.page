@@ -46,7 +46,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
+							"Caption": "ProductID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
@@ -54,33 +54,33 @@
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{Name}",
-								"ReturnValue": "{ProductId}",
+								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "ProductId",
+							"_Name": "ProductID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
-							"Caption": "PurchaseOrderId",
+							"Caption": "PurchaseOrderID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{PurchaseOrderId}",
-								"ReturnValue": "{PurchaseOrderId}",
+								"DisplayValue": "{PurchaseOrderID}",
+								"ReturnValue": "{PurchaseOrderID}",
 								"Target": {
 									"EntitySet": "PurchaseOrderHeaders",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "PurchaseOrderId",
+							"_Name": "PurchaseOrderID",
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"Value": "{PurchaseOrderId}"
+							"Value": "{PurchaseOrderID}"
 						},
 						{
 							"Caption": "Quantity",

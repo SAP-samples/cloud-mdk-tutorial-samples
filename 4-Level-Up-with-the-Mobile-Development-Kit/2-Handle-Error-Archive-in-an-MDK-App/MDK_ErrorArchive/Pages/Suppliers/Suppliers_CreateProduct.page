@@ -82,22 +82,10 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": true,
-							"IsSelectedSectionEnabled": true,
-							"PickerItems": {
-								"DisplayValue": "{ProductId}",
-								"ReturnValue": "{ProductId}",
-								"Target": {
-									"EntitySet": "Stock",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
-								}
-							},
-							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.ListPicker"
+							"Caption": "ProductID",
+							"KeyboardType": "Number",
+							"_Name": "ProductID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "QuantityUnit",
@@ -110,7 +98,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
+							"Caption": "SupplierID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": false,
@@ -118,21 +106,15 @@
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
-								"ReturnValue": "{SupplierId}",
+								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "SupplierId",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"Value": "{SupplierId}"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
+							"Value": "{SupplierID}"
 						},
 						{
 							"Caption": "Weight",
@@ -146,7 +128,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"AttachmentTitle": "Media",
+							"AttachmentTitle": "Picture",
 							"AttachmentAddTitle": "Browse",
 							"AttachmentActionType": [
 								"AddPhoto",
@@ -158,7 +140,7 @@
 								"png",
 								"gif"
 							],
-							"_Name": "Attachment",
+							"_Name": "Picture",
 							"_Type": "Control.Type.FormCell.Attachment"
 						}
 					]

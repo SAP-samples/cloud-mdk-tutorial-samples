@@ -1,57 +1,75 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "FormCellContainer0",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Controls": [
 						{
 							"Value": "{FirstName}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCFirstName",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "First Name",
 							"PlaceHolder": "PlaceHolder",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"Value": "{LastName}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCLastName",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Last Name",
 							"PlaceHolder": "PlaceHolder",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"Value": "{PhoneNumber}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCPhone",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Phone",
 							"PlaceHolder": "PlaceHolder",
 							"KeyboardType": "Phone",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"Value": "{EmailAddress}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCEmail",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Email",
 							"PlaceHolder": "PlaceHolder",
 							"KeyboardType": "Email",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						}
 					],
 					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"_Type": "Section.Type.FormCell",
-					"_Name": "FormCellContainer0SectionFormCell0"
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}
@@ -59,6 +77,7 @@
 	"_Type": "Page",
 	"_Name": "Customers_Edit",
 	"Caption": "Update Customer",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -81,6 +100,5 @@
 			}
 		],
 		"_Name": "ActionBar1"
-	},
-	"PrefersLargeCaption": true
+	}
 }

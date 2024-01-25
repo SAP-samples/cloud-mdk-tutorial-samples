@@ -2,15 +2,15 @@
     "_Type": "Action.Type.ODataService.UpdateEntity",
     "Target": {
         "EntitySet": "PurchaseOrderHeaders",
-        "Service": "/MDKApp/Services/SampleServiceV2.service",
+        "Service": "/MDKApp/Services/SampleServiceV4.service",
         "ReadLink": "{@odata.readLink}"
     },
     "Properties": {
         "CurrencyCode": "#Control:CurrencyCode/#Value",
         "GrossAmount": "#Control:GrossAmount/#Value",
         "NetAmount": "#Control:NetAmount/#Value",
-        "PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
-        "SupplierId": "#Control:SupplierId/#SelectedValue",
+        "PurchaseOrderID": "#Control:PurchaseOrderID/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
         "TaxAmount": "#Control:TaxAmount/#Value"
     },
     "UpdateLinks": [],

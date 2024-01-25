@@ -20,21 +20,19 @@
         "Name": "#Control:Name/#Value",
         "PictureUrl": "#Control:PictureUrl/#Value",
         "Price": "#Control:Price/#Value",
-        "ProductId": "#Control:ProductId/#SelectedValue",
+        "ProductID": "#Control:ProductID/#Value",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
         "ShortDescription": "#Control:ShortDescription/#Value",
-        "SupplierId": "#Control:SupplierId/#SelectedValue",
-        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
         "Weight": "#Control:Weight/#Value",
         "WeightUnit": "#Control:WeightUnit/#Value"
     },
-    "Media": "#Control:Attachment/#Value",
     "Target": {
         "EntitySet": "Products",
-        "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
     },
     "ActionResult": {
         "_Name": "create"
     },
-    "_Type": "Action.Type.ODataService.CreateRelatedMedia"
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
 }

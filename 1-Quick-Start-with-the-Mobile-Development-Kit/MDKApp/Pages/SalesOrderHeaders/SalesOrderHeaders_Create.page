@@ -34,21 +34,21 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "CustomerId",
+							"Caption": "CustomerID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
-								"DisplayValue": "{CustomerId}",
-								"ReturnValue": "{CustomerId}",
+								"DisplayValue": "{CustomerID}",
+								"ReturnValue": "{CustomerID}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "CustomerId",
+							"_Name": "CustomerID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -74,8 +74,9 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SalesOrderId",
-							"_Name": "SalesOrderId",
+							"Caption": "SalesOrderID",
+							"KeyboardType": "Number",
+							"_Name": "SalesOrderID",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{

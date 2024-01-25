@@ -31,7 +31,7 @@
 						"OnPress": "/MDKApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
 						"StatusImage": "",
 						"Title": "{LifeCycleStatusName}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{GrossAmount}",
 						"Subhead": "{CreatedAt}",
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "SalesOrderHeaders",
-						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"Service": "/MDKApp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

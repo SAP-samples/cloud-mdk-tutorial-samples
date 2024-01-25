@@ -45,7 +45,9 @@
 						"Selected": false,
 						"ContextMenu": {
 							"Items": [],
-							"PerformFirstActionWithFullSwipe": true
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
 						}
 					},
 					"DataPaging": {
@@ -99,11 +101,22 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Layout": {
 						"NumberOfColumns": 1
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",

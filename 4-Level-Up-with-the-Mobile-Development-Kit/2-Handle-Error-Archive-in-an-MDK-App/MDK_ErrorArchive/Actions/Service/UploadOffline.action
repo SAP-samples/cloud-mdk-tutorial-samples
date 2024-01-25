@@ -1,5 +1,5 @@
 {
-    "Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service",
+    "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
     "_Type": "Action.Type.OfflineOData.Upload",
     "ActionResult": {
         "_Name": "sync"

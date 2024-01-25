@@ -1,7 +1,7 @@
 {
 	"Caption": "Product Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "Products",
 		"QueryOptions": ""
 	},
@@ -25,7 +25,7 @@
 				{
 					"ObjectHeader": {
 						"Tags": [],
-						"DetailImage": "/MDKApp/Services/SampleServiceV2.service/{@odata.readLink}/$value",
+						"DetailImage": "/MDKApp/Services/SampleServiceV4.service/{@odata.readLink}/Picture",
 						"HeadlineText": "{Name}",
 						"Subhead": "{Category}",
 						"BodyText": "",
@@ -85,8 +85,8 @@
 							"Value": "{Price}"
 						},
 						{
-							"KeyName": "ProductId",
-							"Value": "{ProductId}"
+							"KeyName": "ProductID",
+							"Value": "{ProductID}"
 						},
 						{
 							"KeyName": "QuantityUnit",
@@ -97,12 +97,8 @@
 							"Value": "{ShortDescription}"
 						},
 						{
-							"KeyName": "SupplierId",
-							"Value": "{SupplierId}"
-						},
-						{
-							"KeyName": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}"
+							"KeyName": "SupplierID",
+							"Value": "{SupplierID}"
 						},
 						{
 							"KeyName": "Weight",
@@ -119,9 +115,80 @@
 					"MaxItemCount": 1,
 					"_Name": "SectionKeyValue0",
 					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "PurchaseOrderItems"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{GrossAmount}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{PurchaseOrderID}",
+						"OnPress": "/MDKApp/Actions/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/PurchaseOrderItems",
+						"Service": "/MDKApp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrderItems"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrderItems",
+						"Service": "/MDKApp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
 				}
 			],
-			"DataSubscriptions": [],
+			"DataSubscriptions": [
+				"PurchaseOrderItems",
+				"SalesOrderItems"
+			],
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable"
 		}

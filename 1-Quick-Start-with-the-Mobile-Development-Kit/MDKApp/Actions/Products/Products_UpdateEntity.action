@@ -2,7 +2,7 @@
     "_Type": "Action.Type.ODataService.UpdateEntity",
     "Target": {
         "EntitySet": "Products",
-        "Service": "/MDKApp/Services/SampleServiceV2.service",
+        "Service": "/MDKApp/Services/SampleServiceV4.service",
         "ReadLink": "{@odata.readLink}"
     },
     "Properties": {
@@ -17,11 +17,10 @@
         "Name": "#Control:Name/#Value",
         "PictureUrl": "#Control:PictureUrl/#Value",
         "Price": "#Control:Price/#Value",
-        "ProductId": "#Control:ProductId/#SelectedValue",
+        "ProductID": "#Control:ProductID/#Value",
         "QuantityUnit": "#Control:QuantityUnit/#Value",
         "ShortDescription": "#Control:ShortDescription/#Value",
-        "SupplierId": "#Control:SupplierId/#SelectedValue",
-        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
         "Weight": "#Control:Weight/#Value",
         "WeightUnit": "#Control:WeightUnit/#Value"
     },

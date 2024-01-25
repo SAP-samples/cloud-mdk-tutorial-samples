@@ -1,6 +1,6 @@
 {
 	"DesignTimeTarget": {
-		"Service": "/MDK_Maps/Services/SampleServiceV2.service",
+		"Service": "/MDK_Maps/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"QueryOptions": ""
 	},
@@ -15,16 +15,14 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "{City}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"Description": "{Country}",
 						"StatusText": "{DateOfBirth}",
 						"SubstatusText": "{EmailAddress}",
-						"Tags": [],
 						"HeadlineText": "{FirstName}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading",
-						"Labels": []
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",

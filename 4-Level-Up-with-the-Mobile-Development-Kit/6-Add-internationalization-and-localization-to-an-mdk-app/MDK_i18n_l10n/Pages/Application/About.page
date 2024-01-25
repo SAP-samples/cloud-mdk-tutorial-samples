@@ -44,7 +44,7 @@
                         "Value": "/MDK_i18n_l10n/Rules/Application/GetClientVersion.js",
                         "_Name": "KeyValue4",
                         "KeyName": "Client Version",
-                        "Visible": true
+                        "Visible": "$(PLT,true,true,false)"
                     },
                     {
                         "Value": "/MDK_i18n_l10n/Rules/Application/GetClientSupportVersions.js",

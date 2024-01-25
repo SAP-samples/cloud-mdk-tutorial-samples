@@ -1,7 +1,7 @@
 {
 	"Caption": "Update Product Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV2.service",
+		"Service": "/MDKApp/Services/SampleServiceV4.service",
 		"EntitySet": "Products",
 		"QueryOptions": ""
 	},
@@ -98,22 +98,11 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"IsPickerDismissedOnSelection": true,
-							"IsSelectedSectionEnabled": true,
-							"PickerItems": {
-								"DisplayValue": "{ProductId}",
-								"ReturnValue": "{ProductId}",
-								"Target": {
-									"EntitySet": "Stock",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
-								}
-							},
-							"Value": "{ProductId}",
-							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.ListPicker",
+							"Caption": "ProductID",
+							"_Name": "ProductID",
+							"Value": "{ProductID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"IsEditable": false
 						},
 						{
@@ -129,29 +118,22 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
+							"Caption": "SupplierID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsPickerDismissedOnSelection": true,
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
-								"ReturnValue": "{SupplierId}",
+								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV2.service"
+									"Service": "/MDKApp/Services/SampleServiceV4.service"
 								}
 							},
-							"Value": "{SupplierId}",
-							"_Name": "SupplierId",
+							"Value": "{SupplierID}",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Value": "{UpdatedTimestamp}",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						},
 						{
 							"Caption": "Weight",

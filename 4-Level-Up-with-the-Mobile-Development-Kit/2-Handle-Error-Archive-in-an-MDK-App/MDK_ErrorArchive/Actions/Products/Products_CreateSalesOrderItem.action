@@ -1,0 +1,31 @@
+{
+    "ParentLink": {
+        "Property": "SalesOrderItems",
+        "Target": {
+            "EntitySet": "Products",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/MDK_ErrorArchive/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MDK_ErrorArchive/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DeliveryDate": "#Control:DeliveryDate/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "ItemNumber": "#Control:ItemNumber/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "ProductID": "#Control:ProductID/#SelectedValue",
+        "Quantity": "#Control:Quantity/#Value",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "SalesOrderItems",
+        "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

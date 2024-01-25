@@ -1,28 +1,32 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-						"EntitySet": "SalesOrderHeaders",
-						"QueryOptions": "$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No Orders Found",
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
 						"HeaderSeparator": true,
 						"FooterSeparator": true,
 						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"EntitySet": "SalesOrderHeaders",
+						"QueryOptions": "$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Orders Found",
+						"FooterVisible": false
 					},
 					"ObjectCell": {
 						"ContextMenu": {
@@ -31,20 +35,21 @@
 							"LeadingItems": [],
 							"TrailingItems": []
 						},
-						"Title": "{SalesOrderId}",
-						"Subhead": "{CustomerId}",
+						"Title": "{SalesOrderID}",
+						"Subhead": "{CustomerID}",
 						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-						"SubstatusText": "{LifeCycleStatusName}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "None",
+						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
 						"AvatarStack": {
+							"Avatars": [],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"OnPress": {
@@ -55,17 +60,26 @@
 						},
 						"Selected": false
 					},
-					"HighlightSelectedItem": false
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Orders",
-	"Caption": "Customer Orders",
+	"Caption": " Customer Orders",
 	"PrefersLargeCaption": true
 }

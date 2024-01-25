@@ -7,13 +7,13 @@
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDK_Styling/Actions/Products/Products_CreateEntity.action",
+				"OnPress": "/MDK_Styling/Rules/Products/Products_CreateEntity.js",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create Product Detail",
+	"Caption": "Create $(L,PRODUCT_TYPE)",
 	"Controls": [
 		{
 			"Sections": [
@@ -82,22 +82,10 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "ProductId",
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": true,
-							"IsSelectedSectionEnabled": true,
-							"PickerItems": {
-								"DisplayValue": "{ProductId}",
-								"ReturnValue": "{ProductId}",
-								"Target": {
-									"EntitySet": "Stock",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
-								}
-							},
-							"_Name": "ProductId",
-							"_Type": "Control.Type.FormCell.ListPicker"
+							"Caption": "ProductID",
+							"KeyboardType": "Number",
+							"_Name": "ProductID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "QuantityUnit",
@@ -110,7 +98,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
+							"Caption": "SupplierID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
@@ -118,20 +106,14 @@
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
-								"ReturnValue": "{SupplierId}",
+								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDK_Styling/Services/SampleServiceV2.service"
+									"Service": "/MDK_Styling/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "SupplierId",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Mode": "Datetime",
-							"_Name": "UpdatedTimestamp",
-							"Caption": "UpdatedTimestamp",
-							"_Type": "Control.Type.FormCell.DatePicker"
 						},
 						{
 							"Caption": "Weight",
@@ -145,7 +127,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"AttachmentTitle": "Media",
+							"AttachmentTitle": "Picture",
 							"AttachmentAddTitle": "Browse",
 							"AttachmentActionType": [
 								"AddPhoto",
@@ -157,7 +139,7 @@
 								"png",
 								"gif"
 							],
-							"_Name": "Attachment",
+							"_Name": "Picture",
 							"_Type": "Control.Type.FormCell.Attachment"
 						}
 					]

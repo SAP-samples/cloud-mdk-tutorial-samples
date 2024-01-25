@@ -1,7 +1,7 @@
 {
 	"Caption": "SalesOrderItem Detail",
 	"DesignTimeTarget": {
-		"Service": "/MDK_i18n_l10n/Services/SampleServiceV2.service",
+		"Service": "/MDK_i18n_l10n/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderItems",
 		"QueryOptions": ""
 	},
@@ -15,7 +15,7 @@
 					"ObjectHeader": {
 						"Tags": [],
 						"DetailImage": "",
-						"HeadlineText": "{ProductId}",
+						"HeadlineText": "{ProductID}",
 						"Subhead": "{CurrencyCode}",
 						"BodyText": "",
 						"Footnote": "{GrossAmount}",
@@ -50,8 +50,8 @@
 							"Value": "{NetAmount}"
 						},
 						{
-							"KeyName": "ProductId",
-							"Value": "{ProductId}"
+							"KeyName": "ProductID",
+							"Value": "{ProductID}"
 						},
 						{
 							"KeyName": "Quantity",
@@ -62,8 +62,8 @@
 							"Value": "{QuantityUnit}"
 						},
 						{
-							"KeyName": "SalesOrderId",
-							"Value": "{SalesOrderId}"
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
 						},
 						{
 							"KeyName": "TaxAmount",

@@ -44,7 +44,7 @@
                         "Value": "/DemoSampleApp/Rules/Application/GetClientVersion.js",
                         "_Name": "KeyValue4",
                         "KeyName": "Client Version",
-                        "Visible": true
+                        "Visible": "$(PLT,true,true,false)"
                     },
                     {
                         "Value": "/DemoSampleApp/Rules/Application/GetClientSupportVersions.js",

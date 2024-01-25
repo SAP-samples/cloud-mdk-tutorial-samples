@@ -30,7 +30,7 @@
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
 						"StatusImage": "",
-						"Title": "{ProductId}",
+						"Title": "{ProductID}",
 						"Footnote": "{GrossAmount}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{ItemNumber}",
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "SalesOrderItems",
-						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"Service": "/MDKApp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

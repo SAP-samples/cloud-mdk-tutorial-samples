@@ -12,8 +12,10 @@
 					"Buttons": [
 						{
 							"OnPress": "/MDK_Annotations/Actions/Products/NavToProducts_List.action",
-							"TextAlignment": "center",
-							"Title": "Products"
+							"Alignment": "Center",
+							"Title": "Products",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					],
 					"_Name": "SectionButtonTable0",

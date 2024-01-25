@@ -1,62 +1,81 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "FormCellContainer0",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateFirstName",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "First Name",
 							"PlaceHolder": "Enter Value",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateLastName",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Last Name",
 							"PlaceHolder": "Enter Value",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreatePhone",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Phone",
 							"PlaceHolder": "Enter Value",
 							"KeyboardType": "Phone",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCreateEmail",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "Email",
 							"PlaceHolder": "Enter Value",
 							"KeyboardType": "Email",
-							"Enabled": true
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
 							"Value": "Enter Date",
 							"_Type": "Control.Type.FormCell.DatePicker",
 							"_Name": "FCCreateDOB",
-							"IsEditable": true,
 							"IsVisible": true,
+							"Separator": true,
 							"Caption": "DOB",
+							"IsEditable": true,
 							"Mode": "Datetime"
 						}
 					],
 					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"_Type": "Section.Type.FormCell",
-					"_Name": "FormCellContainer0SectionFormCell0"
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}
@@ -64,10 +83,11 @@
 	"_Type": "Page",
 	"_Name": "Customers_Create",
 	"Caption": "Create Customer",
+	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "ActionBarItem1",
+				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
 				"Position": "Left",
@@ -76,7 +96,7 @@
 				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
-				"_Name": "ActionBarItem0",
+				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Save",
 				"Position": "Right",
@@ -86,6 +106,5 @@
 			}
 		],
 		"_Name": "ActionBar1"
-	},
-	"PrefersLargeCaption": true
+	}
 }

@@ -30,10 +30,10 @@
 						"Icons": [],
 						"OnPress": "/MDKApp/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Detail.action",
 						"StatusImage": "",
-						"Title": "{PurchaseOrderId}",
+						"Title": "{PurchaseOrderID}",
 						"Footnote": "{NetAmount}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{SupplierId}",
+						"StatusText": "{SupplierID}",
 						"Subhead": "{CurrencyCode}",
 						"SubstatusText": "{TaxAmount}"
 					},
@@ -53,7 +53,7 @@
 					},
 					"Target": {
 						"EntitySet": "PurchaseOrderHeaders",
-						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"Service": "/MDKApp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

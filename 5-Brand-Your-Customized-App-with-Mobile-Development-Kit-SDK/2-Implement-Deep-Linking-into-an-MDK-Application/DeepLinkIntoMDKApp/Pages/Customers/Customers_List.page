@@ -25,7 +25,7 @@
 						"OnPress": "/DeepLinkIntoMDKApp/Actions/Customers/NavToCustomers_Detail.action",
 						"StatusImage": "",
 						"Title": "{FirstName}",
-						"Footnote": "{CustomerId}",
+						"Footnote": "{CustomerID}",
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{DateOfBirth}",
 						"Subhead": "{City}",
@@ -47,7 +47,7 @@
 					},
 					"Target": {
 						"EntitySet": "Customers",
-						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV2.service",
+						"Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"

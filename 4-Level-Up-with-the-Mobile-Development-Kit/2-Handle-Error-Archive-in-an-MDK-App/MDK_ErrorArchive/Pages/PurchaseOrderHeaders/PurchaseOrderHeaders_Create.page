@@ -40,12 +40,13 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "PurchaseOrderId",
-							"_Name": "PurchaseOrderId",
+							"Caption": "PurchaseOrderID",
+							"KeyboardType": "Number",
+							"_Name": "PurchaseOrderID",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "SupplierId",
+							"Caption": "SupplierID",
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"IsEditable": true,
@@ -53,13 +54,13 @@
 							"IsSelectedSectionEnabled": true,
 							"PickerItems": {
 								"DisplayValue": "{SupplierName}",
-								"ReturnValue": "{SupplierId}",
+								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDK_ErrorArchive/Services/SampleServiceV2.service"
+									"Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service"
 								}
 							},
-							"_Name": "SupplierId",
+							"_Name": "SupplierID",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/MDK_Styling/Pages/Products/Products_CreatePurchaseOrderItem.page",
+    "_Type": "Action.Type.Navigation"
+}

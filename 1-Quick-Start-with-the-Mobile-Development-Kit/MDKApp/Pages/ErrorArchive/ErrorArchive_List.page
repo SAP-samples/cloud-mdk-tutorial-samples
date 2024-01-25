@@ -7,7 +7,7 @@
 				{
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"Service": "/MDKApp/Services/SampleServiceV2.service",
+						"Service": "/MDKApp/Services/SampleServiceV4.service",
 						"EntitySet": "ErrorArchive"
 					},
 					"_Name": "SectionObjectTable0",

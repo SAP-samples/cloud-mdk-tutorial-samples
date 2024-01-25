@@ -1,15 +1,25 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"_Type": "Section.Type.ContactCell",
 					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
-						"EntitySet": "Customers",
-						"QueryOptions": "$orderby=LastName"
+						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"EntitySet": "Customers"
 					},
 					"_Name": "SectionContactCell0",
 					"Visible": true,
@@ -19,10 +29,7 @@
 					"ContactCell": {
 						"Visible": true,
 						"ContextMenu": {
-							"PerformFirstActionWithFullSwipe": true,
-							"Items": [],
-							"LeadingItems": [],
-							"TrailingItems": []
+							"PerformFirstActionWithFullSwipe": true
 						},
 						"DetailImage": "",
 						"Headline": "{LastName}",
@@ -51,11 +58,7 @@
 						"BarcodeScanner": true
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
