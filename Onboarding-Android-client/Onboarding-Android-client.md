@@ -33,7 +33,7 @@ Tap **Agree** on `End User License Agreement and Privacy Statement`.
 
     ![MDK](img-8.png)
 
-9. You have the option to enable Biometric Authentication for faster access to app data. Provide your biometric information.
+9. You have the option to enable Biometric Authentication for faster access to app data. Provide your biometric information. Please note that if your client is multi-user enabled, you won't see the screen below.
 
     ![MDK](img-9.png)
 
