@@ -28,7 +28,7 @@
 
     ![MDK](img-7.png)
 
-8.  You have the option to enable Biometric Authentication for faster access to app data. Tap **Enable** if you wish to use this feature. **Please note that if your client is multi-user enabled, you won't see the screen below**.
+8.  You have the option to enable Biometric Authentication for faster access to app data. Tap **Enable** if you wish to use this feature. **Please note that if your MDK client is multi-user enabled, you won't see the screen below**.
 
     ![MDK](img-8.png)
 
