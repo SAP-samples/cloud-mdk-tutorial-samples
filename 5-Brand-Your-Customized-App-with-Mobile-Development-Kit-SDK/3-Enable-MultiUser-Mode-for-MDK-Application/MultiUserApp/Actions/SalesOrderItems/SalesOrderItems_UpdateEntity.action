@@ -1,0 +1,26 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "SalesOrderItems",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DeliveryDate": "#Control:DeliveryDate/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "ItemNumber": "#Control:ItemNumber/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "ProductID": "#Control:ProductID/#SelectedValue",
+        "Quantity": "#Control:Quantity/#Value",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/MultiUserApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/MultiUserApp/Actions/UpdateEntityFailureMessage.action"
+}

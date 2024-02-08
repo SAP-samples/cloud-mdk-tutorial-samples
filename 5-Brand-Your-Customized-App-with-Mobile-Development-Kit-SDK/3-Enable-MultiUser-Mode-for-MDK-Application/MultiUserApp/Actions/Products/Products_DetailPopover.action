@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/MultiUserApp/Actions/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/MultiUserApp/Actions/Products/NavToProducts_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Add SalesOrderItem",
+            "OnPress": "/MultiUserApp/Actions/Products/NavToProducts_CreateSalesOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/MultiUserApp/Rules/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

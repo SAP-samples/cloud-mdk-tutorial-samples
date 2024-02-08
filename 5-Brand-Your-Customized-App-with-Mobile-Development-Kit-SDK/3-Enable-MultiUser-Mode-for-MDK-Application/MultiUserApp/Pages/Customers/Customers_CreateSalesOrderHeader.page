@@ -1,0 +1,99 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MultiUserApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/MultiUserApp/Actions/Customers/Customers_CreateSalesOrderHeader.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create SalesOrderHeader",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Mode": "Datetime",
+							"_Name": "CreatedAt",
+							"Caption": "CreatedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{CustomerID}",
+								"ReturnValue": "{CustomerID}",
+								"Target": {
+									"EntitySet": "Customers",
+									"Service": "/MultiUserApp/Services/SampleServiceV4.service"
+								}
+							},
+							"_Name": "CustomerID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{CustomerID}"
+						},
+						{
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifeCycleStatus",
+							"_Name": "LifeCycleStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifeCycleStatusName",
+							"_Name": "LifeCycleStatusName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOrderID",
+							"KeyboardType": "Number",
+							"_Name": "SalesOrderID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_CreateSalesOrderHeader",
+	"PrefersLargeCaption": true
+}

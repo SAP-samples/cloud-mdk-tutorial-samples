@@ -1,0 +1,30 @@
+{
+    "ParentLink": {
+        "Property": "SalesOrders",
+        "Target": {
+            "EntitySet": "Customers",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/MultiUserApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MultiUserApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CreatedAt": "#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "CustomerID": "#Control:CustomerID/#SelectedValue",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "LifeCycleStatus": "#Control:LifeCycleStatus/#Value",
+        "LifeCycleStatusName": "#Control:LifeCycleStatusName/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#Value",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "SalesOrderHeaders",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

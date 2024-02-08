@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "SalesOrderHeaders",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/MultiUserApp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/MultiUserApp/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/MultiUserApp/Pages/PurchaseOrderItems/PurchaseOrderItems_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

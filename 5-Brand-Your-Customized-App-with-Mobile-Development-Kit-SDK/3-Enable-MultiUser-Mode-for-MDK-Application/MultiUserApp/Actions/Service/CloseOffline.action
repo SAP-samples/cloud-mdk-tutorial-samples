@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/MultiUserApp/Services/SampleServiceV4.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/MultiUserApp/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/MultiUserApp/Actions/Service/CloseOfflineFailureMessage.action"
+}

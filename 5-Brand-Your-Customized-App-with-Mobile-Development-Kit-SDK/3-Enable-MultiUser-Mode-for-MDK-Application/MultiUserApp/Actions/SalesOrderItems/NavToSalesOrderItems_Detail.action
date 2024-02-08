@@ -1,0 +1,4 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "PageToOpen": "/MultiUserApp/Pages/SalesOrderItems/SalesOrderItems_Detail.page"
+}

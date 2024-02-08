@@ -1,0 +1,173 @@
+{
+	"Caption": "Customer Detail",
+	"DesignTimeTarget": {
+		"Service": "/MultiUserApp/Services/SampleServiceV4.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MultiUserApp/Actions/Customers/NavToCustomers_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/MultiUserApp/Actions/Customers/Customers_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{FirstName}",
+						"Subhead": "{City}",
+						"BodyText": "",
+						"Footnote": "{CustomerID}",
+						"Description": "{Country}",
+						"StatusText": "{DateOfBirth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{EmailAddress}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "City",
+							"Value": "{City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
+						},
+						{
+							"KeyName": "DateOfBirth",
+							"Value": "{DateOfBirth}"
+						},
+						{
+							"KeyName": "EmailAddress",
+							"Value": "{EmailAddress}"
+						},
+						{
+							"KeyName": "FirstName",
+							"Value": "{FirstName}"
+						},
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}"
+						},
+						{
+							"KeyName": "LastName",
+							"Value": "{LastName}"
+						},
+						{
+							"KeyName": "PhoneNumber",
+							"Value": "{PhoneNumber}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Address"
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{Address/HouseNumber}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Address/Street}"
+						},
+						{
+							"KeyName": "City",
+							"Value": "{Address/City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Address/Country}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{Address/PostalCode}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValueAddress",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrders"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CurrencyCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LifeCycleStatusName}",
+						"Footnote": "{CustomerID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{GrossAmount}",
+						"Subhead": "{CreatedAt}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"OnPress": "/MultiUserApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"Service": "/MultiUserApp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Detail",
+	"PrefersLargeCaption": true
+}

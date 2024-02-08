@@ -1,0 +1,26 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/MultiUserApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MultiUserApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "CustomerID": "#Control:CustomerID/#Value",
+        "DateOfBirth": "#Control:DateOfBirth/#Value",
+        "EmailAddress": "#Control:EmailAddress/#Value",
+        "FirstName": "#Control:FirstName/#Value",
+        "HouseNumber": "#Control:HouseNumber/#Value",
+        "LastName": "#Control:LastName/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value"
+    },
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

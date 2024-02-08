@@ -1,0 +1,27 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Customers",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "CustomerID": "#Control:CustomerID/#Value",
+        "DateOfBirth": "#Control:DateOfBirth/#Value",
+        "EmailAddress": "#Control:EmailAddress/#Value",
+        "FirstName": "#Control:FirstName/#Value",
+        "HouseNumber": "#Control:HouseNumber/#Value",
+        "LastName": "#Control:LastName/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/MultiUserApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/MultiUserApp/Actions/UpdateEntityFailureMessage.action"
+}

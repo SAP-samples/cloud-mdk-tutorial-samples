@@ -1,0 +1,132 @@
+{
+	"Caption": "SalesOrderHeader Detail",
+	"DesignTimeTarget": {
+		"Service": "/MultiUserApp/Services/SampleServiceV4.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MultiUserApp/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/MultiUserApp/Actions/SalesOrderHeaders/SalesOrderHeaders_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"BodyText": "",
+						"Footnote": "{CustomerID}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{LifeCycleStatus}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CreatedAt",
+							"Value": "{CreatedAt}"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "LifeCycleStatus",
+							"Value": "{LifeCycleStatus}"
+						},
+						{
+							"KeyName": "LifeCycleStatusName",
+							"Value": "{LifeCycleStatusName}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Items"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/MultiUserApp/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/Items",
+						"Service": "/MultiUserApp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail",
+	"PrefersLargeCaption": true
+}

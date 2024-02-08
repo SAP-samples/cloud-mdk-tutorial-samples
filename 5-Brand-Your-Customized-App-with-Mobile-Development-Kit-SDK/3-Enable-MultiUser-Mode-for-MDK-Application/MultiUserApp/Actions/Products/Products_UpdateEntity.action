@@ -1,0 +1,33 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/MultiUserApp/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DimensionDepth": "#Control:DimensionDepth/#Value",
+        "DimensionHeight": "#Control:DimensionHeight/#Value",
+        "DimensionUnit": "#Control:DimensionUnit/#Value",
+        "DimensionWidth": "#Control:DimensionWidth/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "PictureUrl": "#Control:PictureUrl/#Value",
+        "Price": "#Control:Price/#Value",
+        "ProductID": "#Control:ProductID/#Value",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
+        "Weight": "#Control:Weight/#Value",
+        "WeightUnit": "#Control:WeightUnit/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/MultiUserApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/MultiUserApp/Actions/UpdateEntityFailureMessage.action"
+}

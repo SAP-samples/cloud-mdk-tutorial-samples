@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/MultiUserApp/Pages/Customers/Customers_CreateSalesOrderHeader.page",
+    "_Type": "Action.Type.Navigation"
+}
