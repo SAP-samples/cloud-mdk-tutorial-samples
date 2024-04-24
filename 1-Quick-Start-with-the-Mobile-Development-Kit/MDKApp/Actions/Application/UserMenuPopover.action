@@ -2,7 +2,7 @@
     "PopoverItems": [{
             "Enabled": true,
             "Icon": "sap-icon://synchronize",
-            "OnPress": "/MDKApp/Actions/Service/SyncStartedMessage.action",
+            "OnPress": "/MDKApp/Actions/SampleServiceV4/Service/SyncStartedMessage.action",
             "Title": "Sync Changes",
             "Visible": "$(PLT,true,true,false)"
         },
@@ -32,7 +32,7 @@
             "Icon": "sap-icon://reset",
             "OnPress": "/MDKApp/Actions/Application/ResetMessage.action",
             "Title": "Reset",
-            "Visible": "$(PLT,true,true,false)"
+            "Visible": true
         },
         {
             "Enabled": true,

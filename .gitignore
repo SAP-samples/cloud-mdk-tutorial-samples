@@ -1,2 +1,7 @@
-.DS_Store
-Onboarding-Android-client/.vscode/settings.json
+# Git Ignore for the MDK Tutorial projects
+**/.DS_Store
+**/jsconfig.json
+**/IClientAPI.d.ts
+**/.vscode/*
+**/.build/*
+**/.project.json

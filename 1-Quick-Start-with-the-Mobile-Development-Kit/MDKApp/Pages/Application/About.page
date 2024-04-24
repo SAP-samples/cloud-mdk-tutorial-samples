@@ -44,7 +44,7 @@
                         "Value": "/MDKApp/Rules/Application/GetClientVersion.js",
                         "_Name": "KeyValue4",
                         "KeyName": "Client Version",
-                        "Visible": true
+                        "Visible": "$(PLT,true,true,false)"
                     },
                     {
                         "Value": "/MDKApp/Rules/Application/GetClientSupportVersions.js",
