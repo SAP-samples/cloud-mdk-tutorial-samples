@@ -29,5 +29,5 @@ For any issue you encounter with
 - the _resources_ in this repository, please create a new `Issue` in the [Issues](https://github.com/SAP/cloud-mdk-tutorial-samples/issues) section of this repository.
 - the _tutorials_ associated with them, please create a new `Issue` by clicking on the **Provide Feedback** option available in the tutorial page.
 
-- In addition, registered users can log-in and submit their question in the **SAP Community** by following [this link](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/73555000100800001081/board-id/technology-questions) .
-  Please select the **Primary Tag** - `mobile development kit client`.
+- In addition, registered users can log-in and submit their question in the **SAP Community** by following [this link](https://community.sap.com/t5/forums/postpage/choose-node/true/product-id/73555000100800001081/board-id/technology-questions).
+  

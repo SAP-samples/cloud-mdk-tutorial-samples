@@ -1,0 +1,26 @@
+{
+    "Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/DemoSampleApp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/DemoSampleApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}
