@@ -1,0 +1,72 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader_SampleServiceV4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "SampleServiceV4"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"OnPress": "/MDK_ErrorArchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
+							"Alignment": "Center",
+							"Title": "PurchaseOrderHeaders",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						},
+						{
+							"OnPress": "/MDK_ErrorArchive/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
+							"Alignment": "Center",
+							"Title": "PurchaseOrderItems",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						},
+						{
+							"OnPress": "/MDK_ErrorArchive/Actions/SampleServiceV4/Suppliers/NavToSuppliers_List.action",
+							"Alignment": "Center",
+							"Title": "Suppliers",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						}
+					],
+					"_Name": "SectionButtonTable_SampleServiceV4",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDK_ErrorArchive/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

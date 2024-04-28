@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/MDK_ErrorArchive/Pages/SampleServiceV4_Suppliers/Suppliers_CreateProduct.page",
+    "_Type": "Action.Type.Navigation"
+}

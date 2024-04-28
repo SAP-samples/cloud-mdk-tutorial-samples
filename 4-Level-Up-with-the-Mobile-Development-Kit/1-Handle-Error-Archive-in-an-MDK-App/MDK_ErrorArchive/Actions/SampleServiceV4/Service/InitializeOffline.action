@@ -1,0 +1,23 @@
+{
+    "Service": "/MDK_ErrorArchive/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/MDK_ErrorArchive/Actions/SampleServiceV4/Service/InitializeOfflineFailureMessage.action"
+}
