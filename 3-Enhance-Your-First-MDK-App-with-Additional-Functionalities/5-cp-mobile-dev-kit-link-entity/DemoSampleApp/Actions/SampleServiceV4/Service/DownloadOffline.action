@@ -17,12 +17,10 @@
             "Query": "SalesOrderItems"
         }
     ],
-    "_Type": "Action.Type.ODataService.Initialize",
-    "ShowActivityIndicator": true,
-    "ActivityIndicatorText": "Downloading...",
+    "_Type": "Action.Type.OfflineOData.Download",
     "ActionResult": {
-        "_Name": "init"
+        "_Name": "sync"
     },
-    "OnSuccess": "/DemoSampleApp/Actions/Service/InitializeOfflineSuccessMessage.action",
-    "OnFailure": "/DemoSampleApp/Actions/Service/InitializeOfflineFailureMessage.action"
+    "OnFailure": "/DemoSampleApp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/DemoSampleApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
 }

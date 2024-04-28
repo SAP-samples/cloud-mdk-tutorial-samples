@@ -9,13 +9,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
@@ -28,16 +21,16 @@
 						"Caption": "No Orders Found",
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						},
-						"Title": "{SalesOrderID}",
+						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
-						"Description": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
 						"PreserveIconStackSpacing": false,
@@ -58,7 +51,13 @@
 								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
 					},
 					"Search": {
 						"Enabled": true,

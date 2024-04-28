@@ -72,21 +72,14 @@
 					}
 				},
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
-						"_Name": "SectionHeader0",
+						"_Name": "SectionHeader2",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter0",
+						"_Name": "SectionFooter1",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "DisclosureIndicator",
@@ -100,11 +93,6 @@
 						},
 						"UseBottomPadding": false
 					},
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No Customer Orders Found",
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -112,12 +100,29 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Customer Orders Found",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"Title": "{SalesOrderID}",
-						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-						"SubstatusText": "{CurrencyCode}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
@@ -136,13 +141,7 @@
 								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,

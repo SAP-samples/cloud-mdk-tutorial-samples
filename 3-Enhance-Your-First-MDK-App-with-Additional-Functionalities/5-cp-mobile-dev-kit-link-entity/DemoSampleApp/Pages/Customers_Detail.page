@@ -73,13 +73,13 @@
 				},
 				{
 					"Header": {
-						"_Name": "SectionHeader0",
+						"_Name": "SectionHeader2",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter0",
+						"_Name": "SectionFooter1",
 						"Caption": "See All",
 						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "DisclosureIndicator",
@@ -122,11 +122,10 @@
 							"LeadingItems": [],
 							"TrailingItems": []
 						},
-						"Title": "{SalesOrderID}",
-						"Subhead": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
+						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-						"SubstatusText": "{CurrencyCode}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DisclosureIndicator",
 						"Tags": [],
@@ -192,23 +191,26 @@
 		],
 		"_Name": "ActionBar1"
 	},
-	"ToolBar": {
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
 		"Items": [
 			{
-				"_Type": "Control.Type.ToolbarItem",
+				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
-				"Caption": "Create Order",
-				"Enabled": true,
 				"Visible": true,
-				"Clickable": true,
-				"Style": "",
+				"Title": "Create Order",
 				"OnPress": {
 					"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
 					"Properties": {
 						"PageToOpen": "/DemoSampleApp/Pages/SalesOrderHeaders_Create.page",
 						"ModalPage": true
 					}
-				}
+				},
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
 			}
 		]
 	}

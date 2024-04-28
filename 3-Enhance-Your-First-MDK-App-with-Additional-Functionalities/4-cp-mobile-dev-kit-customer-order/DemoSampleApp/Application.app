@@ -2,12 +2,10 @@
 	"_Name": "DemoSampleApp",
 	"Version": "/DemoSampleApp/Globals/Application/AppDefinition_Version.global",
 	"MainPage": "/DemoSampleApp/Pages/Main.page",
-	"OnLaunch": [
-		"/DemoSampleApp/Actions/Service/InitializeOffline.action"
-	],
+	"OnLaunch": "/DemoSampleApp/Rules/Service/Initialize.js",
 	"OnWillUpdate": "/DemoSampleApp/Rules/Application/OnWillUpdate.js",
-	"OnDidUpdate": "/DemoSampleApp/Actions/Service/InitializeOffline.action",
+	"OnDidUpdate": "/DemoSampleApp/Rules/Service/Initialize.js",
 	"Styles": "/DemoSampleApp/Styles/Styles.less",
 	"Localization": "/DemoSampleApp/i18n/i18n.properties",
-	"_SchemaVersion": "23.12"
+	"_SchemaVersion": "24.4"
 }
