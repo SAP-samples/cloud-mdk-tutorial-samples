@@ -9,18 +9,24 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
 						"HeaderSeparator": true,
 						"FooterSeparator": true,
 						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable_SampleServiceV4",
+					"Header": {
+						"_Name": "SectionHeader_SampleServiceV4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "SampleServiceV4"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
 					},
 					"Buttons": [
 						{
@@ -33,7 +39,7 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/MDK_i18n_l10n/Actions/Customers/NavToCustomers_List.action"
+							"OnPress": "/MDK_i18n_l10n/Actions/SampleServiceV4/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Name": "SectionButton1",
@@ -45,7 +51,7 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/MDK_i18n_l10n/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
+							"OnPress": "/MDK_i18n_l10n/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_List.action"
 						}
 					],
 					"Layout": {

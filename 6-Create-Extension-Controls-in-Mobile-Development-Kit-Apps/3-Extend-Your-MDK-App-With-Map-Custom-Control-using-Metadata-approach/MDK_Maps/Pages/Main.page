@@ -9,16 +9,29 @@
 			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
+					"Header": {
+						"_Name": "SectionHeader_SampleServiceV4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "SampleServiceV4"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Buttons": [
 						{
-							"OnPress": "/MDK_Maps/Actions/Customers/NavToCustomers_List.action",
+							"OnPress": "/MDK_Maps/Actions/SampleServiceV4/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
 							"Title": "Customers",
 							"ButtonType": "Text",
 							"Semantic": "Tint"
 						}
 					],
-					"_Name": "SectionButtonTable0",
+					"_Name": "SectionButtonTable_SampleServiceV4",
 					"_Type": "Section.Type.ButtonTable"
 				}
 			]

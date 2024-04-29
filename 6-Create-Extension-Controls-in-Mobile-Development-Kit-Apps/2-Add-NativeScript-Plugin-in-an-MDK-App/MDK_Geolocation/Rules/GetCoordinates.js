@@ -1,11 +1,11 @@
 /**
 * Describe this function...
-* @param {IClientAPI} clientAPI
+* @param {IClientAPI} context
 */
 import * as geolocation from "@nativescript/geolocation";
 import { CoreTypes } from "@nativescript/core";
-export default async function GetCoordinates(clientAPI) {
-    var logger = clientAPI.getLogger();
+export default async function GetCoordinates(context) {
+    var logger = context.getLogger();
     console.log("Current Log Level: " + logger.getLevel());
     // check if geolocation is not enabled
     var locationIsEnabled = await geolocation.isEnabled();

@@ -1,10 +1,10 @@
 /**
 * Describe this function...
-* @param {IClientAPI} clientAPI
+* @param {IClientAPI} context
 */
-export default function SetExtensionValue(clientAPI) {
+export default function SetExtensionValue(context) {
     console.log("In SetExtensionValue");
-    let srcValue = clientAPI.getValue();
-    let targetCtrl = clientAPI.evaluateTargetPath("#Page:Main/#Control:MyExtensionControlName");
+    let srcValue = context.getValue();
+    let targetCtrl = context.evaluateTargetPath("#Page:Main/#Control:MyExtensionControlName");
     targetCtrl.setValue(srcValue);
 }

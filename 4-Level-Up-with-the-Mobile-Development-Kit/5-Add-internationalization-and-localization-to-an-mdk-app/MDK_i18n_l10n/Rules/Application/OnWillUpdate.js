@@ -5,7 +5,7 @@
 export default function OnWillUpdate(clientAPI) {
     return clientAPI.executeAction('/MDK_i18n_l10n/Actions/Application/OnWillUpdate.action').then((result) => {
         if (result.data) {
-            return clientAPI.executeAction('/MDK_i18n_l10n/Actions/Service/CloseOffline.action').then(
+            return clientAPI.executeAction('/MDK_i18n_l10n/Actions/SampleServiceV4/Service/CloseOffline.action').then(
                 (success) => Promise.resolve(success),
                 (failure) => Promise.reject('Offline Odata Close Failed ' + failure));
         } else {

@@ -1,0 +1,9 @@
+{
+    "Service": "/MDK_Styling/Services/SampleServiceV4.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/MDK_Styling/Actions/SampleServiceV4/Service/DownloadStartedMessage.action",
+    "OnFailure": "/MDK_Styling/Actions/SampleServiceV4/Service/SyncFailureMessage.action"
+}

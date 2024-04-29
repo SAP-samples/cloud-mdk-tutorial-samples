@@ -1,0 +1,9 @@
+{
+    "Service": "/MDK_Maps/Services/SampleServiceV4.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/MDK_Maps/Actions/SampleServiceV4/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}
