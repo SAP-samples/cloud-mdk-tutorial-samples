@@ -1,9 +1,0 @@
-{
-    "Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
-    "_Type": "Action.Type.OfflineOData.Upload",
-    "ActionResult": {
-        "_Name": "sync"
-    },
-    "OnSuccess": "/DeepLinkIntoMDKApp/Actions/Service/DownloadStartedMessage.action",
-    "OnFailure": "/DeepLinkIntoMDKApp/Actions/Service/SyncFailureMessage.action"
-}

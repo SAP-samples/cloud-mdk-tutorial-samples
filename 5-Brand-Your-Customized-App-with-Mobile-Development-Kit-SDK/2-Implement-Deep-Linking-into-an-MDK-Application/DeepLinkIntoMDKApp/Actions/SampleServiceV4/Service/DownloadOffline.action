@@ -1,0 +1,18 @@
+{
+    "Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/DeepLinkIntoMDKApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

@@ -40,13 +40,13 @@ function openProductByID(context, id) {
     return context.read('/DeepLinkIntoMDKApp/Services/SampleServiceV4.service', `Products(${id})`, [], null).then(function (result) {
         if (result.length) {
             context.getPageProxy().setActionBinding(result.getItem(0));
-            return context.getPageProxy().executeAction('/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_Detail.action');
+            return context.getPageProxy().executeAction('/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Products/NavToProducts_Detail.action');
         }
     });
 }
 
 function openProductListWithFilter(context, parametersObj) {
-    let pageData = context.getPageProxy().getPageDefinition('/DeepLinkIntoMDKApp/Pages/Products/Products_List.page');
+    let pageData = context.getPageProxy().getPageDefinition('/DeepLinkIntoMDKApp/Pages/SampleServiceV4_Products/Products_List.page');
     var filterQO = '$filter=';
     for (var key in parametersObj) {
         var value = parametersObj[key];
@@ -58,7 +58,7 @@ function openProductListWithFilter(context, parametersObj) {
     context.getLogger().log(`${filterQO}`,'Debug');
     pageData.Controls[0].Sections[0].Target.QueryOptions = filterQO;
     return context.getPageProxy().executeAction({
-        "Name": '/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_List.action',
+        "Name": '/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Products/NavToProducts_List.action',
         "Properties": {
             "PageMetadata": pageData
         }

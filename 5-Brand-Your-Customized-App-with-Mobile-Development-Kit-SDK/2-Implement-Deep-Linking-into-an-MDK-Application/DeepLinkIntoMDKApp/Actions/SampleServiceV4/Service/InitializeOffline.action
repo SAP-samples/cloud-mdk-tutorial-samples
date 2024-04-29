@@ -1,0 +1,19 @@
+{
+    "Service": "/DeepLinkIntoMDKApp/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Service/InitializeOfflineFailureMessage.action"
+}

@@ -9,23 +9,36 @@
 			"_Type": "Control.Type.SectionedTable",
 			"Sections": [
 				{
+					"Header": {
+						"_Name": "SectionHeader_SampleServiceV4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "SampleServiceV4"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Buttons": [
 						{
-							"OnPress": "/DeepLinkIntoMDKApp/Actions/Customers/NavToCustomers_List.action",
+							"OnPress": "/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
 							"Title": "Customers",
 							"ButtonType": "Text",
 							"Semantic": "Tint"
 						},
 						{
-							"OnPress": "/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_List.action",
+							"OnPress": "/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Products/NavToProducts_List.action",
 							"Alignment": "Center",
 							"Title": "Products",
 							"ButtonType": "Text",
 							"Semantic": "Tint"
 						}
 					],
-					"_Name": "SectionButtonTable0",
+					"_Name": "SectionButtonTable_SampleServiceV4",
 					"_Type": "Section.Type.ButtonTable"
 				}
 			]

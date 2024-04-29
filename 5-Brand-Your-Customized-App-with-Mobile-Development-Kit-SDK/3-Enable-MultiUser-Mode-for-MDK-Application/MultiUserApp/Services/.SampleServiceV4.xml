@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ESPM">
             <EnumType Name="Gender" UnderlyingType="Edm.Int32">
@@ -15,7 +18,9 @@
                 </Key>
                 <Property MaxLength="40" Name="City" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="3" Name="Country" Nullable="true" Type="Edm.String"/>
-                <Property MaxLength="10" Name="CustomerID" Nullable="false" Type="Edm.Int64"/>
+                <Property MaxLength="10" Name="CustomerID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property Name="DateOfBirth" Nullable="false" Type="Edm.Date"/>
                 <Property MaxLength="255" Name="EmailAddress" Nullable="true" Type="Edm.String"/>
                 <Property Name="Gender" Nullable="true" Type="ESPM.Gender"/>
@@ -48,7 +53,9 @@
                 <Property MaxLength="30" Name="PhoneNumber" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="10" Name="PostalCode" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="60" Name="Street" Nullable="true" Type="Edm.String"/>
-                <Property MaxLength="10" Name="SupplierID" Nullable="false" Type="Edm.Int64"/>
+                <Property MaxLength="10" Name="SupplierID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property MaxLength="80" Name="SupplierName" Nullable="true" Type="Edm.String"/>
                 <Property Name="Address" Nullable="true" Type="ESPM.Address"/>
                 <NavigationProperty Name="Products" Partner="Supplier" Type="Collection(ESPM.Product)">
@@ -73,7 +80,9 @@
                 <Property MaxLength="80" Name="Name" Nullable="false" Type="Edm.String"/>
                 <Property MaxLength="255" Name="PictureUrl" Nullable="true" Type="Edm.String"/>
                 <Property Name="Price" Nullable="true" Precision="23" Scale="3" Type="Edm.Decimal"/>
-                <Property MaxLength="10" Name="ProductID" Nullable="false" Type="Edm.Int64"/>
+                <Property MaxLength="10" Name="ProductID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property MaxLength="3" Name="QuantityUnit" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="255" Name="ShortDescription" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="10" Name="SupplierID" Nullable="false" Type="Edm.Int64"/>
@@ -109,7 +118,9 @@
                 <Key>
                     <PropertyRef Name="ID"/>
                 </Key>
-                <Property Name="ID" Nullable="false" Type="Edm.Int64"/>
+                <Property Name="ID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property MaxLength="2" Name="Language" Nullable="true" Type="Edm.String"/>
                 <Property MaxLength="255" Name="LongDescription" Nullable="true" Type="Edm.String"/>
                 <Property Name="Name" Type="Edm.String"/>
@@ -123,7 +134,9 @@
                 <Property MaxLength="5" Name="CurrencyCode" Nullable="true" Type="Edm.String"/>
                 <Property Name="GrossAmount" Nullable="true" Precision="15" Scale="3" Type="Edm.Decimal"/>
                 <Property Name="NetAmount" Nullable="true" Precision="15" Scale="3" Type="Edm.Decimal"/>
-                <Property MaxLength="10" Name="PurchaseOrderID" Nullable="false" Type="Edm.Int64"/>
+                <Property MaxLength="10" Name="PurchaseOrderID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property MaxLength="10" Name="SupplierID" Nullable="false" Type="Edm.Int64"/>
                 <Property Name="TaxAmount" Nullable="true" Precision="15" Scale="3" Type="Edm.Decimal"/>
                 <NavigationProperty Name="Supplier" Nullable="false" Partner="PurchaseOrders" Type="ESPM.Supplier">
@@ -165,7 +178,9 @@
                 <Property MaxLength="1" Name="LifeCycleStatus" Nullable="false" Type="Edm.String"/>
                 <Property MaxLength="255" Name="LifeCycleStatusName" Nullable="false" Type="Edm.String"/>
                 <Property Name="NetAmount" Nullable="true" Precision="15" Scale="3" Type="Edm.Decimal"/>
-                <Property MaxLength="10" Name="SalesOrderID" Nullable="false" Type="Edm.Int64"/>
+                <Property MaxLength="10" Name="SalesOrderID" Nullable="false" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.Computed"/>
+                </Property>
                 <Property Name="TaxAmount" Nullable="true" Precision="15" Scale="3" Type="Edm.Decimal"/>
                 <NavigationProperty Name="Customer" Nullable="false" Partner="SalesOrders" Type="ESPM.Customer">
                     <ReferentialConstraint Property="CustomerID" ReferencedProperty="CustomerID"/>
