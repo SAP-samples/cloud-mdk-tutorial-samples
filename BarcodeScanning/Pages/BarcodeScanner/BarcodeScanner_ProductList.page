@@ -1,0 +1,107 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{Name}",
+						"Subhead": "{CategoryName}",
+						"StatusText": "$(C,{Price},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/BarcodeScanning/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_Detail.action",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Product Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"HighlightSelectedItem": false
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BarcodeScanner_ProductList",
+	"Caption": "Products",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Camera",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": {
+					"Name": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action",
+					"Properties": {
+						"OnSuccess": "/BarcodeScanning/Rules/BarcodeScanner/BarcodeResult_OpenProductDetail.js"
+					}
+				}
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

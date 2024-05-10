@@ -1,0 +1,79 @@
+{
+	"Caption": "Update Product Detail",
+	"DesignTimeTarget": {
+		"Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BarcodeScanning/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/Products_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [{
+		"Sections": [{
+			"_Type": "Section.Type.FormCell",
+			"_Name": "SectionFormCell0",
+			"Visible": true,
+			"Controls": [{
+					"Caption": "Name",
+					"_Name": "Name",
+					"Value": "{Name}",
+					"_Type": "Control.Type.FormCell.SimpleProperty"
+				},
+				{
+					"Caption": "Product Description",
+					"_Name": "LongDescription",
+					"Value": "{LongDescription}",
+					"_Type": "Control.Type.FormCell.SimpleProperty"
+				},
+				{
+					"Caption": "Category",
+					"_Name": "Category",
+					"Value": "{Category}",
+					"_Type": "Control.Type.FormCell.SimpleProperty",
+					"AlternateInput": "Barcode"
+				},
+
+				{
+					"Caption": "Price",
+					"_Name": "Price",
+					"Value": "{Price}",
+					"KeyboardType": "Number",
+					"_Type": "Control.Type.FormCell.SimpleProperty"
+				},
+				{
+					"Caption": "SupplierID",
+					"AllowMultipleSelection": false,
+					"AllowEmptySelection": true,
+					"IsPickerDismissedOnSelection": true,
+					"IsSelectedSectionEnabled": true,
+					"PickerItems": {
+						"DisplayValue": "{SupplierName}",
+						"ReturnValue": "{SupplierID}",
+						"Target": {
+							"EntitySet": "Suppliers",
+							"Service": "/BarcodeScanning/Services/SampleServiceV4.service"
+						}
+					},
+					"Value": "{SupplierID}",
+					"_Name": "SupplierID",
+					"_Type": "Control.Type.FormCell.ListPicker"
+				}
+			]
+		}],
+		"_Name": "SectionedTable0",
+		"_Type": "Control.Type.SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_Edit",
+	"PrefersLargeCaption": true
+}

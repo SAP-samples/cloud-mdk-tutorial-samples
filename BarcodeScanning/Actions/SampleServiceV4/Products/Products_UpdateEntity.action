@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Name": "#Control:Name/#Value",
+        "Category": "#Control:Category/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Price": "#Control:Price/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BarcodeScanning/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BarcodeScanning/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,5 +1,0 @@
-{
-	"_Type": "Action.Type.OfflineOData.Close",
-	"Service": "/BarcodeScanning/Services/sample.service",
-	"Force": true
-}

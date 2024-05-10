@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/BarcodeScanning/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/BarcodeScanning/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

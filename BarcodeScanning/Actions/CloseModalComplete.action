@@ -1,5 +1,0 @@
-{
-	"CancelPendingActions": false,
-	"DismissModal": "Action.Type.ClosePage.Completed",
-	"_Type": "Action.Type.ClosePage"
-}

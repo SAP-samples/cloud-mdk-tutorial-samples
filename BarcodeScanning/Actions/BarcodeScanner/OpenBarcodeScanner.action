@@ -3,7 +3,13 @@
 	"ActionResult": {
 		"_Name": "BarcodeScanner"
 	},
-	"OnFailure": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScannerFailure.action",
-	"OnSuccess": "/BarcodeScanning/Rules/BarcodeScanner/BarcodeScanResult.js",
-	"_OnSuccess": "/BarcodeScanning/Rules/BarcodeScanner/ShowBarcodeScanningResult.js"
+	"OnFailure": {
+		"Name": "/BarcodeScanning/Actions/GenericToastMessage.action",
+		"Properties": {
+			"Message": "Barcode scanning failed",
+			"NumberOfLines": 2,
+			"Duration": 3
+		}
+	},
+	"OnSuccess": "/BarcodeScanning/Rules/BarcodeScanner/BarcodeScanResult.js"
 }

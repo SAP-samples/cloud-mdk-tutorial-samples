@@ -1,0 +1,25 @@
+{
+	"Caption": "BarcodeScanner",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"FioriToolbar": {
+		"_Name": "FioriToolbar",
+		"_Type": "Control.Type.FioriToolbar",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": true,
+				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action",
+				"Enabled": true
+			}
+		]
+	},
+	"_Name": "BarcodeScanner",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

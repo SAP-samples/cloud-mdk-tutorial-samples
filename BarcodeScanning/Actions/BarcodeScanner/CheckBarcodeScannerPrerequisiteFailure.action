@@ -1,8 +1,0 @@
-{
-	"Animated": true,
-	"Duration": 3,
-	"IsIconHidden": false,
-	"Message": "Check Camera for Barcode Scanner failed",
-	"NumberOfLines": 2,
-	"_Type": "Action.Type.ToastMessage"
-}

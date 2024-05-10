@@ -1,0 +1,44 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FormCellNote0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "Scanned value is"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BarcodeScannerResult",
+	"Caption": "Barcode Scanner Action",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"SystemItem": "Camera",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	},
+	"PrefersLargeCaption": true
+}

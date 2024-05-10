@@ -1,6 +1,7 @@
 {
-	"Animated": true,
-	"Duration": 5,
-	"Message": "Message Text",
-	"_Type": "Action.Type.BannerMessage"
+    "_Type": "Action.Type.BannerMessage",
+    "ActionResult": {
+        "_Name": "GenericBannerMessage"
+    },
+    "Message": "Message"
 }
