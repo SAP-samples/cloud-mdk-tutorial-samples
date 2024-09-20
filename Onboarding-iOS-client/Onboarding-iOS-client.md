@@ -4,7 +4,7 @@
 
     ![MDK](img-1.png)
 
-2. Tap **Scan** to start the device camera for scanning the onboarding QR code. Please note, if you already have the MDK client on-boarded, tap *Get Started* and *Scan new QR code* to continue.
+2. Tap **Use QR Code Scan** to start the device camera for scanning the onboarding QR code. Please note, if you already have the MDK client on-boarded, tap *Get Started* and *Scan new QR code* to continue.
 
     ![MDK](img-2.png)
 
@@ -16,7 +16,7 @@
 
     ![MDK](img-4.png)
 
-5. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+5. Enter your password to login to SAP Business Technology Platform (BTP). If you see an Universal ID screen, enter your Universal ID password.
 
     ![MDK](img-5.png)
 

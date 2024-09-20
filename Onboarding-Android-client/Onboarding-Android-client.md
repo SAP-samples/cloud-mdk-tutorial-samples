@@ -21,7 +21,7 @@ Tap **Agree** on `End User License Agreement and Privacy Statement`.
 
     ![MDK](img-5.png)
 
-6. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+6. Enter your password to login to SAP Business Technology Platform (BTP). If you see an Universal ID screen, enter your Universal ID password.
 
     ![MDK](img-6.png)
 
