@@ -23,6 +23,6 @@ export default function ResetAppSettingsAndLogout(clientAPI) {
         logger.log(`ERROR: AppSettings cleanup failure - ${err}`, 'ERROR');
     } finally {
         // Logout 
-        return clientAPI.getPageProxy().executeAction('/MDKApp/Actions/Application/Reset.action');
+        return clientAPI.getPageProxy().executeAction('/mdkapp/Actions/Application/Reset.action');
     }
 }

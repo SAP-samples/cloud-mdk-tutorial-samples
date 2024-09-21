@@ -1,19 +1,19 @@
 {
-	"Caption": "SalesOrderItem Detail",
+	"Caption": "$(L,SalesOrderItem_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderItems",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Edit.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Edit.action",
 				"Position": "Right",
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Rules/SampleServiceV4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js",
+				"OnPress": "/mdkapp/Rules/SampleServiceV4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js",
 				"Position": "Right",
 				"SystemItem": "Trash"
 			}

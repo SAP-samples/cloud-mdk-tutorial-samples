@@ -3,6 +3,6 @@
     "ActionResult": {
         "_Name": "AppUpdate"
     },
-    "OnFailure": "/DemoSampleApp/Rules/Application/AppUpdateFailure.js",
-    "OnSuccess": "/DemoSampleApp/Rules/Application/AppUpdateSuccess.js"
+    "OnFailure": "/demosampleapp/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/demosampleapp/Rules/Application/AppUpdateSuccess.js"
 }

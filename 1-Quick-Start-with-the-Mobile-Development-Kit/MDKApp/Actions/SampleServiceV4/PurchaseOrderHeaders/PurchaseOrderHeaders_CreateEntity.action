@@ -1,7 +1,7 @@
 {
     "CreateLinks": [],
-    "OnFailure": "/MDKApp/Actions/CreateEntityFailureMessage.action",
-    "OnSuccess": "/MDKApp/Actions/CreateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mdkapp/Actions/CreateEntitySuccessMessage.action",
     "Properties": {
         "CurrencyCode": "#Control:CurrencyCode/#Value",
         "GrossAmount": "#Control:GrossAmount/#Value",
@@ -12,7 +12,7 @@
     },
     "Target": {
         "EntitySet": "PurchaseOrderHeaders",
-        "Service": "/MDKApp/Services/SampleServiceV4.service"
+        "Service": "/mdkapp/Services/SampleServiceV4.service"
     },
     "ActionResult": {
         "_Name": "create"

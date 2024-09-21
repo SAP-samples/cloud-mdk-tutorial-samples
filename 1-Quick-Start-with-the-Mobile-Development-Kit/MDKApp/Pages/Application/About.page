@@ -16,13 +16,13 @@
                         "Visible": true
                     },
                     {
-                        "Value": "/MDKApp/Globals/Application/ApplicationName.global",
+                        "Value": "/mdkapp/Globals/Application/ApplicationName.global",
                         "_Name": "KeyValue2",
                         "KeyName": "Application",
                         "Visible": true
                     },
                     {
-                        "Value": "/MDKApp/Globals/Application/AppDefinition_Version.global",
+                        "Value": "/mdkapp/Globals/Application/AppDefinition_Version.global",
                         "_Name": "KeyValue3",
                         "KeyName": "Application Metadata Version",
                         "Visible": true
@@ -41,13 +41,13 @@
             },
             {
                 "KeyAndValues": [{
-                        "Value": "/MDKApp/Rules/Application/GetClientVersion.js",
+                        "Value": "/mdkapp/Rules/Application/GetClientVersion.js",
                         "_Name": "KeyValue4",
                         "KeyName": "Client Version",
                         "Visible": "$(PLT,true,true,false)"
                     },
                     {
-                        "Value": "/MDKApp/Rules/Application/GetClientSupportVersions.js",
+                        "Value": "/mdkapp/Rules/Application/GetClientSupportVersions.js",
                         "_Name": "KeyValue5",
                         "KeyName": "Client Support Versions",
                         "Visible": true
@@ -78,7 +78,7 @@
             "Position": "Right",
             "IsIconCircular": false,
             "Visible": true,
-            "OnPress": "/MDKApp/Actions/CloseModalPage_Complete.action"
+            "OnPress": "/mdkapp/Actions/CloseModalPage_Complete.action"
         }],
         "_Name": "ActionBar1"
     }

@@ -1,19 +1,19 @@
 {
-	"Caption": "Customer Detail",
+	"Caption": "$(L,Customer_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/NavToCustomers_Edit.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/NavToCustomers_Edit.action",
 				"Position": "Right",
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/Customers_DetailPopover.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/Customers_DetailPopover.action",
 				"Position": "Right",
 				"Caption": "More"
 			}
@@ -94,7 +94,8 @@
 				},
 				{
 					"Header": {
-						"Caption": "Address"
+						"Caption": "Address",
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"KeyAndValues": [
 						{
@@ -127,7 +128,8 @@
 				},
 				{
 					"Header": {
-						"Caption": "SalesOrders"
+						"Caption": "SalesOrders",
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"ObjectCell": {
 						"AccessoryType": "DisclosureIndicator",
@@ -148,14 +150,14 @@
 						"StatusText": "{GrossAmount}",
 						"Subhead": "{CreatedAt}",
 						"SubstatusText": "{LifeCycleStatus}",
-						"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+						"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"Service": "/MDKApp/Services/SampleServiceV4.service"
+						"Service": "/mdkapp/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

@@ -13,7 +13,8 @@
 						"_Name": "SectionHeader_SampleServiceV4",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "SampleServiceV4"
+						"Caption": "SampleServiceV4",
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -24,46 +25,52 @@
 					},
 					"Buttons": [
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/NavToCustomers_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
 							"Title": "Customers",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/Products/NavToProducts_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/Products/NavToProducts_List.action",
 							"Alignment": "Center",
 							"Title": "Products",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
 							"Alignment": "Center",
 							"Title": "PurchaseOrderHeaders",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
 							"Alignment": "Center",
 							"Title": "PurchaseOrderItems",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"Alignment": "Center",
 							"Title": "SalesOrderHeaders",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_List.action",
+							"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_List.action",
 							"Alignment": "Center",
 							"Title": "SalesOrderItems",
 							"ButtonType": "Text",
-							"Semantic": "Tint"
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
 						}
 					],
 					"_Name": "SectionButtonTable_SampleServiceV4",
@@ -85,7 +92,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/MDKApp/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdkapp/Actions/Application/UserMenuPopover.action"
 			}
 		],
 		"_Name": "ActionBar1"

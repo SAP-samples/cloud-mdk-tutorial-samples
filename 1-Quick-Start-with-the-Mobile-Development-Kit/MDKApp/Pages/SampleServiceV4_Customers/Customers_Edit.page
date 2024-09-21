@@ -1,7 +1,7 @@
 {
-	"Caption": "Update Customer Detail",
+	"Caption": "$(L,Update_Customer_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers",
 		"QueryOptions": ""
 	},
@@ -10,12 +10,12 @@
 			{
 				"Position": "Left",
 				"SystemItem": "Cancel",
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
 				"Position": "Right",
 				"SystemItem": "Save",
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/Customers_UpdateEntity.action"
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/Customers_UpdateEntity.action"
 			}
 		]
 	},

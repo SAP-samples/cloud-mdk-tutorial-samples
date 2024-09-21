@@ -2,6 +2,6 @@
     "Animated": true,
     "CompletionTimeout": 3,
     "Message": "Checking for Updates...",
-    "OnSuccess": "/MDKApp/Actions/Application/AppUpdate.action",
+    "OnSuccess": "/mdkapp/Actions/Application/AppUpdate.action",
     "_Type": "Action.Type.ProgressBanner"
 }

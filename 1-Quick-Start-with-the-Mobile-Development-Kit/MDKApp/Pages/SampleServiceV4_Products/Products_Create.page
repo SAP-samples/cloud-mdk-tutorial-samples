@@ -2,18 +2,18 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDKApp/Rules/SampleServiceV4/Products/Products_CreateEntity.js",
+				"OnPress": "/mdkapp/Rules/SampleServiceV4/Products/Products_CreateEntity.js",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create Product Detail",
+	"Caption": "$(L,Create_Product_Detail)",
 	"Controls": [
 		{
 			"Sections": [
@@ -109,7 +109,7 @@
 								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"_Name": "SupplierID",

@@ -2,18 +2,18 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/SalesOrderItems_CreateEntity.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/SalesOrderItems_CreateEntity.action",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create SalesOrderItem Detail",
+	"Caption": "$(L,Create_SalesOrderItem_Detail)",
 	"Controls": [
 		{
 			"Sections": [
@@ -63,7 +63,7 @@
 								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"_Name": "ProductID",
@@ -92,7 +92,7 @@
 								"ReturnValue": "{SalesOrderID}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"_Name": "SalesOrderID",

@@ -81,14 +81,14 @@
 					"Footer": {
 						"_Name": "SectionFooter1",
 						"Caption": "See All",
-						"AttributeLabel": "/DemoSampleApp/Rules/Customers_OrderCount.js",
+						"AttributeLabel": "/demosampleapp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "DisclosureIndicator",
 						"FooterStyle": "Attribute",
 						"Visible": true,
 						"OnPress": {
-							"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+							"Name": "/demosampleapp/Actions/GenericNavigation.action",
 							"Properties": {
-								"PageToOpen": "/DemoSampleApp/Pages/Customers_Orders.page"
+								"PageToOpen": "/demosampleapp/Pages/Customers_Orders.page"
 							}
 						},
 						"UseBottomPadding": false
@@ -105,7 +105,7 @@
 						"SalesOrderHeaders"
 					],
 					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/SampleServiceV4.service",
 						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
 					},
@@ -139,9 +139,9 @@
 							"ImageIsCircular": true
 						},
 						"OnPress": {
-							"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+							"Name": "/demosampleapp/Actions/GenericNavigation.action",
 							"Properties": {
-								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
+								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
 						"Selected": false
@@ -161,7 +161,7 @@
 		}
 	],
 	"DesignTimeTarget": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers"
 	},
 	"_Type": "Page",
@@ -177,7 +177,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action"
+				"OnPress": "/demosampleapp/Actions/NavToCustomers_Edit.action"
 			},
 			{
 				"_Name": "ActionBarItem1",
@@ -186,7 +186,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js"
+				"OnPress": "/demosampleapp/Rules/Customers_DeleteConfirmation.js"
 			}
 		],
 		"_Name": "ActionBar1"
@@ -201,9 +201,9 @@
 				"Visible": true,
 				"Title": "Create Order",
 				"OnPress": {
-					"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+					"Name": "/demosampleapp/Actions/GenericNavigation.action",
 					"Properties": {
-						"PageToOpen": "/DemoSampleApp/Pages/SalesOrderHeaders_Create.page",
+						"PageToOpen": "/demosampleapp/Pages/SalesOrderHeaders_Create.page",
 						"ModalPage": true
 					}
 				},

@@ -3,10 +3,10 @@
 	"ActionResult": {
 		"_Name": "Customers_CreateEntity"
 	},
-	"OnFailure": "/DemoSampleApp/Actions/CreateCustomerEntityFailureMessage.action",
-	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
+	"OnFailure": "/demosampleapp/Actions/CreateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/demosampleapp/Actions/CloseModalPage_Complete.action",
 	"Target": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers"
 	},
 	"Properties": {

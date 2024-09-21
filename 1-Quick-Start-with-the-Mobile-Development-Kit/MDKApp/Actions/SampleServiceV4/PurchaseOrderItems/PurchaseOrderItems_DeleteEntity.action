@@ -1,11 +1,11 @@
 {
     "Target": {
         "EntitySet": "PurchaseOrderItems",
-        "Service": "/MDKApp/Services/SampleServiceV4.service",
+        "Service": "/mdkapp/Services/SampleServiceV4.service",
         "ReadLink": "{@odata.readLink}"
     },
-    "OnSuccess": "/MDKApp/Actions/DeleteEntitySuccessMessage.action",
-    "OnFailure": "/MDKApp/Actions/DeleteEntityFailureMessage.action",
+    "OnSuccess": "/mdkapp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/DeleteEntityFailureMessage.action",
     "ActionResult": {
         "_Name": "delete"
     },

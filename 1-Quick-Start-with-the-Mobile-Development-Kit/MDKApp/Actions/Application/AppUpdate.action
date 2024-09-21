@@ -3,6 +3,6 @@
     "ActionResult": {
         "_Name": "AppUpdate"
     },
-    "OnFailure": "/MDKApp/Rules/Application/AppUpdateFailure.js",
-    "OnSuccess": "/MDKApp/Rules/Application/AppUpdateSuccess.js"
+    "OnFailure": "/mdkapp/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/mdkapp/Rules/Application/AppUpdateSuccess.js"
 }

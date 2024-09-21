@@ -2,18 +2,18 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/Customers_CreateSalesOrderHeader.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/Customers_CreateSalesOrderHeader.action",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create SalesOrderHeader",
+	"Caption": "$(L,Create_SalesOrderHeader)",
 	"Controls": [
 		{
 			"Sections": [
@@ -45,7 +45,7 @@
 								"ReturnValue": "{CustomerID}",
 								"Target": {
 									"EntitySet": "Customers",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"_Name": "CustomerID",

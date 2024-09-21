@@ -1,7 +1,7 @@
 {
-	"Caption": "Update Product Detail",
+	"Caption": "$(L,Update_Product_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "Products",
 		"QueryOptions": ""
 	},
@@ -10,12 +10,12 @@
 			{
 				"Position": "Left",
 				"SystemItem": "Cancel",
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
 				"Position": "Right",
 				"SystemItem": "Save",
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Products/Products_UpdateEntity.action"
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Products/Products_UpdateEntity.action"
 			}
 		]
 	},
@@ -128,7 +128,7 @@
 								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"Value": "{SupplierID}",

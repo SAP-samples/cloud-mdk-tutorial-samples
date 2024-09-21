@@ -75,7 +75,7 @@
 		}
 	],
 	"DesignTimeTarget": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "Customers"
 	},
 	"_Type": "Page",
@@ -91,7 +91,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action"
+				"OnPress": "/demosampleapp/Actions/NavToCustomers_Edit.action"
 			}
 		],
 		"_Name": "ActionBar1"

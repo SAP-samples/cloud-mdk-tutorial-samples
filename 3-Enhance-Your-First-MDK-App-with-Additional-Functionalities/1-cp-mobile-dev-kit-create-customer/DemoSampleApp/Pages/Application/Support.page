@@ -22,15 +22,15 @@
 								"ActivityItems": [
 									{
 										"ActivityType": "Phone",
-										"ActivityValue": "/DemoSampleApp/Globals/Application/SupportPhone.global"
+										"ActivityValue": "/demosampleapp/Globals/Application/SupportPhone.global"
 									},
 									{
 										"ActivityType": "Email",
-										"ActivityValue": "/DemoSampleApp/Globals/Application/SupportEmail.global"
+										"ActivityValue": "/demosampleapp/Globals/Application/SupportEmail.global"
 									},
 									{
 										"ActivityType": "Message",
-										"ActivityValue": "/DemoSampleApp/Globals/Application/SupportPhone.global"
+										"ActivityValue": "/demosampleapp/Globals/Application/SupportPhone.global"
 									}
 								]
 							}
@@ -58,7 +58,7 @@
 								"KeyName": "Activity Log",
 								"AccessoryType": "DisclosureIndicator",
 								"Visible": "$(PLT,true,true,false)",
-								"OnPress": "/DemoSampleApp/Actions/Application/NavToActivityLog.action"
+								"OnPress": "/demosampleapp/Actions/Application/NavToActivityLog.action"
 							}
 						}
 					],
@@ -83,7 +83,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Complete.action"
+				"OnPress": "/demosampleapp/Actions/CloseModalPage_Complete.action"
 			}
 		],
 		"_Name": "ActionBar1"

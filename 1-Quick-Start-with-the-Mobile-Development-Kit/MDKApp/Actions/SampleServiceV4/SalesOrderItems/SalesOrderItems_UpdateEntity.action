@@ -2,7 +2,7 @@
     "_Type": "Action.Type.ODataService.UpdateEntity",
     "Target": {
         "EntitySet": "SalesOrderItems",
-        "Service": "/MDKApp/Services/SampleServiceV4.service",
+        "Service": "/mdkapp/Services/SampleServiceV4.service",
         "ReadLink": "{@odata.readLink}"
     },
     "Properties": {
@@ -21,6 +21,6 @@
     "ActionResult": {
         "_Name": "update"
     },
-    "OnSuccess": "/MDKApp/Actions/UpdateEntitySuccessMessage.action",
-    "OnFailure": "/MDKApp/Actions/UpdateEntityFailureMessage.action"
+    "OnSuccess": "/mdkapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/UpdateEntityFailureMessage.action"
 }

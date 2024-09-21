@@ -16,13 +16,13 @@
                         "Visible": true
                     },
                     {
-                        "Value": "/DemoSampleApp/Globals/Application/ApplicationName.global",
+                        "Value": "/demosampleapp/Globals/Application/ApplicationName.global",
                         "_Name": "KeyValue2",
                         "KeyName": "Application",
                         "Visible": true
                     },
                     {
-                        "Value": "/DemoSampleApp/Globals/Application/AppDefinition_Version.global",
+                        "Value": "/demosampleapp/Globals/Application/AppDefinition_Version.global",
                         "_Name": "KeyValue3",
                         "KeyName": "Application Metadata Version",
                         "Visible": true
@@ -41,13 +41,13 @@
             },
             {
                 "KeyAndValues": [{
-                        "Value": "/DemoSampleApp/Rules/Application/GetClientVersion.js",
+                        "Value": "/demosampleapp/Rules/Application/GetClientVersion.js",
                         "_Name": "KeyValue4",
                         "KeyName": "Client Version",
                         "Visible": "$(PLT,true,true,false)"
                     },
                     {
-                        "Value": "/DemoSampleApp/Rules/Application/GetClientSupportVersions.js",
+                        "Value": "/demosampleapp/Rules/Application/GetClientSupportVersions.js",
                         "_Name": "KeyValue5",
                         "KeyName": "Client Support Versions",
                         "Visible": true
@@ -78,7 +78,7 @@
             "Position": "Right",
             "IsIconCircular": false,
             "Visible": true,
-            "OnPress": "/DemoSampleApp/Actions/CloseModalPage_Complete.action"
+            "OnPress": "/demosampleapp/Actions/CloseModalPage_Complete.action"
         }],
         "_Name": "ActionBar1"
     }

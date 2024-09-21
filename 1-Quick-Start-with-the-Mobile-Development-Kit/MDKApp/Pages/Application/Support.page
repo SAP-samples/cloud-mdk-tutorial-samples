@@ -22,15 +22,15 @@
 								"ActivityItems": [
 									{
 										"ActivityType": "Phone",
-										"ActivityValue": "/MDKApp/Globals/Application/SupportPhone.global"
+										"ActivityValue": "/mdkapp/Globals/Application/SupportPhone.global"
 									},
 									{
 										"ActivityType": "Email",
-										"ActivityValue": "/MDKApp/Globals/Application/SupportEmail.global"
+										"ActivityValue": "/mdkapp/Globals/Application/SupportEmail.global"
 									},
 									{
 										"ActivityType": "Message",
-										"ActivityValue": "/MDKApp/Globals/Application/SupportPhone.global"
+										"ActivityValue": "/mdkapp/Globals/Application/SupportPhone.global"
 									}
 								]
 							}
@@ -58,7 +58,7 @@
 								"KeyName": "Activity Log",
 								"AccessoryType": "DisclosureIndicator",
 								"Visible": "$(PLT,true,true,false)",
-								"OnPress": "/MDKApp/Actions/Application/NavToActivityLog.action"
+								"OnPress": "/mdkapp/Actions/Application/NavToActivityLog.action"
 							}
 						}
 					],
@@ -83,7 +83,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Complete.action"
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Complete.action"
 			}
 		],
 		"_Name": "ActionBar1"

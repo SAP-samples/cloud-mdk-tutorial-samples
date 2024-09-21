@@ -73,7 +73,7 @@
 	"Caption": "Order Details",
 	"PrefersLargeCaption": true,
 	"DesignTimeTarget": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders"
 	}
 }

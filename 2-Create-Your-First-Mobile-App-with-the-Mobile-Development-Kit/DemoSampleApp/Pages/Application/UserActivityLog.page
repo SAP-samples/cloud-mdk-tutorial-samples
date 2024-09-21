@@ -14,7 +14,7 @@
                         "IsVisible": true,
                         "Separator": true,
                         "Caption": "Enable Logging",
-                        "OnValueChange": "/DemoSampleApp/Rules/Logging/ToggleLogging.js",
+                        "OnValueChange": "/demosampleapp/Rules/Logging/ToggleLogging.js",
                         "IsEditable": true
                     },
                     {
@@ -26,12 +26,12 @@
                         "AllowMultipleSelection": false,
                         "AllowEmptySelection": false,
                         "Caption": "Log Level",
-                        "OnValueChange": "/DemoSampleApp/Rules/Logging/SetUserLogLevel.js",
+                        "OnValueChange": "/demosampleapp/Rules/Logging/SetUserLogLevel.js",
                         "IsSelectedSectionEnabled": false,
                         "IsPickerDismissedOnSelection": true,
                         "AllowDefaultValueIfOneItem": false,
                         "IsEditable": false,
-                        "PickerItems": "/DemoSampleApp/Rules/Logging/LogLevels.js"
+                        "PickerItems": "/demosampleapp/Rules/Logging/LogLevels.js"
                     },
                     {
                         "_Type": "Control.Type.FormCell.ListPicker",
@@ -42,13 +42,13 @@
                         "AllowEmptySelection": true,
                         "Caption": "Tracing Categories",
                         "PickerPrompt": "Select Categories for Tracing",
-                        "OnValueChange": "/DemoSampleApp/Rules/Logging/SetTraceCategories.js",
+                        "OnValueChange": "/demosampleapp/Rules/Logging/SetTraceCategories.js",
                         "IsSelectedSectionEnabled": true,
                         "IsPickerDismissedOnSelection": false,
                         "IsSearchCancelledAfterSelection": false,
                         "AllowDefaultValueIfOneItem": false,
                         "IsEditable": true,
-                        "PickerItems": "/DemoSampleApp/Rules/Logging/TraceCategories.js"
+                        "PickerItems": "/demosampleapp/Rules/Logging/TraceCategories.js"
                     },
                     {
                         "Value": false,
@@ -57,7 +57,7 @@
                         "IsVisible": false,
                         "Separator": true,
                         "Caption": "OData Tracing",
-                        "OnValueChange": "/DemoSampleApp/Rules/Logging/SetTraceCategories.js",
+                        "OnValueChange": "/demosampleapp/Rules/Logging/SetTraceCategories.js",
                         "IsEditable": true
                     }
                 ],
@@ -87,7 +87,7 @@
                     "Semantic": "Tint",
                     "ImagePosition": "Leading",
                     "Enabled": true,
-                    "OnPress": "/DemoSampleApp/Actions/Logging/UploadLogProgress.action"
+                    "OnPress": "/demosampleapp/Actions/Logging/UploadLogProgress.action"
                 }],
                 "Separators": {
                     "TopSectionSeparator": false,
@@ -109,5 +109,5 @@
     "_Name": "UserActivityLog",
     "Caption": "Activity Log",
     "PrefersLargeCaption": false,
-    "OnLoaded": "/DemoSampleApp/Rules/Logging/UserLogSetting.js"
+    "OnLoaded": "/demosampleapp/Rules/Logging/UserLogSetting.js"
 }

@@ -2,7 +2,7 @@
     "Message": "Upload in progress...",
     "CompletionMessage": "Sync completed",
     "CompletionTimeout": 7,
-    "OnSuccess": "/DemoSampleApp/Actions/SampleServiceV4/Service/UploadOffline.action",
-    "OnFailure": "/DemoSampleApp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/demosampleapp/Actions/SampleServiceV4/Service/UploadOffline.action",
+    "OnFailure": "/demosampleapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
     "_Type": "Action.Type.ProgressBanner"
 }

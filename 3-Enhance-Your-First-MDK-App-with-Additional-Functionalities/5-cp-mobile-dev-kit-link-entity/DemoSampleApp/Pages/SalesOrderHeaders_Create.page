@@ -117,7 +117,7 @@
 				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/demosampleapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
 				"_Name": "ActionBarItem1",
@@ -126,7 +126,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/SalesOrderHeaders_CreateEntity.action"
+				"OnPress": "/demosampleapp/Actions/SalesOrderHeaders_CreateEntity.action"
 			}
 		],
 		"_Name": "ActionBar1"

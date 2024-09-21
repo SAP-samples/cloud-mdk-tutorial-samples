@@ -7,7 +7,7 @@
 				{
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/SampleServiceV4.service",
 						"EntitySet": "ErrorArchive"
 					},
 					"_Name": "SectionObjectTable0",
@@ -30,7 +30,7 @@
 						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
-						"OnPress": "/DemoSampleApp/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
+						"OnPress": "/demosampleapp/Actions/ErrorArchive/NavToErrorArchive_Detail.action",
 						"Selected": false
 					},
 					"DataPaging": {

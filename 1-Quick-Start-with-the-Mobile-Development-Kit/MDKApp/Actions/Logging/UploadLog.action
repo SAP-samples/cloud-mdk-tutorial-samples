@@ -3,8 +3,8 @@
         "_Name": "UploadLog"
     },
     "ActivityIndicatorText": "Uploading...",
-    "OnFailure": "/MDKApp/Actions/Logging/LogUploadFailure.action",
-    "OnSuccess": "/MDKApp/Actions/Logging/LogUploadSuccessful.action",
+    "OnFailure": "/mdkapp/Actions/Logging/LogUploadFailure.action",
+    "OnSuccess": "/mdkapp/Actions/Logging/LogUploadSuccessful.action",
     "ShowActivityIndicator": false,
     "_Type": "Action.Type.Logger.Upload"
 }

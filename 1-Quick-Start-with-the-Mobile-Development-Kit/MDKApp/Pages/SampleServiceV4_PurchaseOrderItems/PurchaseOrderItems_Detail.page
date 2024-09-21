@@ -1,19 +1,19 @@
 {
-	"Caption": "PurchaseOrderItem Detail",
+	"Caption": "$(L,PurchaseOrderItem_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderItems",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_Edit.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_Edit.action",
 				"Position": "Right",
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Rules/SampleServiceV4/PurchaseOrderItems/PurchaseOrderItems_DeleteConfirmation.js",
+				"OnPress": "/mdkapp/Rules/SampleServiceV4/PurchaseOrderItems/PurchaseOrderItems_DeleteConfirmation.js",
 				"Position": "Right",
 				"SystemItem": "Trash"
 			}

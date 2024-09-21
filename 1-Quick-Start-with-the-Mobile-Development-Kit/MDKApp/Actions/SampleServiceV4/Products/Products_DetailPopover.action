@@ -1,19 +1,19 @@
 {
     "PopoverItems": [{
             "Title": "Open Document",
-            "OnPress": "/MDKApp/Actions/SampleServiceV4/Products/Products_OpenDocument.action"
+            "OnPress": "/mdkapp/Actions/SampleServiceV4/Products/Products_OpenDocument.action"
         },
         {
             "Title": "Add PurchaseOrderItem",
-            "OnPress": "/MDKApp/Actions/SampleServiceV4/Products/NavToProducts_CreatePurchaseOrderItem.action"
+            "OnPress": "/mdkapp/Actions/SampleServiceV4/Products/NavToProducts_CreatePurchaseOrderItem.action"
         },
         {
             "Title": "Add SalesOrderItem",
-            "OnPress": "/MDKApp/Actions/SampleServiceV4/Products/NavToProducts_CreateSalesOrderItem.action"
+            "OnPress": "/mdkapp/Actions/SampleServiceV4/Products/NavToProducts_CreateSalesOrderItem.action"
         },
         {
             "Title": "Delete",
-            "OnPress": "/MDKApp/Rules/SampleServiceV4/Products/Products_DeleteConfirmation.js"
+            "OnPress": "/mdkapp/Rules/SampleServiceV4/Products/Products_DeleteConfirmation.js"
         }
     ],
     "_Type": "Action.Type.PopoverMenu"

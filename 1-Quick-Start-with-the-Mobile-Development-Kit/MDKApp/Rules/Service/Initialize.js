@@ -3,7 +3,7 @@ export default function Initialize(context) {
     // Perform pre data initialization task
 
     // Initialize all your Data sources
-    let _SampleServiceV4 = context.executeAction('/MDKApp/Actions/SampleServiceV4/Service/InitializeOffline.action');
+    let _SampleServiceV4 = context.executeAction('/mdkapp/Actions/SampleServiceV4/Service/InitializeOffline.action');
 
     //You can add more service initialize actions here
 
@@ -13,7 +13,7 @@ export default function Initialize(context) {
         // Display successful initialization  message to the user
         return context.executeAction({
 
-            "Name": "/MDKApp/Actions/GenericToastMessage.action",
+            "Name": "/mdkapp/Actions/GenericToastMessage.action",
             "Properties": {
                 "Message": "Application Services Initialized",
                 "Animated": true,

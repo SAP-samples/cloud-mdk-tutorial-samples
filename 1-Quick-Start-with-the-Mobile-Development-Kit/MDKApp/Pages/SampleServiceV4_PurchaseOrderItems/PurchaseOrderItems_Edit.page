@@ -1,7 +1,7 @@
 {
-	"Caption": "Update PurchaseOrderItem Detail",
+	"Caption": "$(L,Update_PurchaseOrderItem_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "PurchaseOrderItems",
 		"QueryOptions": ""
 	},
@@ -10,12 +10,12 @@
 			{
 				"Position": "Left",
 				"SystemItem": "Cancel",
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
 				"Position": "Right",
 				"SystemItem": "Save",
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/PurchaseOrderItems/PurchaseOrderItems_UpdateEntity.action"
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/PurchaseOrderItems/PurchaseOrderItems_UpdateEntity.action"
 			}
 		]
 	},
@@ -66,7 +66,7 @@
 								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"Value": "{ProductID}",
@@ -84,7 +84,7 @@
 								"ReturnValue": "{PurchaseOrderID}",
 								"Target": {
 									"EntitySet": "PurchaseOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"Value": "{PurchaseOrderID}",

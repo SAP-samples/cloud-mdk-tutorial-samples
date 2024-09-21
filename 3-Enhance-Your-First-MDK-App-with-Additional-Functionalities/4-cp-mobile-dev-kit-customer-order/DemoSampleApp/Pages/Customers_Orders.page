@@ -11,7 +11,7 @@
 				{
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/SampleServiceV4.service",
 						"EntitySet": "SalesOrderHeaders",
 						"QueryOptions": "$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc"
 					},
@@ -46,9 +46,9 @@
 							"ImageIsCircular": true
 						},
 						"OnPress": {
-							"Name": "/DemoSampleApp/Actions/GenericNavigation.action",
+							"Name": "/demosampleapp/Actions/GenericNavigation.action",
 							"Properties": {
-								"PageToOpen": "/DemoSampleApp/Pages/SalesOrders_Details.page"
+								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
 						"Selected": false,

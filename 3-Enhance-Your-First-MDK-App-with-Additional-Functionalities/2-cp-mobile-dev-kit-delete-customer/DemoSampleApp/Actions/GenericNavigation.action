@@ -3,5 +3,5 @@
     "ActionResult": {
         "_Name": "GenericNavigation"
     },
-    "PageToOpen": "/DemoSampleApp/Pages/Main.page"
+    "PageToOpen": "/demosampleapp/Pages/Main.page"
 }

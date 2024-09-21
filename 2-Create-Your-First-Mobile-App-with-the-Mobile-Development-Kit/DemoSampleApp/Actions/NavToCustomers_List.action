@@ -3,5 +3,5 @@
 	"ActionResult": {
 		"_Name": "NavToCustomers_List"
 	},
-	"PageToOpen": "/DemoSampleApp/Pages/Customers_List.page"
+	"PageToOpen": "/demosampleapp/Pages/Customers_List.page"
 }

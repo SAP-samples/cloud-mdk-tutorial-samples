@@ -1,19 +1,19 @@
 {
-	"Caption": "SalesOrderHeader Detail",
+	"Caption": "$(L,SalesOrderHeader_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders",
 		"QueryOptions": ""
 	},
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action",
 				"Position": "Right",
 				"SystemItem": "Edit"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderHeaders/SalesOrderHeaders_DetailPopover.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderHeaders/SalesOrderHeaders_DetailPopover.action",
 				"Position": "Right",
 				"Caption": "More"
 			}
@@ -86,7 +86,8 @@
 				},
 				{
 					"Header": {
-						"Caption": "Items"
+						"Caption": "Items",
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"ObjectCell": {
 						"AccessoryType": "DisclosureIndicator",
@@ -107,14 +108,14 @@
 						"StatusText": "{ItemNumber}",
 						"Subhead": "{CurrencyCode}",
 						"SubstatusText": "{NetAmount}",
-						"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+						"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Detail.action"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
 					},
 					"Target": {
 						"EntitySet": "{@odata.readLink}/Items",
-						"Service": "/MDKApp/Services/SampleServiceV4.service"
+						"Service": "/mdkapp/Services/SampleServiceV4.service"
 					},
 					"_Type": "Section.Type.ObjectTable"
 				}

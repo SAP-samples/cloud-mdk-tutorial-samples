@@ -1,5 +1,5 @@
 {
-    "Service": "/MDKApp/Services/SampleServiceV4.service",
+    "Service": "/mdkapp/Services/SampleServiceV4.service",
     "DefiningRequests": [{
             "Name": "Customers",
             "Query": "Customers"
@@ -9,20 +9,20 @@
             "Query": "Products"
         },
         {
-            "Name": "SalesOrderHeaders",
-            "Query": "SalesOrderHeaders"
-        },
-        {
-            "Name": "SalesOrderItems",
-            "Query": "SalesOrderItems"
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
         },
         {
             "Name": "PurchaseOrderItems",
             "Query": "PurchaseOrderItems"
         },
         {
-            "Name": "PurchaseOrderHeaders",
-            "Query": "PurchaseOrderHeaders"
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
         }
     ],
     "_Type": "Action.Type.ODataService.Initialize",
@@ -31,5 +31,5 @@
     "ActionResult": {
         "_Name": "init"
     },
-    "OnFailure": "/MDKApp/Actions/SampleServiceV4/Service/InitializeOfflineFailureMessage.action"
+    "OnFailure": "/mdkapp/Actions/SampleServiceV4/Service/InitializeOfflineFailureMessage.action"
 }

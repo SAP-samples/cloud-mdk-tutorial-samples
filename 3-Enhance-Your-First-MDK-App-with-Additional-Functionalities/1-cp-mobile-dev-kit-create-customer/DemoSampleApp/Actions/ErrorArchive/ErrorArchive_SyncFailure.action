@@ -3,6 +3,6 @@
     "Message": "Upload failed!",
     "Duration": 0,
     "Animated": false,
-    "OnActionLabelPress": "/DemoSampleApp/Actions/ErrorArchive/NavToErrorArchive_List.action",
+    "OnActionLabelPress": "/demosampleapp/Actions/ErrorArchive/NavToErrorArchive_List.action",
     "ActionLabel": "View Errors"
 }

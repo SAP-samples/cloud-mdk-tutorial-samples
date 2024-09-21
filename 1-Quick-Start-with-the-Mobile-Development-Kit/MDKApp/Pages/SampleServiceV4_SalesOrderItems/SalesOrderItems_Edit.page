@@ -1,7 +1,7 @@
 {
-	"Caption": "Update SalesOrderItem Detail",
+	"Caption": "$(L,Update_SalesOrderItem_Detail)",
 	"DesignTimeTarget": {
-		"Service": "/MDKApp/Services/SampleServiceV4.service",
+		"Service": "/mdkapp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderItems",
 		"QueryOptions": ""
 	},
@@ -10,12 +10,12 @@
 			{
 				"Position": "Left",
 				"SystemItem": "Cancel",
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
 				"Position": "Right",
 				"SystemItem": "Save",
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/SalesOrderItems_UpdateEntity.action"
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/SalesOrderItems_UpdateEntity.action"
 			}
 		]
 	},
@@ -73,7 +73,7 @@
 								"ReturnValue": "{ProductID}",
 								"Target": {
 									"EntitySet": "Products",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"Value": "{ProductID}",
@@ -104,7 +104,7 @@
 								"ReturnValue": "{SalesOrderID}",
 								"Target": {
 									"EntitySet": "SalesOrderHeaders",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"Value": "{SalesOrderID}",

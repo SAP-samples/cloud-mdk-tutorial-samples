@@ -2,18 +2,18 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/Customers/Customers_CreateEntity.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/Customers/Customers_CreateEntity.action",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create Customer Detail",
+	"Caption": "$(L,Create_Customer_Detail)",
 	"Controls": [
 		{
 			"Sections": [

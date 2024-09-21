@@ -3,5 +3,5 @@
     "ActionResult": {
         "_Name": "GenericNavigation"
     },
-    "PageToOpen": "/MDKApp/Pages/Main.page"
+    "PageToOpen": "/mdkapp/Pages/Main.page"
 }

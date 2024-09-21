@@ -4,15 +4,15 @@
 		"_Name": "SalesOrderHeaders_CreateEntity"
 	},
 	"OnFailure": {
-		"Name": "/DemoSampleApp/Actions/GenericMessageBox.action",
+		"Name": "/demosampleapp/Actions/GenericMessageBox.action",
 		"Properties": {
 			"Message": "Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}",
 			"Title": "Create Sales Order"
 		}
 	},
-	"OnSuccess": "/DemoSampleApp/Actions/CloseModalPage_Complete.action",
+	"OnSuccess": "/demosampleapp/Actions/CloseModalPage_Complete.action",
 	"Target": {
-		"Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/SampleServiceV4.service",
 		"EntitySet": "SalesOrderHeaders"
 	},
 	"ParentLink": {

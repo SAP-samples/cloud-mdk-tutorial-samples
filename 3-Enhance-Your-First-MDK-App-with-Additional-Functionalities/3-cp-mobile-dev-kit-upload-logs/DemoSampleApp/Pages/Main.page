@@ -24,7 +24,8 @@
 					},
 					"Buttons": [
 						{
-							"_Name": "SectionButton0",
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton0",
 							"Title": "Customers",
 							"Alignment": "Center",
 							"ButtonType": "Text",
@@ -34,7 +35,7 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/DemoSampleApp/Actions/NavToCustomers_List.action"
+							"OnPress": "/demosampleapp/Actions/NavToCustomers_List.action"
 						}
 					],
 					"Layout": {
@@ -58,7 +59,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/DemoSampleApp/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/demosampleapp/Actions/Application/UserMenuPopover.action"
 			}
 		],
 		"_Name": "ActionBar1"

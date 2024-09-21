@@ -14,7 +14,7 @@
                         "IsVisible": true,
                         "Separator": true,
                         "Caption": "Enable Logging",
-                        "OnValueChange": "/MDKApp/Rules/Logging/ToggleLogging.js",
+                        "OnValueChange": "/mdkapp/Rules/Logging/ToggleLogging.js",
                         "IsEditable": true
                     },
                     {
@@ -26,12 +26,12 @@
                         "AllowMultipleSelection": false,
                         "AllowEmptySelection": false,
                         "Caption": "Log Level",
-                        "OnValueChange": "/MDKApp/Rules/Logging/SetUserLogLevel.js",
+                        "OnValueChange": "/mdkapp/Rules/Logging/SetUserLogLevel.js",
                         "IsSelectedSectionEnabled": false,
                         "IsPickerDismissedOnSelection": true,
                         "AllowDefaultValueIfOneItem": false,
                         "IsEditable": false,
-                        "PickerItems": "/MDKApp/Rules/Logging/LogLevels.js"
+                        "PickerItems": "/mdkapp/Rules/Logging/LogLevels.js"
                     },
                     {
                         "_Type": "Control.Type.FormCell.ListPicker",
@@ -42,13 +42,13 @@
                         "AllowEmptySelection": true,
                         "Caption": "Tracing Categories",
                         "PickerPrompt": "Select Categories for Tracing",
-                        "OnValueChange": "/MDKApp/Rules/Logging/SetTraceCategories.js",
+                        "OnValueChange": "/mdkapp/Rules/Logging/SetTraceCategories.js",
                         "IsSelectedSectionEnabled": true,
                         "IsPickerDismissedOnSelection": false,
                         "IsSearchCancelledAfterSelection": false,
                         "AllowDefaultValueIfOneItem": false,
                         "IsEditable": true,
-                        "PickerItems": "/MDKApp/Rules/Logging/TraceCategories.js"
+                        "PickerItems": "/mdkapp/Rules/Logging/TraceCategories.js"
                     },
                     {
                         "Value": false,
@@ -57,7 +57,7 @@
                         "IsVisible": false,
                         "Separator": true,
                         "Caption": "OData Tracing",
-                        "OnValueChange": "/MDKApp/Rules/Logging/SetTraceCategories.js",
+                        "OnValueChange": "/mdkapp/Rules/Logging/SetTraceCategories.js",
                         "IsEditable": true
                     }
                 ],
@@ -87,7 +87,7 @@
                     "Semantic": "Tint",
                     "ImagePosition": "Leading",
                     "Enabled": true,
-                    "OnPress": "/MDKApp/Actions/Logging/UploadLogProgress.action"
+                    "OnPress": "/mdkapp/Actions/Logging/UploadLogProgress.action"
                 }],
                 "Separators": {
                     "TopSectionSeparator": false,
@@ -109,5 +109,5 @@
     "_Name": "UserActivityLog",
     "Caption": "Activity Log",
     "PrefersLargeCaption": false,
-    "OnLoaded": "/MDKApp/Rules/Logging/UserLogSetting.js"
+    "OnLoaded": "/mdkapp/Rules/Logging/UserLogSetting.js"
 }

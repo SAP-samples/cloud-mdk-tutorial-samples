@@ -3,6 +3,6 @@
     "Message": "This action will remove all data and return to the Welcome screen. Any local data will be lost. Are you sure you want to continue?",
     "Title": "Reset",
     "OKCaption": "Yes",
-    "OnOK": "/DemoSampleApp/Rules/Application/ResetAppSettingsAndLogout.js",
+    "OnOK": "/demosampleapp/Rules/Application/ResetAppSettingsAndLogout.js",
     "CancelCaption": "No"
 }

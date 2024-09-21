@@ -2,18 +2,18 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/CloseModalPage_Cancel.action",
+				"OnPress": "/mdkapp/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel"
 			},
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/PurchaseOrderHeaders/PurchaseOrderHeaders_CreateEntity.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/PurchaseOrderHeaders/PurchaseOrderHeaders_CreateEntity.action",
 				"Position": "Right",
 				"SystemItem": "Save"
 			}
 		]
 	},
-	"Caption": "Create PurchaseOrderHeader Detail",
+	"Caption": "$(L,Create_PurchaseOrderHeader_Detail)",
 	"Controls": [
 		{
 			"Sections": [
@@ -57,7 +57,7 @@
 								"ReturnValue": "{SupplierID}",
 								"Target": {
 									"EntitySet": "Suppliers",
-									"Service": "/MDKApp/Services/SampleServiceV4.service"
+									"Service": "/mdkapp/Services/SampleServiceV4.service"
 								}
 							},
 							"_Name": "SupplierID",

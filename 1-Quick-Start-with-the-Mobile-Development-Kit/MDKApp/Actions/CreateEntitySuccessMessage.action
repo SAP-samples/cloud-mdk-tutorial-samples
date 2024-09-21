@@ -3,6 +3,6 @@
     "Duration": 2,
     "Message": "Entity created",
     "IsIconHidden": true,
-    "OnSuccess": "/MDKApp/Actions/CloseModalPage_Complete.action",
+    "OnSuccess": "/mdkapp/Actions/CloseModalPage_Complete.action",
     "_Type": "Action.Type.ToastMessage"
 }

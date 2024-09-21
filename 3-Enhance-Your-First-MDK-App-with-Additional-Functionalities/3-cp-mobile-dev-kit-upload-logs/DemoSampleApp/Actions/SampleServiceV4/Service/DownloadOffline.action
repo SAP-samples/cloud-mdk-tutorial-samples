@@ -1,5 +1,5 @@
 {
-    "Service": "/DemoSampleApp/Services/SampleServiceV4.service",
+    "Service": "/demosampleapp/Services/SampleServiceV4.service",
     "DefiningRequests": [{
             "Name": "Customers",
             "Query": "Customers"
@@ -7,6 +7,14 @@
         {
             "Name": "Products",
             "Query": "Products"
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
         },
         {
             "Name": "SalesOrderHeaders",
@@ -21,6 +29,6 @@
     "ActionResult": {
         "_Name": "sync"
     },
-    "OnFailure": "/DemoSampleApp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
-    "OnSuccess": "/DemoSampleApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+    "OnFailure": "/demosampleapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/demosampleapp/Rules/SampleServiceV4/ErrorArchive_CheckForSyncError.js"
 }

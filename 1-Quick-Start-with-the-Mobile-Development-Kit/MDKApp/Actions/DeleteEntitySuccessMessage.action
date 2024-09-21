@@ -5,6 +5,6 @@
     "Icon": "",
     "IsIconHidden": false,
     "NumberOfLines": 2,
-    "OnSuccess": "/MDKApp/Actions/CloseModalPage_Complete.action",
+    "OnSuccess": "/mdkapp/Actions/CloseModalPage_Complete.action",
     "_Type": "Action.Type.ToastMessage"
 }

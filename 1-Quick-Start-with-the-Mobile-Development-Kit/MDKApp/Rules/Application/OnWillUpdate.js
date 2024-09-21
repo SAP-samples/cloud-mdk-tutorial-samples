@@ -3,9 +3,9 @@
  * @param {IClientAPI} clientAPI
  */
 export default function OnWillUpdate(clientAPI) {
-    return clientAPI.executeAction('/MDKApp/Actions/Application/OnWillUpdate.action').then((result) => {
+    return clientAPI.executeAction('/mdkapp/Actions/Application/OnWillUpdate.action').then((result) => {
         if (result.data) {
-            return clientAPI.executeAction('/MDKApp/Actions/SampleServiceV4/Service/CloseOffline.action').then(
+            return clientAPI.executeAction('/mdkapp/Actions/SampleServiceV4/Service/CloseOffline.action').then(
                 (success) => Promise.resolve(success),
                 (failure) => Promise.reject('Offline Odata Close Failed ' + failure));
         } else {

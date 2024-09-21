@@ -1,9 +1,9 @@
 {
-	"Caption": "SalesOrderItems",
+	"Caption": "$(L,SalesOrderItems)",
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Create.action",
+				"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Create.action",
 				"Position": "Right",
 				"SystemItem": "Add"
 			}
@@ -14,7 +14,8 @@
 			"Sections": [
 				{
 					"Header": {
-						"UseTopPadding": false
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"ObjectCell": {
 						"AccessoryType": "DisclosureIndicator",
@@ -28,7 +29,7 @@
 							"ImageIsCircular": false
 						},
 						"Icons": [],
-						"OnPress": "/MDKApp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"OnPress": "/mdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Detail.action",
 						"StatusImage": "",
 						"Title": "{ProductID}",
 						"Footnote": "{GrossAmount}",
@@ -53,7 +54,7 @@
 					},
 					"Target": {
 						"EntitySet": "SalesOrderItems",
-						"Service": "/MDKApp/Services/SampleServiceV4.service",
+						"Service": "/mdkapp/Services/SampleServiceV4.service",
 						"QueryOptions": ""
 					},
 					"_Type": "Section.Type.ObjectTable"
