@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateCustomerEntityFailureMessage"
+	},
+	"Message": "Failed to Create Customer record - {#ActionResults:Customers_CreateEntity/error}",
+	"Title": "Create Customer",
+	"OKCaption": "OK"
+}
