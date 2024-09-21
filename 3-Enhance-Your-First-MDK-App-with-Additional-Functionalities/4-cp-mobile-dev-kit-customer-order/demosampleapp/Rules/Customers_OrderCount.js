@@ -1,7 +1,7 @@
 /**
- * Describe this function...
- * @param {IClientAPI} context
- */
+* Describe this function...
+* @param {IClientAPI} context
+*/
 export default function CustomerOrderCount(context) {
     // Retrieves the current customer's information from the context
     const currentCustomer = context.getPageProxy().binding['@odata.readLink'];

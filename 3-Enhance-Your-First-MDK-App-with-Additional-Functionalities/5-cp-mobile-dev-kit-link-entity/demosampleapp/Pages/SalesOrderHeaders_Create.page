@@ -94,6 +94,9 @@
 							"Mode": "Datetime"
 						}
 					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false

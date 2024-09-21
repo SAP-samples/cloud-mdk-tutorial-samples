@@ -3,6 +3,6 @@
 	"ActionResult": {
 		"_Name": "NavToCustomers_Edit"
 	},
-	"PageToOpen": "/DemoSampleApp/Pages/Customers_Edit.page",
+	"PageToOpen": "/demosampleapp/Pages/Customers_Edit.page",
 	"ModalPage": true
 }

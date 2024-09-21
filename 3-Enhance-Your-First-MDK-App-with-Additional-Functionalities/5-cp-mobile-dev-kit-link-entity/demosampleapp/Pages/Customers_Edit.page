@@ -64,6 +64,9 @@
 							"IsEditable": true
 						}
 					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
@@ -76,7 +79,7 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Edit",
-	"Caption": "Update Customer",
+	"Caption": " Update Customer",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [

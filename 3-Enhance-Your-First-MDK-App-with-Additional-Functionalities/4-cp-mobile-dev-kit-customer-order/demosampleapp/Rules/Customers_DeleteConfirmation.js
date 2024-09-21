@@ -1,11 +1,11 @@
 /**
 * Describe this function...
-* @param {IClientAPI} clientAPI
+* @param {IClientAPI} context
 */
-export default function Customers_DeleteConfirmation(clientAPI) {
-    return clientAPI.executeAction('/demosampleapp/Actions/Customers_DeleteConfirmation.action').then((result) => {
+export default function Customers_DeleteConfirmation(context) {
+    return context.executeAction('/demosampleapp/Actions/Customers_DeleteConfirmation.action').then((result) => {
         if (result.data) {
-            return clientAPI.executeAction('/demosampleapp/Actions/Customers_DeleteEntity.action').then(
+            return context.executeAction('/demosampleapp/Actions/Customers_DeleteEntity.action').then(
                 (success) => Promise.resolve(success),
                 (failure) => Promise.reject('Delete entity failed ' + failure));
         } else {

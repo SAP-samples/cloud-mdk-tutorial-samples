@@ -9,6 +9,13 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/demosampleapp/Services/SampleServiceV4.service",
@@ -21,14 +28,13 @@
 						"Caption": "No Orders Found",
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
 						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
@@ -51,13 +57,7 @@
 								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						}
+						"Selected": false
 					},
 					"Search": {
 						"Enabled": true,
@@ -79,6 +79,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Orders",
-	"Caption": " Customer Orders",
+	"Caption": "Customer Orders",
 	"PrefersLargeCaption": true
 }

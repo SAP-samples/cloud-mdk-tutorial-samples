@@ -11,8 +11,9 @@
 	},
 	"Properties": {
 		"DateOfBirth": "#Control:FCCreateDOB/#Value",
-		"FirstName": "#Control:FCCreateFirstName/#Value",
-		"LastName": "#Control:FCCreateLastName/#Value",
-		"PhoneNumber": "#Control:FCCreatePhone/#Value"
+		"EmailAddress": "#Control:FCEmail/#Value",
+		"FirstName": "#Control:FCFirstName/#Value",
+		"LastName": "#Control:FCLastName/#Value",
+		"PhoneNumber": "#Control:FCPhone/#Value"
 	}
 }

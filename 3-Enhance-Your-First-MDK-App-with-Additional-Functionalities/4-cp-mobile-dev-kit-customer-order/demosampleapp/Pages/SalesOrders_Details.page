@@ -6,7 +6,7 @@
 			"Sections": [
 				{
 					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue1",
+					"_Name": "SectionKeyValue0",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
@@ -70,7 +70,7 @@
 	],
 	"_Type": "Page",
 	"_Name": "SalesOrders_Details",
-	"Caption": "Order Details",
+	"Caption": " Order Details",
 	"PrefersLargeCaption": true,
 	"DesignTimeTarget": {
 		"Service": "/demosampleapp/Services/SampleServiceV4.service",

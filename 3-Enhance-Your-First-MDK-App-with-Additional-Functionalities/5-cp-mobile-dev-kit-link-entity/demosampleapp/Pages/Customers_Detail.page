@@ -73,13 +73,15 @@
 				},
 				{
 					"Header": {
-						"_Name": "SectionHeader2",
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter1",
+						"_Type": "SectionCommon.Type.Footer",
+						"_Name": "SectionCommonTypeFooter0",
 						"Caption": "See All",
 						"AttributeLabel": "/demosampleapp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "DisclosureIndicator",

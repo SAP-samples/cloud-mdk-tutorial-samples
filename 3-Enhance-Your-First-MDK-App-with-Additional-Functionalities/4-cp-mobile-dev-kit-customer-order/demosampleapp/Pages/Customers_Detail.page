@@ -72,14 +72,23 @@
 					}
 				},
 				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/demosampleapp/Services/SampleServiceV4.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
 					"Header": {
-						"_Name": "SectionHeader2",
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
-						"_Name": "SectionFooter1",
+						"_Type": "SectionCommon.Type.Footer",
+						"_Name": "SectionCommonTypeFooter0",
 						"Caption": "See All",
 						"AttributeLabel": "/demosampleapp/Rules/Customers_OrderCount.js",
 						"AccessoryType": "DisclosureIndicator",
@@ -93,6 +102,11 @@
 						},
 						"UseBottomPadding": false
 					},
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Customer Orders Found",
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -100,25 +114,7 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/demosampleapp/Services/SampleServiceV4.service",
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No Customer Orders Found",
-						"FooterVisible": false
-					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						},
 						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
@@ -141,7 +137,13 @@
 								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
