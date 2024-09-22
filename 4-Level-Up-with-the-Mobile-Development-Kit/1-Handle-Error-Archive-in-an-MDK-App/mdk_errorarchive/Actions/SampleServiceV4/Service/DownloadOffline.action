@@ -1,0 +1,22 @@
+{
+    "Service": "/mdk_errorarchive/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/mdk_errorarchive/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/mdk_errorarchive/Rules/SampleServiceV4/ErrorArchive_CheckForSyncError.js"
+}

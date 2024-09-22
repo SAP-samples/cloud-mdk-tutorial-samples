@@ -1,0 +1,8 @@
+{
+    "Message": "Upload in progress...",
+    "CompletionMessage": "Sync completed",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/mdk_errorarchive/Actions/SampleServiceV4/Service/UploadOffline.action",
+    "OnFailure": "/mdk_errorarchive/Actions/SampleServiceV4/Service/SyncFailureMessage.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

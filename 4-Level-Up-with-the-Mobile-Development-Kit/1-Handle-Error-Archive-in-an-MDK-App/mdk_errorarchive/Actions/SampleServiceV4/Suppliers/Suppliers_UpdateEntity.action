@@ -1,0 +1,25 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Suppliers",
+        "Service": "/mdk_errorarchive/Services/SampleServiceV4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "EmailAddress": "#Control:EmailAddress/#Value",
+        "HouseNumber": "#Control:HouseNumber/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value",
+        "SupplierID": "#Control:SupplierID/#Value",
+        "SupplierName": "#Control:SupplierName/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mdk_errorarchive/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdk_errorarchive/Actions/UpdateEntityFailureMessage.action"
+}

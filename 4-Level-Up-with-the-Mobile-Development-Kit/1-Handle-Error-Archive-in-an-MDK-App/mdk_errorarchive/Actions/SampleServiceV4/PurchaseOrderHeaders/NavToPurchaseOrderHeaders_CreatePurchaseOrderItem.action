@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mdk_errorarchive/Pages/SampleServiceV4_PurchaseOrderHeaders/PurchaseOrderHeaders_CreatePurchaseOrderItem.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,27 @@
+{
+    "ParentLink": {
+        "Property": "PurchaseOrders",
+        "Target": {
+            "EntitySet": "Suppliers",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/mdk_errorarchive/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mdk_errorarchive/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "PurchaseOrderID": "#Control:PurchaseOrderID/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "PurchaseOrderHeaders",
+        "Service": "/mdk_errorarchive/Services/SampleServiceV4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

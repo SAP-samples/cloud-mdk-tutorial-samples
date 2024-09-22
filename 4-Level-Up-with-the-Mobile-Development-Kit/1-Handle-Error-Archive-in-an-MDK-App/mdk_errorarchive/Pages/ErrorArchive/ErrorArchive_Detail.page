@@ -1,0 +1,127 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "{AffectedEntity}",
+					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Affected Entity: {#Page:-Current/AffectedEntity/@odata.type}"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "Edit Affected Entity",
+						"Subhead": "{@odata.id}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mdk_errorarchive/Rules/SampleServiceV4/ErrorArchive_DecideWhichEditPage.js",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Message}",
+							"_Name": "KeyValue0",
+							"KeyName": "Error",
+							"Visible": true
+						},
+						{
+							"Value": "{RequestBody}",
+							"_Name": "KeyValue1",
+							"KeyName": "Request Body",
+							"Visible": true
+						},
+						{
+							"Value": "{RequestURL}",
+							"_Name": "KeyValue2",
+							"KeyName": "Request URL",
+							"Visible": true
+						},
+						{
+							"Value": "{HTTPStatusCode}",
+							"_Name": "KeyValue3",
+							"KeyName": "HTTP Status Code",
+							"Visible": true
+						},
+						{
+							"Value": "{RequestMethod}",
+							"_Name": "KeyValue4",
+							"KeyName": "Request Method",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ErrorArchive_Detail",
+	"Caption": "Details",
+	"PrefersLargeCaption": true
+}
