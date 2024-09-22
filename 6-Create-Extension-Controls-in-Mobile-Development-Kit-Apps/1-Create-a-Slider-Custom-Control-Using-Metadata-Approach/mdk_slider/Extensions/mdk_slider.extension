@@ -1,0 +1,25 @@
+{
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "MySliderModule",
+	"Control": "MySliderExtension",
+	"Class": "MySliderClass",
+	"Display": "/mdk_slider/Images/slider.png",
+	"ExtensionPropertiesSchema": {
+		"type": "object",
+		"BindType": "",
+		"properties": {
+			"MaxValue": {
+				"type": "number",
+				"BindType": ""
+			},
+			"MinValue": {
+				"type": "number",
+				"BindType": ""
+			},
+			"Title": {
+				"type": "string",
+				"BindType": ""
+			}
+		}
+	}
+}

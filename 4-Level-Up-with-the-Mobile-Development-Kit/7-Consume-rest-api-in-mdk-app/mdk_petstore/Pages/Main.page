@@ -1,0 +1,99 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/mdk_petstore/Services/petstore.service",
+						"Path": "/pet/findByStatus?status=available",
+						"RequestProperties": {
+							"Method": "GET",
+							"FetchCSRF": true
+						}
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "Pet ID: {id}",
+						"Subhead": "Pet Name: {name}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{status}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mdk_petstore/Actions/Application/UserMenuPopover.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mdk_petstore/Actions/NavToPet_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

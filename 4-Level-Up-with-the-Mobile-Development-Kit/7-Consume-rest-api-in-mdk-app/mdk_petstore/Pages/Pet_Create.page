@@ -1,0 +1,81 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreatePet",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Pet Name",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateStatus",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Status",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Pet_Create",
+	"Caption": "Create Pet",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mdk_petstore/Actions/ClosePage.action"
+			},
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mdk_petstore/Actions/CreatePet.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}
