@@ -1,7 +1,0 @@
-{
-    "_Type": "Action.Type.BannerMessage",
-    "ActionResult": {
-        "_Name": "GenericBannerMessage"
-    },
-    "Message": "Message"
-}

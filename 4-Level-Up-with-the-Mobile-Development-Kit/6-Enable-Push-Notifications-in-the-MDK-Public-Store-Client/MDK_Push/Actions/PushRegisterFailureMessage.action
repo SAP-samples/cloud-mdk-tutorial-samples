@@ -1,9 +1,0 @@
-{
-	"_Type": "Action.Type.Message",
-	"ActionResult": {
-		"_Name": "PushRegisterFailureMessage"
-	},
-	"Message": "Push Notification didn't register",
-	"Title": "Failure",
-	"OKCaption": "OK"
-}

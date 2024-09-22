@@ -1,6 +1,0 @@
-{
-    "ModalPageFullscreen": false,
-    "ModalPage": true,
-    "PageToOpen": "/MDK_Styling/Pages/SampleServiceV4_Customers/Customers_Edit.page",
-    "_Type": "Action.Type.Navigation"
-}

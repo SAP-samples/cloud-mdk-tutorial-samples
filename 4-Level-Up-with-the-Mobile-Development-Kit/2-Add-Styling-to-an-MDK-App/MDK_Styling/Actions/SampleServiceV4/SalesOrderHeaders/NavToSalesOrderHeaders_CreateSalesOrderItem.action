@@ -1,6 +1,0 @@
-{
-    "ModalPageFullscreen": false,
-    "ModalPage": true,
-    "PageToOpen": "/MDK_Styling/Pages/SampleServiceV4_SalesOrderHeaders/SalesOrderHeaders_CreateSalesOrderItem.page",
-    "_Type": "Action.Type.Navigation"
-}
