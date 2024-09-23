@@ -1,8 +1,0 @@
-{
-    "_Type": "Action.Type.BannerMessage",
-    "Message": "Upload failed!",
-    "Duration": 0,
-    "Animated": false,
-    "OnActionLabelPress": "/MultiUserApp/Actions/ErrorArchive/NavToErrorArchive_List.action",
-    "ActionLabel": "View Errors"
-}

@@ -1,8 +1,0 @@
-{
-    "_Type": "Action.Type.ApplicationUpdate",
-    "ActionResult": {
-        "_Name": "AppUpdate"
-    },
-    "OnFailure": "/MultiUserApp/Rules/Application/AppUpdateFailure.js",
-    "OnSuccess": "/MultiUserApp/Rules/Application/AppUpdateSuccess.js"
-}

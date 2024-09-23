@@ -1,5 +1,0 @@
-{
-    "ModalPage": true,
-    "PageToOpen": "/MultiUserApp/Pages/Application/UserActivityLog.page",
-    "_Type": "Action.Type.Navigation"
-}
