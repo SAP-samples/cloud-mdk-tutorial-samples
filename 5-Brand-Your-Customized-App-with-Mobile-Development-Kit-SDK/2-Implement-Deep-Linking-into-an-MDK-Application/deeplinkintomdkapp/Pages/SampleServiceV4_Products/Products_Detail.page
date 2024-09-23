@@ -1,0 +1,190 @@
+{
+	"Caption": "$(L,PRODUCT_TYPE)",
+	"DesignTimeTarget": {
+		"Service": "/deeplinkintomdkapp/Services/SampleServiceV4.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "/deeplinkintomdkapp/Services/SampleServiceV4.service/{@odata.readLink}/Picture",
+						"HeadlineText": "{Name}",
+						"Subhead": "{Category}",
+						"BodyText": "",
+						"Footnote": "{CurrencyCode}",
+						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{DimensionHeight}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}"
+						},
+						{
+							"KeyName": "CategoryName",
+							"Value": "{CategoryName}"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "DimensionDepth",
+							"Value": "{DimensionDepth}"
+						},
+						{
+							"KeyName": "DimensionHeight",
+							"Value": "{DimensionHeight}"
+						},
+						{
+							"KeyName": "DimensionUnit",
+							"Value": "{DimensionUnit}"
+						},
+						{
+							"KeyName": "DimensionWidth",
+							"Value": "{DimensionWidth}"
+						},
+						{
+							"KeyName": "LongDescription",
+							"Value": "{LongDescription}"
+						},
+						{
+							"KeyName": "Name",
+							"Value": "{Name}"
+						},
+						{
+							"KeyName": "PictureUrl",
+							"Value": "{PictureUrl}"
+						},
+						{
+							"KeyName": "Price",
+							"Value": "{Price}"
+						},
+						{
+							"KeyName": "ProductID",
+							"Value": "{ProductID}"
+						},
+						{
+							"KeyName": "QuantityUnit",
+							"Value": "{QuantityUnit}"
+						},
+						{
+							"KeyName": "ShortDescription",
+							"Value": "{ShortDescription}"
+						},
+						{
+							"KeyName": "SupplierID",
+							"Value": "{SupplierID}"
+						},
+						{
+							"KeyName": "Weight",
+							"Value": "{Weight}"
+						},
+						{
+							"KeyName": "WeightUnit",
+							"Value": "{WeightUnit}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "PurchaseOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{GrossAmount}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{PurchaseOrderID}",
+						"OnPress": "/deeplinkintomdkapp/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/PurchaseOrderItems",
+						"Service": "/deeplinkintomdkapp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/deeplinkintomdkapp/Actions/SampleServiceV4/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrderItems",
+						"Service": "/deeplinkintomdkapp/Services/SampleServiceV4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PurchaseOrderItems",
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Detail",
+	"PrefersLargeCaption": true
+}

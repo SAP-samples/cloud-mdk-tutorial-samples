@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/mdk_geolocation/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/mdk_geolocation/Rules/Application/AppUpdateSuccess.js"
+}

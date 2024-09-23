@@ -1,0 +1,10 @@
+{
+    "DestinationName": "SampleServiceV4",
+    "OfflineEnabled": false,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "OfflineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
+}

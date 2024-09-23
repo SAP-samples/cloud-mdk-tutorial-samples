@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "PushRegisterSuccessMessage"
+	},
+	"Message": "Push Notification registered",
+	"Title": "Success",
+	"OKCaption": "OK"
+}

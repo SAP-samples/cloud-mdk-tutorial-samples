@@ -1,0 +1,9 @@
+{
+    "Service": "/multiuserapp/Services/SampleServiceV4.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/multiuserapp/Actions/SampleServiceV4/Service/DownloadStartedMessage.action",
+    "OnFailure": "/multiuserapp/Actions/SampleServiceV4/Service/SyncFailureMessage.action"
+}
