@@ -2,7 +2,7 @@
     "PopoverItems": [{
             "Enabled": true,
             "Icon": "sap-icon://synchronize",
-            "OnPress": "/mdk_styling/Actions/SampleServiceV4/Service/SyncStartedMessage.action",
+            "OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/Service/SyncStartedMessage.action",
             "Title": "Sync Changes",
             "Visible": "$(PLT,true,true,false)"
         },

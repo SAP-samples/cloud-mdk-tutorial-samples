@@ -4,16 +4,20 @@
 			{
 				"OnPress": "/mdk_annotations/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
-				"SystemItem": "Cancel"
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
 				"OnPress": "/mdk_annotations/Actions/SampleServiceV4/Products/Products_CreateSalesOrderItem.action",
 				"Position": "Right",
-				"SystemItem": "Save"
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
 			}
-		]
+		],
+		"Caption": "$(L,Create_SalesOrderItem)",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	},
-	"Caption": "$(L,Create_SalesOrderItem)",
 	"Controls": [
 		{
 			"Sections": [
@@ -113,6 +117,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_CreateSalesOrderItem",
-	"PrefersLargeCaption": true
+	"_Name": "Products_CreateSalesOrderItem"
 }

@@ -18,7 +18,7 @@
 					},
 					"_Type": "Section.Type.ContactCell",
 					"Target": {
-						"Service": "/demosampleapp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 						"EntitySet": "Customers"
 					},
 					"_Name": "SectionContactCell0",
@@ -63,11 +63,10 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_List",
-	"Caption": "Customers",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Add",
@@ -77,6 +76,8 @@
 				"OnPress": "/demosampleapp/Actions/NavToCustomers_Create.action"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Customers"
 	}
 }

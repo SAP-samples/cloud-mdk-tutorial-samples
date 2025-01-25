@@ -35,7 +35,8 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true,
 							"LeadingItems": [],
-							"TrailingItems": []
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "Pet ID: {id}",
 						"Subhead": "Pet Name: {name}",
@@ -53,7 +54,8 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"Selected": false
+						"Selected": false,
+						"_Type": "ObjectTable.Type.ObjectCell"
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -71,8 +73,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -82,7 +82,8 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_petstore/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdk_petstore/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
 				"_Name": "ActionBarItem1",
@@ -91,9 +92,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_petstore/Actions/NavToPet_Create.action"
+				"OnPress": "/mdk_petstore/Actions/NavToPet_Create.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

@@ -10,10 +10,10 @@
 			"Sections": [
 				{
 					"Header": {
-						"_Name": "SectionHeader_SampleServiceV4",
+						"_Name": "SectionHeader_com_sap_edm_sampleservice_v4",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "SampleServiceV4",
+						"Caption": "com_sap_edm_sampleservice_v4",
 						"_Type": "SectionCommon.Type.Header"
 					},
 					"Separators": {
@@ -25,7 +25,7 @@
 					},
 					"Buttons": [
 						{
-							"OnPress": "/mdk_maps/Actions/SampleServiceV4/Customers/NavToCustomers_List.action",
+							"OnPress": "/mdk_maps/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
 							"Title": "Customers",
 							"ButtonType": "Text",
@@ -33,7 +33,7 @@
 							"_Type": "ButtonTable.Type.Button"
 						}
 					],
-					"_Name": "SectionButtonTable_SampleServiceV4",
+					"_Name": "SectionButtonTable_com_sap_edm_sampleservice_v4",
 					"_Type": "Section.Type.ButtonTable"
 				}
 			]
@@ -41,8 +41,6 @@
 	],
 	"_Name": "Main",
 	"_Type": "Page",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -52,9 +50,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_maps/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdk_maps/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

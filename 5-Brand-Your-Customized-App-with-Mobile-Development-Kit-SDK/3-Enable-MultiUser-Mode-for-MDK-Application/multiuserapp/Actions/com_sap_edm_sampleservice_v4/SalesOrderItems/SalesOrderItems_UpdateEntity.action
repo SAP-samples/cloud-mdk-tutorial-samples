@@ -1,0 +1,26 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "SalesOrderItems",
+        "Service": "/multiuserapp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "DeliveryDate": "#Control:DeliveryDate/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "ItemNumber": "#Control:ItemNumber/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "ProductID": "#Control:ProductID/#SelectedValue",
+        "Quantity": "#Control:Quantity/#Value",
+        "QuantityUnit": "#Control:QuantityUnit/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/multiuserapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/multiuserapp/Actions/UpdateEntityFailureMessage.action"
+}

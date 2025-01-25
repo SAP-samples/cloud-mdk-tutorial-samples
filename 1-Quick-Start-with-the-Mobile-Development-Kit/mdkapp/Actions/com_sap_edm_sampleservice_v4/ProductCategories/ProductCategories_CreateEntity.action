@@ -1,0 +1,20 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mdkapp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mdkapp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "MainCategory": "#Control:MainCategory/#Value",
+        "MainCategoryName": "#Control:MainCategoryName/#Value",
+        "NumberOfProducts": "#Control:NumberOfProducts/#Value"
+    },
+    "Target": {
+        "EntitySet": "ProductCategories",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

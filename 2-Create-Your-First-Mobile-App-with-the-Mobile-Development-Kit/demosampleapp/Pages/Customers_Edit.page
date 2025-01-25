@@ -1,14 +1,14 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -16,6 +16,8 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"Value": "{FirstName}",
@@ -47,7 +49,6 @@
 							"Separator": true,
 							"Caption": "Phone",
 							"PlaceHolder": "PlaceHolder",
-							"KeyboardType": "Phone",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -57,33 +58,29 @@
 							"_Name": "FCEmail",
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Email",
+							"Caption": "FCEmail",
 							"PlaceHolder": "PlaceHolder",
-							"KeyboardType": "Email",
 							"Enabled": true,
 							"IsEditable": true
 						}
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					},
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0"
+					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Edit",
-	"Caption": " Update Customer",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
@@ -93,6 +90,7 @@
 				"OnPress": "/demosampleapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Save",
@@ -102,6 +100,8 @@
 				"OnPress": "/demosampleapp/Actions/Customers_UpdateEntity.action"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Update Customer"
 	}
 }

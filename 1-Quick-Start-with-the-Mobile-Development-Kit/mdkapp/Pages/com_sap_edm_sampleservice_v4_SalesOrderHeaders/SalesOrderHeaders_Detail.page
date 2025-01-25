@@ -1,0 +1,145 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+		"EntitySet": "SalesOrderHeaders",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/SalesOrderHeaders_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,SalesOrderHeader_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"BodyText": "",
+						"Footnote": "{CustomerID}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{LifeCycleStatus}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CreatedAt",
+							"Value": "{CreatedAt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LifeCycleStatus",
+							"Value": "{LifeCycleStatus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LifeCycleStatusName",
+							"Value": "{LifeCycleStatusName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Items",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/Items",
+						"Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail"
+}

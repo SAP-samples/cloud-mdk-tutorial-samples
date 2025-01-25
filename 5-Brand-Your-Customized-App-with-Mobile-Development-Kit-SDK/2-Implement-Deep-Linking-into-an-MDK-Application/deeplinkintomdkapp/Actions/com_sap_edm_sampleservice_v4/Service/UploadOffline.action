@@ -1,0 +1,9 @@
+{
+    "Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/DownloadStartedMessage.action",
+    "OnFailure": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/SyncFailureMessage.action"
+}

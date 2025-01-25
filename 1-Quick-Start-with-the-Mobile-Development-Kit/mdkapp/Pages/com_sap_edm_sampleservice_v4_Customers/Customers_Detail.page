@@ -1,0 +1,194 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Customers/Customers_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Customer_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{FirstName}",
+						"Subhead": "{City}",
+						"BodyText": "",
+						"Footnote": "{CustomerID}",
+						"Description": "{Country}",
+						"StatusText": "{DateOfBirth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{EmailAddress}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "City",
+							"Value": "{City}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DateOfBirth",
+							"Value": "{DateOfBirth}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "EmailAddress",
+							"Value": "{EmailAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FirstName",
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastName",
+							"Value": "{LastName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PhoneNumber",
+							"Value": "{PhoneNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "Address",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{Address/HouseNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Address/Street}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "City",
+							"Value": "{Address/City}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Address/Country}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{Address/PostalCode}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValueAddress",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrders",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CurrencyCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LifeCycleStatusName}",
+						"Footnote": "{CustomerID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{GrossAmount}",
+						"Subhead": "{CreatedAt}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Detail"
+}

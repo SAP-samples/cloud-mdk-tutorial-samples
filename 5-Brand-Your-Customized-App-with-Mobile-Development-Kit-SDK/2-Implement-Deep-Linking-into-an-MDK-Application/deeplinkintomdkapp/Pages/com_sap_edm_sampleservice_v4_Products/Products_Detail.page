@@ -1,0 +1,209 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,Product_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture",
+						"HeadlineText": "{Name}",
+						"Subhead": "{Category}",
+						"BodyText": "",
+						"Footnote": "{CurrencyCode}",
+						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{DimensionHeight}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CategoryName",
+							"Value": "{CategoryName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DimensionDepth",
+							"Value": "{DimensionDepth}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DimensionHeight",
+							"Value": "{DimensionHeight}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DimensionUnit",
+							"Value": "{DimensionUnit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DimensionWidth",
+							"Value": "{DimensionWidth}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LongDescription",
+							"Value": "{LongDescription}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Name",
+							"Value": "{Name}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PictureUrl",
+							"Value": "{PictureUrl}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Price",
+							"Value": "{Price}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ProductID",
+							"Value": "{ProductID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "QuantityUnit",
+							"Value": "{QuantityUnit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ShortDescription",
+							"Value": "{ShortDescription}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierID",
+							"Value": "{SupplierID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Weight",
+							"Value": "{Weight}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WeightUnit",
+							"Value": "{WeightUnit}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "PurchaseOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{GrossAmount}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{ItemNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NetAmount}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{PurchaseOrderID}",
+						"OnPress": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/PurchaseOrderItems",
+						"Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "SalesOrderItems",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DeliveryDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ProductID}",
+						"Footnote": "{GrossAmount}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ItemNumber}",
+						"Subhead": "{CurrencyCode}",
+						"SubstatusText": "{NetAmount}",
+						"OnPress": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrderItems",
+						"Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PurchaseOrderItems",
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Detail"
+}

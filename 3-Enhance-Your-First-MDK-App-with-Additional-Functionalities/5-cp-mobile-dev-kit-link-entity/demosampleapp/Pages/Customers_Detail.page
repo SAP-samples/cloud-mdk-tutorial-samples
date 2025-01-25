@@ -37,24 +37,28 @@
 					"KeyAndValues": [
 						{
 							"Value": "{HouseNumber} {Street}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue0",
 							"KeyName": "Address",
 							"Visible": true
 						},
 						{
 							"Value": "{City}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue1",
 							"KeyName": "City",
 							"Visible": true
 						},
 						{
 							"Value": "{PostalCode}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue2",
 							"KeyName": "Postal Code",
 							"Visible": true
 						},
 						{
 							"Value": "{Country}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue3",
 							"KeyName": "Country",
 							"Visible": true
@@ -107,7 +111,7 @@
 						"SalesOrderHeaders"
 					],
 					"Target": {
-						"Service": "/demosampleapp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 						"EntitySet": "{@odata.readLink}/SalesOrders",
 						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
 					},
@@ -122,7 +126,8 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true,
 							"LeadingItems": [],
-							"TrailingItems": []
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
@@ -146,6 +151,7 @@
 								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
+						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
 					"DataPaging": {
@@ -163,16 +169,15 @@
 		}
 	],
 	"DesignTimeTarget": {
-		"Service": "/demosampleapp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 		"EntitySet": "Customers"
 	},
 	"_Type": "Page",
 	"_Name": "Customers_Detail",
-	"Caption": "Details",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Edit",
@@ -182,6 +187,7 @@
 				"OnPress": "/demosampleapp/Actions/NavToCustomers_Edit.action"
 			},
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Trash",
@@ -191,7 +197,9 @@
 				"OnPress": "/demosampleapp/Rules/Customers_DeleteConfirmation.js"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Details"
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",

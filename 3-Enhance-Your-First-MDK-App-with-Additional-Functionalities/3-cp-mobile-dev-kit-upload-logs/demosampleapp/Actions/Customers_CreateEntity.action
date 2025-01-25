@@ -6,14 +6,14 @@
 	"OnFailure": "/demosampleapp/Actions/CreateCustomerEntityFailureMessage.action",
 	"OnSuccess": "/demosampleapp/Actions/CloseModalPage_Complete.action",
 	"Target": {
-		"Service": "/demosampleapp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 		"EntitySet": "Customers"
 	},
 	"Properties": {
 		"DateOfBirth": "#Control:FCCreateDOB/#Value",
-		"EmailAddress": "#Control:FCEmail/#Value",
-		"FirstName": "#Control:FCFirstName/#Value",
+		"EmailAddress": "#Control:FCCreateEmail/#Value",
+		"FirstName": "#Control:FCCreateFirstName/#Value",
 		"LastName": "#Control:FCLastName/#Value",
-		"PhoneNumber": "#Control:FCPhone/#Value"
+		"PhoneNumber": "#Control:FCCreatePhone/#Value"
 	}
 }

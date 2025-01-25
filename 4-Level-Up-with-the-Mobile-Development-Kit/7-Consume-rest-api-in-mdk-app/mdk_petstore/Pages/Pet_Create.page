@@ -53,8 +53,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Pet_Create",
-	"Caption": "Create Pet",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -64,7 +62,8 @@
 				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_petstore/Actions/ClosePage.action"
+				"OnPress": "/mdk_petstore/Actions/ClosePage.action",
+				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
 				"_Name": "ActionBarItem0",
@@ -73,9 +72,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_petstore/Actions/CreatePet.action"
+				"OnPress": "/mdk_petstore/Actions/CreatePet.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Create Pet",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

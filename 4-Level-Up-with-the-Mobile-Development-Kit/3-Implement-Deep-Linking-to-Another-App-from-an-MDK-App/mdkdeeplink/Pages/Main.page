@@ -60,8 +60,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -71,9 +69,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdkdeeplink/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdkdeeplink/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

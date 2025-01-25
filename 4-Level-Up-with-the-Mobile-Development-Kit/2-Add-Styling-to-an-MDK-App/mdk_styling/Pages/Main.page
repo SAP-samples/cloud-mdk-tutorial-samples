@@ -17,13 +17,13 @@
 						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable_SampleServiceV4",
+					"_Name": "SectionButtonTable_com_sap_edm_sampleservice_v4",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
-						"_Name": "SectionHeader_SampleServiceV4",
+						"_Name": "SectionHeader_com_sap_edm_sampleservice_v4",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "SampleServiceV4"
+						"Caption": "com_sap_edm_sampleservice_v4"
 					},
 					"Visible": true,
 					"EmptySection": {
@@ -44,7 +44,7 @@
 							"Styles": {
 								"Button": "MyCustomerButton"
 							},
-							"OnPress": "/mdk_styling/Actions/SampleServiceV4/Customers/NavToCustomers_List.action"
+							"OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_List.action"
 						},
 						{
 							"_Type": "ButtonTable.Type.Button",
@@ -57,7 +57,7 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/mdk_styling/Actions/SampleServiceV4/Products/NavToProducts_List.action"
+							"OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action"
 						}
 					],
 					"Layout": {
@@ -70,11 +70,10 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "User Menu",
 				"Icon": "sap-icon://customer",
@@ -84,6 +83,9 @@
 				"OnPress": "/mdk_styling/Actions/Application/UserMenuPopover.action"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Main",
+		"PrefersLargeCaption": true
 	}
 }

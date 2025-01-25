@@ -47,7 +47,6 @@
 							"Separator": true,
 							"Caption": "Phone",
 							"PlaceHolder": "PlaceHolder",
-							"KeyboardType": "Phone",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -57,9 +56,8 @@
 							"_Name": "FCEmail",
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Email",
+							"Caption": "FCEmail",
 							"PlaceHolder": "PlaceHolder",
-							"KeyboardType": "Email",
 							"Enabled": true,
 							"IsEditable": true
 						}
@@ -79,11 +77,10 @@
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Edit",
-	"Caption": " Update Customer",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
@@ -93,6 +90,7 @@
 				"OnPress": "/demosampleapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Save",
@@ -102,6 +100,8 @@
 				"OnPress": "/demosampleapp/Actions/Customers_UpdateEntity.action"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Update Customer"
 	}
 }

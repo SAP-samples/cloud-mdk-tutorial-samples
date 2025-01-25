@@ -7,5 +7,5 @@
 	"OnDidUpdate": "/mdk_styling/Rules/Service/Initialize.js",
 	"Styles": "/mdk_styling/Styles/Styles.less",
 	"Localization": "/mdk_styling/i18n/i18n.properties",
-	"_SchemaVersion": "24.7"
+	"_SchemaVersion": "24.11"
 }

@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Stock",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "LotSize": "#Control:LotSize/#Value",
+        "MinStock": "#Control:MinStock/#Value",
+        "ProductID": "#Control:ProductID/#SelectedValue",
+        "Quantity": "#Control:Quantity/#Value",
+        "QuantityLessMin": "#Control:QuantityLessMin/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mdkapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/UpdateEntityFailureMessage.action"
+}

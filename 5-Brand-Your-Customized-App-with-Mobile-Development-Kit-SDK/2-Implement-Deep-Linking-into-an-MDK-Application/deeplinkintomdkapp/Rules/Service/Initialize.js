@@ -3,11 +3,11 @@ export default function Initialize(context) {
     // Perform pre data initialization task
 
     // Initialize all your Data sources
-    let _SampleServiceV4 = context.executeAction('/deeplinkintomdkapp/Actions/SampleServiceV4/Service/InitializeOffline.action');
+    let _com_sap_edm_sampleservice_v4 = context.executeAction('/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/InitializeOffline.action');
 
     //You can add more service initialize actions here
 
-    return Promise.all([_SampleServiceV4]).then(() => {
+    return Promise.all([_com_sap_edm_sampleservice_v4]).then(() => {
         // After Initializing the DB connections
 
         // Display successful initialization  message to the user

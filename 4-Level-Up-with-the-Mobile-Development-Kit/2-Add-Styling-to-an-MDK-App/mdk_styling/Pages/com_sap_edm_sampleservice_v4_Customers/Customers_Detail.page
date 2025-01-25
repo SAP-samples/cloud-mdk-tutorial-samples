@@ -1,0 +1,296 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/mdk_styling/Services/com_sap_edm_sampleservice_v4.service",
+		"EntitySet": "Customers",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [
+				"SalesOrderHeaders"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{City}",
+						"Footnote": "{CustomerID}",
+						"Description": "{Country}",
+						"StatusText": "{DateOfBirth}",
+						"SubstatusText": "{EmailAddress}",
+						"HeadlineText": "{FirstName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Styles": {
+							"ObjectHeader": "objectHeaderBackground",
+							"BodyText": "objectHeaderBodyText",
+							"Description": "objectHeaderDescription",
+							"Footnote": "objectHeaderFootNote",
+							"HeadlineText": "objectHeaderHeadline",
+							"StatusText": "objectHeaderStatus",
+							"Subhead": "objectHeaderSubhead",
+							"SubstatusText": "objectHeaderSubStatus"
+						}
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{City}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue0",
+							"KeyName": "City",
+							"Visible": true
+						},
+						{
+							"Value": "{Country}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue1",
+							"KeyName": "Country",
+							"Visible": true
+						},
+						{
+							"Value": "{CustomerID}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue2",
+							"KeyName": "CustomerID",
+							"Visible": true
+						},
+						{
+							"Value": "{DateOfBirth}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue3",
+							"KeyName": "DateOfBirth",
+							"Visible": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue4",
+							"KeyName": "EmailAddress",
+							"Visible": true
+						},
+						{
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue5",
+							"KeyName": "FirstName",
+							"Visible": true
+						},
+						{
+							"Value": "{HouseNumber}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue6",
+							"KeyName": "HouseNumber",
+							"Visible": true
+						},
+						{
+							"Value": "{LastName}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue7",
+							"KeyName": "LastName",
+							"Visible": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue8",
+							"KeyName": "PhoneNumber",
+							"Visible": true
+						},
+						{
+							"Value": "{PostalCode}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue9",
+							"KeyName": "PostalCode",
+							"Visible": true
+						},
+						{
+							"Value": "{Street}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue10",
+							"KeyName": "Street",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Address/HouseNumber}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue11",
+							"KeyName": "HouseNumber",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Street}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue12",
+							"KeyName": "Street",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/City}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue13",
+							"KeyName": "City",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Country}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue14",
+							"KeyName": "Country",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/PostalCode}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue15",
+							"KeyName": "PostalCode",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValueAddress",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Address"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "SalesOrders"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"Service": "/mdk_styling/Services/com_sap_edm_sampleservice_v4.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"Footnote": "{CustomerID}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
+					},
+					"HighlightSelectedItem": false
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_Edit.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "More",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/mdk_styling/Actions/com_sap_edm_sampleservice_v4/Customers/Customers_DetailPopover.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "$(L,Customer_Detail)"
+	}
+}

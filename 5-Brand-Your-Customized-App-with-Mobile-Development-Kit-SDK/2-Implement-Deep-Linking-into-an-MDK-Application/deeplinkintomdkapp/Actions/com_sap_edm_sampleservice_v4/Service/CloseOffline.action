@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/CloseOfflineFailureMessage.action"
+}

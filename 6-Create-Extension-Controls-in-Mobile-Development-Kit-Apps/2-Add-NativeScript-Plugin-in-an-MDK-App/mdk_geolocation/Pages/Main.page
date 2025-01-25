@@ -27,7 +27,8 @@
 							"Value": "/mdk_geolocation/Rules/GetCoordinates.js",
 							"_Name": "KeyValue0",
 							"KeyName": "Coordinates",
-							"Visible": true
+							"Visible": true,
+							"_Type": "KeyValue.Type.Item"
 						}
 					],
 					"MaxItemCount": 1,
@@ -44,8 +45,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -55,9 +54,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_geolocation/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdk_geolocation/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

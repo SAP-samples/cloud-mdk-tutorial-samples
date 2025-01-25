@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mdkapp/Pages/com_sap_edm_sampleservice_v4_PurchaseOrderHeaders/PurchaseOrderHeaders_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,24 +1,13 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
-						"Service": "/demosampleapp/Services/SampleServiceV4.service",
+						"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 						"EntitySet": "SalesOrderHeaders",
 						"QueryOptions": "$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc"
 					},
@@ -28,13 +17,14 @@
 						"Caption": "No Orders Found",
 						"FooterVisible": false
 					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						},
 						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
@@ -57,7 +47,15 @@
 								"PageToOpen": "/demosampleapp/Pages/SalesOrders_Details.page"
 							}
 						},
-						"Selected": false
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -74,11 +72,19 @@
 						"Mode": "None"
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Customers_Orders",
-	"Caption": "Customer Orders",
-	"PrefersLargeCaption": true
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Customer Orders"
+	}
 }

@@ -1,0 +1,50 @@
+{
+    "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "ProductCategories",
+            "Query": "ProductCategories"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "ProductTexts",
+            "Query": "ProductTexts"
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "Stock",
+            "Query": "Stock"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/mdkapp/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_CheckForSyncError.js"
+}

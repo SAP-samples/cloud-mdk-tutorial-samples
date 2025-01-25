@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "ErrorArchive_UnknownAffectedEntity"
 	},
-	"Message": "Affected Entity {AffectedEntity/@odata.id} doesn't have handler yet",
+	"Message": "Affected Entity {AffectedEntity/@odata.id} doesn't have handler yet.",
 	"Duration": 4,
 	"Animated": true
 }

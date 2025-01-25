@@ -1,0 +1,5 @@
+{
+    "_Type": "Action.Type.OpenDocument",
+    "Path": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture",
+    "MimeType": "image/jpeg"
+}

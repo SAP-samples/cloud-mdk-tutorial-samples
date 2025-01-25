@@ -109,11 +109,10 @@
 	],
 	"_Type": "Page",
 	"_Name": "SalesOrderHeaders_Create",
-	"Caption": "Create Order",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
@@ -123,6 +122,7 @@
 				"OnPress": "/demosampleapp/Actions/CloseModalPage_Cancel.action"
 			},
 			{
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem1",
 				"Caption": "Item",
 				"SystemItem": "Save",
@@ -132,6 +132,8 @@
 				"OnPress": "/demosampleapp/Actions/SalesOrderHeaders_CreateEntity.action"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Create Order"
 	}
 }

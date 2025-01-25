@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "ID": "#Control:ID/#Value",
+        "Language": "#Control:Language/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "ProductID": "#Control:ProductID/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mdkapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/UpdateEntityFailureMessage.action"
+}

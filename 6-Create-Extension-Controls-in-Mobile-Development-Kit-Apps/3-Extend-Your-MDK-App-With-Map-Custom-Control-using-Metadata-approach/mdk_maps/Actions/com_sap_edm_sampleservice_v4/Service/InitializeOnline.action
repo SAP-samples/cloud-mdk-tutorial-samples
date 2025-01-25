@@ -1,0 +1,9 @@
+{
+    "Service": "/mdk_maps/Services/com_sap_edm_sampleservice_v4.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/mdk_maps/Actions/com_sap_edm_sampleservice_v4/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

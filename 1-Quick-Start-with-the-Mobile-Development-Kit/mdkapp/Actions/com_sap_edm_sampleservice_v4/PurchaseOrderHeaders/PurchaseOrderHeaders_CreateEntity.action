@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mdkapp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mdkapp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "PurchaseOrderID": "#Control:PurchaseOrderID/#Value",
+        "SupplierID": "#Control:SupplierID/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "PurchaseOrderHeaders",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,6 +1,0 @@
-{
-    "ModalPageFullscreen": false,
-    "ModalPage": true,
-    "PageToOpen": "/mdkapp/Pages/SampleServiceV4_Products/Products_Create.page",
-    "_Type": "Action.Type.Navigation"
-}

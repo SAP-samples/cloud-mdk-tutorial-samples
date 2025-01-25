@@ -1,6 +1,0 @@
-{
-    "ModalPageFullscreen": false,
-    "ModalPage": true,
-    "PageToOpen": "/multiuserapp/Pages/SampleServiceV4_Products/Products_CreatePurchaseOrderItem.page",
-    "_Type": "Action.Type.Navigation"
-}

@@ -1,0 +1,18 @@
+{
+    "Service": "/mdk_i18n_l10n/Services/com_sap_edm_sampleservice_v4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/mdk_i18n_l10n/Actions/com_sap_edm_sampleservice_v4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/mdk_i18n_l10n/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_CheckForSyncError.js"
+}

@@ -21,39 +21,44 @@
 					"KeyAndValues": [
 						{
 							"Value": "{SalesOrderID}",
-							"_Name": "KeyValue0",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue4",
 							"KeyName": "Order Number",
 							"Visible": true
 						},
 						{
 							"Value": "{LifeCycleStatusName}",
-							"_Name": "KeyValue1",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue0",
 							"KeyName": "Status",
 							"Visible": true
 						},
 						{
 							"Value": "$(D,{CreatedAt},'','',{format:'medium'})",
-							"_Name": "KeyValue2",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue1",
 							"KeyName": "Created At",
 							"Visible": true
 						},
 						{
 							"Value": "$(C,{NetAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-							"_Name": "KeyValue3",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue2",
 							"KeyName": "Net Amount",
 							"Visible": true
 						},
 						{
 							"Value": "$(C,{TaxAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
-							"_Name": "KeyValue4",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue3",
 							"KeyName": "Tax Amount",
 							"Visible": true
 						},
 						{
 							"Value": "$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue5",
-							"KeyName": "Total Amount",
-							"Visible": true
+							"KeyName": "Total Amount"
 						}
 					],
 					"MaxItemCount": 1,
@@ -70,10 +75,14 @@
 	],
 	"_Type": "Page",
 	"_Name": "SalesOrders_Details",
-	"Caption": " Order Details",
-	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Order Details"
+	},
 	"DesignTimeTarget": {
-		"Service": "/demosampleapp/Services/SampleServiceV4.service",
+		"Service": "/demosampleapp/Services/com_sap_edm_sampleservice_v4.service",
 		"EntitySet": "SalesOrderHeaders"
 	}
 }

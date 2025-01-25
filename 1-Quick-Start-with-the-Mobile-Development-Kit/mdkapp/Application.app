@@ -7,5 +7,5 @@
 	"OnDidUpdate": "/mdkapp/Rules/Service/Initialize.js",
 	"Styles": "/mdkapp/Styles/Styles.less",
 	"Localization": "/mdkapp/i18n/i18n.properties",
-	"_SchemaVersion": "24.7"
+	"_SchemaVersion": "24.11"
 }

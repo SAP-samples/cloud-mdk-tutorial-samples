@@ -1,0 +1,69 @@
+{
+	"ActionBar": {
+		"Items": [],
+		"Caption": "$(L,Customers)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Country}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/mdk_i18n_l10n/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_Detail.action",
+						"StatusImage": "",
+						"Title": "{FirstName}",
+						"Footnote": "{CustomerID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{DateOfBirth}",
+						"Subhead": "{City}",
+						"SubstatusText": "{EmailAddress}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"Service": "/mdk_i18n_l10n/Services/com_sap_edm_sampleservice_v4.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_List"
+}

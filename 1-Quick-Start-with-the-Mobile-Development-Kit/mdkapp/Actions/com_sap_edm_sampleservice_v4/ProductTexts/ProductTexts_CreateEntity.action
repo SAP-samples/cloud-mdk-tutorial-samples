@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mdkapp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mdkapp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "ID": "#Control:ID/#Value",
+        "Language": "#Control:Language/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "ProductID": "#Control:ProductID/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value"
+    },
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

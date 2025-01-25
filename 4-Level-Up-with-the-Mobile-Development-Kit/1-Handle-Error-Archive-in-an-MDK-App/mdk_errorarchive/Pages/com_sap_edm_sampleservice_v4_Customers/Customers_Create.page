@@ -1,0 +1,106 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mdk_errorarchive/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/Customers/Customers_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_Customer_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerID",
+							"KeyboardType": "Number",
+							"_Name": "CustomerID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Date",
+							"_Name": "DateOfBirth",
+							"Caption": "DateOfBirth",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "EmailAddress",
+							"_Name": "EmailAddress",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gender",
+							"_Name": "Gender",
+							"Segments": [
+								"Male",
+								"Female",
+								"Other",
+								"None",
+								"Unknown"
+							],
+							"_Type": "Control.Type.FormCell.SegmentedControl"
+						},
+						{
+							"Caption": "FirstName",
+							"_Name": "FirstName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HouseNumber",
+							"_Name": "HouseNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastName",
+							"_Name": "LastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PhoneNumber",
+							"_Name": "PhoneNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_Create"
+}

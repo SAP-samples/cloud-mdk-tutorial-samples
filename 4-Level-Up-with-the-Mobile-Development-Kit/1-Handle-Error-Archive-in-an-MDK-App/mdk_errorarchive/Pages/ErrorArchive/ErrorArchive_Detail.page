@@ -35,7 +35,8 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true,
 							"LeadingItems": [],
-							"TrailingItems": []
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "Edit Affected Entity",
 						"Subhead": "{@odata.id}",
@@ -52,7 +53,8 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
-						"OnPress": "/mdk_errorarchive/Rules/SampleServiceV4/ErrorArchive_DecideWhichEditPage.js",
+						"OnPress": "/mdk_errorarchive/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_DecideWhichEditPage.js",
+						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
 					"DataPaging": {
@@ -70,30 +72,35 @@
 					"KeyAndValues": [
 						{
 							"Value": "{Message}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue0",
 							"KeyName": "Error",
 							"Visible": true
 						},
 						{
 							"Value": "{RequestBody}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue1",
 							"KeyName": "Request Body",
 							"Visible": true
 						},
 						{
 							"Value": "{RequestURL}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue2",
 							"KeyName": "Request URL",
 							"Visible": true
 						},
 						{
 							"Value": "{HTTPStatusCode}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue3",
 							"KeyName": "HTTP Status Code",
 							"Visible": true
 						},
 						{
 							"Value": "{RequestMethod}",
+							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue4",
 							"KeyName": "Request Method",
 							"Visible": true
@@ -122,6 +129,11 @@
 	],
 	"_Type": "Page",
 	"_Name": "ErrorArchive_Detail",
-	"Caption": "Details",
-	"PrefersLargeCaption": true
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Details",
+		"PrefersLargeCaption": true
+	}
 }

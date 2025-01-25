@@ -10,10 +10,10 @@
 			"Sections": [
 				{
 					"Header": {
-						"_Name": "SectionHeader_SampleServiceV4",
+						"_Name": "SectionHeader_com_sap_edm_sampleservice_v4",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "SampleServiceV4",
+						"Caption": "com_sap_edm_sampleservice_v4",
 						"_Type": "SectionCommon.Type.Header"
 					},
 					"Separators": {
@@ -25,31 +25,39 @@
 					},
 					"Buttons": [
 						{
-							"OnPress": "/mdk_errorarchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
+							"OnPress": "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_List.action",
 							"Alignment": "Center",
-							"Title": "PurchaseOrderHeaders",
+							"Title": "Customers",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/mdk_errorarchive/Actions/SampleServiceV4/PurchaseOrderItems/NavToPurchaseOrderItems_List.action",
+							"OnPress": "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action",
 							"Alignment": "Center",
-							"Title": "PurchaseOrderItems",
+							"Title": "Products",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"_Type": "ButtonTable.Type.Button"
 						},
 						{
-							"OnPress": "/mdk_errorarchive/Actions/SampleServiceV4/Suppliers/NavToSuppliers_List.action",
+							"OnPress": "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"Alignment": "Center",
-							"Title": "Suppliers",
+							"Title": "SalesOrderHeaders",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/SalesOrderItems/NavToSalesOrderItems_List.action",
+							"Alignment": "Center",
+							"Title": "SalesOrderItems",
 							"ButtonType": "Text",
 							"Semantic": "Tint",
 							"_Type": "ButtonTable.Type.Button"
 						}
 					],
-					"_Name": "SectionButtonTable_SampleServiceV4",
+					"_Name": "SectionButtonTable_com_sap_edm_sampleservice_v4",
 					"_Type": "Section.Type.ButtonTable"
 				}
 			]
@@ -57,8 +65,6 @@
 	],
 	"_Name": "Main",
 	"_Type": "Page",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -68,9 +74,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/mdk_errorarchive/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/mdk_errorarchive/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

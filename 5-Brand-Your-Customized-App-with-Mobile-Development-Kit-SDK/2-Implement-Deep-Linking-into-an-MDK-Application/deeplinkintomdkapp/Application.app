@@ -9,6 +9,6 @@
 	"Styles": "/deeplinkintomdkapp/Styles/Styles.less",
 	"Version": "/deeplinkintomdkapp/Globals/Application/AppDefinition_Version.global",
 	"Localization": "/deeplinkintomdkapp/i18n/i18n.properties",
-	"_SchemaVersion": "24.7",
+	"_SchemaVersion": "24.11",
 	"_Name": "deeplinkintomdkapp"
 }

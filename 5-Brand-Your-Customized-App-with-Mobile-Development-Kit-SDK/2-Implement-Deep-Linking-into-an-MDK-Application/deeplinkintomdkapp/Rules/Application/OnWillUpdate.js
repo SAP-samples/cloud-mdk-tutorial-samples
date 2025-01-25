@@ -5,7 +5,7 @@
 export default function OnWillUpdate(clientAPI) {
     return clientAPI.executeAction('/deeplinkintomdkapp/Actions/Application/OnWillUpdate.action').then((result) => {
         if (result.data) {
-            return clientAPI.executeAction('/deeplinkintomdkapp/Actions/SampleServiceV4/Service/CloseOffline.action').then(
+            return clientAPI.executeAction('/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/CloseOffline.action').then(
                 (success) => Promise.resolve(success),
                 (failure) => Promise.reject('Offline Odata Close Failed ' + failure));
         } else {

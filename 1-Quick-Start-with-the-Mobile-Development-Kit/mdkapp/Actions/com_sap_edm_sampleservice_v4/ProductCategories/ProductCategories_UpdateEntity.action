@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ProductCategories",
+        "Service": "/mdkapp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "MainCategory": "#Control:MainCategory/#Value",
+        "MainCategoryName": "#Control:MainCategoryName/#Value",
+        "NumberOfProducts": "#Control:NumberOfProducts/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mdkapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/UpdateEntityFailureMessage.action"
+}

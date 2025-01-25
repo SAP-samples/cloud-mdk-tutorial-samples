@@ -1,0 +1,18 @@
+{
+    "Service": "/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/deeplinkintomdkapp/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_CheckForSyncError.js"
+}

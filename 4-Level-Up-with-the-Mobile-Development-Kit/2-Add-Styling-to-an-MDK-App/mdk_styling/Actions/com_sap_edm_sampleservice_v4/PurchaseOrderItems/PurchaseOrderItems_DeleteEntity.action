@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "PurchaseOrderItems",
+        "Service": "/mdk_styling/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/mdk_styling/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/mdk_styling/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

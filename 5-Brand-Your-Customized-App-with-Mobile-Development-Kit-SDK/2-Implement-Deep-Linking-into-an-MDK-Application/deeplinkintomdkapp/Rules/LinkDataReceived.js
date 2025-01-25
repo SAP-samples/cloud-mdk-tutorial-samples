@@ -37,16 +37,16 @@ export default function LinkDataReceived(context) {
 
 function openProductByID(context, id) {
     context.getLogger().log(`ID: ${id}`,'Debug');
-    return context.read('/deeplinkintomdkapp/Services/SampleServiceV4.service', `Products(${id})`, [], null).then(function (result) {
+    return context.read('/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service', `Products(${id})`, [], null).then(function (result) {
         if (result.length) {
             context.getPageProxy().setActionBinding(result.getItem(0));
-            return context.getPageProxy().executeAction('/deeplinkintomdkapp/Actions/SampleServiceV4/Products/NavToProducts_Detail.action');
+            return context.getPageProxy().executeAction('/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_Detail.action');
         }
     });
 }
 
 function openProductListWithFilter(context, parametersObj) {
-    let pageData = context.getPageProxy().getPageDefinition('/deeplinkintomdkapp/Pages/SampleServiceV4_Products/Products_List.page');
+    let pageData = context.getPageProxy().getPageDefinition('/deeplinkintomdkapp/Pages/com_sap_edm_sampleservice_v4_Products/Products_List.page');
     var filterQO = '$filter=';
     for (var key in parametersObj) {
         var value = parametersObj[key];
@@ -58,7 +58,7 @@ function openProductListWithFilter(context, parametersObj) {
     context.getLogger().log(`${filterQO}`,'Debug');
     pageData.Controls[0].Sections[0].Target.QueryOptions = filterQO;
     return context.getPageProxy().executeAction({
-        "Name": '/deeplinkintomdkapp/Actions/SampleServiceV4/Products/NavToProducts_List.action',
+        "Name": '/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action',
         "Properties": {
             "PageMetadata": pageData
         }

@@ -1,7 +1,0 @@
-{
-    "Message": "Download in progress...",
-    "CompletionMessage": "Download Successful",
-    "CompletionTimeout": 7,
-    "OnSuccess": "/mdk_errorarchive/Actions/SampleServiceV4/Service/DownloadOffline.action",
-    "_Type": "Action.Type.ProgressBanner"
-}

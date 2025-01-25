@@ -1,13 +1,16 @@
 {
-	"Caption": "$(L,PRODUCT_TYPES)",
 	"ActionBar": {
 		"Items": [
 			{
 				"OnPress": "/mdk_annotations/Actions/SampleServiceV4/Products/NavToProducts_Create.action",
 				"Position": "Right",
-				"SystemItem": "Add"
+				"SystemItem": "Add",
+				"_Type": "Control.Type.ActionBarItem"
 			}
-		]
+		],
+		"Caption": "$(L,PRODUCT_TYPES)",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
 		{
@@ -36,7 +39,8 @@
 						"PreserveIconStackSpacing": false,
 						"StatusText": "{DimensionDepth}",
 						"Subhead": "{Category}",
-						"SubstatusText": "{DimensionHeight}"
+						"SubstatusText": "{DimensionHeight}",
+						"_Type": "ObjectTable.Type.ObjectCell"
 					},
 					"EmptySection": {
 						"Caption": "No record found!"
@@ -69,6 +73,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_List",
-	"PrefersLargeCaption": true
+	"_Name": "Products_List"
 }

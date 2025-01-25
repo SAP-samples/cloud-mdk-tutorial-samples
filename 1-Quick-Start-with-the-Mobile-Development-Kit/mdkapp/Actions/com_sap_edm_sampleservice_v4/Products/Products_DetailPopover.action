@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Add SalesOrderItem",
+            "OnPress": "/mdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_CreateSalesOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/mdkapp/Rules/com_sap_edm_sampleservice_v4/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

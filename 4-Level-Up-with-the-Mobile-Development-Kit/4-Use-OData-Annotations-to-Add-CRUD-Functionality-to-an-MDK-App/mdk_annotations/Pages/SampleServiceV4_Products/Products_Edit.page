@@ -1,5 +1,4 @@
 {
-	"Caption": "$(L,Update_PRODUCT_TYPE)",
 	"DesignTimeTarget": {
 		"Service": "/mdk_annotations/Services/SampleServiceV4.service",
 		"EntitySet": "Products",
@@ -10,14 +9,19 @@
 			{
 				"Position": "Left",
 				"SystemItem": "Cancel",
-				"OnPress": "/mdk_annotations/Actions/CloseModalPage_Cancel.action"
+				"OnPress": "/mdk_annotations/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
 			},
 			{
 				"Position": "Right",
 				"SystemItem": "Save",
-				"OnPress": "/mdk_annotations/Actions/SampleServiceV4/Products/Products_UpdateEntity.action"
+				"OnPress": "/mdk_annotations/Actions/SampleServiceV4/Products/Products_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
-		]
+		],
+		"Caption": "$(L,Update_PRODUCT_TYPE)",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
 		{
@@ -156,6 +160,5 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Products_Edit",
-	"PrefersLargeCaption": true
+	"_Name": "Products_Edit"
 }

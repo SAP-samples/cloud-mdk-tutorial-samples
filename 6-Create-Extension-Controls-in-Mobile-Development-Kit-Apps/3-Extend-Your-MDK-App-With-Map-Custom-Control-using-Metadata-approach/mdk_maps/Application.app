@@ -7,5 +7,5 @@
 	"OnDidUpdate": "/mdk_maps/Rules/Service/Initialize.js",
 	"Styles": "/mdk_maps/Styles/Styles.less",
 	"Localization": "/mdk_maps/i18n/i18n.properties",
-	"_SchemaVersion": "24.7"
+	"_SchemaVersion": "24.11"
 }
