@@ -7,11 +7,14 @@
 				"Position": "Right",
 				"SystemItem": "Edit",
 				"Caption": "Edit",
-				"Visible": true
+				"Visible": true,
+				"_Type": "Control.Type.ActionBarItem"
 			}
-		]
+		],
+		"Caption": "Product Detail",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	},
-	"Caption": "Product Detail",
 	"Controls": [
 		{
 			"Sections": [
@@ -20,7 +23,8 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"UseTopPadding": true
+						"UseTopPadding": true,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"ObjectCells": [
 						{
@@ -29,14 +33,15 @@
 								"AvatarStack": {
 									"Avatars": [
 										{
-											"Image": "/BarcodeScanning/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
+											"Image": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture"
 										}
 									],
 									"ImageIsCircular": false
 								},
 								"PreserveIconStackSpacing": false,
 								"Title": "{Name}",
-								"StatusText": "$(C,{Price},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})"
+								"StatusText": "$(C,{Price},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})",
+								"_Type": "ObjectTable.Type.ObjectCell"
 							}
 						}
 					],
@@ -48,12 +53,14 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"UseTopPadding": true
+						"UseTopPadding": true,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"KeyAndValues": [
 						{
 							"KeyName": "Description",
-							"Value": "{ShortDescription}"
+							"Value": "{ShortDescription}",
+							"_Type": "KeyValue.Type.Item"
 						}
 					],
 					"Layout": {
@@ -68,16 +75,19 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"UseTopPadding": true
+						"UseTopPadding": true,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"KeyAndValues": [
 						{
 							"KeyName": "Category",
-							"Value": "{Category}"
+							"Value": "{Category}",
+							"_Type": "KeyValue.Type.Item"
 						},
 						{
 							"KeyName": "Quantity Unit",
-							"Value": "{QuantityUnit}"
+							"Value": "{QuantityUnit}",
+							"_Type": "KeyValue.Type.Item"
 						}
 					],
 					"Layout": {
@@ -93,20 +103,24 @@
 					},
 					"Header": {
 						"Caption": "Stock Details",
-						"UseTopPadding": true
+						"UseTopPadding": true,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"KeyAndValues": [
 						{
 							"KeyName": "Quantity",
-							"Value": "{Quantity}"
+							"Value": "{Quantity}",
+							"_Type": "KeyValue.Type.Item"
 						},
 						{
 							"KeyName": "Lot Size",
-							"Value": "{LotSize}"
+							"Value": "{LotSize}",
+							"_Type": "KeyValue.Type.Item"
 						},
 						{
 							"KeyName": "Min Stock Level",
-							"Value": "{MinStock}"
+							"Value": "{MinStock}",
+							"_Type": "KeyValue.Type.Item"
 						}
 					],
 					"Layout": {
@@ -116,7 +130,7 @@
 					"Target": {
 						"EntitySet": "Stock",
 						"QueryOptions": "$filter=ProductID eq {ProductID}",
-						"Service": "/BarcodeScanning/Services/SampleServiceV4.service"
+						"Service": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service"
 					},
 					"_Name": "SectionKeyValue3",
 					"_Type": "Section.Type.KeyValue"
@@ -127,7 +141,8 @@
 					},
 					"Header": {
 						"Caption": "Dimensions",
-						"UseTopPadding": true
+						"UseTopPadding": true,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"Layout": {
 						"NumberOfColumns": 2
@@ -137,28 +152,32 @@
 							"SimplePropertyCell": {
 								"AccessoryType": "None",
 								"KeyName": "Height",
-								"Value": "{DimensionHeight} {DimensionUnit}"
+								"Value": "{DimensionHeight} {DimensionUnit}",
+								"_Type": "SimplePropertyCollection.Type.Cell"
 							}
 						},
 						{
 							"SimplePropertyCell": {
 								"AccessoryType": "None",
 								"KeyName": "Width",
-								"Value": "{DimensionWidth} {DimensionUnit}"
+								"Value": "{DimensionWidth} {DimensionUnit}",
+								"_Type": "SimplePropertyCollection.Type.Cell"
 							}
 						},
 						{
 							"SimplePropertyCell": {
 								"AccessoryType": "None",
 								"KeyName": "Depth",
-								"Value": "{DimensionDepth} {DimensionUnit}"
+								"Value": "{DimensionDepth} {DimensionUnit}",
+								"_Type": "SimplePropertyCollection.Type.Cell"
 							}
 						},
 						{
 							"SimplePropertyCell": {
 								"AccessoryType": "None",
 								"KeyName": "Weight",
-								"Value": "{Weight} {WeightUnit}"
+								"Value": "{Weight} {WeightUnit}",
+								"_Type": "SimplePropertyCollection.Type.Cell"
 							}
 						}
 					],
@@ -171,6 +190,5 @@
 		}
 	],
 	"_Name": "Product_Detail",
-	"_Type": "Page",
-	"PrefersLargeCaption": true
+	"_Type": "Page"
 }

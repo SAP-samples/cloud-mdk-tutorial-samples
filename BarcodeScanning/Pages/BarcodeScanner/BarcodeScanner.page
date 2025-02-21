@@ -1,5 +1,9 @@
 {
-	"Caption": "BarcodeScanner",
+	"ActionBar": {
+		"Caption": "BarcodeScanner",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	},
 	"Controls": [
 		{
 			"_Name": "SectionedTable0",
@@ -20,6 +24,5 @@
 		]
 	},
 	"_Name": "BarcodeScanner",
-	"_Type": "Page",
-	"PrefersLargeCaption": true
+	"_Type": "Page"
 }

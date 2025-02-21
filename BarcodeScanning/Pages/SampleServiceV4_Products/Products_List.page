@@ -8,12 +8,13 @@
 					"Header": {
 						"_Name": "SectionHeader0",
 						"AccessoryType": "None",
-						"UseTopPadding": false
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"EntitySet": "Products",
-						"Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+						"Service": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service",
 						"QueryOptions": ""
 					},
 					"_Name": "SectionObjectTable0",
@@ -39,7 +40,7 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "/BarcodeScanning/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
+									"Image": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture"
 								}
 							],
 							"ImageIsCircular": false,
@@ -54,8 +55,10 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true,
 							"LeadingItems": [],
-							"TrailingItems": []
-						}
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"_Type": "ObjectTable.Type.ObjectCell"
 					},
 					"Search": {
 						"Enabled": true,
@@ -83,6 +86,9 @@
 	],
 	"_Type": "Page",
 	"_Name": "Products_List",
-	"Caption": "Products",
-	"PrefersLargeCaption": true
+	"ActionBar": {
+		"Caption": "Products",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	}
 }

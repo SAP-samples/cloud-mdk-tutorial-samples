@@ -26,7 +26,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "BarcodeScannerResult",
-	"Caption": "Barcode Scanner Action",
 	"ActionBar": {
 		"Items": [
 			{
@@ -35,10 +34,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action"
+				"OnPress": "/BarcodeScanning/Actions/BarcodeScanner/OpenBarcodeScanner.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar0"
-	},
-	"PrefersLargeCaption": true
+		"_Name": "ActionBar0",
+		"Caption": "Barcode Scanner Action",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	}
 }

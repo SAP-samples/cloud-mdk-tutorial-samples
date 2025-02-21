@@ -1,5 +1,5 @@
 {
-    "Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+    "Service": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service",
     "DefiningRequests": [{
         "Name": "Products",
         "Query": "Products"

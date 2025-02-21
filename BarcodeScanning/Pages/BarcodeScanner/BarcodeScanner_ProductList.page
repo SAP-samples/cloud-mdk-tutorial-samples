@@ -12,7 +12,8 @@
 					"Header": {
 						"_Name": "SectionHeader0",
 						"AccessoryType": "None",
-						"UseTopPadding": false
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -24,7 +25,7 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"EntitySet": "Products",
-						"Service": "/BarcodeScanning/Services/SampleServiceV4.service",
+						"Service": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service",
 						"QueryOptions": ""
 					},
 					"_Name": "SectionObjectTable0",
@@ -38,7 +39,8 @@
 							"Items": [],
 							"PerformFirstActionWithFullSwipe": true,
 							"LeadingItems": [],
-							"TrailingItems": []
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "{Name}",
 						"Subhead": "{CategoryName}",
@@ -49,7 +51,7 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "/BarcodeScanning/Services/SampleServiceV4.service/{@odata.readLink}/Picture"
+									"Image": "/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture"
 								}
 							],
 							"ImageIsCircular": false,
@@ -59,7 +61,8 @@
 							"ImageIsCircular": true
 						},
 						"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_Detail.action",
-						"Selected": false
+						"Selected": false,
+						"_Type": "ObjectTable.Type.ObjectCell"
 					},
 					"Search": {
 						"Enabled": true,
@@ -83,13 +86,11 @@
 	],
 	"_Type": "Page",
 	"_Name": "BarcodeScanner_ProductList",
-	"Caption": "Products",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
-				"Caption": "Item",
+				"Caption": "Scan",
 				"SystemItem": "Camera",
 				"Position": "Right",
 				"IsIconCircular": false,
@@ -99,9 +100,13 @@
 					"Properties": {
 						"OnSuccess": "/BarcodeScanning/Rules/BarcodeScanner/BarcodeResult_OpenProductDetail.js"
 					}
-				}
+				},
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Products",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

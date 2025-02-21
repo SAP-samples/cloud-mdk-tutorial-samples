@@ -17,7 +17,7 @@
 						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable_SampleServiceV4",
+					"_Name": "SectionButtonTable_com_sap_edm_sampleservice_v4",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
@@ -34,7 +34,8 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_List.action"
+							"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_List.action",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
 							"_Name": "SectionButton1",
@@ -47,7 +48,8 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_List.action"
+							"OnPress": "/BarcodeScanning/Actions/SampleServiceV4/Products/NavToProducts_List.action",
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
 							"_Name": "SectionButton2",
@@ -65,7 +67,8 @@
 								"Properties": {
 									"PageToOpen": "/BarcodeScanning/Pages/BarcodeScanner/BarcodeScannerResult.page"
 								}
-							}
+							},
+							"_Type": "ButtonTable.Type.Button"
 						},
 						{
 							"_Name": "SectionButton3",
@@ -83,7 +86,8 @@
 								"Properties": {
 									"PageToOpen": "/BarcodeScanning/Pages/BarcodeScanner/BarcodeScanner_ProductList.page"
 								}
-							}
+							},
+							"_Type": "ButtonTable.Type.Button"
 						}
 					],
 					"Layout": {
@@ -96,8 +100,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main",
-	"Caption": "Main",
-	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
@@ -107,9 +109,13 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/BarcodeScanning/Actions/Application/UserMenuPopover.action"
+				"OnPress": "/BarcodeScanning/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
 			}
 		],
-		"_Name": "ActionBar1"
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
 	}
 }

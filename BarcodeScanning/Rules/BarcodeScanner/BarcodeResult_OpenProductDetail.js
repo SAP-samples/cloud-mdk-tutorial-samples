@@ -4,7 +4,8 @@ export default function BarcodeResult_OpenProductDetail(context) {
     var message = '';
     var actionResult = context.getActionResult('BarcodeScanner');
     var scannedResult = actionResult.data;
-    return context.read('/BarcodeScanning/Services/SampleServiceV4.service', 'Products', [], `$filter=ProductID eq ${scannedResult}`).then((results) => {
+    //alert(scannedResult);
+    return context.read('/BarcodeScanning/Services/com_sap_edm_sampleservice_v4.service', 'Products', [], `$filter=ProductID eq ${scannedResult}`).then((results) => {
         if (results && results.length > 0) {
             let prod = results.getItem(0);
             pageProxy.setActionBinding(prod);
