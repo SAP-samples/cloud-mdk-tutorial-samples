@@ -4,5 +4,5 @@
 	"Styles": "/mdk_slider/Styles/Styles.less",
 	"Localization": "/mdk_slider/i18n/i18n.properties",
 	"_Name": "mdk_slider",
-	"_SchemaVersion": "24.11"
+	"_SchemaVersion": "25.6"
 }
