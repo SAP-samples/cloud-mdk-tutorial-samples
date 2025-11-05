@@ -9,6 +9,6 @@
 	"Styles": "/multiuserapp/Styles/Styles.less",
 	"Version": "/multiuserapp/Globals/Application/AppDefinition_Version.global",
 	"Localization": "/multiuserapp/i18n/i18n.properties",
-	"_SchemaVersion": "25.6",
+	"_SchemaVersion": "25.9",
 	"_Name": "multiuserapp"
 }

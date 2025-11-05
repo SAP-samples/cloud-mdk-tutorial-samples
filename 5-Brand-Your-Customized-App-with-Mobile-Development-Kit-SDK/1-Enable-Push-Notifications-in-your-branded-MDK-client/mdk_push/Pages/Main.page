@@ -1,27 +1,33 @@
 {
-    "Controls": [{
-        "FilterFeedbackBar": {
-            "ShowAllFilters": false,
-            "_Type": "Control.Type.FilterFeedbackBar"
-        },
-        "_Name": "SectionedTable0",
-        "_Type": "Control.Type.SectionedTable",
-        "Sections": []
-    }],
-    "_Name": "Main",
-    "_Type": "Page",
-    "Caption": "Main",
-    "PrefersLargeCaption": true,
-    "ActionBar": {
-        "Items": [{
-            "_Name": "ActionBarItem0",
-            "Caption": "User Menu",
-            "Icon": "sap-icon://customer",
-            "Position": "Right",
-            "IsIconCircular": false,
-            "Visible": true,
-            "OnPress": "/mdk_push/Actions/Application/UserMenuPopover.action"
-        }],
-        "_Name": "ActionBar1"
-    }
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": []
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mdk_push/Actions/Application/UserMenuPopover.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"_Name": "ActionBar1",
+		"Caption": "Main",
+		"PrefersLargeCaption": true,
+		"_Type": "Control.Type.ActionBar"
+	}
 }
