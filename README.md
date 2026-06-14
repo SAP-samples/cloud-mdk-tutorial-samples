@@ -30,12 +30,12 @@ Above folders point to related tutorial mission/group.
 
 | Folder                                                                                                                            | Tutorials                                                               |
 | :-------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
-| [1-Quick-Start-with-the-Mobile-Development-Kit](/1-Quick-Start-with-the-Mobile-Development-Kit)                                   | https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html |
-| [2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit](/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit) | https://developers.sap.com/mission.mobile-dev-kit-get-started.html      |
+| [1-Quick-Start-with-the-mobile development kit](/1-Quick-Start-with-the-mobile development kit)                                   | https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html |
+| [2-Create-Your-First-Mobile-App-with-the-mobile development kit](/2-Create-Your-First-Mobile-App-with-the-mobile development kit) | https://developers.sap.com/mission.mobile-dev-kit-get-started.html      |
 | [3-Enhance-Your-First-MDK-App-with-Additional-Functionalities](3-Enhance-Your-First-MDK-App-with-Additional-Functionalities)      | https://developers.sap.com/group.mobile-dev-kit-enhance.html            |
-| [4-Level-Up-with-the-Mobile-Development-Kit](4-Level-Up-with-the-Mobile-Development-Kit)                                          | https://developers.sap.com/mission.mobile-dev-kit-level-up.html         |
-| [5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK)       | https://developers.sap.com/mission.mobile-dev-kit-brand.html            |
-| [6-Create-Extension-Controls-in-Mobile-Development-Kit-Apps](/6-Create-Extension-Controls-in-Mobile-Development-Kit-Apps)         | https://developers.sap.com/mission.mobile-dev-kit-controls.html         |
+| [4-Level-Up-with-the-mobile development kit](4-Level-Up-with-the-mobile development kit)                                          | https://developers.sap.com/mission.mobile-dev-kit-level-up.html         |
+| [5-Brand-Your-Customized-App-with-mobile development kit-SDK](/5-Brand-Your-Customized-App-with-mobile development kit-SDK)       | https://developers.sap.com/mission.mobile-dev-kit-brand.html            |
+| [6-Create-Extension-Controls-in-mobile development kit-Apps](/6-Create-Extension-Controls-in-mobile development kit-Apps)         | https://developers.sap.com/mission.mobile-dev-kit-controls.html         |
 
 The resources can also be used as a general code reference and starting point for the mobile development kit.
 
