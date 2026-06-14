@@ -1,5 +1,5 @@
 # Add NativeScript Plugins in an MDK App
-Build and run the Mobile Development Kit client with a non-visual extension functionality for Android and iOS platforms.
+Build and run the mobile development kit client with a non-visual extension functionality for Android and iOS platforms.
 
 ***
 ### 📌 Description

@@ -1,6 +1,6 @@
 # Extend Your MDK App With a Map Custom Control (Using Metadata Approach)
 
-Build and run the Mobile Development Kit client with Map custom control functionality for Android and iOS platforms.
+Build and run the mobile development kit client with Map custom control functionality for Android and iOS platforms.
 
 ---
 
