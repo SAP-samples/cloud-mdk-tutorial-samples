@@ -1,6 +1,7 @@
 # Quick Start with the mobile development kit (MDK)
 Create and examine your first offline CRUD mobile app using the mobile development kit template connecting against a sample service.
 
+
 ***
 ### 📌 Description
 This folder contains the MDK metadata project which is the end result the tutorial of [Quick Start with the mobile development kit (MDK)](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html).
