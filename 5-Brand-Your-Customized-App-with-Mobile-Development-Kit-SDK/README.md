@@ -1,4 +1,4 @@
-# Brand Your Customized App with Mobile Development Kit SDK
+# Brand Your Customized App with mobile development kit SDK
 
 Explore the mobile development kit SDK and build a custom Android/iOS client, enable push notifications, and create extensions.
 
@@ -6,14 +6,14 @@ Explore the mobile development kit SDK and build a custom Android/iOS client, en
 
 ### 📌 Description
 
-This folder contains the MDK metadata projects which is the end result of each tutorial part of [Brand Your Customized App with Mobile Development Kit SDK](https://developers.sap.com/mission.mobile-dev-kit-brand.html) mission.
+This folder contains the MDK metadata projects which is the end result of each tutorial part of [Brand Your Customized App with mobile development kit SDK](https://developers.sap.com/mission.mobile-dev-kit-brand.html) mission.
 The samples include:
 
 | Folder                                                                                                                                                                        | Description                                                  | Tutorial                                                                                                                              |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [1-Enable-Push-Notifications-in-your-branded-MDK-client](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/1-Enable-Push-Notifications-in-your-branded-MDK-client) | Use the SAP Mobile Services to enable push notifications in your branded MDK client | [Enable Push Notifications in your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) |
-| [2-Implement-Deep-Linking-into-an-MDK-Application](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application) | Set up the Mobile Development Kit client to accept deep links through URL schemes and HTTP URLs (iOS Universal Links and Android App Links). With this feature, your MDK app can be launched to perform actions like navigating to a page, filter a list based on a parameter, or approving a request from external sources (web page, email, or another app) | [Implement Deep Linking into an MDK Application](https://developers.sap.com/tutorials/cp-mobile-dev-kit-deep-link-into-app.html) |
-| [3-Enable-MultiUser-Mode-for-MDK-Application](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/3-Enable-MultiUser-Mode-for-MDK-Application) | Set up the Mobile Development Kit client to enable the multi-user mode (one device, multiple users with secure access). | [Enable Multi-User Mode for MDK Application](https://developers.sap.com/tutorials/cp-mobile-dev-kit-multi-user.html) |
+| [1-Enable-Push-Notifications-in-your-branded-MDK-client](/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/1-Enable-Push-Notifications-in-your-branded-MDK-client) | Use the SAP Mobile Services to enable push notifications in your branded MDK client | [Enable Push Notifications in your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) |
+| [2-Implement-Deep-Linking-into-an-MDK-Application](/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application) | Set up the mobile development kit client to accept deep links through URL schemes and HTTP URLs (iOS Universal Links and Android App Links). With this feature, your MDK app can be launched to perform actions like navigating to a page, filter a list based on a parameter, or approving a request from external sources (web page, email, or another app) | [Implement Deep Linking into an MDK Application](https://developers.sap.com/tutorials/cp-mobile-dev-kit-deep-link-into-app.html) |
+| [3-Enable-MultiUser-Mode-for-MDK-Application](/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/3-Enable-MultiUser-Mode-for-MDK-Application) | Set up the mobile development kit client to enable the multi-user mode (one device, multiple users with secure access). | [Enable Multi-User Mode for MDK Application](https://developers.sap.com/tutorials/cp-mobile-dev-kit-multi-user.html) |
 ---
 
 ### Download and Installation
