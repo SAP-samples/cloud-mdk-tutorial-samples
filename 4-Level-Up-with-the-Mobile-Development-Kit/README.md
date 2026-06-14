@@ -1,8 +1,8 @@
-# Level Up with the Mobile Development Kit
+# Level Up with the mobile development kit
 Become proficient with the mobile development kit by learning how to handle an error archive, add styling, deep link, and leverage OData annotations.
 ***
 ### 📌 Description
-This folder contains the MDK metadata projects which is the end result of each tutorial part of [Level Up with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) group.
+This folder contains the MDK metadata projects which is the end result of each tutorial part of [Level Up with the mobile development kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) group.
 
 The samples include:
 

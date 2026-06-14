@@ -1,22 +1,22 @@
-# Developer Tutorials - SAP Mobile Development Kit
+# Developer Tutorials - mobile development kit (MDK)
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-mdk-tutorial-samples)](https://api.reuse.software/info/github.com/SAP-samples/cloud-mdk-tutorial-samples)
 
-The samples provided in this repository reference to the MDK tutorials listed on the SAP Developer Center [Mobile Development Kit page](https://developers.sap.com/topics/mobile-development-kit.html#tutorials).
+The samples provided in this repository reference to the [MDK tutorials](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/overview.html#tutorials) listed on the SAP Developer Center.
 
 ---
 
 ### 📌 Description
 
-These sample resources demonstrate various components & features of the Mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorials.
+These sample resources demonstrate various components & features of the mobile development kit (MDK) in the context of bigger apps and provide samples referenced in developer tutorials.
 The samples include:
 
-- How to quick start with the Mobile Development Kit (MDK)
+- How to quick start with the mobile development kit (MDK)
 - How to create an MDK Online/Offline app
 - How to add CRUD (Create, Read, Update & Delete) functionality.
 - How to store the data locally, make some transactions against the local database (offline store), upload the changes to the backend
 - How to add client side validation rule
-- How to implement deep linking from an MDK app to open an installed app like SAP Mobile Cards or how to open a web page 
+- How to implement deep linking from an MDK app to open an installed app like SAP Mobile Start or how to open a web page 
 - How to upload client logs, enable Push notifications, add Styling, handle Error Archive, OData Annotations, Localization & Internationlaization.
 
 * How to create your branded MDK client
@@ -37,7 +37,7 @@ Above folders point to related tutorial mission/group.
 | [5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK](/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK)       | https://developers.sap.com/mission.mobile-dev-kit-brand.html            |
 | [6-Create-Extension-Controls-in-Mobile-Development-Kit-Apps](/6-Create-Extension-Controls-in-Mobile-Development-Kit-Apps)         | https://developers.sap.com/mission.mobile-dev-kit-controls.html         |
 
-The resources can also be used as a general code reference and starting point for the Mobile development kit.
+The resources can also be used as a general code reference and starting point for the mobile development kit.
 
 Please be advised that any downloads are subject to the following:
 

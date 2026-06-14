@@ -1,9 +1,9 @@
-# Create Your First Mobile App with the Mobile Development Kit (MDK)
+# Create Your First Mobile App with the mobile development kit (MDK)
 Build a cross-platform native offline mobile app from scratch with the SAP Mobile Services mobile development kit.
 
 ***
 ### 📌 Description
-This folder contains the MDK metadata project which is the end result the tutorial mission of [Create Your First Mobile App with the Mobile Development Kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
+This folder contains the MDK metadata project which is the end result the tutorial mission of [Create Your First Mobile App with the mobile development kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
 
 You can reference this project and continue with the [Enhance MDK First MDK App with Additional Functionalities](https://developers.sap.com/group.mobile-dev-kit-enhance.html) tutorial group.
 
