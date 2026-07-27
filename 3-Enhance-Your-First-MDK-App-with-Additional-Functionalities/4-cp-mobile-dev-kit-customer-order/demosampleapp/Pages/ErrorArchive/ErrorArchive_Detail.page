@@ -60,7 +60,7 @@
 	"_Name": "ErrorArchive_Detail",
 	"ActionBar": {
 		"Caption": "Details",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

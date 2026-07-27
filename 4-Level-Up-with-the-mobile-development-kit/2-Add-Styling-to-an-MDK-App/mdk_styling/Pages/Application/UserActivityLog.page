@@ -115,7 +115,7 @@
 	"_Name": "UserActivityLog",
 	"ActionBar": {
 		"Caption": "Activity Log",
-		"PrefersLargeCaption": false,
+		"PreferredCaptionSize": "Small",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"OnLoaded": "/mdk_styling/Rules/Logging/UserLogSetting.js"

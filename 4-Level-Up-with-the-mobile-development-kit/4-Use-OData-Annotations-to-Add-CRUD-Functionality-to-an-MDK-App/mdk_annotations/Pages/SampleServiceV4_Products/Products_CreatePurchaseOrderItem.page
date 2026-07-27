@@ -15,7 +15,7 @@
 			}
 		],
 		"Caption": "$(L,Create_PurchaseOrderItem)",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [

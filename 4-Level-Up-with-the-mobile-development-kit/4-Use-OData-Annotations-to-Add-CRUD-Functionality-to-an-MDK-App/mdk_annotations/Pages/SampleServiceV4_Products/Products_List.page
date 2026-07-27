@@ -9,7 +9,7 @@
 			}
 		],
 		"Caption": "$(L,PRODUCT_TYPES)",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [

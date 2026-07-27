@@ -20,7 +20,7 @@
 			}
 		],
 		"Caption": "$(L,Update_PRODUCT_TYPE)",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [
