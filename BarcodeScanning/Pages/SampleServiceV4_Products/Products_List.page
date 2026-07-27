@@ -88,7 +88,7 @@
 	"_Name": "Products_List",
 	"ActionBar": {
 		"Caption": "Products",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

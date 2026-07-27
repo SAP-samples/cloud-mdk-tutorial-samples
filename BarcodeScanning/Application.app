@@ -7,5 +7,5 @@
 	"OnDidUpdate": "/BarcodeScanning/Rules/Service/Initialize.js",
 	"Styles": "/BarcodeScanning/Styles/Styles.less",
 	"Localization": "/BarcodeScanning/i18n/i18n.properties",
-	"_SchemaVersion": "25.9"
+	"_SchemaVersion": "26.6"
 }

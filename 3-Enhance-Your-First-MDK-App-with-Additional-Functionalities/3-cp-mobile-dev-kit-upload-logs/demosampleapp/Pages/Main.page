@@ -64,6 +64,6 @@
 		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Main",
-		"PrefersLargeCaption": true
+		"PreferredCaptionSize": "Large"
 	}
 }

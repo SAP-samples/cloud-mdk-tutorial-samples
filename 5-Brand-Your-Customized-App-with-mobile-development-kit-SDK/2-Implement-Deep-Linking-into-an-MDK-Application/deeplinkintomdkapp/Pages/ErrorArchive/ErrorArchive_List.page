@@ -53,7 +53,7 @@
 	"_Name": "ErrorArchive_List",
 	"ActionBar": {
 		"Caption": "Error List",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
