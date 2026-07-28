@@ -20,7 +20,7 @@
 			}
 		],
 		"Caption": "Update Product Detail",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"Controls": [

@@ -88,7 +88,7 @@
 		],
 		"_Name": "ActionBar1",
 		"Caption": "Settings",
-		"PrefersLargeCaption": false,
+		"PreferredCaptionSize": "Small",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

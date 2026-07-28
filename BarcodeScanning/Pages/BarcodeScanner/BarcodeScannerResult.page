@@ -40,7 +40,7 @@
 		],
 		"_Name": "ActionBar0",
 		"Caption": "Barcode Scanner Action",
-		"PrefersLargeCaption": true,
+		"PreferredCaptionSize": "Large",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
