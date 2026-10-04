@@ -7,5 +7,5 @@
 	"OnDidUpdate": "/demosampleapp/Rules/Service/Initialize.js",
 	"Styles": "/demosampleapp/Styles/Styles.less",
 	"Localization": "/demosampleapp/i18n/i18n.properties",
-	"_SchemaVersion": "26.6"
+	"_SchemaVersion": "26.9"
 }

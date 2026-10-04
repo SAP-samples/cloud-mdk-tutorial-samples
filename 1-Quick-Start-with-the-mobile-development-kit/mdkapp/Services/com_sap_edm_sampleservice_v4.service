@@ -1,12 +1,11 @@
 {
-    "DestinationName": "com.sap.edm.sampleservice.v4",
-    "OfflineEnabled": true,
-    "LanguageURLParam": "",
-    "OnlineOptions": {},
-    "OfflineOptions": {
-	"StoreParameters": {}
-},
-    "PathSuffix": "",
-    "SourceType": "Mobile",
-    "ServiceUrl":""
+	"DestinationName": "com.sap.edm.sampleservice.v4",
+	"OfflineEnabled": true,
+	"OfflineOptions": {
+		"StoreParameters": {
+			"EnableBackgroundDataTransfer": true
+		},
+		"AutoIncludeProgressMessages": true
+	},
+	"SourceType": "Mobile"
 }
